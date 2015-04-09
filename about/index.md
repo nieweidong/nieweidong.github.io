@@ -1,26 +1,40 @@
 ---
 layout: page
-title: About the Jekyll Theme
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
-modified: 2014-08-08T19:44:38.564948-04:00
+title: About me.
+excerpt: "darrencode, 微东, 聂微东, darren, 自述"
+modified: 2015-04-09
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: so-simple-sample-image-2.jpg
+  credit: 未知
+  creditlink: javascript:;
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+姓聂名微东，英文名Darren，自称东哥，已婚已育，base北京。 [个人博客](http://www.cnblogs.com/Darren_code/) 可多关注，正在努力坚持更新... 毕业于陆军航空兵学院，获计算机科学与技术学士学位。
 
-## So Simple Theme is all about:
+热爱编程。目前从事JavaScript研发工作，关注并喜欢研究 HTML5，Python，PHP，MySQL，NoSQL等技术。
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page]({{ site.url }}/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+业余爱好DOTA和各种球类运动。想去旅游，可又没有计划旅游，矛盾着，纠结着...希望能在有生之年环游世界。
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
+## Hello World
+什么是攻城狮？维基上的解释：“工程师（Engineer）是指那些在工程专业领域的人，他们使用科学知识来驾驭技术以解决实际问题，并以此为职业”
 
-[^1]: Example: *domain.com/category-name/post-title*
+一句老掉牙的话说前端的由来 ：“随着互联网的迅猛发展和普及，一个新型的行业和新兴的职位正在上升到技术的层面 —— web前端开发工程师”
+
+作为前端中的一份子，不为国家和人民做点什么都觉得 愧对呼吸北京像鸡汤一样的空气(够浑浊)，所以本人虎躯一震，打算力排万难、奔过艰险，写篇自己在“前端领域知识积累”的[《前端攻略系列》](http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html)，进度略慢还请看官忽喷
+
+## 一名码农的自述
+读军校是因年少时够调皮捣蛋，父母担心送去地方大学必会惹是生非之类，所以毅然决然的给我丢进军校深造，美名曰——“锻炼我”。实际，去了军校更没少打架斗殴；然后转眼四年毕业，懂得两点。
+
+部队并不适合自身性格
+
+坐办公室折腾电脑不错
+
+。。。
+
+于是乎卷起衣袖、扛着麻袋成为一名IT从业人员。
+
+我是一名以“码农”自称的“前端”。骄傲这两个称呼，所以依旧在自己梦想的道路上坚持着。
+
+技术杂，不精，互联网从业四年。领导曾对鄙人的评价是 “艺术青年”，个人觉得可改为“学艺不精的技术打杂青年”
+
+**人生就像写代码，每一次成长就是一次更新，每一次收获就是一个迭代。所以...得写好代码，写好人生（就算现在写不出好的代码，可至少有一颗迭代的心），付出才可能有回报。**

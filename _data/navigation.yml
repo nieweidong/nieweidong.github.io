@@ -3,9 +3,6 @@
 - title: Home
   url : /
 
-- title: About
-  url: /about/
-
 - title: Tech
   url: /tech/
 
@@ -23,4 +20,7 @@
 
 - title: Search
   url: /search/
+
+- title: About
+  url: /about/
 

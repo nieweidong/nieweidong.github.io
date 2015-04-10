@@ -6,6 +6,7 @@ description: 完成《前端攻略系列》仅仅是第一步...
 logo: site-logo.png
 search: true
 url: 
+comments: true
 
 # Jekyll configuration
 

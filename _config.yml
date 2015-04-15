@@ -5,7 +5,7 @@ locale: zh_CN
 description: 关注Web技术，擅长前端领域...
 logo: site-logo.png
 search: true
-url: 
+url:
 comments: true
 
 # Jekyll configuration
@@ -36,12 +36,12 @@ owner:
   avatar: me.jpg
   email: darrencode@qq.com
   disqus-shortname: nieweidong
-  twitter: darrencode
-  facebook: darrencode
+  twitter: nieweidong
+  facebook: weidong.nie
   github: nieweidong
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: #username
-  instagram: #username
+  instagram: nieweidong
   flickr: #username
   tumblr: #username
   pinterest: #username
@@ -50,5 +50,5 @@ owner:
     analytics:
     verify:
     ad-client:
-    ad-slot: 
+    ad-slot:
   bing-verify:

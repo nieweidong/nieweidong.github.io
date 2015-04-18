@@ -1,8 +1,10 @@
 # Site wide configuration
 
-title: 内容建设中...聂微东的博客
+title: 一枚关注Web技术领域的手艺人
 locale: zh_CN
-description: 关注Web技术，擅长前端领域...
+description: 博观而约取,厚积而薄发...
+
+
 logo: site-logo.png
 search: true
 url:
@@ -10,7 +12,8 @@ comments: true
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+#permalink:   /:categories/:title/
+permalink:   /:title/
 markdown:    kramdown
 highlighter: pygments
 sass:

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sample Interview
+title: 前端攻略系列
 excerpt: "An archive of articles sorted by date."
 search_omit: true
 ---

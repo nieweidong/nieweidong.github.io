@@ -1,6 +1,6 @@
 # Site navigation links
 
-- title: Home
+- title: 首页
   url : /
 
 - title: Tech
@@ -9,13 +9,13 @@
 - title: 前端攻略
   url: /gonglue/
 
-- title: Interview
+- title: 前端面试
   url: /interview/
 
-- title: Life
+- title: 点滴生活
   url: /life/
 
-- title: Note
+- title: 杂记
   url: /note/
 
 - title: Tags

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me.
-excerpt: "darrencode, 微东, 聂微东, darren, 自述"
+excerpt: "聂微东,前端,前端面试,前端攻略,前端博客,JavaScript,JS,React,Gulp,Nodejs,darren"
 modified: 2015-04-09
 image:
   feature: so-simple-sample-image-2.jpg

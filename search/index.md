@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "Search"
-date: 
+date:
 modified:
-excerpt:
+excerpt: "聂微东,前端,前端面试,前端攻略,前端博客,JavaScript,JS,React,Gulp,Nodejs,darren"
 image:
   feature:
 search_omit: true
 sitemap: false
 ---
-  
+
 <!-- Search form -->
 <form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
   <label for="q">Search {{ site.title }} for:</label>

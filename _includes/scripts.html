@@ -6,6 +6,23 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 
+<script type="text/javascript">
+  // back-to-top
+  $(window).scroll(function(){
+    if ($(window).scrollTop()>100){
+      $("#back-to-top").fadeIn(1000);
+    } else {
+      $("#back-to-top").fadeOut(1000);
+    }
+  });
+
+  //当点击跳转链接后，回到页面顶部位置
+  $("#back-to-top").click(function(){
+    $('body,html').animate({scrollTop:0},1000);
+    return false;
+  });
+</script>
+
 {% if site.owner.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>

@@ -28,3 +28,21 @@
     }
   }
 }
+
+.back-to-top {
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 7px;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  font-weight: bold;
+  opacity: .8;
+  padding: 3px 6px;
+  position: fixed;
+  right: 50px;
+  z-index: 99999;
+  span {
+    cursor: pointer;
+  }
+}

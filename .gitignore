@@ -27,6 +27,5 @@ node_modules
 .idea
 .DS_Store
 
-
 .sass-cache/
-_site/
+#_site/

@@ -1,0 +1,344 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>JavaScript DOM操作 提高篇 &#8211; 聂微东，一枚Web技术领域的手艺人</title>
+
+<meta name="keywords" content="JS">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="JavaScript DOM操作 提高篇">
+
+<meta name="twitter:site" content="@nieweidong">
+<meta name="twitter:creator" content="@nieweidong">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript DOM操作 提高篇">
+
+<meta property="og:url" content="/JSDOM%E6%93%8D%E4%BD%9C%E6%8F%90%E9%AB%98%E7%AF%87/">
+<meta property="og:site_name" content="聂微东，一枚Web技术领域的手艺人">
+
+
+
+
+
+<link rel="canonical" href="/JSDOM%E6%93%8D%E4%BD%9C%E6%8F%90%E9%AB%98%E7%AF%87/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="聂微东，一枚Web技术领域的手艺人 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >首页</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/gonglue/" >前端攻略</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/interview/" >前端面试</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/life/" >点滴生活</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/note/" >杂记</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="/" class="site-logo" rel="home" title="聂微东，一枚Web技术领域的手艺人"><img src="/images/site-logo.png" width="200" height="200" alt="聂微东，一枚Web技术领域的手艺人 logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="/">聂微东，一枚Web技术领域的手艺人</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">博观而约取,厚积而薄发...</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#JS" title="Pages tagged JS">JS</a></span>
+        
+          <h1 class="entry-title">JavaScript DOM操作 提高篇</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/me.jpg" class="bio-photo" alt="nieweidong bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">nieweidong</span></span>
+        <span class="entry-date date published"><time datetime="2011-05-30T00:00:00+08:00"><i class="fa fa-calendar-o"></i> May 30, 2011</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>做为一个web前端，处理和了解浏览器差异一个重要问题.下面将介绍本人在工作中的一些笔记总结，先介绍没有使用js库的情况。</p>
+
+<ul>
+  <li>setAttribute方法设置元素类名 ： 在jQuery中，直接使用attr()方法即可，可在原生的JS中
+element.setAttribute(‘class’,’newClassName’) //这个是W3C的标准，在兼容W3C标准的浏览器中有效，可是，IE才是国内用户的主旋律
+element.setAttribute(‘className’,’newClassName’) //这样的设置在IE中才能有效
+element.className = ‘newClassName’ //所有浏览器有效(只要支持javascript)</li>
+</ul>
+
+<p>　　好了，开篇说完了，这篇文章的目的也就是介绍浏览器差异的同时使前端的朋友们了解如果用最有效的方法去解决问题，下面继续。</p>
+
+<ul>
+  <li>
+    <p>FireFox没有window.event对象，只有event对象,IE里只支持window.event,而其他主流浏览器两者都支持,所以一般写成：
+function handle(e)
+{
+e = e || event;
+…
+}</p>
+  </li>
+  <li>
+    <p>DOMContentLoaded事件原理：对window.onload事件是当页面解析/DOM树建立完成，并完成了如图片、脚本、样式表等所有资源的下载后才触发的。这对于很多实际的应用而言有点太“迟”了，比较影响用户体验。为了解决这个问题，FF中便增加了一个DOMContentLoaded方法，与onload相比，该方法触发的时间更早，它是在页面的DOM内容加载完成后即触发，而无需等待其他资源的加载(这个也就是jquery.ready()事件的实现原理)。
+//以下是jQuery 1.4.2版本的原版分析</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">bindReady</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="nx">readyBound</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">readyBound</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="c1">// Catch cases where $(document).ready() is called after the</span>
+    <span class="c1">// browser event has already occurred.</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="nb">document</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">===</span> <span class="s2">&quot;complete&quot;</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">ready</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="c1">// Mozilla, Opera and webkit nightlies currently support this event</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Use the handy event callback</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span> <span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span> <span class="nx">DOMContentLoaded</span><span class="p">,</span> <span class="kc">false</span> <span class="p">);</span>
+        <span class="c1">// A fallback to window.onload, that will always work</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span> <span class="s2">&quot;load&quot;</span><span class="p">,</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">ready</span><span class="p">,</span> <span class="kc">false</span> <span class="p">);</span>
+        <span class="c1">// If IE event model is used</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nb">document</span><span class="p">.</span><span class="nx">attachEvent</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// ensure firing before onload,</span>
+        <span class="c1">// maybe late but safe also for iframes</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="s2">&quot;onreadystatechange&quot;</span><span class="p">,</span> <span class="nx">DOMContentLoaded</span><span class="p">);</span>
+        <span class="c1">// A fallback to window.onload, that will always work</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span> <span class="s2">&quot;onload&quot;</span><span class="p">,</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">ready</span> <span class="p">);</span>
+        <span class="c1">// If IE and not a frame</span>
+        <span class="c1">// continually check to see if the document is ready</span>
+        <span class="kd">var</span> <span class="nx">toplevel</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="nx">toplevel</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">frameElement</span> <span class="o">==</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">doScroll</span> <span class="o">&amp;&amp;</span> <span class="nx">toplevel</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="nx">doScrollCheck</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>设计思路 - 将Webkit与Firefox同等对待，都是直接注册DOMContentLoaded事件，但是由于Webkit是在525以上版本才引入的，因此存在兼容性的隐患。</p>
+
+<p>对于IE，首先注册document的onreadystatechange事件，经测试，该方式与window.onload相当，依然会等到所有资源下载完毕后才触发。 之后，判断如果是IE并且页面不在iframe当中，则通过setTiemout来不断的调用documentElement的doScroll方法，直到调用成功则出触发DOMContentLoaded。</p>
+
+<p>jQuery对于IE的解决方案的原理是，在IE下，DOM的某些方法只有在DOM解析完成后才可以调用，doScroll就是这样一个方法，反过来当能调用doScroll的时候即是DOM解析完成之时，与prototype中的document.write相比，该方案可以解决页面有iframe时失效的问题。</p>
+
+<p>此外，jQuery似乎担心当页面处于iframe中时，该方法会失效，因此实现代码中做了判断，如果是在iframe中则通过document的onreadystatechange来实现，否则通过doScroll来实现。不过经测试，即使是在iframe中，doScroll依然有效。</p>
+
+<ul>
+  <li>学会使用IE的条件注释。许多前端总是在抱怨万恶的IE,确实,处理兼容性的问题确实会越来越恶心,可是没有办法,既然没有办法改变,那么请享受…</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!--[if IE]&gt;</span>
+<span class="c">&lt;h1&gt;您正在使用IE浏览器&lt;/h1&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 5]&gt;</span>
+<span class="c">&lt;h1&gt;版本 5&lt;/h1&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 5.0]&gt;</span>
+<span class="c">&lt;h1&gt;版本 5.0&lt;/h1&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 5.5]&gt;</span>
+<span class="c">&lt;h1&gt;版本 5.5&lt;/h1&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 6]&gt;</span>
+<span class="c">&lt;h1&gt;版本 6&lt;/h1&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span>
+<span class="c">&lt;!--[if IE 7]&gt;</span>
+<span class="c">&lt;h1&gt;版本 7&lt;/h1&gt;</span>
+<span class="c">&lt;![endif]--&gt;</span></code></pre></div>
+
+<p>　　今天就先总结到这里吧，下周收假回来有时间发高级AJAX篇，希望能对新手或者有需要的人有所帮助.由于文笔有限，写的不好也请见谅，这个刚刚开始写博客，成长阶段嘛。哈哈…</p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'nieweidong'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/jQuery.bind%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3/" class="btn" title="Jquery.bind事件详解">Previous</a>
+      
+      
+        <a href="/%E8%AF%B4%E8%AF%B4%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E4%B9%8B%E8%B7%AF%E5%92%8C%E5%88%86%E4%BA%AB%E5%A5%BD%E4%B9%A6/" class="btn" title="说说我的前端之路和分享好书">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 nieweidong. </span>
+<div class="social-icons">
+	<a href="http://twitter.com/nieweidong" title="nieweidong on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://facebook.com/weidong.nie" title="nieweidong on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	
+	
+	<a href="http://instagram.com/nieweidong" title="nieweidong on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/nieweidong" title="nieweidong on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+<p id="back-to-top" class="back-to-top"><span>Go Top</span></p>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '';
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+  // back-to-top
+  $(window).scroll(function(){
+    if ($(window).scrollTop()>100){
+      $("#back-to-top").fadeIn(1000);
+    } else {
+      $("#back-to-top").fadeOut(1000);
+    }
+  });
+
+  //当点击跳转链接后，回到页面顶部位置
+  $("#back-to-top").click(function(){
+    $('body,html').animate({scrollTop:0},1000);
+    return false;
+  });
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Jquery.bind事件详解 &#8211; 聂微东，一枚Web技术领域的手艺人</title>
+
+<meta name="keywords" content="jQuery">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Jquery.bind事件详解">
+
+<meta name="twitter:site" content="@nieweidong">
+<meta name="twitter:creator" content="@nieweidong">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jquery.bind事件详解">
+
+<meta property="og:url" content="/jQuery.bind%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3/">
+<meta property="og:site_name" content="聂微东，一枚Web技术领域的手艺人">
+
+
+
+
+
+<link rel="canonical" href="/jQuery.bind%E4%BA%8B%E4%BB%B6%E8%AF%A6%E8%A7%A3/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="聂微东，一枚Web技术领域的手艺人 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >首页</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/gonglue/" >前端攻略</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/interview/" >前端面试</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/life/" >点滴生活</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/note/" >杂记</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="/" class="site-logo" rel="home" title="聂微东，一枚Web技术领域的手艺人"><img src="/images/site-logo.png" width="200" height="200" alt="聂微东，一枚Web技术领域的手艺人 logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="/">聂微东，一枚Web技术领域的手艺人</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">博观而约取,厚积而薄发...</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#jQuery" title="Pages tagged jQuery">jQuery</a></span>
+        
+          <h1 class="entry-title">Jquery.bind事件详解</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/me.jpg" class="bio-photo" alt="nieweidong bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">nieweidong</span></span>
+        <span class="entry-date date published"><time datetime="2011-05-04T00:00:00+08:00"><i class="fa fa-calendar-o"></i> May 04, 2011</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>很久没有写东西了，今天在工作中碰见问题才发现。以后得多逼自己多抽时间来写写自己的东西，也顺便和大家分享一下自己在工作中碰见的问题。</p>
+
+<p>使用jquery也有近1年了，今天在看国外大牛代码突然发现一个地方没看明白，代码如下:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;load.jcarousel&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">windowLoaded</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<p>也许我对jQuery的了解不多吧，自己也就看过一本jQuery的入门书，然后总是在工作中学习，碰着问题了就总结一点，学习一点…嘿嘿，也许为什么动不动公司招人就是1年以上工作经验什么的，确实<strong>实战才是能让人最快速提高的</strong>。</p>
+
+<p>找到jQuery API，解释如下：</p>
+
+<ul>
+  <li>一次可以绑定多个事件。如：</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#foo&#39;</span><span class="p">).</span><span class="nx">bind</span><span class="p">({</span>
+      <span class="nx">click</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// do something on click</span>
+      <span class="p">},</span>
+      <span class="nx">mouseenter</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// do something on mouseenter</span>
+      <span class="p">}</span>
+    <span class="p">});</span></code></pre></div>
+
+<ul>
+  <li>
+    <p>任何作为type参数的字符串都是合法的；如果一个字符串不是原生的JavaScript事件名，那么这个事件处理函数会绑定到一个自定义事件上。这些自定义事件绝对不会由浏览器触发，但可以通过使用.trigger()或者.triggerHandler()在其他代码中手动触发。</p>
+  </li>
+  <li>
+    <p>如果type参数的字符串中包含一个点(.)字符，那么这个事件就看做是有命名空间的了。这个点字符就用来分隔事件和他的命名空间。如：</p>
+  </li>
+</ul>
+
+<p>$obj.bind(‘click.name’, handler) 那么字符串中的 click 是事件类型，而字符串 name 就是命名空间。</p>
+
+<p>行吧，就这点内容，下班回家了。这个月总结一篇jQuery开发的模式吧，一定好好准备准备。最后，希望这篇文章能给你有所帮助。</p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'nieweidong'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/%E3%80%8A%E9%AB%98%E6%80%A7%E8%83%BDJS%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" class="btn" title="《高性能js》读书笔记">Previous</a>
+      
+      
+        <a href="/JSDOM%E6%93%8D%E4%BD%9C%E6%8F%90%E9%AB%98%E7%AF%87/" class="btn" title="JavaScript DOM操作 提高篇">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 nieweidong. </span>
+<div class="social-icons">
+	<a href="http://twitter.com/nieweidong" title="nieweidong on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://facebook.com/weidong.nie" title="nieweidong on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	
+	
+	<a href="http://instagram.com/nieweidong" title="nieweidong on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/nieweidong" title="nieweidong on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+<p id="back-to-top" class="back-to-top"><span>Go Top</span></p>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '';
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+  // back-to-top
+  $(window).scroll(function(){
+    if ($(window).scrollTop()>100){
+      $("#back-to-top").fadeIn(1000);
+    } else {
+      $("#back-to-top").fadeOut(1000);
+    }
+  });
+
+  //当点击跳转链接后，回到页面顶部位置
+  $("#back-to-top").click(function(){
+    $('body,html').animate({scrollTop:0},1000);
+    return false;
+  });
+</script>
+
+
+
+
+</body>
+</html>

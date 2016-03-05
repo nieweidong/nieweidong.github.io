@@ -1,0 +1,450 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Impress.js初体验 &#8211; 聂微东，一枚Web技术领域的手艺人</title>
+
+<meta name="keywords" content="Tool, 前端攻略">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Impress.js初体验">
+
+<meta name="twitter:site" content="@nieweidong">
+<meta name="twitter:creator" content="@nieweidong">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Impress.js初体验">
+
+<meta property="og:url" content="/impress.js%E5%88%9D%E4%BD%93%E9%AA%8C/">
+<meta property="og:site_name" content="聂微东，一枚Web技术领域的手艺人">
+
+
+
+
+
+<link rel="canonical" href="/impress.js%E5%88%9D%E4%BD%93%E9%AA%8C/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="聂微东，一枚Web技术领域的手艺人 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >首页</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/gonglue/" >前端攻略</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/interview/" >前端面试</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/life/" >点滴生活</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/note/" >杂记</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="/" class="site-logo" rel="home" title="聂微东，一枚Web技术领域的手艺人"><img src="/images/site-logo.png" width="200" height="200" alt="聂微东，一枚Web技术领域的手艺人 logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="/">聂微东，一枚Web技术领域的手艺人</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">博观而约取,厚积而薄发...</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#Tool" title="Pages tagged Tool">Tool</a>&nbsp;&bull;&nbsp;<a href="/tags/#前端攻略" title="Pages tagged 前端攻略">前端攻略</a></span>
+        
+          <h1 class="entry-title">Impress.js初体验</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/me.jpg" class="bio-photo" alt="nieweidong bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">nieweidong</span></span>
+        <span class="entry-date date published"><time datetime="2013-01-04T00:00:00+08:00"><i class="fa fa-calendar-o"></i> January 04, 2013</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <div id="cnblogs_post_body"><p>&#12288;&#12288;博客一歇就是半年，略惭愧...元旦假期各种惬意：打打Dota(悲催的输多赢少)、滑滑雪；吃吃东西、逛逛街。转眼儿今天就得上班了，5点早早起床(最近坚持早睡早起)，忍不住分享下前段时间发现的前端工程师装X的利器，所以这新年第一篇博文诞生了:)</p>
+<p>&#12288;&#12288;你希望别人看到你的<span>演示文稿</span>会发出“wow”吗？你希望使用华丽的效果来震惊你的观众吗？ 那咱们往下看</p>
+<p>&nbsp;</p>
+<p><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;"><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;">------</span></em></span><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;">------</span></em></span><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;">------</span></em></span>正文分割线</span></em></span><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;"><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;">------</span></em></span><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;">------</span></em></span><span style="color: #c0c0c0;"><em><span style="background-color: #ffffff;">------</span></em></span></span></em></span></p>
+<p>&nbsp;</p>
+<h1>概述</h1>
+<p>&#12288;&#12288;如果你已经厌烦了使用PowerPoint制作PPT，那么impress.js是一个非常好的选择，用它做的PPT更加直观，效果也非常的不错。装X是需要一定代价的，不过如果你是个前端爱好者那么一切就没问题了。当然如果你能勉强明白HTML和CSS也没问题，看看这篇文章 + 一点点实践（把官网上的例子拿来改改）即可...</p>
+<p>&#12288;&#12288;impress.js 是国外一位开发者受 Prezi 启发，采用 CSS3 与 JavaScript 语言完成的一个可供开发者使用的表现层框架(<strong>演示工具</strong>)。现在普通开发者可以利用 impress.js 自己开发出类似效果的演示工具，但性能比基于 FLASH 的 Prezi 更优。其功能包括画布的无限旋转与缩放，任意角度放置任意大小的文字，CSS3 3D 效果支持等。同时，也支持传统 PowerPoint 形式的幻灯演示。</p>
+<p>&#12288;&#12288;目前 impress.js 是基于 webkit 浏览器（Chrome、Safari）开发，而在其它基于非 webkit 引擎，但支持 CSS3 3D 的浏览器也能正常运行。</p>
+<p>&#12288;&#12288;impreess源码已经发布在GitHub上，地址：<a target="_blank" href="https://github.com/bartaz/impress.js/">https://github.com/bartaz/impress.js</a></p>
+<p>&#12288;&#12288;官方demo地址：<a href="http://bartaz.github.com/impress.js">http://bartaz.github.com/impress.js</a></p>
+<p>&#12288;&#12288;因为在其项目网页中却没有找到说明文档&amp;使用文档，所以这篇文章将一步一步创建一个较初级的演示文稿，我们接着往下走。</p>
+<p><span style="background-color: #ffff99;">&#12288;&#12288;请准备好现代浏览器：Google Chrome(效果最佳)、Safari或FF.</span><br /><span style="background-color: #ffff99;">&#12288;&#12288;*我的IE10不支持，不知道为什么很多资料上写着IE10也能支持，背了个催</span>。</p>
+<p>&nbsp;</p>
+<h1>配置</h1>
+<ol>
+<li>html5页面结构先准备就绪</li>
+<li>创建一个id="impress"的wrapper(载体)，直接div就好，其他标签同样也可以</li>
+<li>在body标签结束前引入impress.js文件并且调用</li>
+<li>class="impress-not-supported"是当浏览器不支持时显示给用户的提示信息，降级处理你懂的，不多解释哈</li>
+
+
+
+
+
+
+
+
+
+
+
+</ol>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;!</span><span style="color: #ff00ff;">doctype html</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>darren - Impress demo<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">meta </span><span style="color: #0000ff;">charset="utf-8" /</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">link </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="http://bartaz.github.com/impress.js/css/impress-demo.css"</span><span style="color: #ff0000;"> rel</span><span style="color: #0000ff;">="stylesheet"</span> <span style="color: #0000ff;">/&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="impress-not-supported"</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="impress"</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="http://bartaz.github.com/impress.js/js/impress.js"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>
+&#12288;&#12288;<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>impress().init();<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li>在wrapper内创建一个幻灯片只需要新建一个class="step"的&lt;div&gt;即可。&lt;div&gt;的id可有可无，当有id时url中的hash变化是随着id走；反之就是step-[num]，如<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAAAfCAIAAADcCk7TAAAEz0lEQVR4nO1c25WjMAxVXRREPfRgaqAHaIEy9sSSz3ywH5bfD0wmTCYMOtnFWJJ1JV9jk+xZIEIiQkIibmohIkQygkiIhISIaByMln2NMxuylbljD9QmhOxmw3CnPwx3ojVmA/JgsZ8XkqF6+XhNpdTX15dSikgZIVJEihQRkSKlFDmt7lC62xqylbljD9ImitiNTBju9IfhTrLGbKA8WOznhWSo3HbweFgiG+7dqQF6QtggTUbOlhmyPxaVFKW+/KiU9355ahvAH/wkZcrPGiAiSolSIkopEVHyBSVKKaWns1ftKlGyGTtJNB9ticZNu2oXrbF27GhCI7elaSPqcGYIi85qPUCMGO0AJ6a2AVw1tdKsbQCNqYFM5CHlI+11ykZ51NqPh5QP050f8+H9KY/9SLsqMF+Y2gaQeF0ktVJ7A2hMDcwaQMs+Y8D8t230nNGqnN40vGWrqWvXEy8TiW5ADP15ZVhIHhAPh1ubbsWiH9L3Pyk1XrhXTK00a3ohtaQG4ziOYhyFuYpxHIXpEaMWwd3cKYQYxRj0CTGa7lGwv+BRhR5GeBFGL6KNJGy3F9jAiTrsyCJ2CW9PS20DuGpqpVnbABpTg+2W5wT+XumaU/57pXmV3KyqGJ4K48pys6pieCqMK8vNqorhqTCuLDerKobR/dQDdMP6ajy/UKYeoJ+e9y+U+MoFPMqqdegA+klfr1qUUH6OVevQcaSpzxXXFP8tsg4dWNmZ+YOsemteB+S7TGgeqyFQO6umnsdah+4ZUr0y63Roh2j3kXKMVevQfcYD6iNZZWfOPbN82S/+iazKRKpgOcQqf6y43U/uEdkNa/DEdJmyl/809cqgtZNWWtC+cWbLiFXBkxriFZYbZ+ozWEK1n52xygZKS7EB1EqRDpQFH09kjPlo1vWJ2JUXsioYKmaVvbNAGeXUe4i5GBFjIq2fXhAzfPJWVOmqLRqHSQ2ZSgXZ6btyoLQUW6UUMbkr+19pRfuY27PemYgdeeUOGGIuZhkVL8O/ALt/WEi0yVbgdoGKakvqWzZuOChG2YUeOVaFpdgAWooW7H95Upk4RczNWe9NRE00/+pbcTuroqDpDphVhbkUjqjZ58ZW3Br6qapKEdWMja5cpsxc1VkVlmIDqJfCbWaRRNtYmk+MuT3r+kQUzwprdDgpSTuruvKiPJVV+eWzs7Iy9a0tQ1vGXL3OZpW1LH6pkMWfwXwg6/pE5ITjNW2S7axKX1ieZFV5688dNUqJ1mtQR1RxylTtR1hV2/9qL3/JUa0x6/pEFOybX/8PPKvKzD7IqmhSwrswTHyIXIcuOF3kVaW9NGO8Dn2w1N2bXGmuUlbFb2pPsMpxyT6zSuUsYT6S9d5EJNK2LK0cOFele/izO+BUeJ/NYq98p1v7utecVrJfUCTvFjnbJlbFgZ7eAYuSs8thPp51eSJiyR/Ryuh/+Nflg5y/hHzv1+Xk24LXyLkTcbPqdPkOq077hexm1YfLr/yXMDerPlxuVlUMTwJwffmVrDpXbladLjerKobLMi/zsizzsszzPC+LbpsL95hO38JqWKX/Mu15NjfRiGZYE1QrZt2eF+c1B36zD9T0+hBmTiHEfFpqG8BVUyvN2gbQmBr8u+Upeft/pPGWT2Nx/gOWeqFbBwA7NAAAAABJRU5ErkJggg==" /></li>
+</ul>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+    first slide
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li>&nbsp;<span style="font-size: 16px;"><strong>数据属性</strong></span>：用来描述幻灯片大小，切换等效果。</li>
+</ul>
+<p>&#12288;&#12288;data-x = 幻灯片的x坐标</p>
+<p>&#12288;&#12288;data-y = 幻灯片的y坐标</p>
+<p>&#12288;&#12288;data-scale = 通过指定一个值来进行缩放，data-scale为5则将会在你幻灯片原始尺寸基础放大5倍</p>
+<p>&#12288;&#12288;data-rotate = 通过一个数字度数来确定旋转你的幻灯片</p>
+<p>&#12288;&#12288;data-rotate-x = 为3D用，这个数字度数是它应该相对x轴旋转多少度。（前倾/后仰）</p>
+<p>&#12288;&#12288;data-rotate-y = 为3D用，这个数字度数是它应该相对y轴旋转多少度。 （左摆/右摆）</p>
+<p>&#12288;&#12288;data-rotate-z = 为3D用，这个数字度数是它应该相对z轴旋转多少度。</p>
+<p>&nbsp;</p>
+<h1>创建</h1>
+<p>&#12288;&#12288;数据属性那段是你接下来需要重点打交道的，接下来开始step by step创建一个演示文稿。</p>
+<p>&#12288;&#12288;从一个初始的幻灯片开始，这个幻灯片已将它data-x和data-y数据属性设置为0，所以会出现在页面的中间。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="0"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+    This is slide 1 - 【标题】
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;第二个幻灯片的data-x值为500、data-y值为0，活动的时候它将会向左平移(滑动)500px的地方。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="500"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-400"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+    This is slide 2
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;第三张幻灯片其data-x值不变，data-y位置为-400，这将会是从顶部400px处滑入屏幕。&#12288;&#12288;</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="500"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-400"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+    This is slide 3
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;第四张幻灯片来个新花样，使用data-scale的值控制其缩放大小。data-scale="0.5"表示着它应该是一半的尺寸，当它变成活动的演示时将通过必需的倍数调节所有幻灯片的缩放尺寸，从这一步绚丽开始起步</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="500"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-800"</span><span style="color: #ff0000;"> data-scale</span><span style="color: #0000ff;">="0.5"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+    This is slide 4
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;第五张幻灯片旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转90度，视觉效果微叼哈</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-800"</span><span style="color: #ff0000;"> data-rotate</span><span style="color: #0000ff;">="90"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+    This is slide 5
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;第六张幻灯片开始3D style，可为每个维度的轴指定旋转属性(x,y,z)。x轴是横轴，意思是你可使事物倾斜(正值)或向后(负值)，y轴是竖轴，所以你可使事物向左摇摆(负值)或向右(正值)，z轴是纵轴，这将是旋转的东西向上（负值）和向下（正值）。</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="-1200"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;">
+    data-rotate-x</span><span style="color: #0000ff;">="30"</span><span style="color: #ff0000;"> data-rotate-y</span><span style="color: #0000ff;">="-30"</span><span style="color: #ff0000;"> data-rotate-z</span><span style="color: #0000ff;">="90"</span><span style="color: #ff0000;"> data-scale</span><span style="color: #0000ff;">="4"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+&#12288;&#12288;This is slide 6
+</span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;</p>
+<p>&#12288;&#12288;以上6张幻灯片把数据属性内的值都过了一遍，一张略high的演示文稿就呈现在我们眼前。你可以以你的想象力用不可思议的和令人惊奇的方式合并这些效果来创建你自己的幻灯片展示风格。</p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-size: 18pt; background-color: #ccffcc;"><strong>全局预览</strong></span></li>
+</ul>
+<p>&#12288;&#12288;个人超赞这个视觉体验，把所有的幻灯片都平行的展示，排列的合理会非常帅气，使用方式就是在幻灯片6后面插入一段html.</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="overview"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="-200"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-500"</span><span style="color: #ff0000;"> data-scale</span><span style="color: #0000ff;">="3"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p>&#12288;&#12288;随着你幻灯片位置的不同所以全局预览的值也会不一样，拿着结尾处的demo一点一点调整找感觉，希望你会喜欢！</p>
+<p>&#12288;&#12288;完成后请记住它，用它做的不只局限于此，<span style="font-size: 18px;"><strong>唯一的限制是你的创造力</strong>！</span></p>
+<p>&nbsp;</p>
+<h1>个人体会</h1>
+<p>&#12288;&#12288;正因为我们是前端，所以用前端技术做做各种尝试没什么不好，impress更可以让我们的<span>演示文稿</span>更有新意，所以简单了解下绝对是值得的，<strong><span style="font-size: 18px;">学习是最好的投资</span></strong>。</p>
+<p>&#12288;&#12288;优点：</p>
+<ol>
+<li>个人非常喜欢overview的功能</li>
+<li>因为HTML+CSS都需要自己完成，位置和效果都得自己经手，视觉效果都由自己掌控</li>
+<li>在我用过的同类产品中视觉效果最绚，CSS3+3D效果，直接给观众看晕:)</li>
+</ol>
+<p>&#12288;&#12288;缺点：</p>
+<ol>
+<li>impress在视觉表现上确实非常强大，比起同样做<span>演示文稿的</span> html5slides 和 deck.js， impress.js的复杂度上高了不少，而且如果想把演示文稿排版的好看可能需要花掉大量的时间.<br />*如果闲impress麻烦的朋友可以去看看 html5slides 和 deck.js的资料，视觉效果会稍差一些，不过上手会简单不少。</li>
+<li>不要把3D和旋转用得太花哨、太绚，看的人会晕，恰当就好哈</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol>
+<p>&#12288;&#12288;</p>
+<p>&#12288;&#12288;<span style="background-color: #ffff99;">以下是demo代码，初学者自己动手多改改感觉就好了</span>。</p>
+<div onclick="cnblogs_code_show('7eae9e96-7379-44cf-acb0-74bffdcffb77')" class="cnblogs_code"><img alt="" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" class="code_img_closed" id="code_img_closed_7eae9e96-7379-44cf-acb0-74bffdcffb77" /><img alt="" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" onclick="cnblogs_code_hide('7eae9e96-7379-44cf-acb0-74bffdcffb77',event)" style="display: none;" class="code_img_opened" id="code_img_opened_7eae9e96-7379-44cf-acb0-74bffdcffb77" /><span class="cnblogs_code_collapse">View Code </span>
+<div class="cnblogs_code_hide" id="cnblogs_code_open_7eae9e96-7379-44cf-acb0-74bffdcffb77">
+<pre><span style="color: #0000ff;">&lt;!</span><span style="color: #ff00ff;">doctype html</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>darren - Impress demo<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">title</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">meta </span><span style="color: #ff0000;">charset</span><span style="color: #0000ff;">="utf-8"</span> <span style="color: #0000ff;">/&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">link </span><span style="color: #ff0000;">href</span><span style="color: #0000ff;">="http://bartaz.github.com/impress.js/css/impress-demo.css"</span><span style="color: #ff0000;"> rel</span><span style="color: #0000ff;">="stylesheet"</span> <span style="color: #0000ff;">/&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">head</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="impress-not-supported"</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="fallback-message"</span><span style="color: #0000ff;">&gt;</span>
+                <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span>你的浏览器<span style="color: #0000ff;">&lt;</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span>不支持<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span> impress.js, 所以当前展示的是简化版。<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span>
+                <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span>为了获得更好的体验，请使用最新的 <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span>Chrome<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span>, <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span>Safari<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span> 或者 <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span>Firefox<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">b</span><span style="color: #0000ff;">&gt;</span> 浏览器。<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="impress"</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="0"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+                Darren code - [标题]
+            </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="500"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="0"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+                This is slide 2
+            </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="500"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-400"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+                This is slide 3
+            </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="500"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-800"</span><span style="color: #ff0000;"> data-scale</span><span style="color: #0000ff;">="0.5"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+                This is slide 4
+            </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-800"</span><span style="color: #ff0000;"> data-rotate</span><span style="color: #0000ff;">="90"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+                This is slide 5
+            </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="-1200"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="0"</span><span style="color: #ff0000;"> data-rotate-x</span><span style="color: #0000ff;">="30"</span><span style="color: #ff0000;"> data-rotate-y</span><span style="color: #0000ff;">="-30"</span><span style="color: #ff0000;"> data-rotate-z</span><span style="color: #0000ff;">="90"</span><span style="color: #ff0000;"> data-scale</span><span style="color: #0000ff;">="4"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;">
+                This is slide 6
+            </span><span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+            <span style="color: #008000;">&lt;!--</span><span style="color: #008000;"> darren code </span><span style="color: #008000;">--&gt;</span>
+            <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">div </span><span style="color: #ff0000;">id</span><span style="color: #0000ff;">="overview"</span><span style="color: #ff0000;"> class</span><span style="color: #0000ff;">="step"</span><span style="color: #ff0000;"> data-x</span><span style="color: #0000ff;">="-200"</span><span style="color: #ff0000;"> data-y</span><span style="color: #0000ff;">="-500"</span><span style="color: #ff0000;"> data-scale</span><span style="color: #0000ff;">="3"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">div</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script </span><span style="color: #ff0000;">src</span><span style="color: #0000ff;">="http://bartaz.github.com/impress.js/js/impress.js"</span><span style="color: #0000ff;">&gt;&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>impress().init();<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">script</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">html</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>&#12288;&#12288;突然想起一句话作为文章总结吧：“<span style="font-size: 18px;"><strong>当你有把锤子的时候,你看什么都像钉子</strong></span>”。</p>
+<p>&#12288;&#12288;今天是2013.1.4，一个很amazing的日子，不知道今天会有多少人会去登记哈，表示 羡慕ing&amp;祝福ing...我也加把劲，hoho</p>
+<p>&#12288;&#12288;祝大家2013年快乐、顺利.</p></div>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'nieweidong'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/%E3%80%8A%E6%9A%97%E6%97%B6%E9%97%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%8E%E8%AF%BB%E5%90%8E%E6%84%9F/" class="btn" title="《暗时间》读书笔记与读后感">Previous</a>
+      
+      
+        <a href="/%E5%89%8D%E7%AB%AF%E6%94%BB%E7%95%A5%E7%B3%BB%E5%88%97/" class="btn" title="前端攻略系列">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 nieweidong. </span>
+<div class="social-icons">
+	<a href="http://twitter.com/nieweidong" title="nieweidong on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://facebook.com/weidong.nie" title="nieweidong on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	
+	
+	<a href="http://instagram.com/nieweidong" title="nieweidong on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/nieweidong" title="nieweidong on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+<p id="back-to-top" class="back-to-top"><span>Go Top</span></p>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '';
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+  // back-to-top
+  $(window).scroll(function(){
+    if ($(window).scrollTop()>100){
+      $("#back-to-top").fadeIn(1000);
+    } else {
+      $("#back-to-top").fadeOut(1000);
+    }
+  });
+
+  //当点击跳转链接后，回到页面顶部位置
+  $("#back-to-top").click(function(){
+    $('body,html').animate({scrollTop:0},1000);
+    return false;
+  });
+</script>
+
+
+
+
+</body>
+</html>

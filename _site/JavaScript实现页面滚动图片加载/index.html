@@ -1,0 +1,388 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Javascript实现页面滚动图片加载 &#8211; 聂微东，一枚Web技术领域的手艺人</title>
+
+<meta name="keywords" content="JS">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Javascript实现页面滚动图片加载">
+
+<meta name="twitter:site" content="@nieweidong">
+<meta name="twitter:creator" content="@nieweidong">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript实现页面滚动图片加载">
+
+<meta property="og:url" content="/JavaScript%E5%AE%9E%E7%8E%B0%E9%A1%B5%E9%9D%A2%E6%BB%9A%E5%8A%A8%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD/">
+<meta property="og:site_name" content="聂微东，一枚Web技术领域的手艺人">
+
+
+
+
+
+<link rel="canonical" href="/JavaScript%E5%AE%9E%E7%8E%B0%E9%A1%B5%E9%9D%A2%E6%BB%9A%E5%8A%A8%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="聂微东，一枚Web技术领域的手艺人 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >首页</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tech/" >Tech</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/gonglue/" >前端攻略</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/interview/" >前端面试</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/life/" >点滴生活</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/note/" >杂记</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/tags/" >Tags</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="/" class="site-logo" rel="home" title="聂微东，一枚Web技术领域的手艺人"><img src="/images/site-logo.png" width="200" height="200" alt="聂微东，一枚Web技术领域的手艺人 logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="/">聂微东，一枚Web技术领域的手艺人</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">博观而约取,厚积而薄发...</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#JS" title="Pages tagged JS">JS</a></span>
+        
+          <h1 class="entry-title">Javascript实现页面滚动图片加载</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/me.jpg" class="bio-photo" alt="nieweidong bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">nieweidong</span></span>
+        <span class="entry-date date published"><time datetime="2011-07-21T00:00:00+08:00"><i class="fa fa-calendar-o"></i> July 21, 2011</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>　　又到了这个月的博客时间了，原计划是打算在这个月做一个的功能较炫的拖拽类，可是感觉想的太容易，实现起来遇见不少问题，如果技术分享做不到有助于人反而害人，那就歇菜了，所以还是等本人多找些资料研究研究，“拖拽类“先放放吧，下面开始正题…</p>
+
+<p>　　为什么写这篇文章？</p>
+
+<p>　　1.优化页面很实用的方法，技术实现不难；</p>
+
+<p>　　2.搜索了相关内容的文章，好像都是用jQuery的方法，可是如果不用jQuery的站长难道就不能用这种方法了么；</p>
+
+<p>　　3.做技术分享也是在让更多人帮自己测试，因为这个本人木有在项目中实际用到，都是自己琢磨的，所有如果有问题请大家指出，先谢谢了；</p>
+
+<p>　　4.这个月的博客还没写；</p>
+
+<p>　　5.刚好木有工作任务，此时不写更待何时…</p>
+
+<p>　　现在的页面大多都具有的特点 - 内容丰富，图片较多；像我们经常浏览的淘宝，京东，团购网站之类的（本人网购控，属于一个月不在网上花点钱就不痛快），一个页面几十张图片那叫毛毛雨，所以现在流行起了一个方法 - 滚动动态加载。这个方法能解决很大程度的HTTP请求，首先页面只加载窗口显示区的图片，只有等到页面滚动，且滚动到相应位置的时候再去加载图片，这样做网页加载快了（请求少了，加载的东西少了能不提快么）。在高性能网站建设指南》第一章就说到，减少HTTP请求的重要性，这是提高网页前端性能，优化页面加载速度很实用的做法。</p>
+
+<p>　　原理：</p>
+
+<p>　　1.给页面绑定滚动事件；</p>
+
+<p>　　2.加载页面的时候把真正的图片地址放在某属性中；</p>
+
+<p>　　3.然后再滚动过程中判断元素是否进入当前浏览器窗口内；</p>
+
+<p>　　4.最后加载图片，当然加载什么，用什哪种用户体验都得由你决定；</p>
+
+<p>　　难点：</p>
+
+<p>　　浏览器兼容是造成难点的原因所在，DOM标准和IE标准，每天前端的工作都在和它们打交道。思考下面的几段代码</p>
+
+<blockquote>
+  <p>window.pageYOffset ? window.pageYOffset : window.document.documentElement.scrollTop</p>
+</blockquote>
+
+<p>　　目的:获得当前页面相对于窗口显示区左上角的 Y 位置.</p>
+
+<p>　　DOM标准:window.pageYOffset;</p>
+
+<p>　　IE标准:window.document.documentElement.scrollTop</p>
+
+<blockquote>
+  <p>window.innerHeight ? window.innerHeight : document.documentElement.clientHeight</p>
+</blockquote>
+
+<p>　　目的:声明了窗口的文档显示区的高度和宽度，以像素计.</p>
+
+<p>　　DOM标准:innerheight 和 innerwidth;</p>
+
+<p>　　IE标准:document.documentElement 或 ducument.body （与 DTD 相关）的 clientWidth 和 clientHeight 属性作为替代</p>
+
+<blockquote>
+  <p>obj.getBoundingClientRect().top + window.document.documentElement.scrollTop + window.document.body.scrollTop</p>
+</blockquote>
+
+<p>　　目的:获取页面元素的位置.</p>
+
+<p>　　当浏览器为 非webkit内核 时，document.body.scrollTop值恒定为0，使用 document.documentElement.scrollTop才能取到正确值 ;</p>
+
+<p>　　当浏览器为 webkit内核 时，document.documentElement.scrollTop值恒定为0，使用 document.body;</p>
+
+<p>　　我还搜索到一种说法是和DTD相关（即 当页面指定了 DOCTYPE时，使用 document.documentElement ; 当页面没有指定了 DOCTYPE时，使用 document.body），请确定知道的朋友帮忙指出下，不胜感谢。</p>
+
+<p>　　细节：</p>
+
+<p>　　1. 因为真正的地址最初是在某属性中(默认是xsrc，可自己设置)，所以默认的图片地址最好是一个像素的透明图片，这样可以避免在浏览器中出现红X；</p>
+
+<p>　　2. 在图片load的时候可以加入等待的图片，这样用户才会知道这里有图片需要加载，良好的用户体验是前端一直所追求的(例子中有体现)；</p>
+
+<p>　　3. 在图片load成功后可以加入合适的显示效果(例子中木有体现，可以自己尝试)；</p>
+
+<hr />
+
+<p>JavaScript源码如下：</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">scrollLoad</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">defaults</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">?</span> <span class="p">{</span> <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;xSrc&#39;</span><span class="p">,</span> <span class="nx">time</span><span class="o">:</span> <span class="mi">300</span><span class="p">}</span> <span class="o">:</span> <span class="p">{</span> <span class="nx">src</span><span class="o">:</span> <span class="nx">options</span><span class="p">.</span><span class="nx">src</span> <span class="o">||</span> <span class="s1">&#39;xSrc&#39;</span><span class="p">,</span> <span class="nx">time</span><span class="o">:</span> <span class="nx">options</span><span class="p">.</span><span class="nx">time</span> <span class="o">||</span><span class="mi">300</span><span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">camelize</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">s</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/-(\w)/g</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">strMatch</span><span class="p">,</span> <span class="nx">p1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">p1</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+            <span class="p">});</span>
+        <span class="p">};</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">getStyle</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">property</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">style</span><span class="p">[</span><span class="nx">camelize</span><span class="p">(</span><span class="nx">property</span><span class="p">)];</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">defaultView</span> <span class="o">&amp;&amp;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">defaultView</span><span class="p">.</span><span class="nx">getComputedStyle</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="kd">var</span> <span class="nx">css</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">defaultView</span><span class="p">.</span><span class="nx">getComputedStyle</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+                    <span class="nx">value</span> <span class="o">=</span> <span class="nx">css</span> <span class="o">?</span> <span class="nx">css</span><span class="p">.</span><span class="nx">getPropertyValue</span><span class="p">(</span><span class="nx">property</span><span class="p">)</span> <span class="o">:</span> <span class="kc">null</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">currentStyle</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">value</span> <span class="o">=</span> <span class="nx">element</span><span class="p">.</span><span class="nx">currentStyle</span><span class="p">[</span><span class="nx">camelize</span><span class="p">(</span><span class="nx">property</span><span class="p">)];</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">return</span> <span class="nx">value</span> <span class="o">==</span> <span class="s1">&#39;auto&#39;</span> <span class="o">?</span> <span class="s1">&#39;&#39;</span> <span class="o">:</span> <span class="nx">value</span><span class="p">;</span>
+        <span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">_init</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">offsetPage</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">pageYOffset</span> <span class="o">?</span> <span class="nb">window</span><span class="p">.</span><span class="nx">pageYOffset</span> <span class="o">:</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">,</span>
+                <span class="nx">offsetWindow</span> <span class="o">=</span> <span class="nx">offsetPage</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span> <span class="o">?</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">clientHeight</span><span class="p">),</span>
+                <span class="nx">docImg</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">images</span><span class="p">,</span>
+                <span class="nx">_len</span> <span class="o">=</span> <span class="nx">docImg</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">_len</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">_len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">attrSrc</span> <span class="o">=</span> <span class="nx">docImg</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getAttribute</span><span class="p">(</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">src</span><span class="p">),</span>
+                    <span class="nx">o</span> <span class="o">=</span> <span class="nx">docImg</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">tag</span> <span class="o">=</span> <span class="nx">o</span><span class="p">.</span><span class="nx">nodeName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">o</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">postPage</span> <span class="o">=</span> <span class="nx">o</span><span class="p">.</span><span class="nx">getBoundingClientRect</span><span class="p">().</span><span class="nx">top</span> <span class="o">+</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">+</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">;</span> <span class="nx">postWindow</span> <span class="o">=</span> <span class="nx">postPage</span> <span class="o">+</span> <span class="nb">Number</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getStyle</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;px&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">));</span>
+                    <span class="k">if</span> <span class="p">((</span><span class="nx">postPage</span> <span class="o">&gt;</span> <span class="nx">offsetPage</span> <span class="o">&amp;&amp;</span> <span class="nx">postPage</span> <span class="o">&lt;</span> <span class="nx">offsetWindow</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nx">postWindow</span> <span class="o">&gt;</span> <span class="nx">offsetPage</span> <span class="o">&amp;&amp;</span> <span class="nx">postWindow</span> <span class="o">&lt;</span> <span class="nx">offsetWindow</span><span class="p">))</span> <span class="p">{</span>
+                        <span class="k">if</span> <span class="p">(</span><span class="nx">tag</span> <span class="o">===</span> <span class="s2">&quot;img&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">attrSrc</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+                            <span class="nx">o</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="nx">attrSrc</span><span class="p">);</span>
+                        <span class="p">}</span>
+                        <span class="nx">o</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">};</span>
+            <span class="nb">window</span><span class="p">.</span><span class="nx">onscroll</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                    <span class="nx">_init</span><span class="p">();</span>
+                <span class="p">},</span> <span class="nx">defaults</span><span class="p">.</span><span class="nx">time</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+        <span class="k">return</span> <span class="nx">_init</span><span class="p">();</span>
+    <span class="p">});</span>
+
+    <span class="nx">scrollLoad</span><span class="p">();</span></code></pre></div>
+
+<p><a href="http://files.cnblogs.com/Darren_code/ScrollLoad.rar">demo下载</a></p>
+
+<p>可传递一个参数设置src原地址和响应时间:</p>
+
+<p><code>
+scrollLoad({
+    src:'userSrc'， //字符串型
+    time: 100       //数字型
+})
+</code></p>
+
+<p>最后，祝大家工作愉快，学习进步，哈哈..</p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'nieweidong'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/%E8%AF%B4%E8%AF%B4%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E4%B9%8B%E8%B7%AF%E5%92%8C%E5%88%86%E4%BA%AB%E5%A5%BD%E4%B9%A6/" class="btn" title="说说我的前端之路和分享好书">Previous</a>
+      
+      
+        <a href="/javascript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="btn" title="Javascript设计模式">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 nieweidong. </span>
+<div class="social-icons">
+	<a href="http://twitter.com/nieweidong" title="nieweidong on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="http://facebook.com/weidong.nie" title="nieweidong on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	
+	
+	<a href="http://instagram.com/nieweidong" title="nieweidong on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="http://github.com/nieweidong" title="nieweidong on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+<p id="back-to-top" class="back-to-top"><span>Go Top</span></p>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '';
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+<script type="text/javascript">
+  // back-to-top
+  $(window).scroll(function(){
+    if ($(window).scrollTop()>100){
+      $("#back-to-top").fadeIn(1000);
+    } else {
+      $("#back-to-top").fadeOut(1000);
+    }
+  });
+
+  //当点击跳转链接后，回到页面顶部位置
+  $("#back-to-top").click(function(){
+    $('body,html').animate({scrollTop:0},1000);
+    return false;
+  });
+</script>
+
+
+
+
+</body>
+</html>

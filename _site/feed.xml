@@ -4,13 +4,107 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-03-05T16:28:56+08:00</updated>
+<updated>2016-03-06T14:14:55+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
   <uri>/</uri>
   <email>darrencode@qq.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[2015简单总结]]></title>
+  <link rel="alternate" type="text/html" href="/2015%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/" />
+  <id>/2015简单总结</id>
+  <published>2016-03-06T00:00:00+08:00</published>
+  <updated>2016-03-06T00:00:00+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;眼瞅着2016第一季都快过去了，俺也总结总结自己在2015年的成长吧。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#sel&quot;&gt;选择&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#work&quot;&gt;工作&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#file&quot;&gt;生活&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sun&quot;&gt;展望2016&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;sel&quot;&gt;选择&lt;/h3&gt;
+
+&lt;p&gt;2013年是我工作的第四年。&lt;/p&gt;
+
+&lt;p&gt;那年，我晋升T5；那年，我与云姐结婚…也是在那年，我有了离京的想法，打算离开这儿南下，离开这个读书、打拼多年的地方。心想着杭州、广州或者深圳，去那里开始新的生活。&lt;/p&gt;
+
+&lt;p&gt;为什么要离开？孩子读书、雾霾、离老家远(湖南怀化)等问题我无法改变又忍不鸟，那么离开也算顺理成章。&lt;/p&gt;
+
+&lt;p&gt;当然，直到现在我还是没离开帝都，和云姐在这座城市北漂着，原因自己也讲不清，可能更多的是不甘心，希望在这个熟悉又陌生的城市里拼出点样子，再考虑是走是留。&lt;/p&gt;
+
+&lt;p&gt;2015年2月，这是我在百度的第三个年头，我提交了离职申请，3月底顺利毕业。&lt;/p&gt;
+
+&lt;p&gt;去哪了？一家创业公司。 为什么去那？因为我觉得这件事有戏。 现在怎么样？公司发展还行，我个人也得到了很多技术上的成长。 去那做什么？打杂的码农&lt;/p&gt;
+
+&lt;p&gt;至于“南北比较”这种问题就不延伸讨论了，最终南下不南下我和云姐也悬而未定，将来的事情将来再定吧，也许过几年我的年度总结里面会有答案。&lt;/p&gt;
+
+&lt;h3 id=&quot;work&quot;&gt;工作&lt;/h3&gt;
+
+&lt;p&gt;创业公司这点比较好，技术上会更加自由些，只要你对自己的项目负责。作为公司的第一个前端，可伸展拳脚的地方太多了。&lt;/p&gt;
+
+&lt;p&gt;2015年我主要的工作三分之一在前端，三分之二在服务端。下面这段想到哪写到哪…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;盲目的使用React尝试搞了几个项目，确实觉得其强大，component的好处不必多说，但是想写点交互效果确实用React太麻烦。所以2015下半年就很少用了；vue有简单了解，未在项目中使用上，心想着：“劳资还是别给自己挖坑了，以后这坨东西都不好交给其他人维护”…&lt;/li&gt;
+  &lt;li&gt;测试环境和现在环境用上了&lt;code&gt;Node 4.x&lt;/code&gt;，可以任性用es6写码啦&lt;/li&gt;
+  &lt;li&gt;一直想在Git上搞几套Node项目的套路和Gulp的套路，希望自己今年完成吧&lt;/li&gt;
+  &lt;li&gt;Git和Github都用起来了，不过随之而来的感觉是自己英文真的太弱，蛋蛋的忧桑；整理了一个&lt;a href=&quot;https://github.com/nieweidong/fetool&quot;&gt;fetool&lt;/a&gt;居然还有上百star，确实没想到&lt;/li&gt;
+  &lt;li&gt;服务端从express=&amp;gt;koa，觉得&lt;code&gt;co&lt;/code&gt;这个包太牛逼了&lt;/li&gt;
+  &lt;li&gt;被音视频这套东西折腾许久，一边写文章，一边 rtmp/hls/m3u8 等等这些词从脑海划过，觉得自己这这块算小成鸟；移动端/PC的音视频播放都逐一搞过，甚至直播服务和各种相关语言的sdk也都简单学习了下&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;nagix&lt;/code&gt;算入门，可以简单写写、修修改改&lt;/li&gt;
+  &lt;li&gt;用了一些云服务，如七牛、Ucloud和阿里云等，将来哪天自己真创业了，这可都是吃饭的家伙:)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;MongoDB/Redis/MySQL&lt;/code&gt; 今年挨个玩了遍，其中MongoDB还是没有在线上项目用上，略有点遗憾。相关的书看了几本，数据方向也算勉强入门了&lt;/li&gt;
+  &lt;li&gt;。。。&lt;/li&gt;
+  &lt;li&gt;。。。&lt;/li&gt;
+  &lt;li&gt;想到哪写到哪，就这样吧&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;file&quot;&gt;生活&lt;/h3&gt;
+
+&lt;p&gt;花钱最多的一年。&lt;/p&gt;
+
+&lt;p&gt;全款给云姐家送了套房子(房主是岳父)；贷款给自己买了台车(2014年已经全款给云姐买过一台了)；晴晴不知不觉已经1岁多啦；外婆离开；父亲化疗…&lt;/p&gt;
+
+&lt;p&gt;生活中本就是有悲有喜，只是2015经历了大起大落，希望2016年能平淡一些。随着自己年龄越大，越能理解“30不惑”，确实我也有很多“惑”，这可能就是成长的代价吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;sun&quot;&gt;展望2016&lt;/h3&gt;
+
+&lt;p&gt;以前总喜欢逼自己，每每都自己给自己压力，让自己完成这完成那；现在对自己没那么那么严苛了，因为知道自己的斤两，懵懂明白生活的无奈，所以开心就好，默默的努力，默默的不停歇就行，这就是我当下的心态。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;看吴军老师的书：《硅谷之谜》《大学之路》《文明之光》&lt;/li&gt;
+  &lt;li&gt;因为比较喜欢看小说和杂书，所以比较崇拜 矮大紧-高晓松老师，今年要读完《鱼羊野史》&lt;/li&gt;
+  &lt;li&gt;《晓松奇谈》2014开播，俺一期都没有看过的，打算每天中午和晚上睡觉前看，把其整个追一遍&lt;/li&gt;
+  &lt;li&gt;控制好体重，不能接受自己今年再超过130斤&lt;/li&gt;
+  &lt;li&gt;练字。字帖已买，好好练习&lt;/li&gt;
+  &lt;li&gt;晴晴今年会接来北京，云姐全职在家带她，希望我能把握好家庭和工作的平衡，尽量让领导们都基本满意&lt;/li&gt;
+  &lt;li&gt;工作？努力做好一名多栈工程师吧。我会少写一些前端，多focus在服务端和自动化，学习swift，尝试做一些ios开发工作&lt;/li&gt;
+  &lt;li&gt;提升自己的英文词汇量和英文阅读&lt;/li&gt;
+  &lt;li&gt;参与或者自己做一个有意义的开源项目&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;就这样，完事。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/2015%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/&quot;&gt;2015简单总结&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on March 06, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -3683,222 +3777,6 @@ c.还有不少不一一列举，可查看&amp;nbsp;http://yingxiao.baidu.com/sup
 &lt;p&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E5%90%84%E7%A7%8D%E9%9D%A2%E8%AF%95%E9%A2%98/&quot;&gt;前端各种面试题&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on January 31, 2012.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[前端各种优化]]></title>
-  <link rel="alternate" type="text/html" href="/%E5%89%8D%E7%AB%AF%E5%90%84%E7%A7%8D%E4%BC%98%E5%8C%96/" />
-  <id>/前端各种优化</id>
-  <published>2011-12-31T00:00:00+08:00</published>
-  <updated>2011-12-31T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;还有一个小时才到2012，那还能有点时间写点吐槽的东西，嘿嘿...2011年12月绝对是本人工作以来压力最大的一个月，已经忙到睡觉时间少了，业余看书时间少了，身体开始报警了，肩膀上的责任压的我实在喘不过气...作为一个普通的北漂，在北京类似我这样的人海的去了，尤其是在咱们这个行业。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;我非常热爱生活，每分钟都无比珍贵；我热爱我现在所做的一切，哪怕确实让我精疲力尽(所以写博客暂时被我当成减压的方法)。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在我看来生活就是应该这样，既然我们在投胎的时候选择的生存模式or困难模式，那么不管发生什么困难都是意料之中。所以我在这不是想要表达自己的抱怨，而是想提醒自己和大家 &amp;nbsp;&lt;span data-mce-=&quot;&quot;&gt;“&amp;nbsp;&lt;span data-mce-=&quot;&quot;&gt;&lt;strong&gt;再忙再累也不要忘记自己的梦想和目标&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;”&lt;/span&gt;。&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;突然想起个例子不吐不快，关于我们80后应该都玩过的超级玛丽(mario)。不管你有多少生命多少金币，说到底都是浮云，游戏中你会碰到无数的敌人(乌龟、飞鱼、食人花...)，遇到无数的艰险(一个接一个的坑、下水道、火海...)，可是想要通关只有一个方法，那就是救到公主，这就是&lt;span data-mce-=&quot;&quot;&gt;&lt;strong&gt;目标&lt;/strong&gt;&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2011/159097/2011122400490933.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #993366; color: #ffffff; font-size: 16px;&quot;&gt;&lt;span data-mce-=&quot;&quot;&gt;&amp;#12288;&amp;#12288;If you want to live a happy life, tie it to a goal. Not to people or things.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #993366; color: #ffffff; font-size: 16px;&quot;&gt;&lt;span data-mce-=&quot;&quot;&gt;&amp;#12288;&amp;#12288;如果你想过得快乐，那就把生活和目标结合在一起，而不是来自他人或物质。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;许久才出来冒一次泡，所以难免吐槽一下，不喜欢以上那段的就当看个热闹，下面咱们开始正题。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ffff99; color: #999999;&quot;&gt;&lt;span&gt;-------------------------------------------------&lt;/span&gt;我是分割线-------------------------------------------------&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;作为本人2011年的收尾文章，就来个总结性质的吧，^_^...最近一直有给新同学做前端方面的培训，也有去参与公司前端的招聘，所以把自己资料库里面很多高效且有用的知识做了些规整分类，然后再分享一篇关于前端优化方面的总结。而且春节一过就又是招聘的高峰期了，在校的、跳槽的、浮躁的都开始进入面试的大军，前端优化也是前端面试一般会问到的东西，所以希望能对朋友们有用。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;前端性能优化&lt;/h1&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;1.&amp;#12288;&amp;#12288;请减少HTTP请求&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;基本原理：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在浏览器(客户端)和服务器发生通信时，就已经消耗了大量的时间，尤其是在网络情况比较糟糕的时候，这个问题尤其的突出。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;一个正常HTTP请求的流程简述：如在浏览器中输入&quot;www.xxxxxx.com&quot;并按下回车，浏览器再与这个URL指向的服务器建立连接，然后浏览器才能向服务器发送请求信息，服务器在接受到请求的信息后再返回相应的信息，浏览器接收到来自服务器的应答信息后，对这些数据解释执行。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;而当我们请求的网页文件中有很多图片、CSS、JS甚至音乐等信息时，将会频繁的与服务器建立连接，与释放连接，这必定会造成资源的浪费，且每个HTTP请求都会对服务器和浏览器产生性能负担。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;网速相同的条件下，下载一个100KB的图片比下载两个50KB的图片要快。所以，&lt;strong&gt;请减少HTTP请求。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;解决办法：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;合并图片（css sprites），合并CSS和JS文件；图片较多的页面也可以使用 lazyLoad 等技术进行&lt;span&gt;优化&lt;/span&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;2.&amp;#12288;&amp;#12288;请正确理解&amp;nbsp;Repaint 和 Reflow&amp;#12288;&amp;#12288;&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #333333; font-size: 12px;&quot;&gt;&amp;#12288;&amp;#12288;注：Repaint 和 Reflow 也就是重绘和重排，请允许我在这卖弄下我有限认识的那么几个英语单词...囧&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;基本原理：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;R&lt;span&gt;epaint(重绘)就是在一个元素的外观被改变，但没有改变布局(宽高)的情况下发生，如改变visibility、outline、背景色等等。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;R&lt;span&gt;eflow(重排)就是&lt;/span&gt;&lt;span&gt;DOM的变化影响到了元素的几何属性（宽和高），浏览器会重新计算元素的几何属性，会使渲染树中受到影响的部分失效，&lt;span&gt;浏览器会验证DOM树上的所有其它结点的visibility属性，这也是&lt;span&gt;R&lt;/span&gt;&lt;span&gt;eflow低效的原因。如：改变窗囗大小&lt;span&gt;、&lt;/span&gt;改变文字大小&lt;span&gt;、&lt;/span&gt;&lt;span&gt;内容的改变、&lt;span&gt;浏览器窗口变化，&lt;span&gt;style属性的改变&lt;/span&gt;等等。&lt;span&gt;如果Re&lt;/span&gt;&lt;span&gt;flow的过于频繁，CPU使用率就会噌噌的往上涨，所以前端也就有必要知道&amp;nbsp;Repaint 和 Reflow的知识。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;减少性能影响的办法：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;上面提到&lt;span&gt;通过设置style属性改变结点样式的话，每设置一次都会导致一次reflow，所以最好通过设置class的方式；&lt;/span&gt;&amp;#12288;有动画效果的元素，它的position属性应当设为fixed或absolute，这样不会影响其它元素的布局；如果功能需求上不能设置position为&lt;span&gt;fixed或absolute，那么就&lt;span&gt;权衡速度的平滑性。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;总之，因为&amp;nbsp;&lt;span&gt;Reflow 有时确实不可避免，所以只能&lt;/span&gt;尽可能限制Reflow的影响范围。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffff; font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffff; font-size: 14pt;&quot;&gt;3.&amp;#12288;&amp;#12288;请减少对DOM的操作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;基本原理：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;对DOM操作的代价是高昂的，这在网页应用中的通常是一个性能瓶颈。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;天生就慢。&lt;/span&gt;&lt;span&gt;在《高性能JavaScript》中这么比喻：“把DOM看成一个岛屿，把JavaScript(ECMAScript)看成另一个岛屿，两者之间以一座收费桥连接”。所以每次访问DOM都会教一个过桥费，而访问的次数越多，交的费用也就越多。所以一般建议尽量减少过桥次数。&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;解决办法：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;修改和访问DOM元素&lt;/span&gt;&lt;span&gt;会造成页面的Repaint和Reflow，循环对DOM操作更是罪恶的行为。所以请合理的使用JavaScript变量储存内容，&lt;span&gt;考虑大量DOM元素中循环的性能开销，&lt;/span&gt;在循环结束时一次性写入。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;减少对DOM元素的查询和修改，查询时可将其赋值给局部变量。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;em&gt;注：在IE中:hover会降低响应速度。&lt;/em&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;4.&amp;#12288;&amp;#12288;使用JSON格式来进行数据交换&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;基本原理：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;JSON&lt;/span&gt;&lt;span&gt;是一种轻量级的数据交换格式，采用完全独立于语言的文本格式，是理想的数据交换格式。同时，&lt;/span&gt;&lt;span&gt;JSON&lt;/span&gt;&lt;span&gt;是&lt;/span&gt;&lt;span&gt;&amp;nbsp;JavaScript&lt;/span&gt;&lt;span&gt;原生格式，这意味着在&lt;/span&gt;&lt;span&gt;&amp;nbsp;JavaScript&amp;nbsp;&lt;/span&gt;&lt;span&gt;中处理&lt;/span&gt;&lt;span&gt;&amp;nbsp;JSON&lt;/span&gt;&lt;span&gt;数据不需要任何特殊的&lt;/span&gt;&lt;span&gt;&amp;nbsp;API&amp;nbsp;&lt;/span&gt;&lt;span&gt;或工具包。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;与XML序列化相比，JSON序列化后产生的数据一般要比XML序列化后数据体积小，所以在Facebook等知名网站中都采用了JSON作为数据交换方式。&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;JS操作JSON：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在JSON中，有两种结构：对象和数组。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1. 一个对象以 “ { ” &amp;nbsp;开始，“ } ” 结束。每个“名称”后跟一个 “ : ” ；“名称/值 对”之间使用 “ , &amp;nbsp;”（逗号）分隔。 名称用引号括起来；值如果是字符串则必须用&lt;span&gt;引号&lt;span&gt;括起来&lt;/span&gt;&lt;/span&gt;，数值型则不需要。如：&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;var&lt;/span&gt; obj={&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800000;&quot;&gt;&quot;darren&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;,&lt;span style=&quot;color: #800000;&quot;&gt;&quot;age&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800080;&quot;&gt;24&lt;/span&gt;,&lt;span style=&quot;color: #800000;&quot;&gt;&quot;location&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800080;&quot;&gt;&quot;beijing&quot;&lt;/span&gt;}    &lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;2. 数组是值（value）的有序集合。一个数组以 “ [ ” 开始， “ ] ” 结束。值之间使用 “ , ” （逗号）分隔。如：&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;var&lt;/span&gt; jsonlist=[{&lt;span style=&quot;color: #800000;&quot;&gt;&quot;name&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800000;&quot;&gt;&quot;darren&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;,&lt;span style=&quot;color: #800000;&quot;&gt;&quot;age&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800080;&quot;&gt;24&lt;/span&gt;,&lt;span style=&quot;color: #800000;&quot;&gt;&quot;location&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800080;&quot;&gt;&quot;beijing&quot;&lt;/span&gt;},{&lt;span style=&quot;color: #800000;&quot;&gt;&quot;name&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800000;&quot;&gt;&quot;weidong.nie&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;,&lt;span style=&quot;color: #800000;&quot;&gt;&quot;age&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800080;&quot;&gt;24&lt;/span&gt;,&lt;span style=&quot;color: #800000;&quot;&gt;&quot;location&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;:&lt;span style=&quot;color: #800080;&quot;&gt;&quot;hunan&quot;&lt;/span&gt;}];&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;对这种数组和对象字面量的操作是非常方便且高效的。如果预先知道JSON结构的情况下，使用JSON进行数据传递简直是太美妙了，可以写出很实用美观可读性强的代码。如果你是纯粹的前台开发人员，一定会非常喜欢JSON。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;5.&amp;#12288;&amp;#12288;高效使用HTML标签和CSS样式&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;基本原理：&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;HTML是一门用来描述网页的一种&lt;strong&gt;语言&lt;/strong&gt;，它使用标记标签来描述网页，作为一名合格的前端开发，你有必要去知道其常用标签代表的含义(SEO)和属性(表现形式)。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;CSS&lt;span&gt;指层叠样式表 (&lt;/span&gt;&lt;em&gt;C&lt;/em&gt;&lt;span&gt;ascading&amp;nbsp;&lt;/span&gt;&lt;em&gt;S&lt;/em&gt;&lt;span&gt;tyle&amp;nbsp;&lt;/span&gt;&lt;em&gt;S&lt;/em&gt;&lt;span&gt;heets)，如果说把页面想象成一个人，HTML就是人的骨架，CSS就是人的衣装，一个人的品味从他的衣装就能一目了然。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;一名专业的前端开发也是一名优秀的重构，因为在页面中经常会有各种不合理的嵌套和重复定义的CSS样式，我不是要你重构页面，只是希望你在碰到这种情况的时候解决这些问题。&lt;span&gt;如这样的HTML：&lt;/span&gt;&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;...&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;&lt;br /&gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/table&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;或者这样的CSS:&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;body .box .border ul li p strong span{color:#000}&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;以上都是对HTML和CSS非常糟糕的使用方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;正确理解：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;HTML是一门标记语言，使用合理的HTML标签前你必须了解其属性，比如Flow Elements，Metadata Elements ，Phrasing Elements。比较基础的就是得知道块级元素和内联元素、盒模型、SEO方面的知识。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;CSS是用来渲染页面的，也是存在渲染效率的问题。&lt;span&gt;CSS选择符是从右向左进行匹配的，这里对css选择符按照开销从小到大的顺序梳理一下：&lt;/span&gt;&amp;#12288;&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;#12288;&amp;#12288;ID选择符 #box&lt;br /&gt;&amp;#12288;&amp;#12288;类选择符 .box  &lt;br /&gt;&amp;#12288;&amp;#12288;标签 div&lt;br /&gt;&amp;#12288;&amp;#12288;伪类和伪元素 a:hover&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;当页面被触发引起回流（reflow）的时候，低效的选择符依然会引发更高的开销，所以请避免低效。&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;6.&amp;#12288;&amp;#12288;使用CDN加速（内容分发网络）&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;基本原理：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;CDN的全称是Content Delivery Network，即内容分发网络。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&quot;其基本思路是尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输的更快、更稳定。通过在网络各处放置节点服务器所构成的在现有的互联网基础之上的一层智能虚拟网络，CDN系统能够实时地根据网络流量和各节点的连接、负载状况以及到用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服务节点上。&quot; - 百度百科。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;上面几句话有多少能安安心心看完的，所以我还是通过说故事再来介绍一遍吧，顺便补一句，故事出处不明，^_^：&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;古代打仗大家一定都知道，由于古代的交通很不发达，所以当外族进攻的时候往往不能及时的反击，等朝廷征完兵再把兵派往边境的时候那些侵略者却是早已不见了踪影，这个让古代的帝王很是郁闷。后来帝王们学聪明了，都将大量的兵员提前派往边境驻扎，让他们平时屯田，战时当兵，这样的策略起到了很显著的作用。&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;不足之处：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;实时性不太好是CDN的致命缺陷。随着对CDN需求的逐渐升温，这一缺陷将得到改进，使来自于远程服务器的网络内容网页与复本服务器或缓存器中的网页保持同步。解决方法是在网络内容发生变化时将新的网络内容从服务器端直接传送到缓存器，或者当对网络内容的访问增加时将数据源服务器的网络内容尽可能实时地复制到缓存服务器。&amp;nbsp;&lt;strong&gt;&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;&lt;strong&gt;7.&amp;#12288;&amp;#12288;将CSS和JS放到外部文件中引用，CSS放头，JS放尾&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;基本原理：&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;注：这个是很基础且必须遵循的知识点，可是为了文章的完整性勉为其难加进来吧，嘿嘿。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;引入外部文件好处是显而易见的，而且是项目稍稍复杂一点的时候就有必要了这样做了。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;易维护、易扩展，方便管理和重复利用。&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;正确的方式：&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;JavaScript是浏览器中的霸主，为什么这么说，因为在浏览器在执行&lt;span&gt;JavaScript&lt;/span&gt;代码时，不能同时做其它事情，即&amp;lt;script&amp;gt;每次出现都会让页面等待脚本的解析和执行（不论&lt;span&gt;JavaScript&lt;/span&gt;是内嵌的还是外链的），&lt;span&gt;JavaScript&lt;/span&gt;代码执行完成后，才继续渲染页面。这个也就是&lt;span&gt;JavaScript的阻塞特性。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;因为这个阻塞的特点，建议把&lt;span&gt;JavaScript代码放到&amp;lt;/body&amp;gt;标签以前，这样既能有效的防止&lt;span&gt;JavaScript的阻塞，又能使得页面的HTML结构能更快的释放。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span&gt;HTML规范清楚指出CSS要放包含在页面的&amp;lt;head&amp;gt;区域内，这里就不多解释了。&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;8.&amp;#12288;&amp;#12288;精简CSS和JS文件&lt;/span&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;基本原理：&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;有一条非常重要的准则一直没有提到，就是CSS和JavaScript的压缩，直接&lt;span&gt;减少下载的文件体积。&lt;/span&gt;我个人经常使用的方式是使用&amp;nbsp;&lt;strong&gt;YUI Compressor&lt;/strong&gt;，它的特点是：移除注释；移除额外的空格；细微优化；标识符替换。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;YUI Compressor是java程序，如果你对java很熟悉的话可快速的上手使用yuicompressor.jar；如果你对java很陌生也没关系，一样可以使用YUI Compressor，下面介绍其使用方式。&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;&lt;span&gt;YUI Compressor的配置和&lt;/span&gt;使用：&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;先配置使用环境：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1.先确保电脑中是否安装了JDK&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;2.再配置必要的环境变量(细节不能三两句说清，所以不知道如何设置还是搜索吧)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;3.在cmd界面，输入javac可测试是否安装成功&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;使用方法可从cmd到进入yuicompressor.jar所在磁盘，我以自己的yuicompressor-2.4.2.jar为例：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1.压缩JS&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;#12288;&amp;#12288;java -jar yuicompressor-&lt;span style=&quot;color: #800080;&quot;&gt;2.4&lt;/span&gt;.&lt;span style=&quot;color: #800080;&quot;&gt;2&lt;/span&gt;.jar api.js &amp;gt; api.min.js&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;2.&lt;span&gt;压缩CSS&lt;/span&gt;&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;#12288;&amp;#12288;java -jar yuicompressor-&lt;span style=&quot;color: #800080;&quot;&gt;2.4&lt;/span&gt;.&lt;span style=&quot;color: #800080;&quot;&gt;2&lt;/span&gt;.jar style.css &amp;gt; style.min.css&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2011/159097/2011123123284580.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;当然，还有另一种更傻瓜式的使用方式，赶兴趣的朋友自己可去多尝试下。&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;9.&amp;#12288;&amp;#12288;压缩图片和使用图片&lt;strong&gt;Sprite技术&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;基本原理:&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;注：其实压缩图片和图片精灵是两个方面的技术，可是既然都是关于图片的优化还是放到一块吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;现在由于工作的细分，专业的前端工程师已经少有机会去切图了，可是关于图片&lt;span&gt;压缩还是得略微&lt;/span&gt;了解，一般图片压缩的方式有：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1.&lt;span&gt;缩小图片分辨率；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;2.&lt;span&gt;改变图片格式；&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;3.降低图片保存质量。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;关于图片精灵(Sprite)技术就和我们工作直接相关，不管是在CSS中的图片还是在HTML结构中的图片都会产生HTTP请求，前端优化的第一条就是减少请求数，最直接有效的方法是使用图片精灵（CSS Sprite）。图片精灵就是把许多图片放到一张大图片里面，通过CSS来显示图片的一部分。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;至于图片精灵的操作细节就不多做介绍了，网上相关内容很多。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 900;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 14pt; background-color: #ccffff;&quot;&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;10.&amp;#12288;&amp;#12288;注意控制Cookie大小和污染&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 900;&quot;&gt;&amp;#12288;&amp;#12288;基本原理和使用方法：&lt;/span&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;有关Cookie的基础和高级知识可以去看本人写过的一篇文章&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/11/24/Cookie.html&quot;&gt;《JavaScript 操作 Cookie》&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;因为Cookie是本地的磁盘文件，每次浏览器都会去读取相应的Cookie，所以建议&lt;span&gt;去除不必要的Coockie，&lt;/span&gt;使Coockie体积尽量小以减少对用户响应的影响；&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;使用Cookie跨域操作时注意在适应级别的域名上设置coockie以便使子域名不受其影响&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;Cookie是有生命周期的，所以请注意设置合理的过期时间，合理地Expire时间和不要过早去清除coockie，都会改善用户的响应时间。&lt;/span&gt;&lt;/p&gt;
-
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;时间有限，今年就先到这里吧，哈哈。愿大家新年快乐，工作顺利。我会在以后的工作中慢慢完善这篇文章，也请大家多提宝贵建议。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;如果大家也有什么好的优化方式也请留言，到时会补充到这篇文章当中，先在此谢谢了。&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;参考资料&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&amp;#12288;&amp;#12288;百度百科&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;a href=&quot;http://dev.w3.org/html5/markup/common-models.html&quot;&gt;http://dev.w3.org/html5/markup/common-models.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;a href=&quot;http://www.w3schools.com/&quot;&gt;http://www.w3schools.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #999999;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ccffff; font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;&lt;/strong&gt;前端攻城师攻略系列&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;作为一名前端攻城师，越来越感受到在公司受到的重视，身边也有越来越多的朋友加入到前端开发这个岗位上，有种说不出的骄傲感。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;由于闲暇时间喜欢看书，所以曾萌生过希望写本书的想法，虽然现在自己还有很多的坑需要踩过，真要写书也是将来很久以后的事了，可是有打算先尝试写点与前端紧密相关的攻略，于是就有了“前端攻略系列”。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;由于现在本人表达能力和技术能力上的欠缺，难免有理解不对的地方，也请大家多多谅解。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E5%90%84%E7%A7%8D%E4%BC%98%E5%8C%96/&quot;&gt;前端各种优化&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on December 31, 2011.&lt;/p&gt;
   </content>
 </entry>
 

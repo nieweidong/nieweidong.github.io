@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 点滴生活记录
-excerpt: "聂微东,前端,前端面试,前端攻略,前端博客,JavaScript,JS,React,Gulp,Nodejs,darren"
 search_omit: true
 ---
 

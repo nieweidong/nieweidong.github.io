@@ -4,13 +4,279 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-03-10T15:21:42+08:00</updated>
+<updated>2016-04-30T11:34:54+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
   <uri>/</uri>
   <email>darrencode@qq.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[gulp使用小结(一)]]></title>
+  <link rel="alternate" type="text/html" href="/gulp_1/" />
+  <id>/gulp_1</id>
+  <published>2016-04-30T00:00:00+08:00</published>
+  <updated>2016-04-30T00:00:00+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;这篇文章不会介绍 &lt;code&gt;gulp&lt;/code&gt; 的起源、发展；不会去一个个讲解 &lt;code&gt;gulp API&lt;/code&gt;；也不想出现大段大段的 &lt;code&gt;gulpfule.js&lt;/code&gt; 代码；更木有帮你分析 &lt;code&gt;gulp&lt;/code&gt; 实现原理，只有一些我自己对 &lt;code&gt;gulp&lt;/code&gt; 的使用理解和总结。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;如何通过 &lt;code&gt;gulp&lt;/code&gt; 让偶们的前端项目高大上的跑起来？&lt;code&gt;gulp&lt;/code&gt; 能做什么，还能做什么？&lt;code&gt;gulp&lt;/code&gt;套路能不能来几套？… 希望通过这篇文章你会找到答案&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;写作风格的原因，劳资写的文章都较详(啰)细(嗦)，请轻拍:)&lt;/p&gt;
+
+&lt;p&gt;当然，同样期待能得到伙伴们的讨论和支持。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#intro&quot;&gt;简单介绍&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#must&quot;&gt;必备插件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#common&quot;&gt;常用插件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#minority&quot;&gt;进阶插件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gulpfile&quot;&gt;聊聊 gulpfile.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#write&quot;&gt;套路&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#over&quot;&gt;结语&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#rec&quot;&gt;推荐阅读&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;intro&quot;&gt;简单介绍&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这篇文章的目的是：介绍些我知晓的 &lt;code&gt;gulp plugins&lt;/code&gt;，然后用少量的代码讲解，最终希望大家能用 &lt;code&gt;gulp&lt;/code&gt; 让前端项目高大上的跑起来&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;默认读者知道点 &lt;code&gt;npm/cnpm&lt;/code&gt;；明白 &lt;code&gt;package.json&lt;/code&gt; 是作甚的；了解 &lt;code&gt;gulpfile.js&lt;/code&gt; 是作甚的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这篇文章起草于2014年下半年，那时 &lt;code&gt;gulp&lt;/code&gt; 还算个较新潮的玩意。所以在项目实践的过程中，自己记录鸟不少使用收获，心里闷骚的想，等哪天有空再润色一把即可分享出去，但特么拖拖拉拉的就到2016年…&lt;/p&gt;
+
+&lt;p&gt;转眼 &lt;code&gt;gulp&lt;/code&gt; 都已快被归类为过时的技术鸟(&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;，有关这篇文章下一篇偶再单独细聊)，于是趁着周末之余，火速整理下自己的 &lt;code&gt;gulp&lt;/code&gt; 套路发布出来，也希望对其他小伙伴有点用。&lt;/p&gt;
+
+&lt;p&gt;本文最下方有一些 文章/文档 的阅读推荐:)&lt;/p&gt;
+
+&lt;h3 id=&quot;must&quot;&gt;必备插件&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;【必备】不是指每次项目都得用，而是指最基础的。你可以不用，但是得知道的那些gulp插件&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;以下插件的方向都各自有不少相似的插件，所以不必过多纠结，用的开心就行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-htmlmin&quot;&gt;gulp-htmlmin&lt;/a&gt; 看到名字就能知道，这个插件是用来压缩 &lt;code&gt;HTML&lt;/code&gt;。PS：注释啥的都可以去掉哦，看文档get更多技能哈&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-imagemin&quot;&gt;gulp-imagemin&lt;/a&gt; 除了能压缩常见的图片格式，还能压缩 &lt;code&gt;SVG&lt;/code&gt;，叼叼的~&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-minify-css&quot;&gt;gulp-clean-css&lt;/a&gt; 压缩 CSS。我原本推荐的是 &lt;a href=&quot;https://www.npmjs.com/package/gulp-minify-css&quot;&gt;gulp-minify-css&lt;/a&gt;，结果其首页中已建议改用&lt;code&gt;gulp-clean-css&lt;/code&gt;…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-uglify&quot;&gt;gulp-uglify&lt;/a&gt; 专业压缩 Javascript&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-concat&quot;&gt;gulp-concat&lt;/a&gt; 上面几个都是压缩，这插件是管合并的…恭喜，“减少网络请求”的成就达成:)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-autoprefixer&quot;&gt;gulp-autoprefixer&lt;/a&gt; 给 CSS 增加前缀。解决某些CSS属性不是标准属性，有各种浏览器前缀的情况，灰常有用&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rename&quot;&gt;gulp-rename&lt;/a&gt; 修改文件名称。比如有时我们需要把&lt;code&gt;app.js&lt;/code&gt;改成&lt;code&gt;app.min.js&lt;/code&gt;，瞬间高级了&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-util&quot;&gt;gulp-util&lt;/a&gt; 最基础的工具，但俺只用来打日志…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;common&quot;&gt;常用插件&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;相对于必备插件，常用插件都是些【有用】但使用场景和频率没那么高的好插件&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/run-sequence&quot;&gt;run-sequence&lt;/a&gt; &lt;code&gt;gulp&lt;/code&gt; 的 &lt;code&gt;task&lt;/code&gt; 都是并行(异步)执行，如果遇见需要串行的场景，那么这个插件就是必备了。偶的使用场景是：处理(压缩、合并等等) &lt;code&gt;CSS/JS&lt;/code&gt;、再&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;、再上传 &lt;code&gt;CDN&lt;/code&gt;；然后使用 &lt;code&gt;CDN&lt;/code&gt;的地址替换 &lt;code&gt;HTML&lt;/code&gt; 中的 &lt;code&gt;CSS/JS&lt;/code&gt; 地址，再压缩 &lt;code&gt;HTML&lt;/code&gt;。那么替换 &lt;code&gt;HTML&lt;/code&gt; 这步须在之前的工作处理完后再执行。 ** 最后要说，gulp4.0发布后，不需要RS也可以搞定串行任务了 **&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/del&quot;&gt;del&lt;/a&gt; / &lt;a href=&quot;https://www.npmjs.com/package/gulp-clean&quot;&gt;gulp-clean&lt;/a&gt; 删除。俺的使用场景是：&lt;code&gt;JS/CSS&lt;/code&gt; 文件都会在压缩后使用&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;，即文件名被&lt;code&gt;hash&lt;/code&gt;，然后再上传到 &lt;code&gt;CDN&lt;/code&gt;，最后俺再使用 &lt;strong&gt;删除插件&lt;/strong&gt; 把本地压缩后的文件删除掉，不用多余保存。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt; 把静态文件名改成&lt;code&gt;hash&lt;/code&gt;的形式。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-replace&quot;&gt;gulp-rev-replace&lt;/a&gt; 配合 &lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt; 使用，拿到生成的 &lt;code&gt;manifest。json&lt;/code&gt; 后替换对应的文件名称。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-collector&quot;&gt;gulp-rev-collector&lt;/a&gt; 到线上环境钱，我会用来配合&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;使用，替换 &lt;code&gt;HTML&lt;/code&gt; 中的路径&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-append&quot;&gt;gulp-rev-append&lt;/a&gt; 给页面引用的静态文件增加&lt;code&gt;hash&lt;/code&gt;后缀，避免被浏览器缓存…当然，如果是使用 &lt;code&gt;CDN&lt;/code&gt;，这个套路就不行了&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-connect&quot;&gt;gulp-connect&lt;/a&gt; / &lt;a href=&quot;https://www.npmjs.com/package/gulp-livereload&quot;&gt;gulp-livereload&lt;/a&gt; &lt;code&gt;LiveReload&lt;/code&gt; 的俩款插件都值得拥有，不过都各稍有学习成本，看看文档就明白鸟&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sourcemaps&quot;&gt;gulp-sourcemaps&lt;/a&gt; 处理 &lt;code&gt;JavaScript&lt;/code&gt; 时生成 &lt;code&gt;SourceMap&lt;/code&gt;；如果你不了解 &lt;code&gt;SourceMap&lt;/code&gt;，可以看看这篇阮一峰大神的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html&quot;&gt;《Source Map 详解》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-load-plugins&quot;&gt;gulp-load-plugins&lt;/a&gt; 帮忙偷懒用的，可以帮我们加载插件，不用&lt;code&gt;require&lt;/code&gt;或者&lt;code&gt;import&lt;/code&gt;…当然，俺个人感觉用了这个插件后，阅读&lt;code&gt;gulpfile.js&lt;/code&gt;的可读性差了，鱼和熊掌不可兼得:(&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-jshint&quot;&gt;gulp-jshint&lt;/a&gt; &lt;code&gt;JavaScript&lt;/code&gt; 代码校验&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sass&quot;&gt;gulp-sass&lt;/a&gt; / &lt;a href=&quot;https://www.npmjs.com/package/gulp-less&quot;&gt;gulp-less&lt;/a&gt; 写 &lt;code&gt;CSS&lt;/code&gt; 的同学都懂哈&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;minority&quot;&gt;进阶插件&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;必备插件和常用插件都有一个特点，就是下载数都不小。虽然有少部分插件下载数相对不多，但同样值得拥有或了解&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/&quot;&gt;babel&lt;/a&gt; &lt;code&gt;JS&lt;/code&gt; 语法新特性用起来。这个插件可以让我们用新的 &lt;strong&gt;标准/特性/提案&lt;/strong&gt; 写 &lt;code&gt;JavaScript&lt;/code&gt; 代码，然后再向下 &lt;strong&gt;转换编译&lt;/strong&gt;，最终生成随处可用的 &lt;code&gt;JavaScript&lt;/code&gt; 代码。更通俗的说话就是：可以用新的规范写代码，经过 &lt;code&gt;babel&lt;/code&gt; 编译后生成没有兼容问题的代码。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-flatten&quot;&gt;gulp-flatten&lt;/a&gt; 移动指定文件，不想压缩或者合并的时候，直接用这个插件把对应文件移动到指定文件夹。俺偶尔在内部项目会偷懒用上，图方便:)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-coffee&quot;&gt;gulp-coffee&lt;/a&gt; &lt;code&gt;CoffeeScript&lt;/code&gt; 值得去了解&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-markdown-pdf&quot;&gt;gulp-markdown-pdf&lt;/a&gt; 把 &lt;code&gt;Markdown&lt;/code&gt; 编译为 &lt;code&gt;PDF&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-markdown&quot;&gt;gulp-markdown&lt;/a&gt; 写手的福音，可以把 &lt;code&gt;Markdown&lt;/code&gt; 转成 &lt;code&gt;HTML&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-html2md&quot;&gt;gulp-html2md&lt;/a&gt; 把 &lt;code&gt;HTML&lt;/code&gt; 编译为 &lt;code&gt;Markdown&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-tinypng&quot;&gt;gulp-tinypng&lt;/a&gt; 超屌的图片压缩工具，使用 &lt;code&gt;Tinypng&lt;/code&gt; 引擎。PS：因为 &lt;code&gt;Tinypng&lt;/code&gt; 免费帐号有月限制，所以使用使需注意。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/sprity&quot;&gt;sprity&lt;/a&gt; 生成雪碧图。稍有点学习成本，仔细阅读文档即可。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-if&quot;&gt;gulp-if&lt;/a&gt; 可以在 &lt;code&gt;pipe&lt;/code&gt; 里面写点逻辑了，屌不屌。举例：比如处理 &lt;code&gt;./pub/*.js&lt;/code&gt;，如果文件名称是 &lt;code&gt;xxx.js&lt;/code&gt;，那么不处理；更可以用来区分当前是开发环境还是生产环境。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-file-include&quot;&gt;gulp-file-include&lt;/a&gt; 俺搞内部项目的时候会用到，让 &lt;code&gt;HTML&lt;/code&gt; 组件化的第一小步&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-git&quot;&gt;gulp-git&lt;/a&gt; 直接在 &lt;code&gt;Build&lt;/code&gt; 时把代码都提交到 &lt;code&gt;git&lt;/code&gt;上了…特么劳资懒起来另我自己都害怕&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-qiniu&quot;&gt;gulp-qiniu&lt;/a&gt; 用于把指定文件上传至七牛的指定路径下(PS:首先，你得有自己的七牛账号和空间)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-notify&quot;&gt;gulp-notify&lt;/a&gt; 在控制台中加入文字描述，&lt;code&gt;build&lt;/code&gt; 的时候更高级有木有。当然，当需要的时候把错误信息也展示出来会很有帮助。更高级的功能就需要你查看其文档了~&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-plumber&quot;&gt;gulp-plumber&lt;/a&gt; &lt;code&gt;gulp&lt;/code&gt; 的错误处理有点坑，假如发生错误进程就挂了。相对的解决办法不少，但是这个是我个人比较推荐的，比特么在容易出错的地方写错误监听靠谱。所以这个插件可以阻止 &lt;code&gt;gulp&lt;/code&gt; 插件发生错误导致进程退出并输出错误日志。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;gulpfile&quot;&gt;聊聊 gulpfile.js&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;gulp API&lt;/code&gt; 真没啥好说的，所以也从没打算花时间介绍，那这一节劳资要说说啥呢…干货！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;已经枯燥的balabala一通插件，所以偶用自己的方式聊聊这个 &lt;code&gt;gulpfile.js&lt;/code&gt;。PS：默认读者了解，所以不堆代码了哈&lt;/p&gt;
+
+&lt;p&gt;一个较简单的前端项目，&lt;code&gt;gulpfile.js&lt;/code&gt; 可以轻松上百行，稍复杂点儿的此文件会更大，肯定会不方便阅读和维护。&lt;/p&gt;
+
+&lt;p&gt;下面这套目录结构，是适合较复杂前端项目的 &lt;code&gt;gulpfile.js&lt;/code&gt; 套路，仅供参考：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-delphi&quot; data-lang=&quot;delphi&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gulpfile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 环境相关&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;global&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;qiniu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// CDN&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tasks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xxx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xxxx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;├──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;release&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;└──&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;js&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一行中的 &lt;code&gt;gulpfile.js&lt;/code&gt; 也可换成 &lt;code&gt;gulpfile.babel.js&lt;/code&gt;。如果想看 &lt;code&gt;gulpfile.babel.js&lt;/code&gt; 的示例可以去 &lt;a href=&quot;https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js&quot;&gt;https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;gulp-conf&lt;/code&gt; 路径、公共参数等等，把有必要都变成配置文件，代码优雅多了。当然，如果没有必要就别麻烦了，视情况来&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;gulp-tasks&lt;/code&gt; 内的各个文件都是些分类型的子任务，这样一拆分 &lt;code&gt;gulpfile.js&lt;/code&gt; 必定清爽很多，关键是之后维护各种 &lt;code&gt;task&lt;/code&gt; 也简单很多&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;不贴代码的原因是因为我只想提供个 &lt;strong&gt;文件夹套路&lt;/strong&gt;，其实怎么用着爽、怎么分类、甚至怎么取名这些都见仁见智，反正目的是让代码组织的够清晰、好维护，那么偶们的目标就达到鸟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;write&quot;&gt;套路&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这节会基于这些插件的相互配合和清晰的 &lt;code&gt;gulp&lt;/code&gt; 目录结构，让偶们的前端项目快速且高大上的 &lt;code&gt;build&lt;/code&gt; 起来！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;偶这粗暴的把套路分成三类：一种是相对简单点的；一种是稍稍复杂点的；一种是“玩”的比较复杂的。区分的原则是这仨套路的目标会有稍许不同，而且项目需求也不同。搞清楚我们(项目)到底想要得到什么，那么剩下的就是去实现它了！&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;附加组合&lt;/strong&gt; 这类在这篇就不说了，比如 &lt;code&gt;gulp+webpack&lt;/code&gt; 这种 &lt;code&gt;CP&lt;/code&gt;，针对 &lt;code&gt;React&lt;/code&gt; 项目可以面面俱到。。。这如果要分析起来，比特么 &lt;code&gt;gulp&lt;/code&gt; 复杂多了去了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;如果你问我，有木有最简单的套路，答曰：有！&lt;/p&gt;
+
+&lt;p&gt;如果你问我，最简单的方法是神马，答曰：&lt;strong&gt;不要用这些 &lt;code&gt;build&lt;/code&gt; 工具…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;哇哈哈哈哈哈哈~&lt;/p&gt;
+
+&lt;h4&gt;简单套路&lt;/h4&gt;
+
+&lt;p&gt;项目/人群 目标：要求较高的个人项目、公司内部项目、小商业项目&lt;/p&gt;
+
+&lt;p&gt;主要需求：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code&gt;HTML&lt;/code&gt; 也得 &lt;code&gt;组件化(这词我有点反感，真听得烂大街了)&lt;/code&gt;。该 &lt;code&gt;common&lt;/code&gt; 的拎出来；该 &lt;code&gt;widget&lt;/code&gt; 的拎出来&lt;/li&gt;
+  &lt;li&gt;图片压缩、合并&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;JS/CSS/HTML&lt;/code&gt; 压缩、合并&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;sass/less&lt;/code&gt; 必须得用起来，要不 &lt;code&gt;CSS&lt;/code&gt; 怎么显得高大上&lt;/li&gt;
+  &lt;li&gt;额…差不多够了吧，毕竟我们只是入门的简体套路，再复杂点儿 &lt;code&gt;gulpfile.js&lt;/code&gt; 的体积就不小了:)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;一般套路&lt;/h4&gt;
+
+&lt;p&gt;项目/人群 目标：喜爱尝试的个人项目、一般商业项目、要求较高的开源项目&lt;/p&gt;
+
+&lt;p&gt;主要需求：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;简单套路里面的都包括&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;JavaScript&lt;/code&gt; 部分用 &lt;code&gt;ES6&lt;/code&gt; 来编写… &lt;strong&gt;PS：技术红利不用白不用嘛&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;JavaScript&lt;/code&gt; 代码校验用起来&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;CSS&lt;/code&gt; 方面根据设置项目所需的浏览器版本，从而自动处理浏览器前缀&lt;/li&gt;
+  &lt;li&gt;所有静态文件全部上 &lt;code&gt;CDN&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;把 &lt;code&gt;task&lt;/code&gt; 进行拆分，使其更好维护&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4&gt;复杂套路&lt;/h4&gt;
+
+&lt;p&gt;项目/人群 目标：商业项目、代码洁癖者…额，再加一箱：程序员中的单身狗:)&lt;/p&gt;
+
+&lt;p&gt;主要需求：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;一般套路里面的都包括&lt;/li&gt;
+  &lt;li&gt;增加对 &lt;code&gt;gulp&lt;/code&gt; 进程出错的优雅处理&lt;/li&gt;
+  &lt;li&gt;更多 &lt;code&gt;task&lt;/code&gt; 信息的相关展示&lt;/li&gt;
+  &lt;li&gt;在 &lt;code&gt;task&lt;/code&gt; 中有逻辑处理，比如执行某 &lt;code&gt;task&lt;/code&gt; 会判断是否是开发环境，然后可以有相应的处理&lt;/li&gt;
+  &lt;li&gt;自动清理掉那些不需要的 &lt;code&gt;tmp&lt;/code&gt; 文件(临时文件)，只留下真正有用的代码&lt;/li&gt;
+  &lt;li&gt;LiveReload&lt;/li&gt;
+  &lt;li&gt;代码自动同步 &lt;code&gt;git&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;劳资实在编不下去了…&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;over&quot;&gt;结语&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;你的插件应该只做一件事，并且做好&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;写插件原本是我想好好写的地方，发现中文文档已经非常丰富了，那就不费那个劲了，直接贴官方地址：&lt;a href=&quot;http://www.gulpjs.com.cn/docs/writing-a-plugin/&quot;&gt;http://www.gulpjs.com.cn/docs/writing-a-plugin/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最后聊聊我眼中的 &lt;code&gt;gulp&lt;/code&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; 目前有相关插件2266个&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; 是基于 &lt;code&gt;Node&lt;/code&gt; 的，95%的代码都是 &lt;code&gt;JavaScript&lt;/code&gt;，5%的代码是 &lt;code&gt;Shell&lt;/code&gt;，&lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;npmjs.com&lt;/a&gt;显示上个月的下载超过210W，当前(2016/04/30)release 的版本是3.9.1&lt;/li&gt;
+  &lt;li&gt;神马？安装各种插件还是用 &lt;code&gt;npm&lt;/code&gt;？赶紧 &lt;a href=&quot;https://www.npmjs.com/package/cnpm&quot;&gt;cnpm&lt;/a&gt; 用起来，安装速度噌噌的&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; VS &lt;code&gt;grunt&lt;/code&gt; 这话题已经被说烂，但我还是想说说。个人觉得玩&lt;code&gt;grunt&lt;/code&gt;是种写配置的感觉；玩&lt;code&gt;gulp&lt;/code&gt;就是写脚本(task)，且&lt;code&gt;gulp&lt;/code&gt;更容易上手、更高效。 推荐读者看看这篇文章&lt;a href=&quot;http://www.benben.cc/blog/?p=407&quot;&gt;Gulp vs Grunt&lt;/a&gt;，写的着实深入浅出&lt;/li&gt;
+  &lt;li&gt;编译 &lt;code&gt;CoffeeScript&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;编译 &lt;code&gt;less / sass&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;把 &lt;code&gt;HTML&lt;/code&gt; 编译为 &lt;code&gt;Markdown&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;把 &lt;code&gt;Markdown&lt;/code&gt; 编译为 &lt;code&gt;HTML/pdf&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;把 &lt;code&gt;Excel&lt;/code&gt; 编译为 &lt;code&gt;HTML/JSON&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;开发 &lt;code&gt;React&lt;/code&gt; 项目时和好基友 &lt;code&gt;webpack&lt;/code&gt; 配合，酸爽到爆，推荐同事的一篇文章，我司目前的&lt;code&gt;React&lt;/code&gt; 项目基本就是这个套路：&lt;a href=&quot;http://www.boke.io/ji-yu-gulphe-webpackde-qian-duan-gong-zuo-liu/&quot;&gt;《基于gulp和webpack的前端工程化》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;最近在InfoQ上有读到一个系列的文章，是讨论 &lt;code&gt;gulp&lt;/code&gt; 和 &lt;code&gt;npm script&lt;/code&gt; 优劣，地址 - &lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;。篇幅有限，下周末的文章我再拿出来讨论，不过推荐大家阅读，还是值得我们思考的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;下一篇会把这篇文章所介绍的套路，用代码体现出来，文章发布时git会同步更新，地址：&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;rec&quot;&gt;推荐阅读&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js&quot;&gt;gulp示例&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://slides.com/contra/gulp&quot;&gt;为什么是gulp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jabez128/stream-handbook&quot;&gt;《stream-handbook中文版》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lisposter/gulp-docs-zh-cn&quot;&gt;《gulp 简体中文文档》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gulpjs.com.cn/&quot;&gt;Gulp中文网 http://www.gulpjs.com.cn/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gulpjs.com.cn/docs/getting-started/&quot;&gt;入门指南 http://www.gulpjs.com.cn/docs/getting-started/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.boke.io/ji-yu-gulphe-webpackde-qian-duan-gong-zuo-liu/&quot;&gt;《基于gulp和webpack的前端工程化》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/gulp_1/&quot;&gt;gulp使用小结(一)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -68,7 +334,7 @@
   &lt;li&gt;&lt;code&gt;Git/Github&lt;/code&gt; 都用起来了，不过随之而来的感觉是自己英文真的太弱，蛋蛋的忧桑；整理了一个 &lt;a href=&quot;https://github.com/nieweidong/fetool&quot;&gt;fetool&lt;/a&gt; 居然还有上百star，确实没想到&lt;/li&gt;
   &lt;li&gt;服务端从 &lt;code&gt;express=&amp;gt;koa&lt;/code&gt;，觉得&lt;code&gt;co&lt;/code&gt;这个包太牛逼了&lt;/li&gt;
   &lt;li&gt;被音视频这套东西折腾许久，一边写文章一边 &lt;code&gt;rtmp/hls/m3u8&lt;/code&gt; 等等这些词从脑海划过，觉得自己在这块算小成鸟；移动端/PC 的音视频播放都逐一搞过，甚至直播服务和各种相关语言的sdk也都有踩坑和补坑&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;nagix&lt;/code&gt; 可以简单写写、修修改改，还是有点儿成就感的，勉强算个入门&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;nginx&lt;/code&gt; 可以简单写写、修修改改，还是有点儿成就感的，勉强算个入门&lt;/li&gt;
   &lt;li&gt;用了一些云服务和他们各种的API，如七牛、Ucloud和阿里云等，将来哪天自己真创业了，这可都是吃饭的家伙:)&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;MongoDB/Redis/MySQL&lt;/code&gt; 今年挨个玩了遍，其中MongoDB还是没有在线上项目用上，略有点遗憾。相关的书看了几本，数据方向也算勉强入门了&lt;/li&gt;
   &lt;li&gt;。。。&lt;/li&gt;
@@ -292,27 +558,6 @@ db：
 
 
     &lt;p&gt;&lt;a href=&quot;/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/&quot;&gt;Fe前端项目套路一期&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 06, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[test]]></title>
-  <link rel="alternate" type="text/html" href="/gulp/" />
-  <id>/gulp</id>
-  <published>2015-04-08T14:25:13+08:00</published>
-  <updated>2015-04-08T14:25:13+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;h2 id=&quot;test&quot;&gt;Test&lt;/h2&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/gulp/&quot;&gt;test&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 08, 2015.&lt;/p&gt;
   </content>
 </entry>
 

@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "gulp使用小结(二)",
+      "link"			: "/gulp_2/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "gulp使用小结(一)",
       "link"			: "/gulp_1/",
       "excerpt"		: ""

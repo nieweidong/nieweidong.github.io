@@ -4,13 +4,34 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-04-30T11:34:54+08:00</updated>
+<updated>2016-04-30T11:49:03+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
   <uri>/</uri>
   <email>darrencode@qq.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[gulp使用小结(二)]]></title>
+  <link rel="alternate" type="text/html" href="/gulp_2/" />
+  <id>/gulp_2</id>
+  <published>2016-04-30T11:49:25+08:00</published>
+  <updated>2016-04-30T11:49:25+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;gulp使用小结(一)&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;gulp使用小结(二)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -3706,143 +3727,6 @@ c.还有不少不一一列举，可查看&amp;nbsp;http://yingxiao.baidu.com/sup
 &lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/%E8%A6%81%E6%9C%89%E6%A2%A6%E6%83%B3,%E5%88%9B%E9%80%A0%E5%8D%93%E8%B6%8A%E7%9A%84%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/&quot;&gt;要有梦想,创造卓越的职业生涯&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on March 23, 2012.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Ie下z Index的各种坑]]></title>
-  <link rel="alternate" type="text/html" href="/IE%E4%B8%8Bz-index%E7%9A%84%E5%90%84%E7%A7%8D%E5%9D%91/" />
-  <id>/IE下z-index的各种坑</id>
-  <published>2012-03-05T00:00:00+08:00</published>
-  <updated>2012-03-05T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;到新地方有些日子了，差不多适应了这边的工作节奏与流程。接到的第一个开发任务是几个比较简单的页面，需要做的工作就是先把设计图变成页面，然后使用PHP创建几个请求的接口传递数据，标准且简洁的web开发思路。可是真有些日子没有写DIV+CSS了，而且对IE6兼容性的坑碰到的还是不够多(以前做国外项目)，所以这次开发中不可避免的碰见了几个问题，尤其是在IE下的 z-index 问题很有意思，所以整理了一些资料和总结分享给大家...注：因为引入了jsfiddle，所以页面加载受影响会稍慢一些^_^&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 14pt;&quot;&gt;阅读目录&lt;/span&gt;：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#darren_1&quot; style=&quot;font-size: 16px;&quot;&gt;z-index属性&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#darren_2&quot; style=&quot;font-size: 16px;&quot;&gt;z-index规范参考&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#darren_3&quot; style=&quot;font-size: 16px;&quot;&gt;在IE下出现的问题&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#darren_4&quot; style=&quot;font-size: 16px;&quot;&gt;在IE6下z-index的问题&lt;/a&gt;&lt;ol&gt;
-&lt;li&gt;&amp;gt;&lt;a href=&quot;#darren_5&quot;&gt;拼爹的时代&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;gt;&lt;a href=&quot;#darren_6&quot;&gt;万恶的float&amp;nbsp;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#darren_7&quot; style=&quot;font-size: 16px;&quot;&gt;IE6下 select z-index无效而遮挡div&lt;/a&gt;&lt;ol&gt;
-&lt;li&gt;&amp;gt;&lt;a href=&quot;#darren_8&quot;&gt;用 iframe 包裹 select 元素&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;gt;&lt;a href=&quot;#darren_9&quot;&gt;以 Iframe 作为div的子元素，覆盖 select 元素&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;a data-mce-=&quot;&quot; href=&quot;#darren_11&quot;&gt;本文结语&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#darren_10&quot; style=&quot;font-size: 16px;&quot;&gt;参考资料&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;h1 id=&quot;darren_1&quot;&gt;&amp;#12288;&amp;#12288;z-index属性&amp;#12288;&amp;#12288;&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;z-index : auto | number&lt;/li&gt;
-&lt;li&gt;z-index 属性设置元素的堆叠顺序，如果为正数，则离用户更近，为负数则表示离用户更远；&lt;/li&gt;
-&lt;li&gt;拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面；&lt;/li&gt;
-&lt;li&gt;z-index 仅能在定位元素上奏效（position 属性值为 relative 或 absolute 或 fixed的对象）。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;h1 id=&quot;darren_2&quot;&gt;&amp;#12288;&amp;#12288;z-index规范参考&amp;#12288;&amp;#12288;&lt;/h1&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;在 W3C CSS2.1 规范中，&lt;strong&gt;每个元素都具有三维的空间位置&lt;/strong&gt;，除我们所熟悉的水平和垂直位置外，元素还可在 &quot;Z轴&quot; 方向上层层相叠、依次向前排开；&amp;nbsp;&lt;/li&gt;
-&lt;li&gt;元素在 &quot;Z 轴&quot; 方向上的呈现顺序，由层叠上下文和层叠级别决定。在文档中，每个元素仅属于一个层叠上下文。在给定的层叠上下文中，&lt;strong&gt;每个元素都有一个整型的层叠级别&lt;/strong&gt;，它描述了在相同层叠上下文中元素在 &quot;Z轴&quot; 上的显示顺序；&lt;/li&gt;
-&lt;li&gt;同一个层叠上下文中，层叠级别大的显示在上，层叠级别小的显示在下，&lt;strong&gt;相同层叠级别时，遵循后来居上的原则&lt;/strong&gt;（back-to-font）；&lt;/li&gt;
-&lt;li&gt;不同层叠上下文中，元素显示顺序以父级层叠上下文的层叠级别来决定显示的先后顺序。与自身的层叠级别无关；&lt;/li&gt;
-&lt;li&gt;每一个定位元素都归属于一个stacking context。根元素形成 root stacking context，而其他的 stacking context 则由定位元素产生（此定位元素的 z-index 被定义一个非 auto 的 z-index 值），定位子元素会以这个 local stacking context 为参考，用相同的规则来决定层叠顺序；&lt;/li&gt;
-&lt;li&gt;当任何一个元素层叠另一个包含在不同 stacking context 元素时，则会以 stacking context 的层叠级别（stack level）来决定显示的先后情况。也就是说，在相同的 stacking context 下才会用&lt;strong&gt;元素本身&lt;/strong&gt;的 z-index 来决定先后，不同时则由 stacking context 的&lt;strong&gt;父元素&lt;/strong&gt;的 z-index 来决定。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;/div&gt;
-&lt;h1 id=&quot;darren_3&quot;&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&amp;#12288;&amp;#12288;在IE下出现的问题&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;当定位元素的 &#39;z-index&#39; 未设置时（默认为 auto），在&amp;nbsp;&lt;em&gt;IE6 IE7 IE8(Q)&lt;/em&gt;&amp;nbsp;下将会创建一个新的局部层叠上下文。而在其它浏览器下，则严格按照规范，不产生新的局部层叠上下文。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这个问题将导致定位元素的层叠关系在不同浏览器出现很大的区别，严重的可导致页面布局混乱、内容覆盖等。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;受影响的浏览器有IE6 IE7 IE8(Quriks Mode)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;直接从w3help复制了代码，分析以下代码：&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;lt;style type=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;text/css&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;br /&gt;  body { margin:&lt;span style=&quot;color: #800080;&quot;&gt;0&lt;/span&gt;; }&lt;br /&gt;  .p1{ top:20px; height:50px; width:150px; background-color:blue;}&lt;br /&gt;  .p2{ top:10px; left:20px; height:30px; width:100px; background-color:yellow;}&lt;br /&gt;  .p3{ top:0px; left:50px; height:100px; width:50px; background-color:red;}&lt;br /&gt;&amp;lt;/style&amp;gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:relative;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p1&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;1&lt;/span&gt;&lt;br /&gt;    &amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute; z-index:1;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p2&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;2&lt;/span&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;&amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p3&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;3&lt;/span&gt;&amp;lt;/div&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012022921011169.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;注：Q代表Quriks Mode，即混杂模式。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;根据 W3C CSS2.1 规范中的说明，定位元素【p1】和【p3】由于未设置 &#39;z-index&#39; 特性（使用默认值 auto），它们不会创建新的局部层叠上下文，而定位元素【p2】设置了 z-index:1 则会创建新的层叠上下文。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;另，在同一根层叠上下文中，同为 z-index:auto 的定位元素【p1】和【p3】，它们的层叠级别相同，但【p3】在【p1】之后，所以在 Z 轴上【p3】比【p1】靠前显示，又，【p2】层叠上下文的层叠级别为正数，所以【p2】的层叠级别要比【p3】高。因此，它们在 Z 轴上的顺序为：（遵循 back-to-font）【p1】 -&amp;gt; 【p3】 -&amp;gt; 【p2】&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;以上为标准浏览器下的情况。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;而在 IE6 IE7 E8(Q) 下，定位元素【p1】和【p3】都创建了新的局部层叠上下文，在同一根层叠上下文中，它们的层叠级别相同，但【p3】在【p1】之后，所以在 Z 轴上【p3】比【p1】靠前显示。此时，由于【p2】处于【p1】的层叠上下文中，所以【p2】在 Z 轴上要比【p3】靠后。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在来一个例子：&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;lt;style&amp;gt;&lt;br /&gt;  .parent{width:200px; height:200px; padding:10px;}&lt;br /&gt;  .sub{text-align:right; font:15px Verdana;width:100px; height:100px;}&lt;br /&gt;  .lt50{left:50px;top:50px;}&lt;br /&gt;&amp;lt;/style&amp;gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute; background:lightgrey;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;parent&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;br /&gt;    &amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute;z-index:20;background:darkgray;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;sub&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;20&lt;/span&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;    &amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute;z-index:10;background:dimgray;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;sub lt50&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;10&lt;/span&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;&amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute;left:80px;top:80px;background:black;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;parent&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;br /&gt;    &amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute;z-index:2;background:darkgray;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;sub&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;2&lt;/span&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;    &amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:absolute;z-index:1;background:dimgray;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;sub lt50&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;span style=&quot;color: #800080;&quot;&gt;1&lt;/span&gt;&amp;lt;/div&amp;gt;&lt;br /&gt;&amp;lt;/div&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012022921053279.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffff; font-size: 18pt;&quot;&gt;&amp;#12288;&amp;#12288;解决办法&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;理解层叠上下文、层叠级别与 &#39;z-index&#39; 之间的关系。在可能出现定位元素相互覆盖的情况时，明确指定定位元素的 &#39;z-index&#39; 特性，避免此问题的出现。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;注：此段内容基本都是来自w3help。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1 id=&quot;darren_4&quot;&gt;&amp;#12288;&amp;#12288;在IE6下z-index的问题&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;我不是一个喜欢抱怨的人，so...有关抱怨IE6的话在此省略500字...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;先上个图说说我在工作中实际遇到的问题：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012030114264812.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;图片的上半部分就是在非IE6下的交互，图片下半部分是在IE6下的显示效果，当打开虚拟机测试的时候我表示瞬间碉堡了，囧...在IE6下这个tips被盖住了，很明显这个不是我想要的效果，可是为什么会出现这个情况类？接着往下看。&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;分析此类问题的原因：&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot; id=&quot;darren_5&quot;&gt;&lt;strong&gt;1.这是个拼爹的时代，在IE6下很好的体现了这点...囧&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;按照正常的思维，z-index层级越高，内容越应该在上面显示，在大部分的浏览器在大部分的情况下，确实如此，但是不绝对。尤其遇到IE6。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在IE6下的层级高低不仅要看本身，还要看自己的父元素是否给力：父元素的 position 属性为 relative或absolute 时，子元素的 absolute 属性是相对于父元素而言的。而在IE6下的层级的表现有时候不是看子元素的 z-index 多高，而要看它们的父元素的 z-index 谁高谁低。点击 Result 可以看到HTML对应的VIEW。&lt;/p&gt;
-&lt;p&gt;&lt;iframe width=&quot;100%&quot; height=&quot;380&quot; src=&quot;http://jsfiddle.net/DarrenCode/D6kfs/2/embedded/html,result&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;从以上的代码中可以看到最内层&amp;lt;div&amp;gt;的z-index属性为999，其父元素的z-index属性为100。按照正常的显示逻辑，图片应该正常显示且不会被背景色所影响，可是在IE6下会有问题，直接上图片会比较直观，比较看看IE6下和非IE6浏览器的显示效果。chrome、FF和opera都经过测试了，为了不使图片过多我就拿个chrome的截图吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012030122580824.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;重现这个bug的条件很简单，只要绝对定位（position:absolute）&amp;lt;div&amp;gt;的祖先元素，或者说是最顶级的祖先元素的 relative 属性小于黑色半透明层的z-index层级即可。解决办法也很简单，只需要给的祖先元素加上z-index就可以。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012030418365071.jpg&quot; style=&quot;width: 760px;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;为具有 relative 属性的顶级祖先元素打了鸡血(加了z-index)后，IE6下终于正常显示了。这个问题很现实的教育了我们 - 在拼爹拼不过的条件下我们只能靠自己努力...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;IE6下拼爹的问题也就是我在实际开发中碰到的问题，现在已经完美解决且达到需求的效果了。接下来要介绍的是一些我总结的资料，都是介绍在IE环境下得各种z-index的坑。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot; id=&quot;darren_6&quot;&gt;&lt;strong&gt;2.万恶的float&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;float 是 css 的定位属性，而且应该是CSS中最常用的属性之一了，至于为什么说它万恶等我改天去准备一篇文章单独进行解说，在这里借着以前的学习笔记简单说几点：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1. IE7 中，底边距 bug是当浮动父元素有浮动子元素时，这些子元素的底边距会被父元素忽略掉；&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;2.&amp;nbsp;3像素间距是指挨着浮动元素的文本会神奇的被踢出去3像素，好像浮动元素的周围有一个奇怪的力场一样；&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;3.&amp;nbsp;双倍边距bug处理 IE6 时，另一个需要记住的事情是，如果在和浮动方向相同的方向上设置外边距(margin)，会引发双倍边距。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;有关float的扫盲就先到这里，还有一点就是float毕竟是标准的属性，而且大多数的前端都习惯用它去实现页面，所以我的建议就是：深入理解 HTML语义和表现。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;接着开始讲述 z-index和float 在IE6环境下擦出的坑爹的火花...先上一段代码：&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;#12288;&amp;#12288;&amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;background:#000;width:100%;height:600px;opacity:0.3; filter:alpha(opacity=30);position:absolute;left:0;top:0;z-index:1;overflow:hidden;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;lt;div style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;position:relative;z-index:100;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;lt;img src=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;http://images.cnblogs.com/cnblogs_com/Darren_code/311197/o_1.jpg&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;float:left;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; width=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;300&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt; /&amp;gt;&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;lt;/div&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;看到&amp;lt;img&amp;gt;有设置float属性，上面这段代码显示的效果与IE6下拼爹失败一样，IE6下的犀牛书是灰色的 T.T 。为了让犀牛书正常显示，只需要把&amp;lt;img&amp;gt;的float属性去掉即可。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;个人理解可能是因为&amp;lt;img&amp;gt;的float使得z-index失效造成的。网上还有种说法是因为float和relative两者在定位上问题，所以一起使用的时候会造成此bug。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这个问题又教育了我们 - 某些环境(IE6)下也要小心被兄弟坑...&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1 id=&quot;darren_7&quot;&gt;&amp;#12288;&amp;#12288;IE6下 select z-index无效而遮挡div&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这个问题其实在是比较常见的了，我早期做项目的时候有幸遇见过这个问题，所以有现成的资料，趁着这次也刚好整理整理、回忆回忆。两个解决办法都是围绕iframe展开的，咱们先来看第一个。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong id=&quot;darren_8&quot;&gt;1.用 iframe 包裹 select 元素&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;使用iframe包住select，这样iframe可以有z-index，只要在div上设置的z-index比iframe的高即可实现。示例代码如下：&amp;nbsp;&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;#12288;&amp;#12288;&amp;lt;iframe style=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;z-index:1;position: absolute; &lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;lt;&lt;span style=&quot;color: #0000ff;&quot;&gt;select&lt;/span&gt; name=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;me&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;                    &lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;lt;option value=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;Darren聂微东&amp;lt;/option&amp;gt;     &lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;lt;option value=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;sex&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;male&amp;lt;/option&amp;gt;     &lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;lt;option value=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;age&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;secret&amp;lt;/option&amp;gt;     &lt;br /&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&amp;lt;/&lt;span style=&quot;color: #0000ff;&quot;&gt;select&lt;/span&gt;&amp;gt;     &lt;br /&gt;&amp;#12288;&amp;#12288;&amp;lt;/iframe&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong id=&quot;darren_9&quot;&gt;2.以 Iframe 作为div的子元素，覆盖 select 元素(推荐使用)&lt;/strong&gt;&lt;br /&gt;&amp;#12288;&amp;#12288;建立一个跟div同宽同高的iframe，并且z-index比div要低。&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&amp;lt;style type=&quot;text/css&quot;&amp;gt;&lt;br /&gt;#iframe{   &lt;br /&gt;    position: absolute;&lt;br /&gt;    width: &lt;span style=&quot;color: #800080;&quot;&gt;100&lt;/span&gt;%;&lt;br /&gt;    height: &lt;span style=&quot;color: #800080;&quot;&gt;100&lt;/span&gt;%;&lt;br /&gt;    z-index:-&lt;span style=&quot;color: #800080;&quot;&gt;1&lt;/span&gt;;&lt;br /&gt;}   &lt;br /&gt;.text_div{   &lt;br /&gt;    position: absolute;   &lt;br /&gt;    left:100px;   &lt;br /&gt;    top:50px;   &lt;br /&gt;    width: 300px;   &lt;br /&gt;    height: 200px;   &lt;br /&gt;    background : blue;     &lt;br /&gt;    z-index:&lt;span style=&quot;color: #800080;&quot;&gt;100&lt;/span&gt;;   &lt;br /&gt;}   &lt;br /&gt;&amp;lt;/style&amp;gt;&lt;br /&gt;&amp;lt;div &lt;span style=&quot;color: #0000ff;&quot;&gt;class&lt;/span&gt;=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;text_div&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;  &lt;br /&gt;     &amp;lt;span&amp;gt;这里可以包含其他dom元素&amp;lt;/span&amp;gt;  &lt;br /&gt;     &amp;lt;iframe id=&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;iframe&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;&quot;&lt;/span&gt;&amp;gt;&amp;lt;/iframe&amp;gt;  &lt;br /&gt;&amp;lt;/div&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;注:在这里如果不加src属性,尽管iframe会把select挡住,但是由于默认iframe为白色,会影响原来的div背景色。解决方法可以加了一个空的HTML文件，并把body 的值设为和原来div背景色一致,这样就解决了默认白色背景色的问题，这里只是一种思路，&lt;strong&gt;办法总比困难多&amp;nbsp;&lt;/strong&gt;^_^。&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h1 id=&quot;darren_11&quot;&gt;&amp;#12288;&amp;#12288;本文结语&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;与很多做国内项目的前端一样，我也会常常忍不住诅咒IE，可是假如换个思考方式我们也得感谢它，工作因为它才有了更多挑战和成就感。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;对不理解CSS层叠朋友来说&amp;nbsp;z-index 确实是一个大坑，希望这篇文章能够给那些掉到坑内的朋友一些帮助。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1 id=&quot;darren_10&quot;&gt;&amp;#12288;&amp;#12288;参考资料：&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.w3.org/TR/CSS21/visuren.html#z-index&quot;&gt;http://www.w3.org/TR/CSS21/visuren.html#z-index&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.zhangxinxu.com/wordpress/?p=471&quot;&gt;http://www.zhangxinxu.com/wordpress/?p=471&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.w3school.com.cn/css/pr_pos_z-index.asp&quot;&gt;http://www.w3school.com.cn/css/pr_pos_z-index.asp&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://w3help.org/zh-cn/causes/RM8015&quot;&gt;http://w3help.org/zh-cn/causes/RM8015&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/IE%E4%B8%8Bz-index%E7%9A%84%E5%90%84%E7%A7%8D%E5%9D%91/&quot;&gt;Ie下z Index的各种坑&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on March 05, 2012.&lt;/p&gt;
   </content>
 </entry>
 

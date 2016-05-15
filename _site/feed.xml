@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-04-30T11:49:03+08:00</updated>
+<updated>2016-05-15T20:55:05+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
@@ -16,20 +16,160 @@
   
 
 <entry>
-  <title type="html"><![CDATA[gulp使用小结(二)]]></title>
-  <link rel="alternate" type="text/html" href="/gulp_2/" />
-  <id>/gulp_2</id>
-  <published>2016-04-30T11:49:25+08:00</published>
-  <updated>2016-04-30T11:49:25+08:00</updated>
+  <title type="html"><![CDATA[假如我去创业]]></title>
+  <link rel="alternate" type="text/html" href="/startup/" />
+  <id>/startup</id>
+  <published>2016-05-15T20:55:11+08:00</published>
+  <updated>2016-05-15T20:55:11+08:00</updated>
   <author>
     <name>nieweidong</name>
     <uri></uri>
     <email>darrencode@qq.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;gulp使用小结(一)&lt;/a&gt;&lt;/p&gt;
+    &lt;blockquote&gt;
+  &lt;p&gt;细细回想起来，我觉得我自己应该算那种没心没肺的呆萌型，结婚之前心智特像小孩(虽然现在也不咋成熟)，没啥想法，晚上睡眠质量杠杠好(囧)。神马诗和远方，劳资只有眼前的苟且…
+所以在这，看官您看不到类似那少年成名的科技明星那样：年少时就意气风发、目标明确，更是收获满满，看着就能量(鸡血)爆棚！&lt;/p&gt;
+&lt;/blockquote&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;gulp使用小结(二)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
+&lt;p&gt;貌似偶第一次有”创业”这个想法已是25岁“高龄”(别特么说那时我还年轻，但劳资身边是个人就天天咋呼说要做点啥做点啥，虽然最后大多做了微商被我屏蔽)了，那时正和云姐(现在家中的领导)恋爱，因为云姐在家待着无聊跑去学花艺，计划将来开个花店做个女老板，所以促使偶萌生了Startup的想法，原因是：&lt;strong&gt;领导开心，家庭和谐&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;如果你对上面八个加黑的字不理解，那么…骚年，说明你还没结婚哈:)&lt;/p&gt;
+
+&lt;p&gt;水够了，开始正文。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;声明：不要问偶为嘛有这些想法，论点没有非黑即白，这些想法都与俺个人性格和经历有关。&lt;/h2&gt;
+
+&lt;p&gt;写这篇文章不是说劳资有创业的计划了，而是俺通过自己这几年的工作，总结了一下如果去创业，我有哪些 &lt;strong&gt;期待的&lt;/strong&gt; 和 &lt;strong&gt;忍不鸟的&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;至于真的将来做神马还偶完全没想好，但是俺已经深刻的明白自己能做什么了 —— 安心做码农。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;先说说我认为最重要的俩点&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;小&lt;/li&gt;
+  &lt;li&gt;美&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;别特么和我说“如果哪天人多了呢”，或者“多小算小呢”…&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;硬环境(配套设施)&lt;/h3&gt;
+
+&lt;p&gt;洗手间文化&lt;/p&gt;
+
+&lt;p&gt;办公环境不要太好，拒绝过分小资、傲娇。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;软环境(公司文化)&lt;/h3&gt;
+
+&lt;p&gt;强大执行力&lt;/p&gt;
+
+&lt;p&gt;分享精神和荣誉感&lt;/p&gt;
+
+&lt;p&gt;简单可依赖&lt;/p&gt;
+
+&lt;p&gt;创造力？以人为本？酌情…&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;人&lt;/h3&gt;
+
+&lt;p&gt;不要有亲戚的财、更不要亲戚本人。&lt;/p&gt;
+
+&lt;p&gt;恋爱自由。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-5&quot;&gt;选择合伙人&lt;/h4&gt;
+
+&lt;p&gt;钱说明白&lt;/p&gt;
+
+&lt;h4 id=&quot;section-6&quot;&gt;选择同事&lt;/h4&gt;
+
+&lt;p&gt;够精简，团队必须 &lt;strong&gt;小而美&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;剥削归剥削，但是 &lt;strong&gt;工资一定给够&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;文凭是基础，但是无绝对，能力至上&lt;/p&gt;
+
+&lt;h4 id=&quot;section-7&quot;&gt;制度&lt;/h4&gt;
+
+&lt;p&gt;得有淘汰制&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;想起一点写一点，所以偶想到啥后续再补，吼吼~&lt;/p&gt;
+&lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/startup/&quot;&gt;假如我去创业&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[gulp使用小结(二)]]></title>
+  <link rel="alternate" type="text/html" href="/gulp_2/" />
+  <id>/gulp_2</id>
+  <published>2016-05-15T20:03:25+08:00</published>
+  <updated>2016-05-15T20:03:25+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;接上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;gulp使用小结(一)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;简单说说这篇文章我要说什么吧：&lt;/p&gt;
+
+&lt;p&gt;首先，&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;已经提交了个较通用的栗子。琢磨半天，原本准备分阶段搞些 &lt;code&gt;gulp&lt;/code&gt; 套路，但是写完一个栗子之后，觉得当前这个栗子已经覆盖绝大多数的场景了。当偶偷懒，就酱…&lt;/p&gt;
+
+&lt;p&gt;然后，再一起看看这篇值得思考的文章《我为何放弃Gulp与Grunt，转投npm scripts》
+&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;上&lt;/a&gt;
+&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part2&quot;&gt;中&lt;/a&gt;
+&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part3&quot;&gt;下&lt;/a&gt;；&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;英文原文地址：&lt;a href=&quot;https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8&quot;&gt;《Why I Left Gulp and Grunt for npm Scripts》&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;最后，漫谈下对前端构建工具的理解。&lt;/p&gt;
+
+&lt;h2 id=&quot;npm-scripts&quot;&gt;聊聊《npm scripts》&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;第一次阅读这篇就引起了我很多共鸣，因为在工作中处理的事务较杂，所以工作中没有过多的倾向性，神马好用就用神马。那么刚好 &lt;code&gt;npm scrpts&lt;/code&gt; 和 &lt;code&gt;gulp&lt;/code&gt; 都是偶常用的解决问题的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这篇文章在 &lt;code&gt;InfoQ&lt;/code&gt; 上被分成了三篇。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一篇是埋汰 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;Grunt&lt;/code&gt;，各种不满意&lt;/li&gt;
+  &lt;li&gt;第二篇开始描述 &lt;code&gt;npm scripts&lt;/code&gt; 是如何强大和好理解&lt;/li&gt;
+  &lt;li&gt;第三篇作者吐了下苦水，分享自己 &lt;code&gt;npm scripts&lt;/code&gt; 带来的问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;“谈到了他对于Gulp、Grunt与npm scripts的认识，并且认为在现在的工程中，我们完全可以抛弃Gulp与Grunt，使用npm scripts就可以满足项目之所需。”&lt;/p&gt;
+
+&lt;p&gt;“众所周知，Gulp与Grunt是很多项目所使用的构建工具，他们也拥有非常丰富的插件。不过，我却认为Gulp与Grunt是完全不必要的抽象，npm scripts更加强大，并且更易于使用。”&lt;/p&gt;
+
+&lt;p&gt;那篇文章作者在上一个项目中遇到的问题：
+1. gulpfile有100多行
+2. 插件文档不重复
+3. 某插件存在奇怪的bug
+4. 某插件输出到命令行时丢失了颜色&lt;/p&gt;
+
+&lt;p&gt;但是，直接使用这些插件，所有问题都不复存在了。&lt;/p&gt;
+
+&lt;p&gt;npm scripts本身其实是非常强大的。https://docs.npmjs.com/misc/scripts#description&lt;/p&gt;
+
+&lt;p&gt;不说 &lt;code&gt;npm start&lt;/code&gt; 和 &lt;code&gt;npm run test&lt;/code&gt; 这种生存技能，在我司 &lt;code&gt;Node&lt;/code&gt; 项目中，测试环境的上线与回滚，生产环境的上线与回滚，甚至某些后门代码都是依赖 &lt;code&gt;npm scripts&lt;/code&gt; 搞定&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;借鉴&lt;/h2&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;漫谈前端构建&lt;/h2&gt;
+
+&lt;p&gt;这俩篇文章加上&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;，也算是自己对 &lt;code&gt;Gulp&lt;/code&gt; 技术的一个总结:)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;gulp使用小结(二)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -48,7 +188,7 @@
     <email>darrencode@qq.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;这篇文章不会介绍 &lt;code&gt;gulp&lt;/code&gt; 的起源、发展；不会去一个个讲解 &lt;code&gt;gulp API&lt;/code&gt;；也不想出现大段大段的 &lt;code&gt;gulpfule.js&lt;/code&gt; 代码；更木有帮你分析 &lt;code&gt;gulp&lt;/code&gt; 实现原理，只有一些我自己对 &lt;code&gt;gulp&lt;/code&gt; 的使用理解和总结。&lt;/p&gt;
+    &lt;p&gt;这篇文章不会介绍 &lt;code&gt;gulp&lt;/code&gt; 的起源、发展；不会去一个个讲解 &lt;code&gt;gulp API&lt;/code&gt;；也不想出现大段大段的 &lt;code&gt;gulpfile.js&lt;/code&gt; 代码；更木有帮你分析 &lt;code&gt;gulp&lt;/code&gt; 实现原理，只有一些我自己对 &lt;code&gt;gulp&lt;/code&gt; 的使用理解和总结。&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;如何通过 &lt;code&gt;gulp&lt;/code&gt; 让偶们的前端项目高大上的跑起来？&lt;code&gt;gulp&lt;/code&gt; 能做什么，还能做什么？&lt;code&gt;gulp&lt;/code&gt;套路能不能来几套？… 希望通过这篇文章你会找到答案&lt;/p&gt;
@@ -121,7 +261,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/del&quot;&gt;del&lt;/a&gt; / &lt;a href=&quot;https://www.npmjs.com/package/gulp-clean&quot;&gt;gulp-clean&lt;/a&gt; 删除。俺的使用场景是：&lt;code&gt;JS/CSS&lt;/code&gt; 文件都会在压缩后使用&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;，即文件名被&lt;code&gt;hash&lt;/code&gt;，然后再上传到 &lt;code&gt;CDN&lt;/code&gt;，最后俺再使用 &lt;strong&gt;删除插件&lt;/strong&gt; 把本地压缩后的文件删除掉，不用多余保存。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt; 把静态文件名改成&lt;code&gt;hash&lt;/code&gt;的形式。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-replace&quot;&gt;gulp-rev-replace&lt;/a&gt; 配合 &lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt; 使用，拿到生成的 &lt;code&gt;manifest。json&lt;/code&gt; 后替换对应的文件名称。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-collector&quot;&gt;gulp-rev-collector&lt;/a&gt; 到线上环境钱，我会用来配合&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;使用，替换 &lt;code&gt;HTML&lt;/code&gt; 中的路径&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-collector&quot;&gt;gulp-rev-collector&lt;/a&gt; 到线上环境前，俺会用来配合&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;使用，替换 &lt;code&gt;HTML&lt;/code&gt; 中的路径&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-append&quot;&gt;gulp-rev-append&lt;/a&gt; 给页面引用的静态文件增加&lt;code&gt;hash&lt;/code&gt;后缀，避免被浏览器缓存…当然，如果是使用 &lt;code&gt;CDN&lt;/code&gt;，这个套路就不行了&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-connect&quot;&gt;gulp-connect&lt;/a&gt; / &lt;a href=&quot;https://www.npmjs.com/package/gulp-livereload&quot;&gt;gulp-livereload&lt;/a&gt; &lt;code&gt;LiveReload&lt;/code&gt; 的俩款插件都值得拥有，不过都各稍有学习成本，看看文档就明白鸟&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-sourcemaps&quot;&gt;gulp-sourcemaps&lt;/a&gt; 处理 &lt;code&gt;JavaScript&lt;/code&gt; 时生成 &lt;code&gt;SourceMap&lt;/code&gt;；如果你不了解 &lt;code&gt;SourceMap&lt;/code&gt;，可以看看这篇阮一峰大神的&lt;a href=&quot;http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html&quot;&gt;《Source Map 详解》&lt;/a&gt;&lt;/li&gt;
@@ -147,7 +287,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/sprity&quot;&gt;sprity&lt;/a&gt; 生成雪碧图。稍有点学习成本，仔细阅读文档即可。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-if&quot;&gt;gulp-if&lt;/a&gt; 可以在 &lt;code&gt;pipe&lt;/code&gt; 里面写点逻辑了，屌不屌。举例：比如处理 &lt;code&gt;./pub/*.js&lt;/code&gt;，如果文件名称是 &lt;code&gt;xxx.js&lt;/code&gt;，那么不处理；更可以用来区分当前是开发环境还是生产环境。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-file-include&quot;&gt;gulp-file-include&lt;/a&gt; 俺搞内部项目的时候会用到，让 &lt;code&gt;HTML&lt;/code&gt; 组件化的第一小步&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-git&quot;&gt;gulp-git&lt;/a&gt; 直接在 &lt;code&gt;Build&lt;/code&gt; 时把代码都提交到 &lt;code&gt;git&lt;/code&gt;上了…特么劳资懒起来另我自己都害怕&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-git&quot;&gt;gulp-git&lt;/a&gt; 直接在 &lt;code&gt;Build&lt;/code&gt; 时把代码都提交到 &lt;code&gt;git&lt;/code&gt;上了…特么劳资懒起来连我自己都害怕&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-qiniu&quot;&gt;gulp-qiniu&lt;/a&gt; 用于把指定文件上传至七牛的指定路径下(PS:首先，你得有自己的七牛账号和空间)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-notify&quot;&gt;gulp-notify&lt;/a&gt; 在控制台中加入文字描述，&lt;code&gt;build&lt;/code&gt; 的时候更高级有木有。当然，当需要的时候把错误信息也展示出来会很有帮助。更高级的功能就需要你查看其文档了~&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-plumber&quot;&gt;gulp-plumber&lt;/a&gt; &lt;code&gt;gulp&lt;/code&gt; 的错误处理有点坑，假如发生错误进程就挂了。相对的解决办法不少，但是这个是我个人比较推荐的，比特么在容易出错的地方写错误监听靠谱。所以这个插件可以阻止 &lt;code&gt;gulp&lt;/code&gt; 插件发生错误导致进程退出并输出错误日志。&lt;/li&gt;
@@ -238,7 +378,7 @@
 
 &lt;h4&gt;复杂套路&lt;/h4&gt;
 
-&lt;p&gt;项目/人群 目标：商业项目、代码洁癖者…额，再加一箱：程序员中的单身狗:)&lt;/p&gt;
+&lt;p&gt;项目/人群 目标：商业项目、代码洁癖者…额，再加一项：程序员中的单身狗:)&lt;/p&gt;
 
 &lt;p&gt;主要需求：&lt;/p&gt;
 
@@ -278,7 +418,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;最近在InfoQ上有读到一个系列的文章，是讨论 &lt;code&gt;gulp&lt;/code&gt; 和 &lt;code&gt;npm script&lt;/code&gt; 优劣，地址 - &lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;。篇幅有限，下周末的文章我再拿出来讨论，不过推荐大家阅读，还是值得我们思考的。&lt;/p&gt;
+  &lt;p&gt;最近在InfoQ上有读到一个系列的文章，是讨论 &lt;code&gt;gulp&lt;/code&gt; 和 &lt;code&gt;npm script&lt;/code&gt; 优劣，地址 - &lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;。篇幅有限，下期的文章我再拿出来讨论，不过推荐大家阅读，还是值得我们思考的。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;下一篇会把这篇文章所介绍的套路，用代码体现出来，文章发布时git会同步更新，地址：&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;&lt;/p&gt;
@@ -338,7 +478,7 @@
 
 &lt;p&gt;2015年2月，这是我在百度的第三个年头，我提交了离职申请，3月底顺利毕业。&lt;/p&gt;
 
-&lt;p&gt;去哪了？一家创业公司。 为什么去那？因为我觉得这件事有戏。 现在怎么样？公司发展还行，我个人也得到了很多技术上的成长。 去那做什么？打杂的码农&lt;/p&gt;
+&lt;p&gt;去哪了？一家创业公司。 为什么去那？因为我觉得这件事有戏。 现在怎么样？公司发展还行，我个人也得到了很多技术上的成长。 去那做什么？打杂的码农…&lt;/p&gt;
 
 &lt;p&gt;至于“南北比较”这种问题就不延伸讨论了，最终南下不南下我和云姐也悬而未定，将来的事情将来再定吧，也许过几年我的年度总结里面会有答案。&lt;/p&gt;
 
@@ -545,7 +685,6 @@
 &lt;hr /&gt;
 
 &lt;p&gt;如发现有趣的内容也会陆续更新补上，更欢迎伙伴们pull request，git地址：&lt;a href=&quot;https://github.com/nieweidong/learn-atom&quot;&gt;learn-atom&lt;/a&gt;&lt;/p&gt;
-
 
     &lt;p&gt;&lt;a href=&quot;/Atom%E4%BD%BF%E7%94%A8%E7%BA%AA%E8%A6%81/&quot;&gt;Atom使用纪要&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 30, 2015.&lt;/p&gt;
   </content>
@@ -3634,99 +3773,6 @@ c.还有不少不一一列举，可查看&amp;nbsp;http://yingxiao.baidu.com/sup
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/%E3%80%8A%E6%9A%97%E6%97%B6%E9%97%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%8E%E8%AF%BB%E5%90%8E%E6%84%9F/&quot;&gt;《暗时间》读书笔记与读后感&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 25, 2012.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[要有梦想,创造卓越的职业生涯]]></title>
-  <link rel="alternate" type="text/html" href="/%E8%A6%81%E6%9C%89%E6%A2%A6%E6%83%B3,%E5%88%9B%E9%80%A0%E5%8D%93%E8%B6%8A%E7%9A%84%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/" />
-  <id>/要有梦想,创造卓越的职业生涯</id>
-  <published>2012-03-23T00:00:00+08:00</published>
-  <updated>2012-03-23T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;我手机里保存着很多经典的句子，有伤感的、幸福的、英语的、励志的... 里面静静的躺着一句不知道从哪抄来的 - “如果生命是一曲动人乐章，我们没法控制如何开始，也很难预测怎么结束，只好把每个音符都弹得漂亮。”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;明天和意外，你永远不知道哪个先来...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;昨天看了燕洋天老师的文章《&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/yanyangtian/archive/2012/03/22/2411038.html&quot;&gt;活在当下&lt;/a&gt;》，颇有感触，于是整理出这篇文章与大家共勉。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这篇文章的目的：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1.这真是一本非常励志的书，适合我们这种经常需要被激励的人...虽然书名确实有点213(不懂213是什么的朋友请搜索一下)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;2.希望在自己无助、失败、懒惰、泄气等等的时候能看到自己这篇文章。人生难免有走弯路和跌倒，希望自己和大家都能扛得住、禁得起&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;3.好书需要拿出来分享，独乐乐不如众乐乐^_^&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;《我编程，我快乐：程序员职业规划之道》&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012032119204736.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;本书从五个大的方面和具体的53个细节讲述了如何去&lt;strong&gt;找到事业上的快乐感和满足感，而成就一个卓越的人生&lt;/strong&gt;。其中五大方面分别指：1.选择市场；2.在产品上投资；3.执行；4.推销……不仅仅是迎合；5.保持技术领先。具体的53个细节我就不一一表述了，感兴趣的朋友建议入手一本细细品味之。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在此选择了一些非常有价值、非常实用、非常励志的和大家分享一下，也顺便总结下自己这几年的程序生涯。下列的这些观点不光针对我们的程序生涯，对我们的人生都是非常有参考价值。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;对待技术投资&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;投资有多种方式和方法，不过提醒大家最重要的一点&amp;nbsp;&lt;strong&gt;每个人最应该投资、同时投资回报率最高的是：投资自己的身体和头脑&amp;nbsp;&lt;/strong&gt;^_^&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;风险收益是指减去当时基本的市场收益后的投资收益，那么之间的平衡就需要自己去取舍了。高回报的孪生兄弟就是高风险，他们总是形影不离。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;现在这项投资不需要大量的金钱，而是时间。越早投资那些有发展的技术，那么就越有可能成为这个新技术潮流的领导者，那么这时你的投资就是正确的。当然新技术也有会有投资“失败”的情况：自己研究的技术投入一段时间后发现并没有好的发展趋势。不过从另一个角度说，&lt;strong&gt;学习&lt;/strong&gt;本身就是非常好的投资。&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;那么如何看待成熟稳定的技术？我觉得这种技术什么时候学习都不算晚，因为成熟的技术就意味着有市场，有市场就会有需求。当然在这个供求关系之间，成熟的技术对技术人员的要求往往会苛刻一些，在初中级的岗位上工资相对会稍低一些(会的人太过泛滥工资确实不好谈)，比如 十年前会写HTML和现在会写HTML...呃&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;作为一名普通的开发工程师，在我看来是否要做技术投资其实很简单，具备三个前提：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;1.得有这个时间和精力。注：貌似不少公司都有那种前瞻性较强的岗位，就是去折腾一些与公司产品有关的新东西、新技术，羡慕这种纯研发的淫...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;2.这技术很酷 or 有些意思，那么花点时间做做研究其实要不了多少时间，而且我认为这种时间的投入肯定都是值得的；&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;3.多听听各种社区和技术牛人的声音...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;自己做判断，选择是把双刃剑...可是无论做出那种选择，最终目的是产生利润。&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;了解公司所处的行业&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;技术是一名技术人员的核心竞争力之一，可是如果你想站稳脚跟，就需要深入了解你所处的领域。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;书上有这么一句话：“&lt;strong&gt;你的行业经历应该成为你的重要才能&lt;/strong&gt;”。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;或许我们只是一名程序员，但是如果能用客户所处行业的专业语言与他们交流，那这就是一门非常重要的技能。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;选择行业是十分重要的，选择哪家公司、哪个领域工作对我们来说都是重要的。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;简单说下我曾经的一些工作经历都教给了我什么：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;1.外包经验让我了解了一些外包行业的工作流程和方式；&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;2.视频公司的经历让我学习了视频行业的商业模式和多种运作方式；&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;3.个性化推荐公司是一家技术型的创业公司，除了让我对个性化推荐的趋势有了了解，更让我懂得了创业的艰辛和成功的不易&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;技术方面的成长只是其中的一个方面，每种经历都学到了很多和技术无关的行业知识，这些都是我人生非常宝贵的财富。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;有时我需要以（冒充）专家的身份去给一些客户去做讲解，客户需要的不光只听你说那些API、代码逻辑，他需要的你给他解决问题，他也是带着问题而来，不管是技术层面的还是牵涉到商业层次的。如果你不能对自己公司和甚至公司所在行业的商业模式有了解，那么你很难从客户的角度出发去考虑问题，这是我自己真实的体会。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;注：就算忽悠也得有点底子才忽悠的过去呀^_^&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;实际的作用当然还不止这些，对业务逻辑越了解那么对工作的掌控能力就越强，对工作会更加得心应手；往往对公司业务了解的技术人员都很容易被重视，那也就更有机会升职加薪，尤其是那些有自己想法的人，是金子总会发光的...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;还有很重要的一点就是通过了解公司和行业的商业模式，可以让自己了解“你到底在什么领域正在做着什么样的事情”，这样你会更加清楚自己的定位和发展。&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;成为一名专家 or “通才”&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在这个专家已经变成 砖家 的年代，专家都快变成骂人的话了。这里说的专家当然说的是那些在专业领域有深度而且深入的人。对于专家不用多解释了，成了专家工资和发展自然不是问题了。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;专家的成功是由于专注，可是专注不等于一条路走到黑。专注的是技术的追求，而不是对于某个职位或者产品。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这里对于“通才”应该如何去定义确实让我思考了好一会，我自己是这么理解的。要成为通才那么就不要只专注于一种技术，其实通才比专家更稀少，所以很珍贵...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;我主要是专注于前端开发，所以曾经也是对后端的知识完全不了解，可是等有了一定的工作经验之后发现，再对后端的知识有了一定认识后，自己对工作和业务的把握更好了，开发效率和沟通效率更高了。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;书上对通才的有个通俗易懂的定义：“什么都懂点，但什么都不专”。我觉得如果你热爱自己的工作，那么应该要求能更高一点：“什么都懂点，有至少一样专的”^_^&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;热爱它，不然就离开它。&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;站在巨人的肩膀上-阅读源码&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;牛顿说过：“我看得更远，是因为我站在巨人的肩膀上。”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;源码确实是最好的教材，通过阅读源码我们可以学到很多牛人们的思想和技巧。所以建议你找到那些优秀的开源项目，开始阅读吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这就像在培养自己的品味，不同的风格和技巧会让你更具有创造力。尤其是在阅读时和自己已有的知识相互印证，你会去想、去思考、去找答案，这个过程你会有很大收获。&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;执行力&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;以前我做外包的时候是scrum敏捷开发的模式，每天上午都会有十几分钟的会议，说说自己昨天都做了什么，今天计划做什么，在工作碰见了什么问题等等；到下午或者晚上下班的时候需要发一份日报，记录今天工作的进展情况。所以我养成了几个习惯并一直坚持到现在：&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;1.按照自己制定的计划的去高效的完成工作&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;2.记录自己今天完成的工作和其他的工作排期，这样可以让自己面对领导询问工作情况时更清楚自己做过什么，即将需要做什么&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;3.记录工作中遇见的大小问题，不管是技术相关还是工作沟通等等，只要我觉得有必要记住的事情我都会记录下来&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;没错，当开始这样每个工作日你都会觉得过的比较紧张。公司一般不会让你无事可做，假如真的无事可做你也想办法给自己安排写具体的任务，比如看看书，学学英语记记单词。我表达这些的目的就是每天进步一点点，这样你就不会停歇不前。当这种思维方式变成习惯，真的会上瘾。如果你没有完成你自己制定的计划，你会浑身不自在^_^&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;每天都问问自己，你完成了今天的计划吗？&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;学会说“不 ”&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在我工作初期，总感觉和同事说“NO”是件非常丢人的事情。可能是由于我当时还没有学会怎么去拒绝别人，所以加班也就成了家常便饭。自己真的是吃到说“Yes”的苦头才明白原来工作和生活一样，都是需要排优先级的^_^。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;当你答应了别人而最终又没有去完成，这就是不遵守承认，这就是在说谎。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这种例子在我身边发生的太多了，说“不”不是说我们失败了，不是说我们不行，往往很多时候是我有自己的排期和计划。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;当然不能过分的说“不”，我们也需要挑战和尝试。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;要勇敢诚实。&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;活在当下，可要有梦想&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;上面这几字就是就是我写这篇文章最初的目的...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;梦想就是蓝图...项目正式开始开发的时候一般都会有开发周期的预估，然后就会在此基础上排好一系列的计划，这一系列的计划就是项目的蓝图。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;人生也需要有一个大概的蓝图，或者程序生涯中每个阶段都可以有每个阶段的蓝图。我们现在需要的就是找好自己的定位，然后告诉自己下个目标在哪，怎么才能更快更好的到达下一个目标。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;自己可以在实现这个蓝图的过程中记录自己成长的点点滴滴，可以有每一次重大的突破和收获，每一次跌倒和失误...慢慢你会发现，每个月，每一周，每一天你都会有进步。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;不管大家是开发还是研发甚至是码农，请好好思考下自己的职业方向，因为明天和意外，你永远不知道哪个先来...所以请热爱你的工作，要不就离开它，去找一份自己真正有激情去做的工作。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;活在当下，可要有梦想，在此祝福大家。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E8%A6%81%E6%9C%89%E6%A2%A6%E6%83%B3,%E5%88%9B%E9%80%A0%E5%8D%93%E8%B6%8A%E7%9A%84%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF/&quot;&gt;要有梦想,创造卓越的职业生涯&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on March 23, 2012.&lt;/p&gt;
   </content>
 </entry>
 

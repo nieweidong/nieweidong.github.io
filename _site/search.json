@@ -2,15 +2,7 @@
 
   
     {
-      "title"			: "假如我去创业",
-      "link"			: "/startup/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "gulp使用小结(二)",
+      "title"			: "Gulp使用小结(二)",
       "link"			: "/gulp_2/",
       "excerpt"		: ""
     }
@@ -18,7 +10,15 @@
 
   
     ,{
-      "title"			: "gulp使用小结(一)",
+      "title"			: "如果我去创业",
+      "link"			: "/startup/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Gulp使用小结(一)",
       "link"			: "/gulp_1/",
       "excerpt"		: ""
     }

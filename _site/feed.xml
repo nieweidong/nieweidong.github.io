@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-05-15T20:55:05+08:00</updated>
+<updated>2016-06-05T12:22:17+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
@@ -16,11 +16,259 @@
   
 
 <entry>
-  <title type="html"><![CDATA[假如我去创业]]></title>
+  <title type="html"><![CDATA[Gulp使用小结(二)]]></title>
+  <link rel="alternate" type="text/html" href="/gulp_2/" />
+  <id>/gulp_2</id>
+  <published>2016-06-05T00:00:00+08:00</published>
+  <updated>2016-06-05T00:00:00+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;接上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;Gulp使用小结(一)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;内容如下：&lt;/p&gt;
+
+&lt;p&gt;首先，偶在&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;上已经提交了个较通用的栗子…俺琢磨半天，原准备分阶段搞些 &lt;code&gt;Gulp&lt;/code&gt; 套路，但是写完介个栗子之后，觉得已经能覆盖绝大多数的场景了(懵逼脸.gif)。算哒，当偶偷懒就酱吧，一个套路打天下:)&lt;/p&gt;
+
+&lt;p&gt;然后，聊聊这篇值得思考的文章《我为何放弃Gulp与Grunt，转投npm scripts》
+&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;上&lt;/a&gt;
+&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part2&quot;&gt;中&lt;/a&gt;
+&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part3&quot;&gt;下&lt;/a&gt;，
+英文原地址奉上：&lt;a href=&quot;https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8&quot;&gt;《Why I Left Gulp and Grunt for npm Scripts》&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最后，偶来分几个维度扯一下这些构建方式的优劣，尤其是对于 &lt;code&gt;npm scripts&lt;/code&gt;。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#skim&quot;&gt;《npm scripts》概要&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#brief&quot;&gt;《npm scripts》观感简聊&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#compare&quot;&gt;优劣一览&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#efficient&quot;&gt;执行效率&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#stuty&quot;&gt;学习成本&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#profit&quot;&gt;个人收益&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#human&quot;&gt;多人 VS 单干&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclude&quot;&gt;小结&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#node&quot;&gt;不美好的Node&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;skim&quot;&gt;《npm scripts》概要&lt;/h2&gt;
+
+&lt;p&gt;这篇文章在 &lt;code&gt;InfoQ&lt;/code&gt; 上被分成了三篇，字数其实不多，且如果您对 &lt;code&gt;npm scripts&lt;/code&gt; 不了解，很推荐各位去看看，构建的玩法完全不一样。基本内容如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一篇分析 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;Grunt&lt;/code&gt; 的劣势。作者忍痛表示各种忍不鸟，主要集中在以下三点：
+    &lt;ul&gt;
+      &lt;li&gt;问题1 - 对插件作者的依赖&lt;/li&gt;
+      &lt;li&gt;问题2 - 令人沮丧的调试&lt;/li&gt;
+      &lt;li&gt;问题3 - 脱节的文档&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;第二篇描述 &lt;code&gt;npm scripts&lt;/code&gt; 的洪荒之力被低估啦。其实 &lt;code&gt;npm scripts&lt;/code&gt; 是如何强大和好理解，作者罗列了四点 &lt;code&gt;Gulp&lt;/code&gt; 与 &lt;code&gt;Grunt&lt;/code&gt; 如此流行的原因：
+    &lt;ul&gt;
+      &lt;li&gt;误解1 - 使用npm scripts需要强大的命令行技巧&lt;/li&gt;
+      &lt;li&gt;误解2 - npm scripts不够强大&lt;/li&gt;
+      &lt;li&gt;误解3 - Gulp的流对于快速构建来说是不可或缺的&lt;/li&gt;
+      &lt;li&gt;误解4 - npm scripts无法实现跨平台运行&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;第三篇吐苦水，作者揭示自己在使用 &lt;code&gt;npm scripts&lt;/code&gt; 过程中遇到的痛点和解决之道。 &lt;strong&gt;痛点：JSON规范并不支持注释，因此无法在package.json中添加注释。&lt;/strong&gt; 解决办法如下：
+    &lt;ul&gt;
+      &lt;li&gt;编写小巧、命名良好、单一目的的脚本&lt;/li&gt;
+      &lt;li&gt;分离文档与脚本（比如说放在README.md中）&lt;/li&gt;
+      &lt;li&gt;调用单独的.js文件&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;阅读这篇文章引起偶很多共鸣，因为工作中处理的事务较琐碎(专业打杂)，所以俺对各种技术木有啥倾向性，神马好用就用神马，正好 &lt;code&gt;npm scripts&lt;/code&gt; 、&lt;code&gt;Gulp&lt;/code&gt;、&lt;code&gt;Grunt&lt;/code&gt; 都是俺使用过或正在使用的方案，那么接下来简单聊聊下偶的观点。&lt;/p&gt;
+
+&lt;h2 id=&quot;brief&quot;&gt;《npm scripts》观感简聊&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;重点强调一下 —— &lt;strong&gt;“存在即合理”&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;不管何种技术方案，存在都有其客观原因（如历史原因、编码习惯、虚拟机、分布式、语法糖、编程范型、语言模型等等，要想“编原因”能说的多了去了，劳资越编越高大上有木有），所以建议（更期待）大家以更高的视角去看待这种“某某技术方案更好”的问题，&lt;strong&gt;适合项目、适合团队&lt;/strong&gt; 才是最重要的。&lt;/p&gt;
+
+&lt;p&gt;偶们先看第一篇文章，主要是分析 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;Grunt&lt;/code&gt; 的劣势。如果你对 &lt;code&gt;Node&lt;/code&gt; 有了解，那么你会发现，作者虽然在吐槽 &lt;code&gt;Gulp/Grunt&lt;/code&gt;，但是，其实这些问题都是 &lt;code&gt;Node&lt;/code&gt; 正在努力想解决的问题。再俺看来，其实这也可以折射整个 &lt;code&gt;Node&lt;/code&gt; 生态略混乱和不标准带来的影响。&lt;/p&gt;
+
+&lt;p&gt;但我们 &lt;code&gt;npm scripts&lt;/code&gt; 就可以不用面对这些问题鸟？答：可以少面对，因为至少不用去学习 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;Grunt&lt;/code&gt; 相关的包，其中很多文档确实令人着急；但根本问题还是一样嘛，一样会遇到 包依赖、调试难、文档差 的问题&lt;/p&gt;
+
+&lt;p&gt;必须得承认 &lt;code&gt;npm scripts&lt;/code&gt; 的强大和灵活，它不仅提供了基于约定的&lt;a href=&quot;https://docs.npmjs.com/misc/scripts#description&quot;&gt;pre与post钩子&lt;/a&gt;（PS：钩子是我眼中 &lt;code&gt;npm scripts&lt;/code&gt; 最炫酷的能力），可以使用 &lt;code&gt;Node&lt;/code&gt; 生态的一切，更可以使用其他的 &lt;code&gt;Python、PHP、bash&lt;/code&gt; 等脚本，给予开发者有更大的施展空间。&lt;/p&gt;
+
+&lt;p&gt;下来让我们通过 执行效率、学习成本、收益 等维度，看看这三种方案的优劣，最终取舍问题就交给各位啦，反正我所在的团队啥都用:)&lt;/p&gt;
+
+&lt;p&gt;再分享几篇学习 &lt;code&gt;npm scripts&lt;/code&gt; 的文章，看完之后你会发现，用其替换 &lt;code&gt;Grunt&lt;/code&gt; 和 &lt;code&gt;Gulp&lt;/code&gt; 没那么简单，但绝不是太麻烦的事情：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/&quot;&gt;How to Use npm as a Build Tool&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/?utm_source=tuicool&amp;amp;utm_medium=referral&quot;&gt;前端工具-npm script&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;compare&quot;&gt;优劣一览&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;背景一：按俺这种屌丝的眼光看，&lt;a href=&quot;https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8&quot;&gt;《Why I Left Gulp and Grunt for npm Scripts》&lt;/a&gt; 的作者 Cory House 是个老外，虽然目前国内前端开发者牛人辈出，与美帝差距不大，但整体水平还是略不如的。其实吧，我想说的是：国内的前端普遍对 &lt;code&gt;bash&lt;/code&gt;，&lt;code&gt;Node&lt;/code&gt; 不熟悉。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;背景二：“胜过”旧工具的新工具似乎不停的在问世，不经意间就会蹦出个“闪闪亮的”技术来替代另一个，在前端界尤其是这样。这着实让其他语言的开发者惊呆了，因为“前端”这个方向已经火爆了那么久，但是看情况短期内不会消停，各种洪荒之力还在不停的喷涌，景象喜人。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;结合这俩个大背景，让偶们用平和的心态来瞅瞅这俩类(&lt;code&gt;Gulp/Grunt&lt;/code&gt; 算一类，&lt;code&gt;npm scripts&lt;/code&gt; 算一类)构建工具的优劣吧。&lt;/p&gt;
+
+&lt;h3 id=&quot;efficient&quot;&gt;执行效率&lt;/h3&gt;
+
+&lt;p&gt;效率问题好理解。
+- &lt;code&gt;Grunt&lt;/code&gt; 年龄比 &lt;code&gt;Gulp&lt;/code&gt;稍长，在 &lt;code&gt;Github&lt;/code&gt; 第一次提交时间是&lt;a href=&quot;https://github.com/gruntjs/grunt/graphs/contributors&quot;&gt;2011/09/18&lt;/a&gt;)；&lt;code&gt;v0.4.0&lt;/code&gt; 这个版本开始(2013年2月)，&lt;code&gt;Grunt&lt;/code&gt; 开始横扫前端圈
+- &lt;code&gt;Gulp&lt;/code&gt; 在 &lt;code&gt;Github&lt;/code&gt; 第一次提交时间是&lt;a href=&quot;https://github.com/gulpjs/gulp/graphs/contributors&quot;&gt;2013/06/30&lt;/a&gt;，俺是2014/08 第一次使用，那时中文文档不多，插件也不多&lt;/p&gt;
+
+&lt;p&gt;基于“背景二”，“新”工具的产生必然是想革了“旧”工具的命，而且 &lt;code&gt;Gulp&lt;/code&gt; 也做到了(尤其在编译效率方面)。由于 &lt;code&gt;Grunt&lt;/code&gt; 的编译过程大量依赖对文件的 &lt;code&gt;I/O&lt;/code&gt; 操作，所以 &lt;code&gt;Grunt&lt;/code&gt; 编译效率远不如基于 &lt;code&gt;stream&lt;/code&gt; 的 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;npm scripts&lt;/code&gt;；且 &lt;code&gt;Gulp&lt;/code&gt; 通过管道(&lt;code&gt;pipe&lt;/code&gt;)把各个任务(&lt;code&gt;task&lt;/code&gt;)的 输入/输出 串起来，让整个编译过程更容易理解和维护。&lt;/p&gt;
+
+&lt;p&gt;再看 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;npm scripts&lt;/code&gt;，如果是基于 &lt;code&gt;Node&lt;/code&gt; 生态，那么理论上执行效率半斤八两，完全依赖对应 &lt;code&gt;Package&lt;/code&gt; 的洪荒之力；如果不基于 &lt;code&gt;Node&lt;/code&gt; 生态，那么比起来就木有太多意义啦，全凭工程师的脑洞和能力。&lt;/p&gt;
+
+&lt;h3 id=&quot;stuty&quot;&gt;学习成本&lt;/h3&gt;
+
+&lt;p&gt;首先，&lt;code&gt;Grunt&lt;/code&gt; 和 &lt;code&gt;Gulp&lt;/code&gt; 都足够好上手，不需要多先进的理念和经验，就可以用这俩样工具构建简单的前端项目。但是，&lt;code&gt;Gulp&lt;/code&gt; 甚至只有几个 API，这真心够易学的。&lt;/p&gt;
+
+&lt;p&gt;偶上一篇&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;《一》&lt;/a&gt;文章说过：“个人觉得玩 &lt;code&gt;Grunt&lt;/code&gt; 是种写配置的感觉；玩&lt;code&gt;Gulp&lt;/code&gt;就是写脚本(task)”。&lt;/p&gt;
+
+&lt;p&gt;但是对于 &lt;code&gt;npm scripts&lt;/code&gt; 来说，学习成本比上面俩种高了几何倍。时间有限，有关更多的 &lt;code&gt;npm scripts&lt;/code&gt; 俺就不多啰嗦啦，下面偶简单罗列下其特点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;得熟悉 &lt;code&gt;Node&lt;/code&gt;，还有相关的 &lt;code&gt;package.json&lt;/code&gt;、&lt;code&gt;npm&lt;/code&gt; 等之类。PS：&lt;code&gt;Grunt&lt;/code&gt; 和 &lt;code&gt;Gulp&lt;/code&gt; 都是前端的范畴，会不会 &lt;code&gt;Node&lt;/code&gt; 无伤大雅&lt;/li&gt;
+  &lt;li&gt;但凡想稍深入一点，就有必要去了解 &lt;code&gt;bash&lt;/code&gt;。&lt;strong&gt;PS：亲，&lt;code&gt;npm scripts&lt;/code&gt; 可不是 &lt;code&gt;CLI&lt;/code&gt; 工具，学会写 &lt;code&gt;Node&lt;/code&gt; 脚本才仅仅是开始呢&lt;/strong&gt;:)&lt;/li&gt;
+  &lt;li&gt;了解跨平台知识~&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;不要被”学习成本”阻挡，接下来偶来说说收益吧。技术的积累肯定都是有用的嘛，比如用来：装逼…&lt;/p&gt;
+
+&lt;h3 id=&quot;profit&quot;&gt;个人收益&lt;/h3&gt;
+
+&lt;p&gt;收益问题就比较现实了。花了时间去学去研究，光收获成就感可不行，实际收益也要能体现才好是吧，所以嘛…让我们干了这碗鸡汤。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-delphi&quot; data-lang=&quot;delphi&quot;&gt;&lt;span class=&quot;err&quot;&gt;少年苦练&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;年拳术欲下山扬名立万，路遇一使刀汉子，数招后不敌惨败而归……回山后找师傅问话&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“师傅，为何我苦练十年还会输？”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“因为你不知道打架不止可以用拳头。”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“可你也没告诉我啊！”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“你只说要学拳法，又没说学打架！”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“那我不学拳法了，我要学打架！”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“那就不只是要学拳法了，打架想要赢就得十八般武艺都学，你未必要门门精通，但你最起码得有这些见识。除此之外，还得学挨打，学疗伤，学逃跑，学追踪，学暗器，学使毒……想赢？哪有那么简单的！”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“那我还能成拳法宗师吗？”&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;“呵呵，如果你打架再也不会输，谁敢说你不是宗师？”&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;来源：&lt;a href=&quot;https://segmentfault.com/q/1010000003732995&quot;&gt;《JavaScript怎样才算学好？》&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;梦想总是要有的，万一遇见了鬼呢…&lt;/p&gt;
+
+&lt;p&gt;不对不对，万一哪天偶们成为了宗师呢，对吧~&lt;/p&gt;
+
+&lt;h3 id=&quot;human&quot;&gt;多人 VS 单干&lt;/h3&gt;
+
+&lt;p&gt;我们再看个更现实的问题 —— 多人开发/独立开发。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;单干&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;技术瓶颈就是自己&lt;/li&gt;
+  &lt;li&gt;开发和部署的环境较随意，反正坑的是自己。PS：各种配环境真的是大团队里的恶魔&lt;/li&gt;
+  &lt;li&gt;文档那都不叫问题，肯写几句代码注释给自己和后来人看，这就已经够意思了&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;多人&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如何统一技术栈？人人都会 &lt;code&gt;Node&lt;/code&gt; 比较难，人人都懂 &lt;code&gt;shell&lt;/code&gt; 就更难了，但是人人都能玩转 &lt;code&gt;Gulp&lt;/code&gt; 就简单的多了，只要懂 &lt;code&gt;JavaScript&lt;/code&gt; 就行鸟&lt;/li&gt;
+  &lt;li&gt;开发环境和生成环境得严谨起来啦，而且但凡要考虑跨平台，&lt;code&gt;npm scripts&lt;/code&gt; 强大的洪荒之力会被压制，而且真要对面这个问题，光屡文档就得忙一阵&lt;/li&gt;
+  &lt;li&gt;请记住，文档是项目和团队的传承…哦对了，&lt;code&gt;package.json&lt;/code&gt; 是 &lt;code&gt;JSON&lt;/code&gt; 格式，不支持写注释哦…我想骂脏话：#&amp;amp;！#@#@&lt;em&gt;#！@#（#&lt;/em&gt;#￥&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;所以，老夫的建议是：请使用 &lt;strong&gt;适合&lt;/strong&gt; 的技术。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 class=&quot;conclude&quot;&gt;小结&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;当前 3.9.1 版本的 &lt;code&gt;Gulp API&lt;/code&gt; 确实足够简单易懂，但 4.0 版本新增了数个 &lt;code&gt;API&lt;/code&gt;。有关新 &lt;code&gt;API&lt;/code&gt; 的内容就不说明鸟，Changelog地址：&lt;a href=&quot;https://github.com/gulpjs/gulp/blob/4.0/CHANGELOG.md&quot;&gt;CHANGELOG.md&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;但是！特么去年劳资就等着这个 4.0，现在已经2016年的6月了，这个 4.0 还特么没有出来…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;Grunt&lt;/code&gt; 的优势是插件够齐全，开发中需要的插件都能找到，且足够易学好上手；缺点是可读性差强人意，编译效率略低，项目越大劣势会越明显。PS：插件数5734(2016/06/01记录)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Gulp&lt;/code&gt; 作为 &lt;code&gt;Grunt&lt;/code&gt; 的颠覆者，确实更简单、更好上手，&lt;code&gt;stream&lt;/code&gt; 的特点也更符合技术趋势，而且编译的效率更优；不过插件数相对 &lt;code&gt;Grunt&lt;/code&gt; 略少。PS：插件数2432(2016/06/01记录)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;更多有关 &lt;code&gt;Grunt 对比 Gulp&lt;/code&gt;，推荐阅读：&lt;a href=&quot;http://www.benben.cc/blog/?p=407&quot;&gt;Gulp vs Grunt&lt;/a&gt; PS：这文章貌似我多次推荐，但俺真没收好处费:)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;学习成本较高可能是 &lt;code&gt;npm scripts&lt;/code&gt; 最大的问题了；其次就是跨平台会比较麻烦。&lt;/p&gt;
+
+&lt;p&gt;其实我觉得使用 &lt;code&gt;npm scripts&lt;/code&gt; 最大的好处就是没有“束缚”！！！&lt;/p&gt;
+
+&lt;p&gt;不管上面两种方案做到了如何美好和抽象，其实都是 &lt;code&gt;Node&lt;/code&gt; 能力的具体落地，所有的一切都背靠整个 &lt;code&gt;Node&lt;/code&gt; 生态完成（PS：当然，偶们得肯定 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;Grunt&lt;/code&gt; 的价值与意义）。&lt;/p&gt;
+
+&lt;p&gt;但如果到了 &lt;code&gt;npm scripts&lt;/code&gt;，您等于拥有了操作系统的一切。&lt;code&gt;npm scripts&lt;/code&gt; 可以执行 &lt;code&gt;shell&lt;/code&gt;，&lt;code&gt;shell&lt;/code&gt; 里可以是 &lt;code&gt;Node&lt;/code&gt; 程序，甚至是 &lt;code&gt;PHP、Ruby、bash&lt;/code&gt; 等等能执行的一切，能玩出什么花样就看自己的脑洞有多大了:)&lt;/p&gt;
+
+&lt;p&gt;比如在我司，部署/回滚 上线环境和测试环境，测试用例，后门调试等，都是用 &lt;code&gt;npm scripts&lt;/code&gt; 几行代码搞定。&lt;/p&gt;
+
+&lt;h3 id=&quot;node&quot;&gt;不美好的Node&lt;/h3&gt;
+
+&lt;p&gt;最后，因为想说说 &lt;strong&gt;包依赖&lt;/strong&gt; 这个事情，所以在这容我多聊五毛钱的 &lt;code&gt;Node&lt;/code&gt;，火热无比的它确实不是那么美好(PS：当然不会存在完美的语言嘛)。&lt;/p&gt;
+
+&lt;p&gt;经过了 &lt;code&gt;JavaScript&lt;/code&gt; 和本身版本号的野蛮生长，略混乱的生态也让不少开发者吃到了苦头。说俩事情：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;善变的标准&lt;/strong&gt; &lt;code&gt;ES5&lt;/code&gt; 还是 &lt;code&gt;ES2015(就是ES6)&lt;/code&gt;？如果你还不知道指针函数、模板字符串、Set/Map数据结构等等，真心看不懂现在新兴的前端项目。又怎么去解决 &lt;code&gt;callback&lt;/code&gt;？是 &lt;code&gt;Promise、Async、Generator&lt;/code&gt; 还是其他…如果你不去追最新的标准，分分钟就被现在的年轻人吊打呀:)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;包依赖&lt;/strong&gt; 数月前 &lt;code&gt;left-pad&lt;/code&gt; 事件(一个名字引发的血案，感兴趣的同学请自行搜索)，硬是搞得 &lt;code&gt;NPM&lt;/code&gt; 升级了移除包的规则。升级内容的中文版奉上：&lt;a href=&quot;http://www.infoq.com/cn/news/2016/04/npm-package-removal-policy&quot;&gt;Npm更新移除包的规&lt;/a&gt;。这一段几次写了删、删了写，吐槽和抱怨不适合我这种阳光 boy。。。算了，都删掉~~贴张国外很火的图片来让大家开心一下吧：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img width=&quot;300&quot; src=&quot;https://raw.githubusercontent.com/nieweidong/nieweidong.github.io/master/images/needless.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;因为这些构建工具，前端有了自动持续化的构建过程，越来越多美好的事务正在发生…&lt;/p&gt;
+
+&lt;p&gt;有关 &lt;code&gt;Gulp&lt;/code&gt; 就说到这吧。我水完了，谢谢:)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;Gulp使用小结(二)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 05, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[如果我去创业]]></title>
   <link rel="alternate" type="text/html" href="/startup/" />
   <id>/startup</id>
-  <published>2016-05-15T20:55:11+08:00</published>
-  <updated>2016-05-15T20:55:11+08:00</updated>
+  <published>2016-05-15T00:00:00+08:00</published>
+  <updated>2016-05-15T00:00:00+08:00</updated>
   <author>
     <name>nieweidong</name>
     <uri></uri>
@@ -32,7 +280,7 @@
 所以在这，看官您看不到类似那少年成名的科技明星那样：年少时就意气风发、目标明确，更是收获满满，看着就能量(鸡血)爆棚！&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;貌似偶第一次有”创业”这个想法已是25岁“高龄”(别特么说那时我还年轻，但劳资身边是个人就天天咋呼说要做点啥做点啥，虽然最后大多做了微商被我屏蔽)了，那时正和云姐(现在家中的领导)恋爱，因为云姐在家待着无聊跑去学花艺，计划将来开个花店做个女老板，所以促使偶萌生了Startup的想法，原因是：&lt;strong&gt;领导开心，家庭和谐&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;貌似偶第一次有“创业”这个想法已是25岁“高龄”(别特么说那时我还年轻，但劳资身边是个人就天天咋呼说要做点啥做点啥，虽然最后大多做了微商被我屏蔽)了，那时正和云姐(现在家中的领导)恋爱，因为云姐在家待着无聊跑去学花艺，计划将来开个花店做个女老板，所以促使偶萌生了Startup的想法，原因是：&lt;strong&gt;领导开心，家庭和谐&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;如果你对上面八个加黑的字不理解，那么…骚年，说明你还没结婚哈:)&lt;/p&gt;
 
@@ -49,55 +297,53 @@
 &lt;h3 id=&quot;section-1&quot;&gt;先说说我认为最重要的俩点&lt;/h3&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;小&lt;/li&gt;
-  &lt;li&gt;美&lt;/li&gt;
+  &lt;li&gt;小 =&amp;gt; 人多不一定是好事&lt;/li&gt;
+  &lt;li&gt;美 =&amp;gt; 方向上有创意和价值&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;别特么和我说“如果哪天人多了呢”，或者“多小算小呢”…&lt;/p&gt;
+&lt;p&gt;别和我说“如果哪天人多了呢”或者“多小算小呢”。 假如、也许、可能、如果…真特么有那么一天，劳资也可以去学习&lt;code&gt;Sergey Brin&lt;/code&gt;，自己搞自己喜欢的就好&lt;/p&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;硬环境(配套设施)&lt;/h3&gt;
+&lt;h4 id=&quot;section-2&quot;&gt;人&lt;/h4&gt;
 
-&lt;p&gt;洗手间文化&lt;/p&gt;
-
-&lt;p&gt;办公环境不要太好，拒绝过分小资、傲娇。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;软环境(公司文化)&lt;/h3&gt;
-
-&lt;p&gt;强大执行力&lt;/p&gt;
-
-&lt;p&gt;分享精神和荣誉感&lt;/p&gt;
-
-&lt;p&gt;简单可依赖&lt;/p&gt;
-
-&lt;p&gt;创造力？以人为本？酌情…&lt;/p&gt;
-
-&lt;h3 id=&quot;section-4&quot;&gt;人&lt;/h3&gt;
-
-&lt;p&gt;不要有亲戚的财、更不要亲戚本人。&lt;/p&gt;
-
-&lt;p&gt;恋爱自由。&lt;/p&gt;
-
-&lt;h4 id=&quot;section-5&quot;&gt;选择合伙人&lt;/h4&gt;
-
-&lt;p&gt;钱说明白&lt;/p&gt;
-
-&lt;h4 id=&quot;section-6&quot;&gt;选择同事&lt;/h4&gt;
-
-&lt;p&gt;够精简，团队必须 &lt;strong&gt;小而美&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;团队精简，有执行力&lt;/p&gt;
 
 &lt;p&gt;剥削归剥削，但是 &lt;strong&gt;工资一定给够&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;文凭是基础，但是无绝对，能力至上&lt;/p&gt;
+&lt;p&gt;文凭是招聘的基础(无绝对，当然还是得能力至上)&lt;/p&gt;
 
-&lt;h4 id=&quot;section-7&quot;&gt;制度&lt;/h4&gt;
+&lt;h4 id=&quot;section-3&quot;&gt;钱&lt;/h4&gt;
 
-&lt;p&gt;得有淘汰制&lt;/p&gt;
+&lt;p&gt;不喜野蛮生长，少拿外面的钱&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;想起一点写一点，所以偶想到啥后续再补，吼吼~&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;懂得 &lt;strong&gt;分享&lt;/strong&gt; 公司的成长&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/startup/&quot;&gt;假如我去创业&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
+&lt;h4 id=&quot;section-4&quot;&gt;制度&lt;/h4&gt;
+
+&lt;p&gt;配套福利得给够&lt;/p&gt;
+
+&lt;p&gt;恋爱自由，不反对员工恋爱&lt;/p&gt;
+
+&lt;p&gt;办公室抽烟的打死&lt;/p&gt;
+
+&lt;p&gt;得有淘汰制(非必须)&lt;/p&gt;
+
+&lt;h4 id=&quot;section-5&quot;&gt;硬环境(配套设施)&lt;/h4&gt;
+
+&lt;p&gt;办公环境不要太过，中等就好，拒绝小资、傲娇。 =&amp;gt; 过好的环境会让人缺乏斗志&lt;/p&gt;
+
+&lt;h4 id=&quot;section-6&quot;&gt;软环境(公司文化)&lt;/h4&gt;
+
+&lt;p&gt;洗手间文化 =&amp;gt; 不想解释&lt;/p&gt;
+
+&lt;p&gt;分享精神&lt;/p&gt;
+
+&lt;p&gt;简单可依赖？以人为本？酌情…容我再想想&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;差不多先这样，想起一点写一点，所以偶想到啥后续再补，吼吼~&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/startup/&quot;&gt;如果我去创业&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -105,79 +351,7 @@
   
 
 <entry>
-  <title type="html"><![CDATA[gulp使用小结(二)]]></title>
-  <link rel="alternate" type="text/html" href="/gulp_2/" />
-  <id>/gulp_2</id>
-  <published>2016-05-15T20:03:25+08:00</published>
-  <updated>2016-05-15T20:03:25+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;接上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;gulp使用小结(一)&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;简单说说这篇文章我要说什么吧：&lt;/p&gt;
-
-&lt;p&gt;首先，&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;已经提交了个较通用的栗子。琢磨半天，原本准备分阶段搞些 &lt;code&gt;gulp&lt;/code&gt; 套路，但是写完一个栗子之后，觉得当前这个栗子已经覆盖绝大多数的场景了。当偶偷懒，就酱…&lt;/p&gt;
-
-&lt;p&gt;然后，再一起看看这篇值得思考的文章《我为何放弃Gulp与Grunt，转投npm scripts》
-&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;上&lt;/a&gt;
-&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part2&quot;&gt;中&lt;/a&gt;
-&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part3&quot;&gt;下&lt;/a&gt;；&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;英文原文地址：&lt;a href=&quot;https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8&quot;&gt;《Why I Left Gulp and Grunt for npm Scripts》&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;最后，漫谈下对前端构建工具的理解。&lt;/p&gt;
-
-&lt;h2 id=&quot;npm-scripts&quot;&gt;聊聊《npm scripts》&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;第一次阅读这篇就引起了我很多共鸣，因为在工作中处理的事务较杂，所以工作中没有过多的倾向性，神马好用就用神马。那么刚好 &lt;code&gt;npm scrpts&lt;/code&gt; 和 &lt;code&gt;gulp&lt;/code&gt; 都是偶常用的解决问题的方法。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这篇文章在 &lt;code&gt;InfoQ&lt;/code&gt; 上被分成了三篇。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;第一篇是埋汰 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;Grunt&lt;/code&gt;，各种不满意&lt;/li&gt;
-  &lt;li&gt;第二篇开始描述 &lt;code&gt;npm scripts&lt;/code&gt; 是如何强大和好理解&lt;/li&gt;
-  &lt;li&gt;第三篇作者吐了下苦水，分享自己 &lt;code&gt;npm scripts&lt;/code&gt; 带来的问题&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;“谈到了他对于Gulp、Grunt与npm scripts的认识，并且认为在现在的工程中，我们完全可以抛弃Gulp与Grunt，使用npm scripts就可以满足项目之所需。”&lt;/p&gt;
-
-&lt;p&gt;“众所周知，Gulp与Grunt是很多项目所使用的构建工具，他们也拥有非常丰富的插件。不过，我却认为Gulp与Grunt是完全不必要的抽象，npm scripts更加强大，并且更易于使用。”&lt;/p&gt;
-
-&lt;p&gt;那篇文章作者在上一个项目中遇到的问题：
-1. gulpfile有100多行
-2. 插件文档不重复
-3. 某插件存在奇怪的bug
-4. 某插件输出到命令行时丢失了颜色&lt;/p&gt;
-
-&lt;p&gt;但是，直接使用这些插件，所有问题都不复存在了。&lt;/p&gt;
-
-&lt;p&gt;npm scripts本身其实是非常强大的。https://docs.npmjs.com/misc/scripts#description&lt;/p&gt;
-
-&lt;p&gt;不说 &lt;code&gt;npm start&lt;/code&gt; 和 &lt;code&gt;npm run test&lt;/code&gt; 这种生存技能，在我司 &lt;code&gt;Node&lt;/code&gt; 项目中，测试环境的上线与回滚，生产环境的上线与回滚，甚至某些后门代码都是依赖 &lt;code&gt;npm scripts&lt;/code&gt; 搞定&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;借鉴&lt;/h2&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;漫谈前端构建&lt;/h2&gt;
-
-&lt;p&gt;这俩篇文章加上&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;，也算是自己对 &lt;code&gt;Gulp&lt;/code&gt; 技术的一个总结:)&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;gulp使用小结(二)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[gulp使用小结(一)]]></title>
+  <title type="html"><![CDATA[Gulp使用小结(一)]]></title>
   <link rel="alternate" type="text/html" href="/gulp_1/" />
   <id>/gulp_1</id>
   <published>2016-04-30T00:00:00+08:00</published>
@@ -188,10 +362,10 @@
     <email>darrencode@qq.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;这篇文章不会介绍 &lt;code&gt;gulp&lt;/code&gt; 的起源、发展；不会去一个个讲解 &lt;code&gt;gulp API&lt;/code&gt;；也不想出现大段大段的 &lt;code&gt;gulpfile.js&lt;/code&gt; 代码；更木有帮你分析 &lt;code&gt;gulp&lt;/code&gt; 实现原理，只有一些我自己对 &lt;code&gt;gulp&lt;/code&gt; 的使用理解和总结。&lt;/p&gt;
+    &lt;p&gt;这篇文章不会介绍 &lt;code&gt;Gulp&lt;/code&gt; 的起源、发展；不会去一个个讲解 &lt;code&gt;Gulp API&lt;/code&gt;；也不想出现大段大段的 &lt;code&gt;gulpfile.js&lt;/code&gt; 代码；更木有帮你分析 &lt;code&gt;Gulp&lt;/code&gt; 实现原理，只有一些我自己对 &lt;code&gt;Gulp&lt;/code&gt; 的使用理解和总结。&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;如何通过 &lt;code&gt;gulp&lt;/code&gt; 让偶们的前端项目高大上的跑起来？&lt;code&gt;gulp&lt;/code&gt; 能做什么，还能做什么？&lt;code&gt;gulp&lt;/code&gt;套路能不能来几套？… 希望通过这篇文章你会找到答案&lt;/p&gt;
+  &lt;p&gt;如何通过 &lt;code&gt;Gulp&lt;/code&gt; 让偶们的前端项目高大上的跑起来？&lt;code&gt;Gulp&lt;/code&gt; 能做什么，还能做什么？&lt;code&gt;Gulp&lt;/code&gt;套路能不能来几套？… 希望通过这篇文章你会找到答案&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;写作风格的原因，劳资写的文章都较详(啰)细(嗦)，请轻拍:)&lt;/p&gt;
@@ -216,23 +390,23 @@
 &lt;h3 id=&quot;intro&quot;&gt;简单介绍&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;这篇文章的目的是：介绍些我知晓的 &lt;code&gt;gulp plugins&lt;/code&gt;，然后用少量的代码讲解，最终希望大家能用 &lt;code&gt;gulp&lt;/code&gt; 让前端项目高大上的跑起来&lt;/p&gt;
+  &lt;p&gt;这篇文章的目的是：介绍些我知晓的 &lt;code&gt;Gulp plugins&lt;/code&gt;，然后用少量的代码讲解，最终希望大家能用 &lt;code&gt;Gulp&lt;/code&gt; 让前端项目高大上的跑起来&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;默认读者知道点 &lt;code&gt;npm/cnpm&lt;/code&gt;；明白 &lt;code&gt;package.json&lt;/code&gt; 是作甚的；了解 &lt;code&gt;gulpfile.js&lt;/code&gt; 是作甚的。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;这篇文章起草于2014年下半年，那时 &lt;code&gt;gulp&lt;/code&gt; 还算个较新潮的玩意。所以在项目实践的过程中，自己记录鸟不少使用收获，心里闷骚的想，等哪天有空再润色一把即可分享出去，但特么拖拖拉拉的就到2016年…&lt;/p&gt;
+&lt;p&gt;这篇文章起草于2014年下半年，那时 &lt;code&gt;Gulp&lt;/code&gt; 还算个较新潮的玩意。所以在项目实践的过程中，自己记录鸟不少使用收获，心里闷骚的想，等哪天有空再润色一把即可分享出去，但特么拖拖拉拉的就到2016年…&lt;/p&gt;
 
-&lt;p&gt;转眼 &lt;code&gt;gulp&lt;/code&gt; 都已快被归类为过时的技术鸟(&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;，有关这篇文章下一篇偶再单独细聊)，于是趁着周末之余，火速整理下自己的 &lt;code&gt;gulp&lt;/code&gt; 套路发布出来，也希望对其他小伙伴有点用。&lt;/p&gt;
+&lt;p&gt;转眼 &lt;code&gt;Gulp&lt;/code&gt; 都已快被归类为过时的技术鸟(&lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;，有关这篇文章下一篇偶再单独细聊)，于是趁着周末之余，火速整理下自己的 &lt;code&gt;gulp&lt;/code&gt; 套路发布出来，也希望对其他小伙伴有点用。&lt;/p&gt;
 
 &lt;p&gt;本文最下方有一些 文章/文档 的阅读推荐:)&lt;/p&gt;
 
 &lt;h3 id=&quot;must&quot;&gt;必备插件&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;【必备】不是指每次项目都得用，而是指最基础的。你可以不用，但是得知道的那些gulp插件&lt;/p&gt;
+  &lt;p&gt;【必备】不是指每次项目都得用，而是指最基础的。你可以不用，但是得知道的那些 Gulp 插件&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -257,7 +431,7 @@
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/run-sequence&quot;&gt;run-sequence&lt;/a&gt; &lt;code&gt;gulp&lt;/code&gt; 的 &lt;code&gt;task&lt;/code&gt; 都是并行(异步)执行，如果遇见需要串行的场景，那么这个插件就是必备了。偶的使用场景是：处理(压缩、合并等等) &lt;code&gt;CSS/JS&lt;/code&gt;、再&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;、再上传 &lt;code&gt;CDN&lt;/code&gt;；然后使用 &lt;code&gt;CDN&lt;/code&gt;的地址替换 &lt;code&gt;HTML&lt;/code&gt; 中的 &lt;code&gt;CSS/JS&lt;/code&gt; 地址，再压缩 &lt;code&gt;HTML&lt;/code&gt;。那么替换 &lt;code&gt;HTML&lt;/code&gt; 这步须在之前的工作处理完后再执行。 ** 最后要说，gulp4.0发布后，不需要RS也可以搞定串行任务了 **&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/run-sequence&quot;&gt;run-sequence&lt;/a&gt; &lt;code&gt;Gulp&lt;/code&gt; 的 &lt;code&gt;task&lt;/code&gt; 都是并行(异步)执行，如果遇见需要串行的场景，那么这个插件就是必备了。偶的使用场景是：处理(压缩、合并等等) &lt;code&gt;CSS/JS&lt;/code&gt;、再&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;、再上传 &lt;code&gt;CDN&lt;/code&gt;；然后使用 &lt;code&gt;CDN&lt;/code&gt;的地址替换 &lt;code&gt;HTML&lt;/code&gt; 中的 &lt;code&gt;CSS/JS&lt;/code&gt; 地址，再压缩 &lt;code&gt;HTML&lt;/code&gt;。那么替换 &lt;code&gt;HTML&lt;/code&gt; 这步须在之前的工作处理完后再执行。 ** 最后要说，&lt;code&gt;Gulp4.0&lt;/code&gt; 发布后，不需要 &lt;a href=&quot;https://www.npmjs.com/package/run-sequence&quot;&gt;RS&lt;/a&gt; 也可以搞定串行任务了 **&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/del&quot;&gt;del&lt;/a&gt; / &lt;a href=&quot;https://www.npmjs.com/package/gulp-clean&quot;&gt;gulp-clean&lt;/a&gt; 删除。俺的使用场景是：&lt;code&gt;JS/CSS&lt;/code&gt; 文件都会在压缩后使用&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt;，即文件名被&lt;code&gt;hash&lt;/code&gt;，然后再上传到 &lt;code&gt;CDN&lt;/code&gt;，最后俺再使用 &lt;strong&gt;删除插件&lt;/strong&gt; 把本地压缩后的文件删除掉，不用多余保存。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt; 把静态文件名改成&lt;code&gt;hash&lt;/code&gt;的形式。&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-rev-replace&quot;&gt;gulp-rev-replace&lt;/a&gt; 配合 &lt;a href=&quot;https://www.npmjs.com/package/gulp-rev&quot;&gt;gulp-rev&lt;/a&gt; 使用，拿到生成的 &lt;code&gt;manifest。json&lt;/code&gt; 后替换对应的文件名称。&lt;/li&gt;
@@ -290,13 +464,13 @@
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-git&quot;&gt;gulp-git&lt;/a&gt; 直接在 &lt;code&gt;Build&lt;/code&gt; 时把代码都提交到 &lt;code&gt;git&lt;/code&gt;上了…特么劳资懒起来连我自己都害怕&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-qiniu&quot;&gt;gulp-qiniu&lt;/a&gt; 用于把指定文件上传至七牛的指定路径下(PS:首先，你得有自己的七牛账号和空间)&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-notify&quot;&gt;gulp-notify&lt;/a&gt; 在控制台中加入文字描述，&lt;code&gt;build&lt;/code&gt; 的时候更高级有木有。当然，当需要的时候把错误信息也展示出来会很有帮助。更高级的功能就需要你查看其文档了~&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-plumber&quot;&gt;gulp-plumber&lt;/a&gt; &lt;code&gt;gulp&lt;/code&gt; 的错误处理有点坑，假如发生错误进程就挂了。相对的解决办法不少，但是这个是我个人比较推荐的，比特么在容易出错的地方写错误监听靠谱。所以这个插件可以阻止 &lt;code&gt;gulp&lt;/code&gt; 插件发生错误导致进程退出并输出错误日志。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/gulp-plumber&quot;&gt;gulp-plumber&lt;/a&gt; &lt;code&gt;Gulp&lt;/code&gt; 的错误处理有点坑，假如发生错误进程就挂了。相对的解决办法不少，但是这个是我个人比较推荐的，比特么在容易出错的地方写错误监听靠谱。所以这个插件可以阻止 &lt;code&gt;Gulp&lt;/code&gt; 插件发生错误导致进程退出并输出错误日志。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;gulpfile&quot;&gt;聊聊 gulpfile.js&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;code&gt;gulp API&lt;/code&gt; 真没啥好说的，所以也从没打算花时间介绍，那这一节劳资要说说啥呢…干货！&lt;/p&gt;
+  &lt;p&gt;&lt;code&gt;Gulp API&lt;/code&gt; 真没啥好说的，所以也从没打算花时间介绍，那这一节劳资要说说啥呢…干货！&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;已经枯燥的balabala一通插件，所以偶用自己的方式聊聊这个 &lt;code&gt;gulpfile.js&lt;/code&gt;。PS：默认读者了解，所以不堆代码了哈&lt;/p&gt;
@@ -332,13 +506,13 @@
 &lt;h3 id=&quot;write&quot;&gt;套路&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;这节会基于这些插件的相互配合和清晰的 &lt;code&gt;gulp&lt;/code&gt; 目录结构，让偶们的前端项目快速且高大上的 &lt;code&gt;build&lt;/code&gt; 起来！&lt;/p&gt;
+  &lt;p&gt;这节会基于这些插件的相互配合和清晰的 &lt;code&gt;Gulp&lt;/code&gt; 目录结构，让偶们的前端项目快速且高大上的 &lt;code&gt;build&lt;/code&gt; 起来！&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;偶这粗暴的把套路分成三类：一种是相对简单点的；一种是稍稍复杂点的；一种是“玩”的比较复杂的。区分的原则是这仨套路的目标会有稍许不同，而且项目需求也不同。搞清楚我们(项目)到底想要得到什么，那么剩下的就是去实现它了！&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;附加组合&lt;/strong&gt; 这类在这篇就不说了，比如 &lt;code&gt;gulp+webpack&lt;/code&gt; 这种 &lt;code&gt;CP&lt;/code&gt;，针对 &lt;code&gt;React&lt;/code&gt; 项目可以面面俱到。。。这如果要分析起来，比特么 &lt;code&gt;gulp&lt;/code&gt; 复杂多了去了。&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;附加组合&lt;/strong&gt; 这类在这篇就不说了，比如 &lt;code&gt;gulp+webpack&lt;/code&gt; 这种 &lt;code&gt;CP&lt;/code&gt;，针对 &lt;code&gt;React&lt;/code&gt; 项目可以面面俱到。。。这如果要分析起来，比特么 &lt;code&gt;Gulp&lt;/code&gt; 复杂多了去了。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;如果你问我，有木有最简单的套路，答曰：有！&lt;/p&gt;
@@ -384,7 +558,7 @@
 
 &lt;ol&gt;
   &lt;li&gt;一般套路里面的都包括&lt;/li&gt;
-  &lt;li&gt;增加对 &lt;code&gt;gulp&lt;/code&gt; 进程出错的优雅处理&lt;/li&gt;
+  &lt;li&gt;增加对 &lt;code&gt;Gulp&lt;/code&gt; 进程出错的优雅处理&lt;/li&gt;
   &lt;li&gt;更多 &lt;code&gt;task&lt;/code&gt; 信息的相关展示&lt;/li&gt;
   &lt;li&gt;在 &lt;code&gt;task&lt;/code&gt; 中有逻辑处理，比如执行某 &lt;code&gt;task&lt;/code&gt; 会判断是否是开发环境，然后可以有相应的处理&lt;/li&gt;
   &lt;li&gt;自动清理掉那些不需要的 &lt;code&gt;tmp&lt;/code&gt; 文件(临时文件)，只留下真正有用的代码&lt;/li&gt;
@@ -401,13 +575,13 @@
 
 &lt;p&gt;写插件原本是我想好好写的地方，发现中文文档已经非常丰富了，那就不费那个劲了，直接贴官方地址：&lt;a href=&quot;http://www.gulpjs.com.cn/docs/writing-a-plugin/&quot;&gt;http://www.gulpjs.com.cn/docs/writing-a-plugin/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;最后聊聊我眼中的 &lt;code&gt;gulp&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;最后聊聊我眼中的 &lt;code&gt;Gulp&lt;/code&gt;：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; 目前有相关插件2266个&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; 是基于 &lt;code&gt;Node&lt;/code&gt; 的，95%的代码都是 &lt;code&gt;JavaScript&lt;/code&gt;，5%的代码是 &lt;code&gt;Shell&lt;/code&gt;，&lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;npmjs.com&lt;/a&gt;显示上个月的下载超过210W，当前(2016/04/30)release 的版本是3.9.1&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Gulp&lt;/code&gt; 目前有相关插件2266个&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Gulp&lt;/code&gt; 是基于 &lt;code&gt;Node&lt;/code&gt; 的，95%的代码都是 &lt;code&gt;JavaScript&lt;/code&gt;，5%的代码是 &lt;code&gt;Shell&lt;/code&gt;，&lt;a href=&quot;https://www.npmjs.com/package/gulp&quot;&gt;npmjs.com&lt;/a&gt;显示上个月的下载超过210W，当前(2016/04/30)release 的版本是3.9.1&lt;/li&gt;
   &lt;li&gt;神马？安装各种插件还是用 &lt;code&gt;npm&lt;/code&gt;？赶紧 &lt;a href=&quot;https://www.npmjs.com/package/cnpm&quot;&gt;cnpm&lt;/a&gt; 用起来，安装速度噌噌的&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; VS &lt;code&gt;grunt&lt;/code&gt; 这话题已经被说烂，但我还是想说说。个人觉得玩&lt;code&gt;grunt&lt;/code&gt;是种写配置的感觉；玩&lt;code&gt;gulp&lt;/code&gt;就是写脚本(task)，且&lt;code&gt;gulp&lt;/code&gt;更容易上手、更高效。 推荐读者看看这篇文章&lt;a href=&quot;http://www.benben.cc/blog/?p=407&quot;&gt;Gulp vs Grunt&lt;/a&gt;，写的着实深入浅出&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Gulp&lt;/code&gt; VS &lt;code&gt;Grunt&lt;/code&gt; 这话题已经被说烂，但我还是想说说。个人觉得玩&lt;code&gt;Grunt&lt;/code&gt;是种写配置的感觉；玩&lt;code&gt;Gulp&lt;/code&gt;就是写脚本(task)，且&lt;code&gt;Gulp&lt;/code&gt;更容易上手、更高效。 推荐读者看看这篇文章&lt;a href=&quot;http://www.benben.cc/blog/?p=407&quot;&gt;Gulp vs Grunt&lt;/a&gt;，写的着实深入浅出&lt;/li&gt;
   &lt;li&gt;编译 &lt;code&gt;CoffeeScript&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;编译 &lt;code&gt;less / sass&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;把 &lt;code&gt;HTML&lt;/code&gt; 编译为 &lt;code&gt;Markdown&lt;/code&gt;&lt;/li&gt;
@@ -418,7 +592,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;最近在InfoQ上有读到一个系列的文章，是讨论 &lt;code&gt;gulp&lt;/code&gt; 和 &lt;code&gt;npm script&lt;/code&gt; 优劣，地址 - &lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;。篇幅有限，下期的文章我再拿出来讨论，不过推荐大家阅读，还是值得我们思考的。&lt;/p&gt;
+  &lt;p&gt;最近在InfoQ上有读到一个系列的文章，是讨论 &lt;code&gt;Gulp&lt;/code&gt; 和 &lt;code&gt;npm script&lt;/code&gt; 优劣，地址 - &lt;a href=&quot;http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1&quot;&gt;《我为何放弃Gulp与Grunt，转投npm scripts》&lt;/a&gt;。篇幅有限，下期的文章我再拿出来讨论，不过推荐大家阅读，还是值得我们思考的。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;下一篇会把这篇文章所介绍的套路，用代码体现出来，文章发布时git会同步更新，地址：&lt;a href=&quot;https://github.com/nieweidong/gulp-demos&quot;&gt;gulp-demos&lt;/a&gt;&lt;/p&gt;
@@ -435,7 +609,7 @@
   &lt;li&gt;&lt;a href=&quot;http://www.boke.io/ji-yu-gulphe-webpackde-qian-duan-gong-zuo-liu/&quot;&gt;《基于gulp和webpack的前端工程化》&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/gulp_1/&quot;&gt;gulp使用小结(一)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/gulp_1/&quot;&gt;Gulp使用小结(一)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
   </content>
 </entry>
 

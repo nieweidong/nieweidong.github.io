@@ -4,13 +4,72 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-06-05T12:22:17+08:00</updated>
+<updated>2016-06-06T21:38:11+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
   <uri>/</uri>
   <email>darrencode@qq.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Chrome插件整理]]></title>
+  <link rel="alternate" type="text/html" href="/chrome_plugins/" />
+  <id>/chrome_plugins</id>
+  <published>2016-06-07T00:00:00+08:00</published>
+  <updated>2016-06-07T00:00:00+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;本文内容都来源于偶整理的&lt;a href=&quot;https://github.com/nieweidong/fetool#BrowserPlugins&quot;&gt;fetool&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;想让更多使用Chrome的小伙伴，体验到这些令人愉悦的小工具，所以单独整理了这篇文章。&lt;/p&gt;
+
+&lt;p&gt;如果你是 &lt;strong&gt;前端/服务端/设计/面向&lt;code&gt;Github&lt;/code&gt;编程/视觉控&lt;/strong&gt;，相信下列的插件有不少你会用到，期待你能喜欢:)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;Chrome&lt;/code&gt; 应用商店必定是需要翻墙的哈。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;以下插件都是俺多年积累淘出来的，数量不多，所以就不区分 &lt;code&gt;Github&lt;/code&gt; 插件和非 &lt;code&gt;Github&lt;/code&gt; 插件了。按照俺推荐的强度自上向下展示，且大多数插件就是偶工作和生活必备，希望能对大家有用。后续如有新发现好插件，偶也会及时更新哒。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&quot;&gt;Postman&lt;/a&gt; - &lt;code&gt;POST&lt;/code&gt; 接口调试终结者，异常强大的接口调试工具。稍稍有一点学习成本，推荐之&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&quot;&gt;JSONView&lt;/a&gt; - 就是个 &lt;code&gt;JSON&lt;/code&gt; 格式的查看工具，可以很方便的展示数据，麻麻再也不用担心偶调试接口啦。PS：同类插件有不少，所以用的开心就行&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/%E4%BA%8C%E7%BB%B4%E7%A0%81qr%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/pflgjjogbmmcmfhfcnlohagkablhbpmg&quot;&gt;二维码生成器&lt;/a&gt; - RT。PS：这FF早已经自带生成二维码工具了，&lt;code&gt;Chrome&lt;/code&gt; 还得装插件才行，任性…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/web%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8Bfehelper/pkgccpejnmalmdinmhkkfafefagiiiad&quot;&gt;WEB前端助手(FeHelper)&lt;/a&gt; &lt;a href=&quot;https://www.baidufe.com/&quot;&gt;百度FE&lt;/a&gt;出品，功能超全的 Chrome 插件。简单列一下其功能：QR码生成器、字符串编解码工具、JSON格式化查看器、前端编码规范检测、代码压缩工具、页面取色工具、统计并分析网页加载性能等等&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka&quot;&gt;Eye Dropper&lt;/a&gt; 前端必备的颜色提取神器，操作简单容易上手&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn&quot;&gt;Page Ruler&lt;/a&gt; 前端必备的尺子。计算页面元素间距、位置等信息的时候，你就知道它的好了，无脑上手，你值得拥有&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/capture-webpage-screensho/mcbpblocgmgfnpjjppndjkmgjaogfceg&quot;&gt;FireShot&lt;/a&gt; 可以截取整个网页、部分页面，然后支持导出为各种格式。俺微博上发的网页全景图都是靠这个插件截取的&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg&quot;&gt;Infinity&lt;/a&gt; - 好不好用有点见仁见智了，但是我个人比较喜欢。使用后会让你的 &lt;strong&gt;新标签页&lt;/strong&gt; 耳目一新，有漂亮的背景和各种常用的功能，比如地图、天气、&lt;code&gt;Gmail&lt;/code&gt;、&lt;code&gt;Chrome&lt;/code&gt;商店等等。当然，在这个插件的设置中还可以设置壁纸、动画效果等等&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&quot;&gt;Momentum&lt;/a&gt; 同样也是 &lt;strong&gt;新标签页&lt;/strong&gt; 的插件，但是不管是视觉上(高清大图)还是功能上，都比 &lt;a href=&quot;https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg&quot;&gt;Infinity&lt;/a&gt; 高大上不少，&lt;code&gt;Setting&lt;/code&gt; 里面有不少设置和快捷键，都很好上手的。&lt;a href=&quot;https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg&quot;&gt;Infinity&lt;/a&gt;胜在中文和直观，&lt;a href=&quot;https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca&quot;&gt;Momentum&lt;/a&gt;胜在视觉冲击。俺基本上这俩款看心情换着用，所以希望你也都能喜欢:)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc&quot;&gt;Octotree&lt;/a&gt; - 在浏览器左侧展示 &lt;code&gt;Github&lt;/code&gt; 项目的文件导航，使目录结构一目了然，而且我们国内 &lt;code&gt;Github&lt;/code&gt; 的访问速度又不稳定，用这个工具也就很提效率了。对经常使用 &lt;code&gt;Github&lt;/code&gt; 的同学强烈推荐&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/builtwith-technology-prof/dapjbgnjinbpoindlpdmhochffioedbn&quot;&gt;BuiltWith&lt;/a&gt; / &lt;a href=&quot;https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg&quot;&gt;wappalyzer&lt;/a&gt; / &lt;a href=&quot;https://chrome.google.com/webstore/detail/chrome-sniffer-plus/fhhdlnnepfjhlhilgmeepgkhjmhhhjkh&quot;&gt;Chrome Sniffer Plus&lt;/a&gt; - 几款超强的网站分析工具，可以给出网站非常多的技术栈信息。大到 &lt;code&gt;Web Servers&lt;/code&gt;、服务端的 &lt;code&gt;Frameworks&lt;/code&gt; 或 &lt;code&gt;JS&lt;/code&gt; 框架，小到 &lt;code&gt;meta&lt;/code&gt;、编码格式甚至 &lt;code&gt;Analytics&lt;/code&gt;，非常推荐&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb/related&quot;&gt;Adblock Plus&lt;/a&gt; 非常非常有名的免费的过滤广告的插件。PS：广告屏蔽这个见仁见智，其实俺个人还是比较接受一些个性化推荐的广告&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/wide-github/kaalofacklcidaampbokdplbklpeldpj/related&quot;&gt;Wide Github&lt;/a&gt; 无聊又实用的 &lt;code&gt;Github&lt;/code&gt; 插件。无聊是因为这个插件就特么一个功能，&lt;strong&gt;加宽&lt;/strong&gt;，能让 &lt;code&gt;Github&lt;/code&gt; 页面变宽，每行展示更多的内容，尤其配合着&lt;a href=&quot;https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc&quot;&gt;Octotree&lt;/a&gt;，展示效果极佳。非常推荐 &lt;code&gt;Mac&lt;/code&gt; 用户实用，因为屏幕比较不大，变宽后阅读感觉更好&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/devtools-author/egfhcfdfnajldliefpdoaojgahefjhhi&quot;&gt;DevTools Author&lt;/a&gt; 纯装逼的插件，可以选择你的 &lt;code&gt;Chrome&lt;/code&gt; 开发者工具的主题，且支持的主题超过25种，视觉装逼控必备。设置分大概三步，官网有文字说明，&lt;code&gt;youtube&lt;/code&gt; 上的视频教程奉上(Customization With DevTools Author)[https://www.youtube.com/watch?v=AUZagMLMAJc]&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/porter-plug/lngoojfoglemfpbeiomhgheccpdheilp&quot;&gt;GitPlug&lt;/a&gt; - 在 &lt;code&gt;Github&lt;/code&gt; 项目页中嵌入有关的图表信息，直观的展示当前项目的 &lt;code&gt;Star Trend&lt;/code&gt;，能方便看到当前这个开源项目的发起时间，火爆趋势；对比较知名的项目还有相关的 &lt;code&gt;News&lt;/code&gt; 展示&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp&quot;&gt;OctoLinker&lt;/a&gt; - 在 &lt;code&gt;package.json&lt;/code&gt; 或任意 &lt;code&gt;.js&lt;/code&gt; 文件中，可以方便的对 &lt;code&gt;require()&lt;/code&gt; 的 &lt;code&gt;package&lt;/code&gt; 进去点击，跳转去对应的 &lt;code&gt;Github&lt;/code&gt; 页面。PS：特么不太好表达，建议你去这个插件的概述页，里面有个十来秒的视频，看完就明白鸟&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;补充：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;翻墙代理的插件偶没使用，偶手机和电脑的翻墙都是配的 &lt;code&gt;Surge&lt;/code&gt; 无脑搞定，不过翻墙代理插件推荐&lt;a href=&quot;https://chrome.google.com/webstore/detail/proxy-switchysharp/dpplabbmogkhghncfbfdeeokoefdjegm&quot;&gt;Proxy SwitchySharp&lt;/a&gt;，熊掌公司里大多用的都是它&lt;/li&gt;
+  &lt;li&gt;日常开发相关的插件就以上这些，还有几款如知乎的插件、购物插件等这类与开发效率不沾边的，俺就不这上头列了哈&lt;/li&gt;
+&lt;/ol&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/chrome_plugins/&quot;&gt;Chrome插件整理&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 07, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -3838,115 +3897,6 @@ c.还有不少不一一列举，可查看&amp;nbsp;http://yingxiao.baidu.com/sup
 &lt;p&gt;&amp;#12288;&amp;#12288;祝大家2013年快乐、顺利.&lt;/p&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/impress.js%E5%88%9D%E4%BD%93%E9%AA%8C/&quot;&gt;Impress.js初体验&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on January 04, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[《暗时间》读书笔记与读后感]]></title>
-  <link rel="alternate" type="text/html" href="/%E3%80%8A%E6%9A%97%E6%97%B6%E9%97%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%8E%E8%AF%BB%E5%90%8E%E6%84%9F/" />
-  <id>/《暗时间》读书笔记与读后感</id>
-  <published>2012-06-25T00:00:00+08:00</published>
-  <updated>2012-06-25T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;写博以来对自己要求博文每月至少一篇，可现在博客的更新一停就是两月，感情上很对不起自己的坚持T.T&amp;nbsp;... 可不管怎样，高压的时间终于算告一段落鸟，打算在这个舒适的周末，用几个小时的时间让自己好好的、静静的 思考和总结 一翻.&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;邮箱关了，IM关了，微博...呃，先不刷了^_^&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;生活和工作中确实有很多事情让自己无法抽身，思考时间也一直被压缩，所以手里好几篇文章都写到一半，挤不出时间整理，导致它们还躺在Evernote里面，悲剧...还是不叨叨了，开始正题。&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ffffff; color: #808080; font-size: 12px;&quot;&gt;&lt;em&gt;---------------------分割线---------------------&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;上班路上差不多有40分钟得坐地铁，这时间也是我雷打不动的读书时段，在地铁上读的书大多都不是纯技术书，什么都有涉及。最近读的几本非技术书有《随遇而安》《长尾理论》《个性化商业的未来》《暗时间》，其中《随遇》是自传题材，《长尾》和《个性化》是商业类的。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;《暗时间》是本偏重心理学的时间管理类书籍，从&lt;span&gt;心理学和神经科学的角度来印证更有效的思考方式。文中有谈到一些我非常认同的好习惯和好方法，使我迫不及待的想分享给大家，于是就有了这篇文章。喜欢看书的朋友可以考虑入手一本，一定会有物有所值的感觉^_^&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&amp;#12288;&amp;#12288;书的LOGO就是一个简单的沙漏，在其第一页这么写道&lt;strong&gt;：&lt;/strong&gt;“&amp;nbsp;&lt;strong&gt;每个人的生命就像沙漏，里面装的沙子总量大致相当，不同的是，有的沙漏颈部较细，有的沙漏颈部较粗。 颈部较细的沙漏能够抓住每一粒时间之沙，即使沙子总量一样，也能拥有更长的生命 。&lt;/strong&gt;”&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ffff99;&quot;&gt;&amp;#12288;&amp;#12288;注：以后只要是 加黑文字 就意味着是从书中直接抄下来的 ；所有配图都来自网络搜索 :)&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012061008533122.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;以下的每个主题都是书中我认为非常精华的部分。当然每个人对自己的定位和认识不一样，所以读书的感受也不一样。还是那句话，好书值得拥有^_^&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;暗时间是什么&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-family: 仿宋; font-size: 14px;&quot;&gt;暗时间（DARK TIME）是书中的第一章第一节，作者用了四页文字来告诉读者暗时间的意义。其中的举例说的非常形象，如下：&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 仿宋; font-size: 14px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;如果你有一台计算机，你装了一个系统之后就整天把它搁置在那里，你觉得这台计算机被实际使用了吗？没有。因为CPU整天运行的就是空闲进程。运行空闲进程也是一天，运行大数据量计算的程序也是一天，对于CPU来说同样的一天，价值却是完全不一样的。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 仿宋; font-size: 14px;&quot;&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;如果你正在学习一门专业，你使用自己所投入的天数来衡量，很容易会产生一种错觉，认为投入了不少时间，然而其实，“投入时间”这个说法本身就是荒唐的，实际投入的是时间和效率的乘积。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 仿宋; font-size: 14px;&quot;&gt;&amp;#12288;&amp;#12288;看完上面这段再理解作者的暗时间就简单了，作者所指的暗时间就是：走路、买菜、洗脸洗手、坐公车、逛街、出游、吃饭、睡觉，所有这些时间都可以成为“暗时间”。那么&lt;strong&gt;利用这些时间进行思考，反刍和消化平时看和读的东西，让你的认识能够脱离照本宣科的层面。这段时间看起来微不足道，但日积月累将会产生庞大的效应。&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 仿宋; font-size: 14px;&quot;&gt;&amp;#12288;&amp;#12288;作者对 专注 这两字体会非常的清晰、明确。“&lt;strong&gt;能够迅速进入专注状态，以及能够长期保持专注状态，是高效学习的两个最重要习惯。&lt;/strong&gt;”&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 仿宋; font-size: 14px;&quot;&gt;&amp;#12288;&amp;#12288;我们在日常的工作中总会面对各种邮件，各种会议，各种打断，那么如何在这种任务切换的状态下保持良好的效率？这里就引出了一个高效的好习惯 - &lt;span style=&quot;background-color: #ffff99;&quot;&gt;抗干扰&lt;/span&gt;。习惯都是在生活中养成的，作者就常在车上看书提高自己扛干扰的能力，看到这里突然就不自觉的匹配到自己，好习惯得继续发扬，嘿嘿。&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;设计你自己的进度条&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;设计自己进度条的理念就在于:“&amp;nbsp;&lt;strong&gt;如果你把任务分割了，你就有了进度条，你就知道，事情在不断的进展，你总会完成任务或到达你的目标，你会有一个时间估计，反之如果没有这个分割，整个任务或目标对你来说就只有两种状态&amp;mdash;&amp;mdash;“完成”和“未完成”&amp;nbsp;&lt;/strong&gt;”。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;不知道看这篇文章的有多少人知道或者感受过 敏捷开发 这种开发模式，我曾有幸参与过scrum这&lt;span&gt;种迭代式增量软件开发过程。在我看来作者所说的 设计自己的进度条 和&amp;nbsp;&lt;span&gt;敏捷开发 的感觉非常类似，每一个任务就是一个story，每个分割后的小进度条就是一个时间节点，每一个story结束就是一个大的进展。通过这种下意识的心里暗示，我们就清楚的知道自己还需要多少努力才能达到目的，就不会让我们 &lt;span style=&quot;background-color: #ffff99;&quot;&gt;过早的放弃&lt;/span&gt;&amp;nbsp;；更能清楚的把握自己的方向，&lt;span style=&quot;background-color: #ffff99;&quot;&gt;不要在工作、生活、时间的腐蚀中忘记自己的目标&lt;/span&gt;。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;PS：曾写过一篇《&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2012/03/23/PassionateProgrammer.html&quot; style=&quot;font-size: 12px;&quot; class=&quot;titlelink&quot;&gt;要有梦想-创造卓越的职业生涯&lt;/a&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;》，没看过的朋友可以看看^_^。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;刚刚说的 过早放弃 作者有一个更形象的句子：“&amp;nbsp;&lt;strong&gt;不要过早退出循环&amp;nbsp;&lt;/strong&gt;”。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;我们在尝试新的事物的时候，总是会越到各种各样的困难，不同的人会在碰壁不同的次数之后退出。用程序员喜欢的话来说就是，我们都在for循环，区别在于你是什么情况下break;的。有的人退出阈值高，这是能坚持的一类人；有的人退出阈值低，这类人很可能遇到一些障碍就退出了。&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;过早退出是一切失败的根源。&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;上面这段文字实在太生猛了，无比喜欢这种风格的句子^_^。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;首先得有自己的目标(目标应较现实)，再到把目标分割成成一个个的进度条(每个进度条的最好是可量化的)，然后我们需要做的就是的去实践、去坚持。其实 人生与梦想 想简单一些无非就是这样，只是生活中太多的选择和困难，所以也就造成了各不相同的人生。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;在《随意而安》中也有这么一句话令我印象深刻：“人生就是这样，一个岔路口就决定了一生”。所说的背景大概就是孟非(非诚勿扰节目主持人)因为老师的“照顾”而没有被分配到文科班，最终没能考上大学，对他来说考上大学他的人生应该就是另一番光景了。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;我想说的就是我们总是需要面对各种选择，可是人生只有一次，你需要为你的选择买单。&lt;/span&gt;&lt;/span&gt;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012061122453793.jpg&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;靠专业技能的成功是最具可复制性的&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;它需要的只是你在一个领域坚持不解的专注下去，只需要选择一个不算太不靠谱的方向，然后专心致志地钻下去，最后必然能成为高手或绝顶高手。世上有很多成功带有偶然因素和运气成分或出身环境，但至少这一样，被无数人复制了无数遍，否则就不会存在学校和教育了。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;这句话其实就只有一个关键词：专注。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;当然每个人对待成功的又不相同，对某些人来说家庭和睦、家人健康就是成功，可对某些人来说要有个成千上万的资产才叫成功，人生每个阶段对成功的定义又不相同。百度百科这么解释成功的：成功其实是一种感觉，可以说是一种积极的感觉，它是每个人达到自己理想之后一种自信的状态和一种满足的感觉！总之，我们每个人对于成功的定义是各不相同的！而到达成功的方法只有一个，那就是先得学会付出常人所不能付出的东西！&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;未来是不确定的。个人因素往往只是成功的一个既非充分又非必要的条件，所谓某事在人，成事在天就是这个意思，可是有一点非常明确，有准备的人成功的几率会大得多。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012061122440263.jpg&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;如何有效地记忆与学习&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;书中先从记忆的机制出发，解释了为什么会有死读书的记忆法，怎么去避免死读书。有关这种提高记忆质量的方法在网上有非常多的讨论，关键就是让记忆有迹可循。“&amp;nbsp;&lt;strong&gt;缺乏线索的记忆就像记忆海洋中的孤岛，虽然在那里，但是难以访问。而富含线索的记忆则是罗马，条条大路通罗马。&amp;nbsp;&lt;/strong&gt;”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;那么如何在生活中更有效的总结知识，书中提到的方法就非常中肯了。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;养成习惯，经常主动回顾一段时间学到的东西&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;创造回忆的机会。a.经常与别人讨论，或者讲给别人听；b.整理笔记；c.书写&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;设身处地“虚拟经历”别人经历过的事情&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;抽象和推广。&lt;/strong&gt;PS：就是把我们遇到的问题用自己的 YY 进行归纳推理，记得有个牛X人说过(是谁忘记了)，优秀的程序员都有一颗能YY的心^_^&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;联系/比较自身的经历&lt;/strong&gt;&amp;nbsp;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;下面列举了作者自己的一些学习习惯，确实非常到位。而且对于 思考和选择书 方面作者都有清楚的认识，很值得我们学习：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;遇到问题的第一件事，&lt;strong&gt;Google &amp;amp; Wiki&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;看书挑剔，只看经典&lt;/strong&gt;。在选择书籍的时候做足功课是对我们自己的时间负责:)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;做读书笔记&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;关于思考的习惯我就没有那么认同了，不过每个人 适合的方式 都有其区别，可能这个方式会适合你：1.利用走路和吃饭的时候思考；2.睡觉前必须弄个问题在脑子里面，在思考中入睡&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;多看心理学与思维的书，因为它们是跨学科的&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;学习一项知识，必须问自己三个重要的问题。1.它的本质是什么；2.它的第一原则是什么；3.它的知识结构是怎样的&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;学习和思考过程中常问自己的问题&lt;/strong&gt;。如：目的是什么？收获是什么？设想做自己将东西讲给别人听等。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://pic002.cnblogs.com/images/2012/159097/2012061311112113.jpg&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&amp;#12288;&amp;#12288;书写是为了更好的思考&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;记笔记和写体会 是我最喜欢的学习方式，在上一段 “如何有效地记忆与学习” 中提到记忆机制的概念也同样支持这类方式。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;为什么记下的东西总是容易忘记？因为你给记忆力提供的资源太少了，我的体会就是 好的记忆方法就是让记忆有迹可寻 ，那么记笔记和写体会不就是非常好的方式么。我们程序员为什么强调要写注释写文档，很多时候注释和文档其实也是写给自己看的，这也是种回顾记忆的方式^_^。当然文档写的好还有不少隐藏价值，比如体现了自身对工作的专业程度和认知程度；写的好也是能力的体现。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;作者非常鼓励用博客的形式来记录下自己的 成长 和 有价值的思考，有一小节整个都是讲解经营博客的种种好处，如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;能够交到很多志同道合的朋友&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;书写是为了更好地思考&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;“教”是最好的“学”。如果一件事情你不能讲清楚，十有八九你还没用完全理解&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;讨论是绝佳的反思&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;激励你去持续学习和思考&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;学会持之以恒地做一件事件。&lt;/strong&gt;PS：偶木有坚持住呀T.T...5555&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;一个长期的有价值博客是很好的简历&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;用博客的来记录下成长，这本身就是件非常有意义的事，而且只会带来很多好处，却没有明显的坏处。习惯了多思考，就会有总结，就会有东西写，然后又会在总结中进一步思考，好习惯成就一生，不是木^_^。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;书中精彩的句子&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;在上文中已出现过的加黑的文字都是我认为很有营养的、可以放大思考的，其实书中还有很多有意义的句子，请大家慢慢品味：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如果你遇到困难，绝大多数情况下你并不孤单，你遇到的问题早就有人遇到过，你踩过的坑里尽是前人的脚印。&lt;/li&gt;
-&lt;li&gt;兴趣遍地都是，专注和持之以恒才是真正稀缺的。&lt;/li&gt;
-&lt;li&gt;生活中的选择远比我们想象的要多，细微的选择差异造就了不同的人生。&lt;/li&gt;
-&lt;li&gt;反思是让人得以改进自己的最重要的思维品质。&lt;/li&gt;
-&lt;li&gt;如果你有一些钱不知道化在A还是B上，你先不作决定，没问题，因为钱还是你的，&lt;strong&gt;但是你有一些时间，不知道花在A上还是B上，不行，因为过了这段时间，这段时间就不是你的了&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;一生的知识积累，自学的起码占90%。&lt;/li&gt;
-&lt;li&gt;趁着对一件事件有热情的时候，一股脑儿把万事开头那个最难的阶段熬过去。&lt;/li&gt;
-&lt;li&gt;利用时间碎片：任何一点时间都可以用于阅读。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1&gt;&lt;span&gt;&lt;span&gt;&amp;#12288;&amp;#12288;小小总结&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;成功的人的原因各不相同，失败的人的原因却大都一样。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;书中有提到非常多好的学习方法和思考方式，不一定适合所有人，可是相信所有看过此书的人 都可以从中领悟到一些作者的精神从而得到收获。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;还是以书中开篇的第一句话结尾吧，与大家共勉：&lt;strong&gt;每个人的生命就像沙漏，里面装的沙子总量大致相当，不同的是，有的沙漏颈部较细，有的沙漏颈部较粗。 颈部较细的沙漏能够抓住每一粒时间之沙，即使沙子总量一样，也能拥有更长的生命&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;祝大家工作顺利^_^&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E3%80%8A%E6%9A%97%E6%97%B6%E9%97%B4%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B8%8E%E8%AF%BB%E5%90%8E%E6%84%9F/&quot;&gt;《暗时间》读书笔记与读后感&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 25, 2012.&lt;/p&gt;
   </content>
 </entry>
 

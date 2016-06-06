@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Chrome插件整理",
+      "link"			: "/chrome_plugins/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Gulp使用小结(二)",
       "link"			: "/gulp_2/",
       "excerpt"		: ""

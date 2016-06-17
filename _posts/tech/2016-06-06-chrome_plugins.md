@@ -28,6 +28,7 @@ image:
 - [二维码生成器](https://chrome.google.com/webstore/detail/%E4%BA%8C%E7%BB%B4%E7%A0%81qr%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/pflgjjogbmmcmfhfcnlohagkablhbpmg) - RT。PS：这FF早已经自带生成二维码工具了，```Chrome``` 还得装插件才行，任性...
 - [WEB前端助手(FeHelper)](https://chrome.google.com/webstore/detail/web%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8Bfehelper/pkgccpejnmalmdinmhkkfafefagiiiad) [百度FE](https://www.baidufe.com/)出品，功能超全的 Chrome 插件。简单列一下其功能：QR码生成器、字符串编解码工具、JSON格式化查看器、前端编码规范检测、代码压缩工具、页面取色工具、统计并分析网页加载性能等等
 - [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka) 前端必备的颜色提取神器，操作简单容易上手
+- [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) 和 ```Vim``` 快捷键一样，浏览网站时不需要鼠标咯
 - [Page Ruler](https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn) 前端必备的尺子。计算页面元素间距、位置等信息的时候，你就知道它的好了，无脑上手，你值得拥有
 - [FireShot](https://chrome.google.com/webstore/detail/capture-webpage-screensho/mcbpblocgmgfnpjjppndjkmgjaogfceg) 可以截取整个网页、部分页面，然后支持导出为各种格式。俺微博上发的网页全景图都是靠这个插件截取的
 - [Infinity](https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg) - 好不好用有点见仁见智了，但是我个人比较喜欢。使用后会让你的 **新标签页** 耳目一新，有漂亮的背景和各种常用的功能，比如地图、天气、```Gmail```、```Chrome```商店等等。当然，在这个插件的设置中还可以设置壁纸、动画效果等等

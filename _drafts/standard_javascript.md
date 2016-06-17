@@ -13,6 +13,7 @@ image:
 
 
 
+膜拜下这位 feross 大神的履历：[Feross Aboukhadijeh](http://feross.org/resume/)
 
 ---
 

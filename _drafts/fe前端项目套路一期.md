@@ -3,7 +3,7 @@ layout: draft
 modified:
 categories: [tech, gonglue]
 excerpt:
-tags: [前端攻略, 前端搭建套路]
+tags: [前端攻略]
 image:
   feature:
   credit: 网络
@@ -20,4 +20,3 @@ db：
 > react(为主)或ag
 代码管理：
 > git
-

@@ -4,7 +4,7 @@ title: "ESLint+ATOM 小结"
 modified:
 categories: [tech, gonglue]
 excerpt:
-tags: [pattern, 前端攻略, JS]
+tags: [Atom, 前端攻略, JS]
 image:
   feature:
   credit: 网络

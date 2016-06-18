@@ -1,9 +1,9 @@
 ---
 layout: post
 modified:
-categories: tech
+categories: [tech]
 excerpt:
-tags: [Chrome]
+tags: [Browser]
 image:
   feature: post/chrome.jpg
   credit: 网络
@@ -21,4 +21,3 @@ image:
 　　其实解决它的最好方法仅仅只需要在你要写的css里面加上:-webkit-text-size-adjust:none;
 
 　　好了，第一次写文章，欢迎大家拍砖。
-

@@ -4,7 +4,7 @@ title: "Chrome插件整理"
 modified:
 categories: [tech, gonglue]
 excerpt:
-tags: [pattern, 前端攻略, browser]
+tags: [Tools, 前端攻略, Browser]
 image:
   feature:
   credit: 网络

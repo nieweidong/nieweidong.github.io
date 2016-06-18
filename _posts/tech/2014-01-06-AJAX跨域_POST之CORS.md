@@ -2,9 +2,9 @@
 layout: post
 title: "AJAX POST&跨域之CORS"
 modified:
-categories: tech
+categories: [tech, gonglue]
 excerpt:
-tags: [JS]
+tags: [JS, 前端攻略]
 image:
   feature:
   credit: 网络

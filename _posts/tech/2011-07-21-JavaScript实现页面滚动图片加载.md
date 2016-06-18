@@ -1,7 +1,7 @@
 ---
 layout: post
 modified:
-categories: tech
+categories: [tech]
 excerpt:
 tags: [JS]
 image:
@@ -148,4 +148,3 @@ scrollLoad({
 ```
 
 最后，祝大家工作愉快，学习进步，哈哈..
-

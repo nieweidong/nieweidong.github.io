@@ -2,6 +2,38 @@
 
   
     {
+      "title"			: "Mac 软件篇",
+      "link"			: "/mac_soft/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Fe前端项目套路一期",
+      "link"			: "/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "ESLint+ATOM 小结",
+      "link"			: "/eslint/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "ESLint+ATOM 小结",
+      "link"			: "/standard_javascript/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Chrome插件整理",
       "link"			: "/chrome_plugins/",
       "excerpt"		: ""
@@ -10,7 +42,7 @@
 
   
     ,{
-      "title"			: "Gulp使用小结(二)",
+      "title"			: "Gulp使用小结(下)",
       "link"			: "/gulp_2/",
       "excerpt"		: ""
     }
@@ -26,7 +58,7 @@
 
   
     ,{
-      "title"			: "Gulp使用小结(一)",
+      "title"			: "Gulp使用小结(上)",
       "link"			: "/gulp_1/",
       "excerpt"		: ""
     }
@@ -44,14 +76,6 @@
     ,{
       "title"			: "Atom使用纪要",
       "link"			: "/Atom%E4%BD%BF%E7%94%A8%E7%BA%AA%E8%A6%81/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "Fe前端项目套路一期",
-      "link"			: "/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/",
       "excerpt"		: ""
     }
   

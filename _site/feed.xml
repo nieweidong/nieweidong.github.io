@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-06-06T21:38:11+08:00</updated>
+<updated>2016-06-19T15:05:49+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
@@ -16,11 +16,173 @@
   
 
 <entry>
+  <title type="html"><![CDATA[Mac 软件篇]]></title>
+  <link rel="alternate" type="text/html" href="/mac_soft/" />
+  <id>/mac_soft</id>
+  <published>2016-06-19T00:00:00+08:00</published>
+  <updated>2016-06-19T00:00:00+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;blockquote&gt;
+  &lt;p&gt;对于美好事务的追求无论何时都不算晚。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mac 下的软件那么多，又是免费又是付费，应该怎么选呢？我来分享下我的推荐列表，推荐的优先级老规矩，从上往下依次降低。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.alfredapp.com/&quot;&gt;Alfred&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;，绝对的推荐Top1，很提效率，高级版 &lt;code&gt;Powerpack&lt;/code&gt; 售价 &lt;code&gt;£17&lt;/code&gt;。除了能快速搜索和打开应用程序之外，查找文本文件、全文检索、调起浏览器搜索和计数器都是俺经常使用的功能。如果想知道具体咋用，推荐阅读老池(池建强)的文章：&lt;a href=&quot;http://www.cnblogs.com/chijianqiang/p/alfred.html&quot;&gt;《神兵利器—Alfred》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.iterm2.com/&quot;&gt;iTerm2&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。&lt;code&gt;Mac&lt;/code&gt; 终端功能少又不好看，&lt;code&gt;iTerm2&lt;/code&gt; 可以解救你~  推荐篇文章：&lt;a href=&quot;http://swiftcafe.io/2015/07/25/iterm/?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io&quot;&gt;《让你的命令行丰富多彩》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bahoom.com/hyperdock/&quot;&gt;HyperDock&lt;/a&gt; - 售价 &lt;code&gt;￥68&lt;/code&gt;，感觉还是很值的(特么我还想说，&lt;code&gt;Windows&lt;/code&gt; 数年前就自带的功能，在 &lt;code&gt;Mac&lt;/code&gt; 上还收费，略忧伤)。预览和快速切换窗口太有必要了，能用快捷键控制窗口，能让拖拽到边缘的窗口自动调整大小(window早就有的功能)，真心能提高效率。推荐篇中文的文章：&lt;a href=&quot;http://www.cnblogs.com/ider/p/let-mac-window-fly-with-hyperdock.html&quot;&gt;让Mac的窗口飞&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://atom.io&quot;&gt;ATOM&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。2015/7 之前，在桌面环境下偶最喜欢的编辑器是 &lt;code&gt;Sublime&lt;/code&gt;，但之后就是 &lt;code&gt;ATOM&lt;/code&gt;，俺也专门为它写了篇&lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://github.com/nieweidong/learn-atom&quot;&gt;使用纪要&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/surge-web-developer-tool-proxy/id1040100637&quot;&gt;Surge&lt;/a&gt; - &lt;code&gt;$99.99&lt;/code&gt;。关注 &lt;code&gt;IOS&lt;/code&gt; 开发或者常备梯子的同学，肯定都知道这大名鼎鼎的软件。价钱从 &lt;code&gt;￥68&lt;/code&gt; 涨到 &lt;code&gt;$99&lt;/code&gt; 也让偶咋舌，背后的故事就不细说了，感兴趣可自行去谷歌百度一下。PS：翻墙软件 &lt;a href=&quot;https://shadowsocks.com/&quot;&gt;小飞机ShadowsocksX&lt;/a&gt; 也非常棒，同样推荐：“轻量级科学上网姿势，改变您的生活体验！”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://1password.com/&quot;&gt;1Password&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt; 试用一个月，售价不便宜 &lt;code&gt;$64.99&lt;/code&gt;。如果觉得对各种账号的密码管理心累，那么推荐你使用，这个钱肯定值，&lt;code&gt;Mac&lt;/code&gt; 和 &lt;code&gt;iPhone&lt;/code&gt; 通用，爽歪歪。如果账号密码都是那种一、俩个套路，而且被盗也随意，那么用不用就无所谓啦&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sequelpro.com&quot;&gt;Sequel Pro&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。好用的Mysql工具&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://manico.im/&quot;&gt;Manico&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt; 版已经很好用了，全功能版售价 &lt;code&gt;￥25&lt;/code&gt;。快捷启动和切换 &lt;code&gt;APP&lt;/code&gt; 的工具，高效的第一步&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://manytricks.com/moom/&quot;&gt;Moom&lt;/a&gt; - 售价 &lt;strong&gt;$10&lt;/strong&gt;，有试用版。个人觉得这钱花的值，设置快捷键之后可以方便的调整每个窗口的位置。我不管在家还是公司都是开双屏，外接屏幕三分之一 &lt;code&gt;iTerm&lt;/code&gt;，三分之二 &lt;code&gt;ATOM&lt;/code&gt;，日常使用时各种全屏、居中、靠左、靠右等用快捷键来回着换，辛福感满满的。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mediaatelier.com/CheatSheet/&quot;&gt;CheatSheet&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。能够显示当前程序的快捷键列表，默认的快捷键是长按 ⌘&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.getmarkman.com/&quot;&gt;马克鳗&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt; 版已经够用啦，收费版是 &lt;code&gt;60/年&lt;/code&gt;。英文名 &lt;code&gt;MarkMan&lt;/code&gt;，非常强大好用的标注、测量工具，&lt;strong&gt;强烈推荐&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/browseshot/id615916400&quot;&gt;BrowseShot&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。偶正在使用的网页截图工具，强烈推荐&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.wireshark.org/&quot;&gt;Wireshark&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。说实话，&lt;code&gt;Mac&lt;/code&gt; 下木有 &lt;code&gt;Fiddler&lt;/code&gt; 挺不习惯，不过在有更强大的替代品，虽然有点复杂…还好后来下载到便宜(&lt;code&gt;￥68&lt;/code&gt;)的 &lt;code&gt;Surge&lt;/code&gt; 做替代品&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cockos.com/licecap/&quot;&gt;LICEcap&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。屏幕录制工具，支持导出 GIF 动画图片格式 轻量级、使用简单，录制过程中可以改变录屏范围&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.macbartender.com/&quot;&gt;Bartender 2&lt;/a&gt; - 售价 &lt;code&gt;$20.97&lt;/code&gt;，但是可 &lt;strong&gt;免费&lt;/strong&gt; 试用四周。Mac右上角菜单的管理工具，试用之后右上角的菜单瞬间清爽了，反正试用下也不花钱:)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.scootersoftware.com&quot;&gt;BeyondCompare&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。在Windows下就开始用了 比对文件和文件夹杠杠好使，Merge必备工具&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sourcetreeapp.com/&quot;&gt;SourceTree&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。属于大名鼎鼎的 &lt;code&gt;Atlassian&lt;/code&gt;，一款好用的的 &lt;code&gt;Git&lt;/code&gt; 客户端工具，重点是 &lt;strong&gt;支持中文&lt;/strong&gt;，哈哈:)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.focusboosterapp.com/&quot;&gt;focus booster&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt; 已经够用，当然还有更高级的 &lt;code&gt;INDIVIDUAL/PROFESSIONAL&lt;/code&gt;，售价分别是 &lt;code&gt;$3/$5&lt;/code&gt;。因为比较在意时间管理，所以当工作压力较大时，这软件是俺的必备之物&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://webtorrent.io/&quot;&gt;WebTorrent&lt;/a&gt; - &lt;strong&gt;免费&lt;/strong&gt;。直接播放种子，你懂得。年轻的斯坦福大神 &lt;a href=&quot;http://feross.org/&quot;&gt;Feross&lt;/a&gt; 开发，Git上的开源项目哦。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.jetbrains.com/webstorm/&quot;&gt;WebStorm&lt;/a&gt; - &lt;strong&gt;$129&lt;/strong&gt;，可试用一个月。功能超强的前端 &lt;code&gt;IDE&lt;/code&gt;，谁用谁知道 PS：貌似俺插件装多了，用着卡卡的，风扇呼呼转…然后俺就卸载装了，装了 &lt;code&gt;ATOM&lt;/code&gt;…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mindnode.com/&quot;&gt;MindNode&lt;/a&gt; - 售价 &lt;strong&gt;$29.99&lt;/strong&gt;，有免费试用版。这是款漂亮的思维导图工具。其实 &lt;a href=&quot;http://naotu.baidu.com/&quot;&gt;百度脑图&lt;/a&gt; 这类 Web 上的工具绝对够用了，不太推荐…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://25.io/mou/&quot;&gt;Mou&lt;/a&gt; - 我曾使用过的 Markdown 编辑器，不推荐使用。原本已经准备去掉，但是偶还是想让大家了解下这个有意思的事情：&lt;a href=&quot;http://matrix.sspai.com/p/c7a3c9c0&quot;&gt;《一年了，那个闻名遐迩的 Mou 你还记得吗？》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上列出来的都是偶觉得比较有意思、有特点的软件。当然，也有三类我没有列出来的，分别是 太大众、太小众、太不合适 T.T&lt;/p&gt;
+
+&lt;p&gt;类似 &lt;code&gt;Docker&lt;/code&gt;、&lt;code&gt;Polarr(泼辣修图)&lt;/code&gt; 等这类都太过小众；
+比如 &lt;code&gt;有道翻译&lt;/code&gt;、&lt;code&gt;Evernote&lt;/code&gt;、&lt;code&gt;Foxmail&lt;/code&gt; 等这类又太大众；
+然后，有些软件买了觉得有点“亏”，比如刚出手买入的 &lt;code&gt;Final Cut Pro&lt;/code&gt;，其实机器自带的 &lt;code&gt;iMovie&lt;/code&gt; 就挺好了（完美诠释《Final从入手到放弃》）。
+所以，这几类就不一一往这列举啦~&lt;/p&gt;
+
+&lt;p&gt;over:)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/mac_soft/&quot;&gt;Mac 软件篇&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 19, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Fe前端项目套路一期]]></title>
+  <link rel="alternate" type="text/html" href="/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/" />
+  <id>/fe前端项目套路一期</id>
+  <published>2016-06-18T11:46:18+08:00</published>
+  <updated>2016-06-18T11:46:18+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;http接入层：
+&amp;gt; node或nginx(有必要再搞)
+server：
+&amp;gt; node+express
+db：
+&amp;gt; redis/mysql/mongodb
+前端：
+&amp;gt; react(为主)或ag
+代码管理：
+&amp;gt; git&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/&quot;&gt;Fe前端项目套路一期&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[ESLint+ATOM 小结]]></title>
+  <link rel="alternate" type="text/html" href="/eslint/" />
+  <id>/eslint</id>
+  <published>2016-06-18T11:46:04+08:00</published>
+  <updated>2016-06-18T11:46:04+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;首先，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt; 是偶司前端团队最主要的开发工具。算起来偶从 2015/6/25 的 1.0 版开始坚持使用，马上都快一年啦。整体感受还不错，偶也一直有坚持更新&lt;a href=&quot;https://github.com/nieweidong/learn-atom&quot;&gt;Atom使用纪要&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;因为团队开发，所以希望有个统一的代码标准，那些啥各种 &lt;strong&gt;编码规范&lt;/strong&gt; 就不多说了，这类都是靠习惯去约束人，今天要介绍的是依靠 &lt;code&gt;ESLint&lt;/code&gt; + &lt;code&gt;ATOM&lt;/code&gt;，达到约束我司 &lt;code&gt;JavaScript&lt;/code&gt; 的编码格式的目的。&lt;/p&gt;
+
+&lt;p&gt;但是！不仅仅只是这样，因为我们达到了 &lt;strong&gt;&lt;em&gt;“JavaScript Standard Style”&lt;/em&gt;&lt;/strong&gt; 的小境界，所以我们可以在项目中加上下面这个小图标自娱自乐一下:)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://standardjs.com&quot;&gt;&lt;img src=&quot;https://cdn.rawgit.com/feross/standard/master/badge.svg&quot; alt=&quot;js-standard-style&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图标的缘由请查看： &lt;a href=&quot;https://github.com/feross/eslint-config-standard#badge&quot;&gt;badge&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ESLint官网地址： &lt;a href=&quot;http://eslint.org/&quot;&gt;ESLint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclude&quot;&gt;小结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/eslint/&quot;&gt;ESLint+ATOM 小结&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[ESLint+ATOM 小结]]></title>
+  <link rel="alternate" type="text/html" href="/standard_javascript/" />
+  <id>/standard_javascript</id>
+  <published>2016-06-18T11:45:52+08:00</published>
+  <updated>2016-06-18T11:45:52+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;膜拜下这位 feross 大神的履历：&lt;a href=&quot;http://feross.org/resume/&quot;&gt;Feross Aboukhadijeh&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclude&quot;&gt;小结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/standard_javascript/&quot;&gt;ESLint+ATOM 小结&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
   <title type="html"><![CDATA[Chrome插件整理]]></title>
   <link rel="alternate" type="text/html" href="/chrome_plugins/" />
   <id>/chrome_plugins</id>
-  <published>2016-06-07T00:00:00+08:00</published>
-  <updated>2016-06-07T00:00:00+08:00</updated>
+  <published>2016-06-06T00:00:00+08:00</published>
+  <updated>2016-06-06T00:00:00+08:00</updated>
   <author>
     <name>nieweidong</name>
     <uri></uri>
@@ -47,6 +209,7 @@
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/%E4%BA%8C%E7%BB%B4%E7%A0%81qr%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/pflgjjogbmmcmfhfcnlohagkablhbpmg&quot;&gt;二维码生成器&lt;/a&gt; - RT。PS：这FF早已经自带生成二维码工具了，&lt;code&gt;Chrome&lt;/code&gt; 还得装插件才行，任性…&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/web%E5%89%8D%E7%AB%AF%E5%8A%A9%E6%89%8Bfehelper/pkgccpejnmalmdinmhkkfafefagiiiad&quot;&gt;WEB前端助手(FeHelper)&lt;/a&gt; &lt;a href=&quot;https://www.baidufe.com/&quot;&gt;百度FE&lt;/a&gt;出品，功能超全的 Chrome 插件。简单列一下其功能：QR码生成器、字符串编解码工具、JSON格式化查看器、前端编码规范检测、代码压缩工具、页面取色工具、统计并分析网页加载性能等等&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka&quot;&gt;Eye Dropper&lt;/a&gt; 前端必备的颜色提取神器，操作简单容易上手&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb&quot;&gt;Vimium&lt;/a&gt; 和 &lt;code&gt;Vim&lt;/code&gt; 快捷键一样，浏览网站时不需要鼠标咯&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn&quot;&gt;Page Ruler&lt;/a&gt; 前端必备的尺子。计算页面元素间距、位置等信息的时候，你就知道它的好了，无脑上手，你值得拥有&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/capture-webpage-screensho/mcbpblocgmgfnpjjppndjkmgjaogfceg&quot;&gt;FireShot&lt;/a&gt; 可以截取整个网页、部分页面，然后支持导出为各种格式。俺微博上发的网页全景图都是靠这个插件截取的&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/infinity-new-tab/dbfmnekepjoapopniengjbcpnbljalfg&quot;&gt;Infinity&lt;/a&gt; - 好不好用有点见仁见智了，但是我个人比较喜欢。使用后会让你的 &lt;strong&gt;新标签页&lt;/strong&gt; 耳目一新，有漂亮的背景和各种常用的功能，比如地图、天气、&lt;code&gt;Gmail&lt;/code&gt;、&lt;code&gt;Chrome&lt;/code&gt;商店等等。当然，在这个插件的设置中还可以设置壁纸、动画效果等等&lt;/li&gt;
@@ -67,7 +230,7 @@
   &lt;li&gt;日常开发相关的插件就以上这些，还有几款如知乎的插件、购物插件等这类与开发效率不沾边的，俺就不这上头列了哈&lt;/li&gt;
 &lt;/ol&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/chrome_plugins/&quot;&gt;Chrome插件整理&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 07, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/chrome_plugins/&quot;&gt;Chrome插件整理&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 06, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -75,7 +238,7 @@
   
 
 <entry>
-  <title type="html"><![CDATA[Gulp使用小结(二)]]></title>
+  <title type="html"><![CDATA[Gulp使用小结(下)]]></title>
   <link rel="alternate" type="text/html" href="/gulp_2/" />
   <id>/gulp_2</id>
   <published>2016-06-05T00:00:00+08:00</published>
@@ -86,7 +249,7 @@
     <email>darrencode@qq.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;接上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;Gulp使用小结(一)&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;接上篇文章接&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;Gulp使用小结(上)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;内容如下：&lt;/p&gt;
 
@@ -205,7 +368,7 @@
 
 &lt;p&gt;首先，&lt;code&gt;Grunt&lt;/code&gt; 和 &lt;code&gt;Gulp&lt;/code&gt; 都足够好上手，不需要多先进的理念和经验，就可以用这俩样工具构建简单的前端项目。但是，&lt;code&gt;Gulp&lt;/code&gt; 甚至只有几个 API，这真心够易学的。&lt;/p&gt;
 
-&lt;p&gt;偶上一篇&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;《一》&lt;/a&gt;文章说过：“个人觉得玩 &lt;code&gt;Grunt&lt;/code&gt; 是种写配置的感觉；玩&lt;code&gt;Gulp&lt;/code&gt;就是写脚本(task)”。&lt;/p&gt;
+&lt;p&gt;偶上一篇&lt;a href=&quot;http://www.fefork.com/gulp_1/&quot;&gt;《上》&lt;/a&gt;文章说过：“个人觉得玩 &lt;code&gt;Grunt&lt;/code&gt; 是种写配置的感觉；玩&lt;code&gt;Gulp&lt;/code&gt;就是写脚本(task)”。&lt;/p&gt;
 
 &lt;p&gt;但是对于 &lt;code&gt;npm scripts&lt;/code&gt; 来说，学习成本比上面俩种高了几何倍。时间有限，有关更多的 &lt;code&gt;npm scripts&lt;/code&gt; 俺就不多啰嗦啦，下面偶简单罗列下其特点：&lt;/p&gt;
 
@@ -315,7 +478,7 @@
 
 &lt;p&gt;有关 &lt;code&gt;Gulp&lt;/code&gt; 就说到这吧。我水完了，谢谢:)&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;Gulp使用小结(二)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 05, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/gulp_2/&quot;&gt;Gulp使用小结(下)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 05, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -394,6 +557,8 @@
 
 &lt;p&gt;洗手间文化 =&amp;gt; 不想解释&lt;/p&gt;
 
+&lt;p&gt;邮件文化&lt;/p&gt;
+
 &lt;p&gt;分享精神&lt;/p&gt;
 
 &lt;p&gt;简单可依赖？以人为本？酌情…容我再想想&lt;/p&gt;
@@ -410,7 +575,7 @@
   
 
 <entry>
-  <title type="html"><![CDATA[Gulp使用小结(一)]]></title>
+  <title type="html"><![CDATA[Gulp使用小结(上)]]></title>
   <link rel="alternate" type="text/html" href="/gulp_1/" />
   <id>/gulp_1</id>
   <published>2016-04-30T00:00:00+08:00</published>
@@ -668,7 +833,7 @@
   &lt;li&gt;&lt;a href=&quot;http://www.boke.io/ji-yu-gulphe-webpackde-qian-duan-gong-zuo-liu/&quot;&gt;《基于gulp和webpack的前端工程化》&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/gulp_1/&quot;&gt;Gulp使用小结(一)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/gulp_1/&quot;&gt;Gulp使用小结(上)&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 30, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -920,37 +1085,6 @@
 &lt;p&gt;如发现有趣的内容也会陆续更新补上，更欢迎伙伴们pull request，git地址：&lt;a href=&quot;https://github.com/nieweidong/learn-atom&quot;&gt;learn-atom&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;/Atom%E4%BD%BF%E7%94%A8%E7%BA%AA%E8%A6%81/&quot;&gt;Atom使用纪要&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 30, 2015.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Fe前端项目套路一期]]></title>
-  <link rel="alternate" type="text/html" href="/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/" />
-  <id>/fe前端项目套路一期</id>
-  <published>2015-05-06T09:22:47+08:00</published>
-  <updated>2015-05-06T09:22:47+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;http接入层：
-&amp;gt; node或nginx(有必要再搞)
-server：
-&amp;gt; node+express
-db：
-&amp;gt; redis/mysql/mongodb
-前端：
-&amp;gt; react(为主)或ag
-代码管理：
-&amp;gt; git&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/&quot;&gt;Fe前端项目套路一期&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 06, 2015.&lt;/p&gt;
   </content>
 </entry>
 
@@ -3447,456 +3581,6 @@ c.还有不少不一一列举，可查看&amp;nbsp;http://yingxiao.baidu.com/sup
 
 
     &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E6%94%BB%E7%95%A5%E4%B9%8B%E5%BC%80%E5%85%89%E7%AF%87/&quot;&gt;前端攻略之开光篇&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 11, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[2013过半，总结、计划、意三十]]></title>
-  <link rel="alternate" type="text/html" href="/2013%E8%BF%87%E5%8D%8A%EF%BC%8C%E6%80%BB%E7%BB%93%E3%80%81%E8%AE%A1%E5%88%92%E3%80%81%E6%84%8F%E4%B8%89%E5%8D%81/" />
-  <id>/2013过半，总结、计划、意三十</id>
-  <published>2013-07-07T00:00:00+08:00</published>
-  <updated>2013-07-07T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;看标题就能猜到这是篇总结加目标计划的文章。转眼自己就是结了婚、奔三的人，所以YY一下自己三十岁的样子；还有就是写博文这事停了太久，久到自己的拖延症犯了又犯，确实不可饶恕(小鞭子抽自己)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201301/11090437-900bebd6f94c405694c8d8324a4e866b.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;最近这段时间有学到不少非前端领域的知识，如果不好好整理整理又成了过往云烟(说直接点就是一片空白)。那么今年后半年继续开博，还给自己加点量(感觉自己属于抽自己的血给自己打鸡血)，每月至少两篇；还有得继续努力自己30岁之前的目标&amp;mdash;&amp;mdash;完成&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html&quot; title=&quot;前端攻略系列&quot;&gt;《前端攻略系列》&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;因为记性不好，所以只好多做总结；因为不进则退的原理，所以需要多停下来思考方向&lt;/strong&gt;&amp;mdash;&amp;mdash;这是我最近最大的感受，工作与生活皆是如此。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;记得看&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2012/06/25/DarkTime.html&quot; title=&quot;《暗时间》读书笔记与读后感&quot;&gt;《暗时间》&lt;/a&gt;这本书时我还在厂里战战兢兢的渡试用期，从小导师那屁颠屁颠的把这本书折腾到手，看得那是津津有味，吧唧吧唧的。所以后来又才写了一篇读后感，发表日期上写着“2012/06/25 20：25”，尼玛转眼已经过了一年又13天。从去年6月至今发生了太多其妙的事情，个人在工作和前端领域的技术积累确实不算理想(js代码还没php+sql写的多T.T)，可生活中确收获了自己的另一半，就此一点对我个人来说也算超额完成了2012的目标，吼吼:)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;看看最近一年的博客几乎木有产出，只写了一篇前端工具&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/04/impressjs.html&quot; title=&quot;impress.js初体验 - 前端装X利器&quot;&gt;《Impress.js》&lt;/a&gt;的分享，想到这觉得脸颊略烫...完成&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html&quot; title=&quot;前端攻略系列&quot;&gt;《前端攻略系列》&lt;/a&gt;这是我30岁的目标之一，里面的内容、深度、广度目前还差的太远，可是不管怎样我会坚持下去，不管前面会有老虎或者大坑，此处可以鼓掌(写博文时会不由自主的自high，请原谅哈)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114011-20b7edcdff6f4e7690f4a220b45fce7c.gif&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114021-5a1999e39a3546fcb2f7ae4fc4bfb233.gif&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114029-92feda3a9c604faf8a7a2d7eb000838e.gif&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #888888;&quot;&gt;&lt;em&gt;------------------分割线-------------------分割线---------------------&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;文章分成四部分。&amp;#12288;&amp;#12288;第一、回顾2012；第二、2013上半年；第三、2013下半年；第四、想象下三年后的自己&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;回顾2012. 关键字“移动&amp;amp;Linux”&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;古玛雅人预言2012是其文明的终点，对我来说2012是新生的一年：新的工作环境和新的生活，一切都是新的开始。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在2011年的总结中提到：“能进入一家大公司做自己喜欢的工作，所以我应该是幸运的，生活待我不薄所以更应该好好把握现在”。“&lt;span data-aligning=&quot;#src_1_5,#tran_1_5&quot; id=&quot;src_1_5&quot;&gt;&lt;strong&gt;I &lt;/strong&gt;&lt;/span&gt;&lt;span data-aligning=&quot;#src_1_6,#tran_1_6&quot; id=&quot;src_1_6&quot;&gt;&lt;strong&gt;love &lt;/strong&gt;&lt;/span&gt;&lt;span data-aligning=&quot;#src_1_7,#tran_1_7&quot; id=&quot;src_1_7&quot;&gt;&lt;strong&gt;my &lt;/strong&gt;&lt;/span&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot; id=&quot;src_1_8&quot;&gt;&lt;strong&gt;job” - &lt;/strong&gt;来自电影穿普拉达的女王。赞同这句，如果能找到一份自己心爱的工作，再怎么努力和勤奋都不算过分。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot; id=&quot;src_1_8&quot;&gt;&amp;#12288;&amp;#12288;工作和生活都需要正能量，所以时不时给自己打打鸡血吧&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114621-32ee0455a10e49a386cf5668f1d6e435.gif&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;工作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot;&gt;&amp;#12288;&amp;#12288;去年&lt;/span&gt;最重要的事件是从PC上的web开发转到了移动端开发，自然也学到了不少移动设备开发的知识，所以往后博客分享大多都是HTML5和移动相关的case.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;PHP知识也算有点累计和长进，不过完全没有达到自己的预期目标。投入的时间和精力还是不够，自己的定位是一名大前端(JS+PHP)，这块算是自己的短板&lt;/li&gt;
-&lt;li&gt;Linux和vim的知识算是意料之外的收获，工作环境就是天天和它们打交道，也算圆了自己大学时的遗憾。PS：大学光记得打Dota了，没时间折腾这些&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;其实关于工作在博客里不想聊的太多，每个人都有自己的工作方式和沟通方式，工作也是各有各的看法，所以只要觉得自己没白活就好。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;生活&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;刚毕业的两三年时，看书都是一月一本甚至俩本，而且几乎都是与技术相关的，尼玛现在回想起来都有那么点佩服自己，确实就这么坚持下来了。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;入职百度后看书不像以前看的那么痴迷了，可能也是由于工作和生活都太过充实，所以就没有向以前那么多时间去看书和写博客。并且看得书籍题材也有一半是与技术本身无关的，其实个人感觉收获的更多。写码到一个阶段之后，除非是去学习新的技术或工具，要不 &lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;源代码和技术交流 &lt;/strong&gt;&lt;/span&gt;比书籍更具性价比。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;常常有新手朋友吐槽读源码这种方式，确实多数的源代码都不好啃，关键还得看你读源码的初衷是什么，除非是工作必要的，其它情况个人&lt;strong&gt;只倾向于浅尝。&lt;/strong&gt;理解基本的实现方式和原理，知道此技术解决神马样的问题，适用于神马样的场景，自己再实际写些代码折腾个demo就不错了。对于新技术更应该慎重的浅尝，不过技术这块国外总是走在前沿，再新的技术等我们去学习的时候英文文档都不会少。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;技术交流是个好东西，北上广有非常好的交流氛围，几乎每周都有大大小小的交流会，挑些自己感兴趣或者比较好玩的话题去参与。从一个技术点渐渐深入进去，最终的产出可能非常可观，而且整个过程的参与会非常有价值，解决问题的成就感那也是必不可少的。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;缘分&lt;/strong&gt;&lt;/span&gt;是个看不透、摸不着的东西，妙不可言...2012最大的事情就是与我的初恋女友联系上了，在对的时间遇到对的人，so...圆满完成2012找女朋友的计划:)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114159-c5720143bebc46eeabbfe45ac88a81a7.gif&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot;&gt;2013上半年总结. 关键字“数据&amp;amp;婚姻”&lt;/span&gt; &amp;#12288;&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;今年上半年工作类型发生了一些改变，不像通常前端开发那样做项目和产品需求，而是偏向基础设施建设，专职做了半年的数据相关支持。怎么定义这个事，说的高深点就是大数据相关那些事。越是大型的公司对数据建设也越是重视，现在更有很多专注数据挖据、分析、展示的公司都挺有影响力和规模。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;原计划也没想到数据的事情会一折腾就是半年，这半年基本上前端技能在工作中就不沾边，都是一些php和sql的活。虽然不乐意不过也坚持过来了，成果和实际产出更是显著的，也算对得起这半年的光阴吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;工作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;折腾了百度各种数据流程，对数据建设和数据挖掘有了最基础的认识。最大的收获是建立了组内新的数据统计流程，拓宽自身的视野和知识面。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;具体细节就不多说了，以下用网络上介绍&quot;阿里数据流&quot;的一张图来说明吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07060655-3a70f3c252884f32ad77621cd206f95d.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;生活&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;2013年2月在家成功领证，4月在家完成婚宴，终于不是临时工了，泪牛满面。从单身到恋爱再到结婚，回想这些感觉自己还在梦境。老婆离开老家来到北京与我过着俩人的小世界，呼吸着北京浑浊的空间，生活着酸甜苦辣，可算有滋有味...&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;业余时间自己又折腾了wordpress，老东西折腾起来也挺有意思。也是准备多练练php，顺便想做个b2c的网站，想为老婆在线上线下开个有个性、有创意的花店。现在的状态正在开发主题:)&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114250-f624355452bc4a82a2689e1c21542b16.jpg&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;2013下半年计划. 关键字“专研、创新”&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;到了6月中旬数据工作也算告一段落，又回到了喜爱的前端岗位。发现产品线用上了各种新东西，又是grunt、又是fis，有种农民工进城的感觉，不知道步子该怎么迈了T.T&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;积累了不少的数据和php知识后 写前端那叫一个心里底气十足，对具体功能的本质了解的更透彻。比如哪些功能是有数据支撑的需求，哪些功能是理想化需要测试的需求，后续url参数如何维护和管理等等，一切用数据说话，结果导向。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;谈谈自己下半年的期待吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;工作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;来厂一年多级别还未变过，下半年和明年1月都有考级的机会。本着不想做厨子的编辑不是好程序员的思想，打算一搏传说中的“职称评定”。fighting！&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;技术积累。组内使用上了不少较新的技术，如Manifest、WorkStory、Grount、Fis、Nodejs等等很多，可是这五项自己没有搞透而且觉得有必要搞透，打算文档走起来，Research最后必定会有产出:)&lt;/li&gt;
-&lt;li&gt;在组内做一次技术分享。要写点总结或者文档自己还行，可是与多数码农一样，站在台上做分享或者长时间发言总会比较怯场，希望能在组内做做自己分享，顺便锻炼下自己的表达和演讲能力。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;生活&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;头一次在博客中提到那么多有关自己家庭的事情，可能真是结婚和不结婚心理还是不一样的，以前单身的时候可以天天朝10晚11，轻松轮轴转坚持几个月，现在偶尔晚上11点多回家还怕家人担心。总听某些成功人士或者年长者谈论 “家人和事业怎么怎么平衡”，那个时候只懂“话”的意思可是还理解不了&lt;strong&gt;平衡&lt;/strong&gt;的意义，这东西真的需要实践才出真理哈。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;得学会做饭菜，只需要会三四个菜就好，没事在家的时候可以下厨是件很享受的事情。媳妇口中生活白痴的我是婚后才第一次学习煎鸡蛋&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07113712-28e097e811db4e83b80a43b0e5d73b90.gif&quot; /&gt;...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;希望接下来的半年里少惹媳妇生气(已婚且疼媳妇的人懂这句，家庭和谐第一)，多陪媳妇买衣服和逛街，做个好好男人:)&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;下半年有几本必须要看的书：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;基友 &lt;a target=&quot;_blank&quot; href=&quot;http://www.weibo.com/u/1241521384&quot; title=&quot;低级码畜&quot;&gt;@&lt;span class=&quot;name&quot;&gt;低级码畜&lt;/span&gt;&lt;/a&gt;推荐的《编程人生》，此书名声在外，上周刚借到手；&lt;/li&gt;
-&lt;li&gt;《代码整洁之道》被几个好友推荐，所以已经入手；&lt;/li&gt;
-&lt;li&gt;重读《php和mysql web开发》。2010年初购买，坚持看完可是现在回想都没有印象了，对于一本入门圣经来说确实罪过&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07113905-2cf38819520d448290c6735e103aa4f3.jpg&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;克军在6月30号的百度技术沙龙分享“工程之美”中有提到这么一句比较有意思，不做评论大家自己思考，大概如：“学习前端技术从阅读标准开始，书是滞后的产物”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114443-b956a01da59b4eeab895c0cb01eb9809.gif&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span style=&quot;color: #000000;&quot;&gt;意三十&lt;br /&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&amp;#12288;&amp;#12288;“三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲”。&lt;span style=&quot;color: #000000;&quot;&gt;毕业4年有余，80后的我转眼到了奔三的年纪，“三十而立”就是摆在我眼前的话题，&lt;/span&gt;作为祖宗的传统说法，源于《论语·为政》的成语，意为人到了30岁就应该去面对一切困难。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&amp;#12288;&amp;#12288;百度百科中有一句比较认同的理解：“&lt;span style=&quot;background-color: #ccffff; font-size: 18px;&quot;&gt;&lt;strong&gt;30岁人应该能依靠自己的本领独立承担自己应承受的责任，并已经确定自己的人生目标与发展方向&lt;/strong&gt;&lt;/span&gt;”&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;北漂一族的我30岁能最希望拥有东西是什么？答案是“孩子、房子、车子”，优先级依次降低...好吧，讲这三个词确实太枯燥也太现实了。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;我憧憬三十岁时能给媳妇开一个花店。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;店里有舒服的沙发，我能窝在里面看书、写码甚至打游戏；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有舒服的茶座，时不时约上两三个好友一起坐着喝喝茶、扯扯蛋；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有一台勉强算高级的半自动咖啡机，亲手操作，调制出一杯美味的咖啡，是一种精神上的享受；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有自己的小孩常在身边，一定不告诉他什么叫“hello world”；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有一条柯基或者萨摩常伴左右；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;。。。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;。。。&lt;/span&gt;&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;继续回到现实。那么现在我需要准备什么，去学习做咖啡吗？NO！以下这句话&lt;span style=&quot;font-size: 16px;&quot;&gt;与大家共勉&lt;/span&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;希望大家在喜欢的行业中站着把钱的挣了&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;ps:就算不喜欢能挣钱也成 &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07120621-18a992ecf64c43b8b9f858f66dc161fd.gif&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; style=&quot;font-size: 16px;&quot; class=&quot;highLight&quot; id=&quot;src_1_8&quot;&gt;越努力，越幸福。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; style=&quot;font-size: 16px;&quot; class=&quot;highLight&quot;&gt;再见，上半年。&lt;/span&gt;&lt;/p&gt;
-
-
-
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; style=&quot;font-size: 16px;&quot; class=&quot;highLight&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/2013%E8%BF%87%E5%8D%8A%EF%BC%8C%E6%80%BB%E7%BB%93%E3%80%81%E8%AE%A1%E5%88%92%E3%80%81%E6%84%8F%E4%B8%89%E5%8D%81/&quot;&gt;2013过半，总结、计划、意三十&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 07, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[前端攻略系列]]></title>
-  <link rel="alternate" type="text/html" href="/%E5%89%8D%E7%AB%AF%E6%94%BB%E7%95%A5%E7%B3%BB%E5%88%97/" />
-  <id>/前端攻略系列</id>
-  <published>2013-01-05T00:00:00+08:00</published>
-  <updated>2013-01-05T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt;&quot;&gt;越努力，越幸福...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;color: #888888;&quot;&gt;&amp;#12288;&amp;#12288;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/p/light.html&quot; title=&quot;开光篇&quot;&gt;00 开光篇&lt;/a&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/12/31/property.html&quot; title=&quot;前端优化&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;01 前端各种优化&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;~ &lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/p/interview.html&quot;&gt;前端面试有感(2014/3/09上传)&lt;/a&gt;&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2012/01/31/questions.html&quot; title=&quot;前端面试题&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;02 前端各种面试题&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/08/31/JavascripDesignPatterns.html&quot; title=&quot;JS设计模式&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;03 Javascript 设计模式&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/06/29/javascript-learn.html&quot; title=&quot;前端好书&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;04 前端好书推荐&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;05 HTML5系列&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;color: #888888;&quot;&gt;Offline Web Application(manifest) &lt;/span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/p/cors.html&quot; title=&quot;AJAX POST&amp;amp;跨域 解决方案 - CORS&quot;&gt;CORS (2014/1/6上传)&lt;/a&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #888888;&quot;&gt;06 &lt;span style=&quot;font-size: 16px;&quot;&gt;移动开发&lt;/span&gt;系列&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: #888888;&quot;&gt;&amp;#12288;&amp;#12288;07 &lt;span style=&quot;font-size: 16px;&quot;&gt;jQuery系列&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;08 &lt;span style=&quot;font-size: 16px;&quot;&gt;node系列&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/10/31/nodejs.html&quot; title=&quot;node初体验&quot;&gt;node初体验&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/p/node_express.html&quot;&gt;Nodejs初阶之express (2014/02/28更新)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/p/express4.html&quot;&gt;Express 4.X 启航指南(2014/09/24更新)&lt;/a&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #888888;&quot;&gt;09 浏览器系列&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: #888888;&quot;&gt;&amp;#12288;&amp;#12288;10 前端组件化系列&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;11 前端利器&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/04/impressjs.html&quot; title=&quot;Impress.js&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Impress.js&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/09/28/Fiddler.html&quot; title=&quot;Fiddler&quot;&gt;Fiddler&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;color: #888888;&quot;&gt;Aptana&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;什么，你以为只有这些列好的内容？NO NO，等着我一点一点的把肉饼做大做好。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;请热爱自己所拥有的一切，因为...说不定哪天你就不热爱了&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201306/21081555-bf89679fb9634519a22105a3a8abc8a2.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E6%94%BB%E7%95%A5%E7%B3%BB%E5%88%97/&quot;&gt;前端攻略系列&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on January 05, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Impress.js初体验]]></title>
-  <link rel="alternate" type="text/html" href="/impress.js%E5%88%9D%E4%BD%93%E9%AA%8C/" />
-  <id>/impress.js初体验</id>
-  <published>2013-01-04T00:00:00+08:00</published>
-  <updated>2013-01-04T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;博客一歇就是半年，略惭愧...元旦假期各种惬意：打打Dota(悲催的输多赢少)、滑滑雪；吃吃东西、逛逛街。转眼儿今天就得上班了，5点早早起床(最近坚持早睡早起)，忍不住分享下前段时间发现的前端工程师装X的利器，所以这新年第一篇博文诞生了:)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;你希望别人看到你的&lt;span&gt;演示文稿&lt;/span&gt;会发出“wow”吗？你希望使用华丽的效果来震惊你的观众吗？ 那咱们往下看&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;正文分割线&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style=&quot;color: #c0c0c0;&quot;&gt;&lt;em&gt;&lt;span style=&quot;background-color: #ffffff;&quot;&gt;------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;概述&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;如果你已经厌烦了使用PowerPoint制作PPT，那么impress.js是一个非常好的选择，用它做的PPT更加直观，效果也非常的不错。装X是需要一定代价的，不过如果你是个前端爱好者那么一切就没问题了。当然如果你能勉强明白HTML和CSS也没问题，看看这篇文章 + 一点点实践（把官网上的例子拿来改改）即可...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;impress.js 是国外一位开发者受 Prezi 启发，采用 CSS3 与 JavaScript 语言完成的一个可供开发者使用的表现层框架(&lt;strong&gt;演示工具&lt;/strong&gt;)。现在普通开发者可以利用 impress.js 自己开发出类似效果的演示工具，但性能比基于 FLASH 的 Prezi 更优。其功能包括画布的无限旋转与缩放，任意角度放置任意大小的文字，CSS3 3D 效果支持等。同时，也支持传统 PowerPoint 形式的幻灯演示。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;目前 impress.js 是基于 webkit 浏览器（Chrome、Safari）开发，而在其它基于非 webkit 引擎，但支持 CSS3 3D 的浏览器也能正常运行。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;impreess源码已经发布在GitHub上，地址：&lt;a target=&quot;_blank&quot; href=&quot;https://github.com/bartaz/impress.js/&quot;&gt;https://github.com/bartaz/impress.js&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;官方demo地址：&lt;a href=&quot;http://bartaz.github.com/impress.js&quot;&gt;http://bartaz.github.com/impress.js&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;因为在其项目网页中却没有找到说明文档&amp;amp;使用文档，所以这篇文章将一步一步创建一个较初级的演示文稿，我们接着往下走。&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ffff99;&quot;&gt;&amp;#12288;&amp;#12288;请准备好现代浏览器：Google Chrome(效果最佳)、Safari或FF.&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;background-color: #ffff99;&quot;&gt;&amp;#12288;&amp;#12288;*我的IE10不支持，不知道为什么很多资料上写着IE10也能支持，背了个催&lt;/span&gt;。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;配置&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;html5页面结构先准备就绪&lt;/li&gt;
-&lt;li&gt;创建一个id=&quot;impress&quot;的wrapper(载体)，直接div就好，其他标签同样也可以&lt;/li&gt;
-&lt;li&gt;在body标签结束前引入impress.js文件并且调用&lt;/li&gt;
-&lt;li&gt;class=&quot;impress-not-supported&quot;是当浏览器不支持时显示给用户的提示信息，降级处理你懂的，不多解释哈&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ol&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&quot;color: #ff00ff;&quot;&gt;doctype html&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;html&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;head&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;title&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;darren - Impress demo&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;title&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;meta &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;charset=&quot;utf-8&quot; /&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;link &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;http://bartaz.github.com/impress.js/css/impress-demo.css&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; rel&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;stylesheet&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;head&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;body&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;impress-not-supported&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;impress&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;src&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;http://bartaz.github.com/impress.js/js/impress.js&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&amp;#12288;&amp;#12288;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;impress().init();&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;body&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;html&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在wrapper内创建一个幻灯片只需要新建一个class=&quot;step&quot;的&amp;lt;div&amp;gt;即可。&amp;lt;div&amp;gt;的id可有可无，当有id时url中的hash变化是随着id走；反之就是step-[num]，如&lt;img alt=&quot;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAAAfCAIAAADcCk7TAAAEz0lEQVR4nO1c25WjMAxVXRREPfRgaqAHaIEy9sSSz3ywH5bfD0wmTCYMOtnFWJJ1JV9jk+xZIEIiQkIibmohIkQygkiIhISIaByMln2NMxuylbljD9QmhOxmw3CnPwx3ojVmA/JgsZ8XkqF6+XhNpdTX15dSikgZIVJEihQRkSKlFDmt7lC62xqylbljD9ImitiNTBju9IfhTrLGbKA8WOznhWSo3HbweFgiG+7dqQF6QtggTUbOlhmyPxaVFKW+/KiU9355ahvAH/wkZcrPGiAiSolSIkopEVHyBSVKKaWns1ftKlGyGTtJNB9ticZNu2oXrbF27GhCI7elaSPqcGYIi85qPUCMGO0AJ6a2AVw1tdKsbQCNqYFM5CHlI+11ykZ51NqPh5QP050f8+H9KY/9SLsqMF+Y2gaQeF0ktVJ7A2hMDcwaQMs+Y8D8t230nNGqnN40vGWrqWvXEy8TiW5ADP15ZVhIHhAPh1ubbsWiH9L3Pyk1XrhXTK00a3ohtaQG4ziOYhyFuYpxHIXpEaMWwd3cKYQYxRj0CTGa7lGwv+BRhR5GeBFGL6KNJGy3F9jAiTrsyCJ2CW9PS20DuGpqpVnbABpTg+2W5wT+XumaU/57pXmV3KyqGJ4K48pys6pieCqMK8vNqorhqTCuLDerKobR/dQDdMP6ajy/UKYeoJ+e9y+U+MoFPMqqdegA+klfr1qUUH6OVevQcaSpzxXXFP8tsg4dWNmZ+YOsemteB+S7TGgeqyFQO6umnsdah+4ZUr0y63Roh2j3kXKMVevQfcYD6iNZZWfOPbN82S/+iazKRKpgOcQqf6y43U/uEdkNa/DEdJmyl/809cqgtZNWWtC+cWbLiFXBkxriFZYbZ+ozWEK1n52xygZKS7EB1EqRDpQFH09kjPlo1vWJ2JUXsioYKmaVvbNAGeXUe4i5GBFjIq2fXhAzfPJWVOmqLRqHSQ2ZSgXZ6btyoLQUW6UUMbkr+19pRfuY27PemYgdeeUOGGIuZhkVL8O/ALt/WEi0yVbgdoGKakvqWzZuOChG2YUeOVaFpdgAWooW7H95Upk4RczNWe9NRE00/+pbcTuroqDpDphVhbkUjqjZ58ZW3Br6qapKEdWMja5cpsxc1VkVlmIDqJfCbWaRRNtYmk+MuT3r+kQUzwprdDgpSTuruvKiPJVV+eWzs7Iy9a0tQ1vGXL3OZpW1LH6pkMWfwXwg6/pE5ITjNW2S7axKX1ieZFV5688dNUqJ1mtQR1RxylTtR1hV2/9qL3/JUa0x6/pEFOybX/8PPKvKzD7IqmhSwrswTHyIXIcuOF3kVaW9NGO8Dn2w1N2bXGmuUlbFb2pPsMpxyT6zSuUsYT6S9d5EJNK2LK0cOFele/izO+BUeJ/NYq98p1v7utecVrJfUCTvFjnbJlbFgZ7eAYuSs8thPp51eSJiyR/Ryuh/+Nflg5y/hHzv1+Xk24LXyLkTcbPqdPkOq077hexm1YfLr/yXMDerPlxuVlUMTwJwffmVrDpXbladLjerKobLMi/zsizzsszzPC+LbpsL95hO38JqWKX/Mu15NjfRiGZYE1QrZt2eF+c1B36zD9T0+hBmTiHEfFpqG8BVUyvN2gbQmBr8u+Upeft/pPGWT2Nx/gOWeqFbBwA7NAAAAABJRU5ErkJggg==&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-    first slide
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;nbsp;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;数据属性&lt;/strong&gt;&lt;/span&gt;：用来描述幻灯片大小，切换等效果。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-x = 幻灯片的x坐标&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-y = 幻灯片的y坐标&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-scale = 通过指定一个值来进行缩放，data-scale为5则将会在你幻灯片原始尺寸基础放大5倍&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-rotate = 通过一个数字度数来确定旋转你的幻灯片&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-rotate-x = 为3D用，这个数字度数是它应该相对x轴旋转多少度。（前倾/后仰）&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-rotate-y = 为3D用，这个数字度数是它应该相对y轴旋转多少度。 （左摆/右摆）&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;data-rotate-z = 为3D用，这个数字度数是它应该相对z轴旋转多少度。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;创建&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;数据属性那段是你接下来需要重点打交道的，接下来开始step by step创建一个演示文稿。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;从一个初始的幻灯片开始，这个幻灯片已将它data-x和data-y数据属性设置为0，所以会出现在页面的中间。&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-    This is slide 1 - 【标题】
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;第二个幻灯片的data-x值为500、data-y值为0，活动的时候它将会向左平移(滑动)500px的地方。&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-400&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-    This is slide 2
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;第三张幻灯片其data-x值不变，data-y位置为-400，这将会是从顶部400px处滑入屏幕。&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-400&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-    This is slide 3
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;第四张幻灯片来个新花样，使用data-scale的值控制其缩放大小。data-scale=&quot;0.5&quot;表示着它应该是一半的尺寸，当它变成活动的演示时将通过必需的倍数调节所有幻灯片的缩放尺寸，从这一步绚丽开始起步&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-800&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-scale&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0.5&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-    This is slide 4
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;第五张幻灯片旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转90度，视觉效果微叼哈&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-800&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;90&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-    This is slide 5
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;第六张幻灯片开始3D style，可为每个维度的轴指定旋转属性(x,y,z)。x轴是横轴，意思是你可使事物倾斜(正值)或向后(负值)，y轴是竖轴，所以你可使事物向左摇摆(负值)或向右(正值)，z轴是纵轴，这将是旋转的东西向上（负值）和向下（正值）。&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-1200&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;
-    data-rotate-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;30&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-30&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate-z&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;90&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-scale&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;4&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-&amp;#12288;&amp;#12288;This is slide 6
-&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;以上6张幻灯片把数据属性内的值都过了一遍，一张略high的演示文稿就呈现在我们眼前。你可以以你的想象力用不可思议的和令人惊奇的方式合并这些效果来创建你自己的幻灯片展示风格。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&lt;strong&gt;全局预览&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;个人超赞这个视觉体验，把所有的幻灯片都平行的展示，排列的合理会非常帅气，使用方式就是在幻灯片6后面插入一段html.&lt;/p&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;overview&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-200&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-scale&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;3&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;随着你幻灯片位置的不同所以全局预览的值也会不一样，拿着结尾处的demo一点一点调整找感觉，希望你会喜欢！&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;完成后请记住它，用它做的不只局限于此，&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;唯一的限制是你的创造力&lt;/strong&gt;！&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;个人体会&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;正因为我们是前端，所以用前端技术做做各种尝试没什么不好，impress更可以让我们的&lt;span&gt;演示文稿&lt;/span&gt;更有新意，所以简单了解下绝对是值得的，&lt;strong&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;学习是最好的投资&lt;/span&gt;&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;优点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;个人非常喜欢overview的功能&lt;/li&gt;
-&lt;li&gt;因为HTML+CSS都需要自己完成，位置和效果都得自己经手，视觉效果都由自己掌控&lt;/li&gt;
-&lt;li&gt;在我用过的同类产品中视觉效果最绚，CSS3+3D效果，直接给观众看晕:)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;缺点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;impress在视觉表现上确实非常强大，比起同样做&lt;span&gt;演示文稿的&lt;/span&gt; html5slides 和 deck.js， impress.js的复杂度上高了不少，而且如果想把演示文稿排版的好看可能需要花掉大量的时间.&lt;br /&gt;*如果闲impress麻烦的朋友可以去看看 html5slides 和 deck.js的资料，视觉效果会稍差一些，不过上手会简单不少。&lt;/li&gt;
-&lt;li&gt;不要把3D和旋转用得太花哨、太绚，看的人会晕，恰当就好哈&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;background-color: #ffff99;&quot;&gt;以下是demo代码，初学者自己动手多改改感觉就好了&lt;/span&gt;。&lt;/p&gt;
-&lt;div onclick=&quot;cnblogs_code_show(&#39;7eae9e96-7379-44cf-acb0-74bffdcffb77&#39;)&quot; class=&quot;cnblogs_code&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif&quot; class=&quot;code_img_closed&quot; id=&quot;code_img_closed_7eae9e96-7379-44cf-acb0-74bffdcffb77&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif&quot; onclick=&quot;cnblogs_code_hide(&#39;7eae9e96-7379-44cf-acb0-74bffdcffb77&#39;,event)&quot; style=&quot;display: none;&quot; class=&quot;code_img_opened&quot; id=&quot;code_img_opened_7eae9e96-7379-44cf-acb0-74bffdcffb77&quot; /&gt;&lt;span class=&quot;cnblogs_code_collapse&quot;&gt;View Code &lt;/span&gt;
-&lt;div class=&quot;cnblogs_code_hide&quot; id=&quot;cnblogs_code_open_7eae9e96-7379-44cf-acb0-74bffdcffb77&quot;&gt;
-&lt;pre&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span style=&quot;color: #ff00ff;&quot;&gt;doctype html&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;html&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;head&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;title&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;darren - Impress demo&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;title&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;meta &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;charset&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;utf-8&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;link &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;href&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;http://bartaz.github.com/impress.js/css/impress-demo.css&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; rel&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;stylesheet&quot;&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;head&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;body&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;impress-not-supported&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;fallback-message&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;你的浏览器&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;不支持&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt; impress.js, 所以当前展示的是简化版。&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;为了获得更好的体验，请使用最新的 &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;Chrome&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;, &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;Safari&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt; 或者 &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;Firefox&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;b&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt; 浏览器。&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;p&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;impress&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-                Darren code - [标题]
-            &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-                This is slide 2
-            &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-400&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-                This is slide 3
-            &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-800&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-scale&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0.5&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-                This is slide 4
-            &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-800&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;90&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-                This is slide 5
-            &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-1200&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;0&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;30&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-30&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-rotate-z&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;90&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-scale&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;4&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-                This is slide 6
-            &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #008000;&quot;&gt;&amp;lt;!--&lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt; darren code &lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt;--&amp;gt;&lt;/span&gt;
-            &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;overview&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; class&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;step&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-x&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-200&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-y&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;-500&quot;&lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt; data-scale&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;3&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script &lt;/span&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;src&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;http://bartaz.github.com/impress.js/js/impress.js&quot;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;impress().init();&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;body&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #800000;&quot;&gt;html&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;突然想起一句话作为文章总结吧：“&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;当你有把锤子的时候,你看什么都像钉子&lt;/strong&gt;&lt;/span&gt;”。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;今天是2013.1.4，一个很amazing的日子，不知道今天会有多少人会去登记哈，表示 羡慕ing&amp;amp;祝福ing...我也加把劲，hoho&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;祝大家2013年快乐、顺利.&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/impress.js%E5%88%9D%E4%BD%93%E9%AA%8C/&quot;&gt;Impress.js初体验&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on January 04, 2013.&lt;/p&gt;
   </content>
 </entry>
 

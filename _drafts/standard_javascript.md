@@ -11,9 +11,16 @@ image:
   creditlink: javascript:;
 ---
 
+http://standardjs.com/
 
+http://eslint.org/
+https://github.com/feross/eslint-config-standard
+
+https://github.com/feross/standard —— "One Style to Rule Them All"
 
 膜拜下这位 feross 大神的履历：[Feross Aboukhadijeh](http://feross.org/resume/)
+
+https://atom.io/packages/linter-eslint
 
 ---
 

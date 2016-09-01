@@ -10,13 +10,24 @@ image:
   creditlink: javascript:;
 ---
 
-http接入层：
-> node或nginx(有必要再搞)
+### 技术栈
+
+接入层：
+
+- node或nginx(有必要再搞)
+
 server：
-> node+express
+
+- node
+
 db：
-> redis/mysql/mongodb
+
+- redis/mysql/mongodb
+
 前端：
-> react(为主)或ag
+
+- react(为主)或ag
+
 代码管理：
-> git
+
+- git

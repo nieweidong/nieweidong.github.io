@@ -2,32 +2,24 @@
 
   
     {
+      "title"			: "《拖拉一点也无妨》小记",
+      "link"			: "/procrastination/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "2016过半",
+      "link"			: "/2016half/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Mac 软件篇",
       "link"			: "/mac_soft/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "Fe前端项目套路一期",
-      "link"			: "/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "ESLint+ATOM 小结",
-      "link"			: "/eslint/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "ESLint+ATOM 小结",
-      "link"			: "/standard_javascript/",
       "excerpt"		: ""
     }
   

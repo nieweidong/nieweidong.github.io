@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/procrastination/</loc>
+    <lastmod>2016-09-04T00:00:00+08:00</lastmod>
+  </url>
+  <url>
+    <loc>/2016half/</loc>
+    <lastmod>2016-08-04T00:00:00+08:00</lastmod>
+  </url>
+  <url>
     <loc>/mac_soft/</loc>
     <lastmod>2016-06-19T00:00:00+08:00</lastmod>
-  </url>
-  <url>
-    <loc>/fe%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%A5%97%E8%B7%AF%E4%B8%80%E6%9C%9F/</loc>
-    <lastmod>2016-06-18T11:46:18+08:00</lastmod>
-  </url>
-  <url>
-    <loc>/eslint/</loc>
-    <lastmod>2016-06-18T11:46:04+08:00</lastmod>
-  </url>
-  <url>
-    <loc>/standard_javascript/</loc>
-    <lastmod>2016-06-18T11:45:52+08:00</lastmod>
   </url>
   <url>
     <loc>/chrome_plugins/</loc>
@@ -166,35 +162,35 @@
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/gonglue/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/interview/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/about/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/tags/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/tech/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/life/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/note/</loc>
-    <lastmod>2016-06-19T15:08:03+08:00</lastmod>
+    <lastmod>2016-09-07T15:04:44+08:00</lastmod>
   </url>
   <url>
     <loc>/baidu_verify_qOIARazTvY/baidu_verify_qOIARazTvY.html</loc>

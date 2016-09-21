@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-09-07T15:04:44+08:00</updated>
+<updated>2016-09-21T14:42:04+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
@@ -16,11 +16,76 @@
   
 
 <entry>
+  <title type="html"><![CDATA[公众号-「前端攻略 开光篇」]]></title>
+  <link rel="alternate" type="text/html" href="/2016-09-22-public/" />
+  <id>/2016-09-22-public</id>
+  <published>2016-09-21T14:25:27+08:00</published>
+  <updated>2016-09-21T14:25:27+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;作为一枚程序员，每件重要项目的开始都忍不住使用”Hello World”。&lt;/p&gt;
+
+&lt;p&gt;这个公众号是不是来晚了？如果你有这个疑问，那么我想说：对于写作和思考，任何时候都不晚。我用三个简单的自问自答，来讲讲这个前端攻略公众号的初衷。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/qrcode.jpg&quot; alt=&quot;聂微东公众号&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;为什么要开这个公众号？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;阅读和写作是我最大的爱好。写作让我静心，让我更好的思考，经常也是我减压的方式；&lt;/li&gt;
+  &lt;li&gt;从2010年开始写博客至今，已坚持有些年头，一直觉得“是该探寻个新方式”，所以开通公众号来继续 &lt;strong&gt;写&lt;/strong&gt; 也成了最佳的选择；&lt;/li&gt;
+  &lt;li&gt;GitHub Pages发图片不太方便，不能很好展示我逗逼的写作风格。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mmbiz.qpic.cn/mmbiz_jpg/z6CJrIF2a4WqSY2HPdL7CEiaY17Q5kbuYvA13llQzNpBSU0aNV8zrwibYKeG9a3CfloEVtVF5GY1rm6oqLW1BYsQ/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;公众号的目标是？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;不知不觉间已经成家，不知不觉间闺女已经可以满街跑，偶然间自己总会焦虑。已到而立之年了，那我还能做些什么呢？&lt;/p&gt;
+
+&lt;p&gt;思考后我告诉自己，&lt;strong&gt;找个自己热爱方向的坚持做下去，因为这样才会有成就感和乐趣&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;好吧，那趁着自己还能写、还想写，那就逼着自己多写一些吧；&lt;/li&gt;
+  &lt;li&gt;一直有个出书的梦想，虽暂时没精力去做，但也算时刻准备着嘛。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mmbiz.qpic.cn/mmbiz_jpg/z6CJrIF2a4WqSY2HPdL7CEiaY17Q5kbuYNYjQiapcS5o5iaibQiaTFglSpibBBLiae4yAN1UIa5SlTclFNKBIXFhwD0bw/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;会推送些什么内容呢？&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我现在是名工程师，且有幸（或不幸）待过多种多样的互联网公司，如按时间的先后顺序排列：外包、外企、创业、大公司、初创、小公司。&lt;/p&gt;
+
+&lt;p&gt;杂乱的工作履历和杂乱的阅读习惯，让我除了技术之外还有很多想记录下来的文字。&lt;/p&gt;
+
+&lt;p&gt;但归根结底，这里所记录的一切都只会与 Web技术、创业思考、好书分享、科技咨询 这类有关。
+我会努力保证每篇推送文章的质量哒。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mmbiz.qpic.cn/mmbiz_jpg/z6CJrIF2a4WqSY2HPdL7CEiaY17Q5kbuYQ5plMroTUB5sE3moWho8KcAJpWszJM2NkWhMzOoCfSSnBEJR2cX55g/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后，希望自己能一直铭记这些初心。&lt;/p&gt;
+
+&lt;p&gt;同样，也愿你能不忘初心。&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/2016-09-22-public/&quot;&gt;公众号-「前端攻略 开光篇」&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on September 21, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
   <title type="html"><![CDATA[《拖拉一点也无妨》小记]]></title>
   <link rel="alternate" type="text/html" href="/procrastination/" />
   <id>/procrastination</id>
-  <published>2016-09-04T00:00:00+08:00</published>
-  <updated>2016-09-04T00:00:00+08:00</updated>
+  <published>2016-09-06T00:00:00+08:00</published>
+  <updated>2016-09-06T00:00:00+08:00</updated>
   <author>
     <name>nieweidong</name>
     <uri></uri>
@@ -31,7 +96,7 @@
 其次，这是我第二次读这本书，上一次貌似是两、三年前了；
 最后，这是一本拖了 &lt;strong&gt;15年&lt;/strong&gt; 才写成的小书，作者是究极的拖延者。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/delay_matter.jpg&quot; alt=&quot;《拖拉一点也无妨》&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/delay_matter.jpg&quot; alt=&quot;《拖拉一点也无妨》&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;第一次读这本书时没啥共鸣，完全就当做周末打发时间的杂书刊物，所以也就懒得去记录些什么；
 不知为何，这次重读居然引动了体内的洪荒之力(貌似我是个隐性的拖延者)，被书中一些经典的句子产生暴击伤害。&lt;/p&gt;
@@ -115,7 +180,104 @@
 
 &lt;p&gt;差不多就这样，over&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/procrastination/&quot;&gt;《拖拉一点也无妨》小记&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on September 04, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/procrastination/&quot;&gt;《拖拉一点也无妨》小记&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on September 06, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[大前端项目技术栈]]></title>
+  <link rel="alternate" type="text/html" href="/%E5%A4%A7%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88/" />
+  <id>/大前端项目技术栈</id>
+  <published>2016-09-01T21:11:14+08:00</published>
+  <updated>2016-09-01T21:11:14+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;h3 id=&quot;section&quot;&gt;技术栈&lt;/h3&gt;
+
+&lt;p&gt;接入层：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;node或nginx(有必要再搞)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;server：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;node&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;db：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;redis/mysql/mongodb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;前端：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;react(为主)或ag&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;代码管理：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;git&lt;/li&gt;
+&lt;/ul&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/%E5%A4%A7%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88/&quot;&gt;大前端项目技术栈&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on September 01, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Linux 软件篇]]></title>
+  <link rel="alternate" type="text/html" href="/linux/" />
+  <id>/linux</id>
+  <published>2016-08-09T19:12:37+08:00</published>
+  <updated>2016-08-09T19:12:37+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;** 文章内容来着我整理的&lt;a href=&quot;https://github.com/nieweidong/fetool&quot;&gt;fetool&lt;/a&gt;，以下内容可能更新不及时 **&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;作为一名程序员兼工具控，我期待自己无比高效&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;首先，都是免费哒；然后，所列项目都是针对 &lt;code&gt;CLI(命令行界面)&lt;/code&gt; 哒；最后，探索无止境&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ohmyz.sh/&quot;&gt;oh-my-zsh&lt;/a&gt; - &lt;strong&gt;&lt;em&gt;终端党&lt;/em&gt;&lt;/strong&gt; 必用的好工具，强烈推荐&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/spf13/spf13-vim&quot;&gt;spf13-vim&lt;/a&gt; - 对于 Vim 偶之前做了好多文档和记录，但是自从了解有这个套路，那些记录都可以丢掉了。不过建议想了解的去看看 .vimrc 中的 Plugin，确实足够大而全。PS：如果遇见 &lt;code&gt;neocomplete does not work&lt;/code&gt; 之类的错误，可以参考 &lt;a href=&quot;http://stackoverflow.com/questions/26724859/problems-with-vim-and-lua&quot;&gt;Problems with Vim and lua?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/VundleVim/Vundle.vim&quot;&gt;Vundle&lt;/a&gt; - Vim 党必备。用于管理各种 Vim 插件，有 Git 就可以安装 &lt;code&gt;$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mama.indstate.edu/users/ice/tree/&quot;&gt;tree&lt;/a&gt; - linux 以树状图逐级列出目录的内容，装逼效果和实用功能都不错&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cloc.sourceforge.net/&quot;&gt;cloc&lt;/a&gt; - 可用来计算 文件夹中各种语言的代码占比情况。展示内容非常直观，如某目录下 &lt;code&gt;JavaScript&lt;/code&gt; 有多少个文件，共多少空格行数、注释行数、代码行数，就这些简单粗暴的内容。常见的安装方式可通过 &lt;code&gt;npm&lt;/code&gt; 来进行安装。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oneapm.com/&quot;&gt;oneapm&lt;/a&gt; - 强大的运维工具，提供多种监控客户端； 有采集、分析、展示等一套功能； PS：我这用了服务器监控(免费哦)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jkbrzt/httpie&quot;&gt;httpie&lt;/a&gt; - 一个 CLI 中的 HTTP 客户端，用法简单，非常适合用来搞调试、测试&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://eslint.org/&quot;&gt;ESLint&lt;/a&gt; - 前端大神&lt;a href=&quot;http://nczonline.net/&quot;&gt;Nicholas C. Zakas&lt;/a&gt;创建。JavaScript 辅助编码的规范工具，有效控制偶们的代码质量&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/raphamorim/lucario&quot;&gt;Lucario&lt;/a&gt; 暗色系主题，支持 Vim, Atom, Sublime Text, TextMate, Terminal.app, iTerm, Xcode and XTerm&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.asty.org/cmatrix/&quot;&gt;cmatrix&lt;/a&gt; - 作用就是装逼，可以在屏幕上显示经典的黑客帝国的数码雨效果(看官方文档上也有其他效果，俺就不往细研究了)。在 Mac 下安装非常简单，一步搞定：&lt;code&gt;$ brew install cmatrix&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Mac&lt;/strong&gt;
+- &lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt; - 有了他 &lt;code&gt;OS X&lt;/code&gt; 程序猿能更好的专注代码层面。最近在看《七周七语言》，里面出现各种语言环境，用 &lt;code&gt;brew&lt;/code&gt; 来安装、管理各种解释器和编译器，省心省力！
+- &lt;a href=&quot;https://developer.apple.com/xcode/&quot;&gt;Xcode&lt;/a&gt; - 因为玩 &lt;code&gt;Swift&lt;/code&gt; 所以早早就下载了，后来才知道原来 &lt;code&gt;Mac&lt;/code&gt; 下如果不安装 &lt;code&gt;Xcode&lt;/code&gt;，部分常用的指令都不支持，囧&lt;/p&gt;
+
+&lt;p&gt;over:)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/linux/&quot;&gt;Linux 软件篇&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on August 09, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -238,6 +400,134 @@
   
 
 <entry>
+  <title type="html"><![CDATA[使用 Inquirer.js 打造有趣的CLI]]></title>
+  <link rel="alternate" type="text/html" href="/InquirerJS/" />
+  <id>/InquirerJS</id>
+  <published>2016-07-24T15:31:48+08:00</published>
+  <updated>2016-07-24T15:31:48+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;前些天第一次接触 Commander 和 Inquirer，觉得都很有意思。其中 Inquirer 除了 Git 上的文档外，中文资料较少，于是写篇文章分享出来。&lt;/p&gt;
+
+&lt;p&gt;https://github.com/sboudrias/Inquirer.js&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/InquirerJS/&quot;&gt;使用 Inquirer.js 打造有趣的CLI&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 24, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[用Node实现高大上的CLI功能]]></title>
+  <link rel="alternate" type="text/html" href="/commanderjs/" />
+  <id>/commanderjs</id>
+  <published>2016-07-22T14:41:34+08:00</published>
+  <updated>2016-07-22T14:41:34+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Commander 写自己的Nodejs命令 - http://blog.fens.me/nodejs-commander/&lt;/p&gt;
+
+&lt;p&gt;Commander API doc - http://tj.github.io/commander.js/&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/commanderjs/&quot;&gt;用Node实现高大上的CLI功能&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 22, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[聊聊Node异步]]></title>
+  <link rel="alternate" type="text/html" href="/async/" />
+  <id>/async</id>
+  <published>2016-07-18T16:55:56+08:00</published>
+  <updated>2016-07-18T16:55:56+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;写 Node 总要面对回调黑洞（Callback Hell）的问题，不过今时不同往日，现在解决这个问题的方法有不少，这篇文章希望能帮你梳理和理解这些方法。&lt;/p&gt;
+
+&lt;p&gt;Promise&lt;/p&gt;
+
+&lt;p&gt;async/await&lt;/p&gt;
+
+&lt;p&gt;generator
+co4.0之前使用的是generator；4.0(含)之后使用的是Promise&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;http://www.jianshu.com/p/b709747d125e - 生成器（Generator）&lt;/p&gt;
+
+&lt;p&gt;https://zhuanlan.zhihu.com/p/20908500 - 「大概可能也许是」目前最好的 JavaScript 异步方案 async/await&lt;/p&gt;
+
+&lt;p&gt;https://www.zhihu.com/question/25413141 - nodejs异步控制「co、async、Q 、『es6原生promise』、then.js、bluebird」有何优缺点？最爱哪个？哪个简单&lt;/p&gt;
+
+&lt;p&gt;Promise文档 - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise&lt;/p&gt;
+
+&lt;p&gt;Node.js回调黑洞全解：Async、Promise 和 Generator - https://zhuanlan.zhihu.com/p/19750470&lt;/p&gt;
+
+&lt;hr /&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/async/&quot;&gt;聊聊Node异步&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[ESLint+ATOM 小结]]></title>
+  <link rel="alternate" type="text/html" href="/standard_javascript/" />
+  <id>/standard_javascript</id>
+  <published>2016-06-19T16:47:21+08:00</published>
+  <updated>2016-06-19T16:47:21+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;http://standardjs.com/&lt;/p&gt;
+
+&lt;p&gt;http://eslint.org/
+https://github.com/feross/eslint-config-standard&lt;/p&gt;
+
+&lt;p&gt;https://github.com/feross/standard —— “One Style to Rule Them All”&lt;/p&gt;
+
+&lt;p&gt;膜拜下这位 feross 大神的履历：&lt;a href=&quot;http://feross.org/resume/&quot;&gt;Feross Aboukhadijeh&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;https://atom.io/packages/linter-eslint&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclude&quot;&gt;小结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/standard_javascript/&quot;&gt;ESLint+ATOM 小结&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 19, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
   <title type="html"><![CDATA[Mac 软件篇]]></title>
   <link rel="alternate" type="text/html" href="/mac_soft/" />
   <id>/mac_soft</id>
@@ -292,6 +582,48 @@
 &lt;p&gt;over:)&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;/mac_soft/&quot;&gt;Mac 软件篇&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 19, 2016.&lt;/p&gt;
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[ESLint+ATOM 小结]]></title>
+  <link rel="alternate" type="text/html" href="/eslint/" />
+  <id>/eslint</id>
+  <published>2016-06-18T11:46:04+08:00</published>
+  <updated>2016-06-18T11:46:04+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;首先，&lt;a href=&quot;https://atom.io/&quot;&gt;ATOM&lt;/a&gt; 是偶司前端团队最主要的开发工具。算起来偶从 2015/6/25 的 1.0 版开始坚持使用，马上都快一年啦。整体感受还不错，偶也一直有坚持更新&lt;a href=&quot;https://github.com/nieweidong/learn-atom&quot;&gt;Atom使用纪要&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;因为团队开发，所以希望有个统一的代码标准，那些啥各种 &lt;strong&gt;编码规范&lt;/strong&gt; 就不多说了，这类都是靠习惯去约束人，今天要介绍的是依靠 &lt;code&gt;ESLint&lt;/code&gt; + &lt;code&gt;ATOM&lt;/code&gt;，达到约束我司 &lt;code&gt;JavaScript&lt;/code&gt; 的编码格式的目的。&lt;/p&gt;
+
+&lt;p&gt;但是！不仅仅只是这样，因为我们达到了 &lt;strong&gt;&lt;em&gt;“JavaScript Standard Style”&lt;/em&gt;&lt;/strong&gt; 的小境界，所以我们可以在项目中加上下面这个小图标自娱自乐一下:)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://standardjs.com&quot;&gt;&lt;img src=&quot;https://cdn.rawgit.com/feross/standard/master/badge.svg&quot; alt=&quot;js-standard-style&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;图标的缘由请查看： &lt;a href=&quot;https://github.com/feross/eslint-config-standard#badge&quot;&gt;badge&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ESLint官网地址： &lt;a href=&quot;http://eslint.org/&quot;&gt;ESLint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclude&quot;&gt;小结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/eslint/&quot;&gt;ESLint+ATOM 小结&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 18, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -2109,1750 +2441,6 @@ PS：此书不是光给管理者读的，而且俺目前更不是个管理者。
 &lt;/div&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/%E3%80%8A%E4%B8%80%E4%B8%AA%E5%B9%BF%E5%91%8A%E4%BA%BA%E7%9A%84%E8%87%AA%E7%99%BD%E3%80%8B%E4%B9%8B%E5%B0%8F%E8%AE%B0/&quot;&gt;《一个广告人的自白》之小记&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on June 02, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Qcon会议之所见所想]]></title>
-  <link rel="alternate" type="text/html" href="/Qcon%E4%BC%9A%E8%AE%AE%E4%B9%8B%E6%89%80%E8%A7%81%E6%89%80%E6%83%B3/" />
-  <id>/Qcon会议之所见所想</id>
-  <published>2014-05-28T00:00:00+08:00</published>
-  <updated>2014-05-28T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;作为普通码农一枚，Qcon是俺参与过的最高级的技术大会了。大会共历时三天，因为俺第二天就得赶火车休个五一大长假，所以只参加了第一天4/25号的会议(其他俩天自然有其他同事会去观摩)，不过第一天的会议有俺很喜欢的老池(&lt;a target=&quot;_blank&quot; href=&quot;http://weibo.com/idreamland&quot;&gt;@池建强&lt;/a&gt;)组织出品的专题，所以俺参加会议的目标这这么愉快的定下拉。&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;105&quot; height=&quot;117&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/252026591994984.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;还是得先感谢给俺票票的经理&lt;a target=&quot;_blank&quot; href=&quot;http://weibo.com/liguniang&quot;&gt;@&lt;span&gt;狸姑娘&lt;/span&gt;&lt;/a&gt;，也终于幸运见到了《MacTalk》作者本尊，让俺也当了一把小小的追星族哈。同时也厚着脸皮搭讪，与Mac君进行了正式友好、亲切的交流:)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;187&quot; height=&quot;332&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251344215746507.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;五一休假后需要给组内同学分享一些在Qcon的所见所得，分享完成后自己又做了一些整理，所以放到博客里用以记录。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;PS：乱七八糟的照片照了不少，不过现场图片只选择性贴几张，而且作为已婚男士，放美女图片更是影响家庭和谐，尤其俺家庭地位又不高&lt;/span&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251433593563780.gif&quot; /&gt;...所以对会议细节感兴趣的同学可以自己去Google百度一下，或者点这个URL&lt;a target=&quot;_blank&quot; href=&quot;http://s.weibo.com/wb/qcon&amp;amp;xsort=hot&quot;&gt; 微博热门搜索 &lt;/a&gt;，不谢。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span style=&quot;font-size: 18pt; font-family: 黑体;&quot;&gt;Qcon是神马&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;Qcon介绍： 为团队领导者、架构师、项目经理和高级软件开发人员量身打造的企业软件开发大会，其所覆盖的主题内容与InfoQ网站相同，关注架构与设计、真实案例分析等。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;一起来看下面几张照片。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;493&quot; height=&quot;278&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251713086849906.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;497&quot; height=&quot;280&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251424066379091.jpg&quot; style=&quot;line-height: 1.5;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;190&quot; height=&quot;337&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251951164813865.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;502&quot; height=&quot;283&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251954126065291.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;图一是因为头一回去国际会议中心，所以得瑟的照了一张以示到此一游；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;图二是InfoQ某领导的开场致辞。俺到的其实还算早(早上7点多)，在外面逛展台、拿礼品、瞎聊天，然后搞得最终进场还给耽搁了，所以坐到会场中间的位置，过会儿回头一看，已然完全坐满，而且还有部分站着的。大家可脑补测量下，这会场坐了多少人:)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;从上俩张图片可以初窥Qcon会议的规模了，我们再看看 &lt;strong&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.qconbeijing.com/schedule.html&quot;&gt;大会日程&lt;/a&gt;&lt;/strong&gt;，上午的分享都是来自老外，对于我等学渣来说，尼玛英语听力和交流真心是硬伤呀&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251956390741609.jpg&quot; /&gt;，可是让我遇见了图三，所以美丽的事情继续发生...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;图三是同声传译的装备，俺果断把驾照压那儿，然后就可以免费借用的，用完了还回去即可；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;图四是自主的午/晚餐，味道肯定谈不上多好，不过作为一个技术的交流大会，能有这等伙食已然不错，知足亦长乐。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;在“技术会议”这个话题中，Qcon绝对算得上“高大上”。不过这仅仅是我参与的第二个收费的技术交流会，第一个是京JS。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;简述下俺眼中的Qcon吧：&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;早上既然还提供了早餐，感觉贴心不少，且糕点的品种还算不少。当然水和程序员最爱的咖啡更是不限量供应哈；&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;再进入会场时会发个Qcon的袋子，里有装有各种展台和相关的广告信息，还有个Qcon攻略的纸。&lt;br /&gt;我略懵，一个技术交流会为啥还有“攻略”。然后明白了，原来Qcon还讲究一定玩法，比如集盖章、现场写code、微信、微博各种方式，当然，也收到不少招聘的信息...最终斩获T恤、杯子、贴牌、抱枕、笔记本等等好多战利品(写这段的时候觉得自己略Low&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/222252009346815.gif&quot; /&gt;羞)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;范儿大，规模大；&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;美女多，可触摸。&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;光夸不贬不是俺的风格，所以再微微吐槽几句：&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;我听的一个分享中，嘉宾的语速比较慢，而且信息含量比较低，其实听着很着急...&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;第一天上午都是老外的分析，而且都在大会议室，不知道这帮人是怎么请来的，确实分享的内容很水。后来有看InfoQ出版的《架构师》，InfoQ自己也承认这点，可为什么不改类，难道从哪哪地方请个老外讲一通英语就显得InfoQ高端么...&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; line-height: 1.5; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;PS：曾听某位技术友人问过俺：“Qcon这会议是不是腾讯办的？”，俺的心情如下图...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251610504346029.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span style=&quot;font-size: 18pt; font-family: 黑体;&quot;&gt;我参加的专题与分享&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;大家如果看&lt;a target=&quot;_blank&quot; href=&quot;http://www.qconbeijing.com/schedule.html&quot;&gt;大会日程&lt;/a&gt;就能看出，第二天4/26有关前端的话题比较多而全。所以第一天的演讲也没多想多选，一上午先听老外灌水，下午就听了一下午《知名网站案例分析》的专题。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;上午大厅分享的内容如下：&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;&lt;strong&gt;亚马逊AWS服务和NoSQL产品&lt;/strong&gt;&lt;/span&gt;(Deep Dive into Amazon&#39;s NoSQL Journey and AWS Operations)&lt;br /&gt;一开场这哥们的英语让我惊呆了，本来就听力不咋地，结果这个嘉宾是标准的印式英语，当场就打算放弃这个分享了。后来看见有同声传译这种高级的玩具，于是乎才又鼓起勇气继续认真听讲。&lt;br /&gt;分享的内容大致就是他介绍了亚马逊研发了一个NoSql的产品，然后用绚丽的PPT延伸了关系型数据库和和NoSQL的优缺点，如果一些增删改查的操作，然后再量较大时，关系型数据库的缺点。&lt;br /&gt;然后就抛出他们这个NoSql的解决方案 &amp;mdash;&amp;mdash;&amp;nbsp;dynamo库，然后围绕这这个dynamo搞出了dynamoDB之类，学习曲线比较陡峭。&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;&lt;strong&gt;大型前端应用的组件与模块&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;一个来自英国金融时报实验室的嘉宾分享了一个他们自己的前端组件，名称是origami。&lt;br /&gt;他上来先一顿吐苦水(Rescue the old stuff)，说自己做的项目如何坑。&lt;br /&gt;然后介绍了&lt;span&gt;origami，基本就是&lt;/span&gt;定义了一些前端的规范和标准，然后基于这些标准，提供了一系列的组件，在使用的时候只要在页面上引入相关的CSS、JS文件，就可以使用相关的组件了。&lt;br /&gt;他讲到在build小型的通用组件，为&lt;span&gt;让别人用起来方便，&lt;/span&gt;一个组件不要做太多事情。&lt;br /&gt;听完之后我的感受就是，他们基本就是实现了一套自己的Bootstrap(又是组件、又是默认样式、又是脚手架的)...&lt;br /&gt;&lt;img width=&quot;73&quot; height=&quot;63&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/281134541198111.jpg&quot; /&gt;&lt;br /&gt;PS：说实话，一天的会议结束后，他的Slides是做的最好的，有可能他已经在很多地方演讲过。Slides地址来一发：&lt;a target=&quot;_blank&quot; href=&quot;http://triblondon.github.io/talk-components-origami/#/&quot;&gt;http://triblondon.github.io/talk-components-origami/&lt;br /&gt;&lt;br /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;&lt;strong&gt;大规模脑计算&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;没听明白...&lt;br /&gt;说研究神经的学者，做大数据量的分析遇到的问题，用的是spark，俺也不懂，就不说了。&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;下午《知名网站案例分析》的内容如下：&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;Localization of Stack Overflow StackOverFlow Marco Cecconi&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;刚吃完午饭略困；老外分享；结果是我睡着了...睡着...睡...&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;&lt;strong&gt;汽车之家论坛架构分析&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;由于刚补充完睡眠，所以这个分享听的异常的认真哈，还记了些小笔记。&lt;br /&gt;由一枚汽车之家的架构师分享他们在论坛上的技术之路。上来的开场不错，先黑了一下去年那个F0车主被BMW7系挖墙脚那事:)&lt;br /&gt;然后开始叙说如何用其三板斧&amp;mdash;&amp;mdash;做一个快、稳、爱的论坛。&lt;br /&gt;&lt;img width=&quot;347&quot; height=&quot;165&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/281459090725154.jpg&quot; /&gt;&lt;br /&gt;然后就开始介绍用Redis做分页、Nginx做缓存、消息队列、分布式上传图片、灾备等等一系列解决快与稳的问题。&lt;br /&gt;&lt;img width=&quot;374&quot; height=&quot;165&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/281510151505230.jpg&quot; /&gt;&lt;br /&gt;PS：貌似最后的服务达到4个9的可用性。&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;&lt;strong&gt;聚石塔&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&lt;/span&gt;因为耗子哥(阿里巴巴 陈皓)的名头才格外关注，确实仰慕大牛名头的人非常多，会场爆满，边上到处站满了人，席地而坐的一大片。&lt;br /&gt;聚石塔是淘宝天猫对接外部商家IT系统的平台，目前被打造成一个云平台，专门为商家提供云服务的。&lt;br /&gt;干货没有，不过有几个理念确实值得思考：&lt;br /&gt;~ 目前国内运维工作的重要性被严重低估&lt;br /&gt;~&amp;nbsp;做平台的时候需要先制定标准，无标准不平台&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;京东大规模内存存储平台&lt;/span&gt;&lt;br /&gt;俺在推进引擎的公司待过，负责过和电子商务的公司对接实施工作；身边更有一大波混在电子商务公司的友人，都携带各种负能量...所以俺对电子商务公司的硬实力和软实力嘛，就感觉和一线互联网不是一个梯队。&lt;br /&gt;不过本次听完技术分享之后，俺还是觉得很高级的&lt;span&gt;(虽然自己也不太懂哈)&lt;/span&gt;，最起码别人使用Redis围绕自己的业务场景进行了高度定制，自主研发&lt;br /&gt;&lt;img width=&quot;307&quot; height=&quot;190&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/281713475412504.jpg&quot; /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span style=&quot;font-family: 黑体; font-size: 18pt;&quot;&gt;感触&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;作为一名长期坚持参加各种会议且工作5年的IT从业人员，再俺看来，参加交流会主要的意义就两个词：&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&lt;strong&gt;扩大社交&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&lt;strong&gt;增长见识&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺参加交流会基本就是为了与圈内的朋友们聚聚会和认识些新朋友，其次才是增长见识和学习。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;不过Qcon确实又令俺大开视野、印象深刻，收获多多、感触多多。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;看着圈内的朋友在讲台上分享，对自己的技术和项目款款而谈，再想着自己的年龄和家人，心中还是挺感慨的。差不多的年龄，友人们还在追求自己的理想，而我却选择了早早的安定下来，结婚、生子。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;记得前年还与友人大说特说、讨论创业的那些事情，再想想现在的自己，感觉自己成长了，长大了...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;长大了意味着要考虑的事儿更多了；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;长大了要承担的事儿更多了；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;长大了意味着时间会越过越快了；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;可是，长大了难道就意味着我离自己的梦想越来越远了？&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;我不信，如果那么容易就放弃，那这TM还叫梦想吗？&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;80&quot; height=&quot;139&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201405/251940591847652.gif&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; font-family: 黑体;&quot;&gt;资料:&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.qconbeijing.com/videoslides.html&quot;&gt;http://www.qconbeijing.com/videoslides.html&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px; font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/Qcon%E4%BC%9A%E8%AE%AE%E4%B9%8B%E6%89%80%E8%A7%81%E6%89%80%E6%83%B3/&quot;&gt;Qcon会议之所见所想&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on May 28, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[《mactalk人生元编程》之小记]]></title>
-  <link rel="alternate" type="text/html" href="/%E3%80%8AMacTalk%E4%BA%BA%E7%94%9F%E5%85%83%E7%BC%96%E7%A8%8B%E3%80%8B%E4%B9%8B%E5%B0%8F%E8%AE%B0/" />
-  <id>/《MacTalk人生元编程》之小记</id>
-  <published>2014-04-08T00:00:00+08:00</published>
-  <updated>2014-04-08T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; 一直以来的自我感觉：自己是个记性偏弱的人。反正从小读书就喜欢做笔记（可自己的字写得巨丑无比，尼玛不科学呀），抄书这事儿真的就常发生俺的身上。&lt;br /&gt;&lt;br /&gt;
-&amp;nbsp; &amp;nbsp; &amp;nbsp;因为那时经常要背诵课文之类，反正为了怕自己忘记，所以一边抄书一边背书。延伸到现在就变成做读书笔记，把书中喜欢的段落和句子都记录下来，偶尔穿插自己的感受，所以读书小记是我的最爱，不过只有好书才值得这么做（遇到一本好书本身就是件幸福的事情，且读且珍惜）。&lt;/div&gt;
-
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;PS：我会告诉你其实笔记在某些关键时刻就变身为“小超”木 :)&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;在未婚之前，悦读与Dota几乎就是我业余时间的全部（读书确实令人愉悦，不过也可看出我特么那时有多无聊了）。除了与自己所在行业息息相关的书籍，没事也常看看神马 近代/古代史、一/二战、玄幻/武侠小说 等诸如此类各种不靠谱的杂书。比较崇拜高晓松那样的杂家（如果他木有那个【酒驾事件】我真会把“比较”俩字去了），把自己所学、所看、所体会到的事物以一种脱口秀的形式《晓说》表述出来，确实大能耐呀。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;特么又扯远了...&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;时代进步，抄书已成往事...可是每每遇见好书总是会记录下很多 笔记/体会，这篇就是读《MacTalk》的一些点滴记录。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;买此书的理由有点囧。身边有朋友说此书很赞，所以对此书已有个好印象，然后微博上也听某些朋友怒赞过此书，可是最终买下此书的理由是&amp;mdash;&amp;mdash;京东包邮的条件涨价了。尼玛太狗血了有木有...&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;103&quot; height=&quot;99&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201404/082006466061626.jpg&quot; /&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;此书已看完有些日子，回想自己购买此书的初衷，顿时觉得略有羞愧。因为此书在我看过的所有非技术类的书籍中，个人心中打分只在《浪潮之巅》之下，且只因为浪潮之巅各种爆料各大IT公司历史，内容太过浩瀚且需要仰望，所以才已微弱优势排在此书之上，纯论读书的 舒爽和屌丝 程度，此书是读的最开森的。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;这真的是本幽默且精彩的书。原谅我只能用自己贫乏的形容词来赞美它，可是我真的很享受读它的每一段章节。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;我不是果粉（至少暂时还不是），不过因为此书导致我把组内的一台老旧iMac折腾到手，哦也。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;416&quot; height=&quot;234&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201404/082005337313923.jpg&quot; /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br /&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;----------------------------- 正文 -----------------------------&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;在俺这，书绝不会有好坏之分，只有好的程度不同。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;好书的定义同样纯粹，读完之后能让自己有所收获就好，书的题材其实完全不重要。技术书只占我日常看书的三分之一，其他更多的时间俺都在读些“杂七杂八”的，并乐此不疲。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;此书读起来非常之享受，这点俺已经提过。其中共分为 Mac、程序员与编程、科技与人文、人物、工具、职场 六大章，最喜欢【科技与人文】这篇，阅读的过程中与自己的从业经历相互印证，深有感触；【程序员与编程】这段同样值得赞颂千篇，阅读过程中代入感非常强烈，作者用平和的文字叙说，令俺启发不断收获多多。&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;92&quot; height=&quot;89&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201404/082007381223988.jpg&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;em&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; 开始愉快的抄书 &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/em&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;其中最令俺强烈共鸣的章节有以下几篇：&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;strong&gt;序 但行好事，莫问前程&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
-其实标题这八字就已让我回忆万千，曾经带过自己的经理签名就是这句。&lt;br /&gt;
-印象深刻的一句话：“每一个写了十几年代码的程序员都是一本书”。&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;程序员的性格&lt;/strong&gt;&lt;br /&gt;
-性格原因，俺也是个“戾气”较重的人。其实个人早已意识都此点(我妈就是因为这个原因才把俺送到军校，说起来都是眼泪T.T)，自己也一直在加以控制，尤其是与人沟通方面。&lt;br /&gt;
-本篇中有句话深深的震撼与我：“&lt;span style=&quot;font-size: 19px; color: #328712;&quot;&gt;&lt;strong&gt;程序员要保持自己的性格、激情、愤怒，这样你才能写出传世的代码&lt;/strong&gt;&lt;/span&gt;，同时也要温和、有理有据有节地与别人探讨问题，还要有健康的生活和好的娱乐活动。除了技术书籍，多看一些人文类的著作，有助于完善自己，善待他人！”&lt;br /&gt;
-大家好好感受感受这句话，东哥只能帮你到这儿了:)&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;如何提问&lt;/strong&gt;&lt;br /&gt;
-为什么东哥喜欢读书，因为读书读到畅快的地方恨不得仰天长啸，非常喜欢这种感觉。&lt;br /&gt;
-这篇文章带来的冲击就有这种效果，下面我也会单独写篇小记来记录这些许体会。&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;不要做一个Hater&lt;/strong&gt;&lt;br /&gt;
-身边有不少这样的亲朋。&lt;br /&gt;
-我个人是个标准的乐天派，比如很少有事情能令我晚上睡不好(可能是天生睡眠好，哈哈)；负能量也是我较厌恶的东西，因为北漂已经够惨，如果尼玛还整天带着负能量去到处传播，还不如回家交代一生也罢。&lt;br /&gt;
-印象深刻的一句话：&quot;他们(Hater)一定要给你泼冷水。泼冷水的愿望之强烈，你无法想象。那种强烈借助了太多的力量：怀疑、嫉妒、恐惧、愤怒。而在表现的过程中却又包装上另外一层表皮：关怀、爱护、有爱、帮助。&quot;&lt;br /&gt;
-Don&#39;t be a Hater.&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;strong&gt;锤子和钉子&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
-超级推荐这篇，尤其是对于工作3年以内的同学，告诉读者们如何去提升自我价值。&lt;br /&gt;
-下面有单独介绍。&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;技术成长&lt;/strong&gt;&lt;br /&gt;
-以技术人员转型为话题，述说如何结合自己的情况去做好每个选择。&lt;br /&gt;
-经典语句：“关于技术和管理(或其他非技术技能)，永远没有非正即负，非黑即白”&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;也无风雨也无晴&lt;/strong&gt;&lt;br /&gt;
-作为一枚写博者，且一写文章就话痨，这篇文章真的让俺笑着读完。&lt;br /&gt;
-其实能让俺坚持写文章最大的原因就是自己怕忘记，而且写作能让自己开心还能认识一些天南海北的友人。如果有人批评技术文章不深或者过糙我都可以坦然接受；如果批评够水，我只默默回复个“呵呵”，心中无数个草泥马都很安静，真的...&lt;br /&gt;
-画面感极强的一段话：“很多IT人在讨论如何去IOE（IBM、Oracle、EMC），而我则希望某一天，我写出的没有干货的文字能有很多人阅读，那时我就可以把这些湿漉漉的文字丢到空中，让它们在晨光中随风飞舞”&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;怎能忘了西游&lt;/strong&gt;&lt;br /&gt;
-文章代入感强，风趣搞笑加自黑。非常想为这篇文章写点什么，发现重读几次之后无从下口。&lt;br /&gt;
-那么就这样，希望大家能去好好细品这节文章，一帮热血IT青年的血泪成长史:)&lt;/li&gt;
-&lt;li&gt;... ...&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;strong style=&quot;font-size: 32px;&quot;&gt;如何提问&lt;/strong&gt;&lt;/div&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;作者以中西方程序员的对于bug邮件的示例拿来做对比分析，然后给出了自己中肯的建议。不得不羡慕作者的语言组织能力，短短俩页纸的内容，用简简单单的调调描述了一个非常重要的话题。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;这篇绝对是所有程序员或非程序员都得好好阅读的，尤其是在校生和刚工作的朋友，问心自问自己的提问是不是够专业？&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;其实我在工作初期同样因为表达不清晰被领导喷个半死，然后开始洗心革面，好好思考提问的艺术。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;也给点自己的建议：&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;ol&gt;
-&lt;li&gt;某问题能不能在2分钟甚至2句话描述清楚；如果不行，那么可能是自己还没能想明白；&lt;/li&gt;
-&lt;li&gt;带上纸和笔。程序员的问题经常会用到这些，居家旅行、打酱油的必备工具&lt;/li&gt;
-&lt;li&gt;表达问题的时候得明白自己再与谁沟通，如果工种不同最好专业术语这个时候通通丢一边，通俗一点把问题表达清楚。比如某个不懂前端技术的PM问你，为毛一个demo实现不了或者实现有问题，你丫和他说浏览器渲染原理或者float甚至CSS细节，那尼玛你没被PM板砖伺候算你命好:)&lt;/li&gt;
-&lt;li&gt;用作者在本节结束的时候说的一句：不要忘了说“请”和“谢谢”，毕竟你需要别人帮助你解决问题，没人欠你什么。&lt;/li&gt;
-
-
-
-
-
-&lt;/ol&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;#12288;&lt;img width=&quot;170&quot; height=&quot;140&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201404/082008463565508.jpg&quot; /&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;strong&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;font-size: 32px;&quot;&gt;锤子和钉子&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;有关锤子和钉子的故事有一箩筐延伸的故事去说，作者在此说的确是技术本身。以另一个视野去看待工具，不是说工具本身或者工具的使用者，而是说工具的开发者。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;第一点：&lt;strong&gt;尽可能的去做开发工具的人&lt;/strong&gt;。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;要说这个问题特好解释，俺身边就有很多例子：在B公司甚至是G公司，基础架构部都是高工的摇篮，必须得承认做通用工具的部门确实对综合能力要求高一些。而且那帮人平台化和接口化的东西接触多了，开口闭口都是讨论些生态、组件类的话题，明显就比产品线的工程师高端一个量级嘛:)&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;上面这句和“不要重复发明轮子”相冲突，所以作者又说道第二点：&lt;strong&gt;用好工具。&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;我常会在面试的时候问jQuery的问题，绝大多数的面试者都用过，可是真的有看过源码或者追寻过细节问题的面试者不多。其实这和“用好工具”一个道理。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;用好的工具，并且逐步地去理解工具的原理，尽可能的去复用。&lt;br /&gt;
-&amp;nbsp; &amp;nbsp; &amp;nbsp;在专业领域的专业工具也是求职加分项，搞懂他，吃透他，高薪那叫事儿吗？&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&amp;#12288;&amp;#12288;&lt;img width=&quot;112&quot; height=&quot;53&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201404/082009375434671.png&quot; /&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;-----------------------------&amp;nbsp;记录语句 -----------------------------&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 21px;&quot;&gt;&lt;strong&gt;序 写在前面的话 - 池建强&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;胸中有丘壑的人总能找到吐槽的土壤&lt;/li&gt;
-&lt;li&gt;“MacTalk”几乎每天一篇，半年内写了100多篇文章。之所以能够坚持下来，得益于公众平台的交互性和&lt;span style=&quot;color: #7b003d;&quot;&gt;&lt;strong style=&quot;font-size: 32px;&quot;&gt;正向刺激&lt;/strong&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;，如果每天都有人告诉你，晚上不读完你推送的文章就不睡觉，你也会坚持下去的&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;这既不是传统意义上的Mac用户手册或技术图书，也不是一本思想文集，而是&lt;span style=&quot;color: #8600a4;&quot;&gt;一个70后程序员，以柔软的笔触，立于Mac之上，讲述技术与人文的故事，&lt;strong&gt;起于Mac而不止于Mac&lt;/strong&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;尽量做到文字简单、内容有趣，因为&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;span style=&quot;color: #147191;&quot;&gt;&lt;strong&gt;简单和有趣也是一种力量&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;，希望您读完这本书以后，也能拥有这种力量。&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;color: #7b003d;&quot;&gt;没一本书都应该有趣，对于一些书来说，有趣是它存在的理由；对于另外一些书，有趣是它应该达到的标准&lt;/span&gt;。&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div style=&quot;font-size: 21px;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;strong&gt;序 技术写作与减熵 - Fenng&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;这个世界上总是有人在不停地做这种“减熵”的事情，这么做的人可能就是因为这是一种乐趣，一种真正的乐趣，尤其是&lt;strong&gt;你的文字能够帮到人、能够启发别人的时候，那种快乐难以言说&lt;/strong&gt;。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;PS：减熵 =&amp;gt;&amp;nbsp;吃力不讨好&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;strong&gt;序 但行好事，莫问前程 - 微信帐号“二爷鉴书”&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;每一个写了十几年代码的程序员都是一本书&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;color: #328712;&quot;&gt;机器没有感情，它执行你要求的每一句逻辑，你对它没什么脾气，因为起承转合都在自与你的编排，机器只是精确的执行&lt;/span&gt;&amp;mdash;&amp;mdash;长时间面对一台机器的冰冷和绝望&lt;/li&gt;
-&lt;li&gt;有人评价程序员说他们“成天跟机器打交道”，别闹了，&lt;span style=&quot;color: #ff7a74;&quot;&gt;&lt;strong&gt;电脑才不会跟人打交道，在这台坚硬的机器前，一切喜怒哀惧都是程序员心中的自言自语&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;我想把它送给每一个在深夜烧烤摊前黯然神伤的人们，精于算计的人们，小心翼翼的人们，举重若轻的人们&amp;mdash;&amp;mdash;但行好事，莫问前程&lt;/li&gt;
-&lt;li&gt;泰山崩于前，我依然沐浴更衣焚香沏茶，诚心正意，手起键落：&lt;br /&gt;
-Hello World!&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;strong&gt;序 生命中遇见的没一本书，都不是偶然 - 密码有误&lt;/strong&gt;&lt;/div&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 21px;&quot;&gt;&lt;span style=&quot;color: #6a0081;&quot;&gt;书和人是有特殊的缘分的&lt;/span&gt;&lt;/strong&gt;，缘分这个词也许有些矫情，更确切的说，遇到的没一本书，冥冥中与你都有特殊的connection。&lt;/li&gt;
-&lt;li&gt;霍夫斯塔特：“... ...如果你问我是否取得了最后的成功，答案是‘当然没有！’如果是的话，生活将会变得令人厌烦。如果人的心灵会被化简为几条僵化的规则，或者是相当大的一个僵化规则的集合，那会是一件令人极度悲哀的憾事... ...我们是幸运的，因为我们的心灵是如此不可预知；正因为如此，生活才充满了情趣。尽管如此，我们人在进行努力来科学地了解我们自身... ...”&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;strong&gt;序 开篇：为何而写 - 池建强&lt;/strong&gt;&lt;/div&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;有一个问题是“你为什么要写东西？”换个说法就是，你就是个写代码的，不去好好做程序员这份有前途的职业，为什么要来写文章呢？谁让你写了？能挣钱吗？有人看吗？你爸爸妈妈造吗？你老板允许吗？... ...&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #e30000;&quot;&gt;不要给自己设限&lt;/span&gt;&lt;/strong&gt;。程序员里才华横溢的多了去了，无论是《黑客与画家》还是《乔布斯传》都描述了很多具备文艺气息的技术大师，他们要么作画、要么弹琴、要么写作、要么运动、同时还写得一手好代码。&lt;/li&gt;
-&lt;li&gt;其实万事万物都是相通的，要么熊样要么鸟样，如果你能够把代码写得很好，那么为什么不去把自己的思想和设计通过文字表达出来呢？如果你能够把技术文章写好，慢慢就能写出人文类的文字，慢慢你就会发现自己已经站在&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;color: #7b003d;&quot;&gt;科技与人文&lt;/span&gt;&lt;/span&gt;的十字路口了。&lt;/li&gt;
-&lt;li&gt;写“MacTalk”花费的时间是我剪切了刷微博、浏览网页、扯蛋、看电视的时间，粘到MacTalk上的，每个人的时间就那么多，我觉得我并没有损失什么。&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 21px;&quot;&gt;&lt;span style=&quot;color: #1a90b9;&quot;&gt;写作即思考&lt;/span&gt;&lt;/strong&gt;。写作其实就代码思考，你需要言之有物，需要架构，需要梳理，需要开端，有结尾，有结论，有主题。&lt;/li&gt;
-&lt;li&gt;特别神奇的是你构思了一篇文章，写完后发现文章像具备了生命一样声场出了很多奇异的果实，他们就在那些文字中间微微颤动，闪烁着独特的光泽，仿佛被岁月冲刷过的鹅卵石一样，而这一切你可能完全没有想过到，而且不可复制。&lt;/li&gt;
-&lt;li&gt;所有有时候我们去看之前写的文章会产生两种感觉：要不觉得写得太烂了，怎么会写得如此臭不可闻；要么是觉得写得太好了，妈妈我再也写不出这么牛逼的文字了。&lt;/li&gt;
-&lt;li&gt;MacTalk，为自己而写，为读者而来。&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;color: #f14f9a;&quot;&gt;但行好事，莫问前程&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;；河狭水急，人急计生。&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;font-size: 21px;&quot;&gt;&lt;strong&gt;第一章 Mac&lt;/strong&gt;&lt;/div&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #e500ff;&quot;&gt;所有伟大的事业都源于梦想，始于微不足道&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;一个公司从创立之初，三年后不死，必然会在战略、架构、人员、产品等层面不断进行调整和改变，可能某一个公司的支持产品或中间力量，突然就会不那么重要了，也有些默默无闻的产品和角色会突然崛起，这些都是正常的。无论你是崛起的甲方，还是没落的乙方，都没什么可抱怨和担忧的...人不进步就会退步，要么甘心没落，要么不断提升，就是这样！&lt;/li&gt;
-&lt;li&gt;作为一个软件从业人员，一个产品从无到有是困难的，从有到精是艰难的，而当你站上一个巅峰之后，哪怕是做最微小的改进和提升，都需要花费大量的人力物力，同时还要承受失败的风险。&lt;/li&gt;
-&lt;li&gt;从平庸到优秀是容易的，从优秀到卓越是痛苦的，可能很多人、公司穷尽一生都无法达到卓越的境地。有时候，我们只是需要一点耐心，把我们自己的事情做好的同时，再等等。&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;有人说不知道自己想做什么，那么最好的办法就是把目前正在做的事情做好&lt;/strong&gt;，如果你把不感兴趣的事情都做好了，一旦你找到自己的方向，那你得做得多好呀。&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 21px;&quot;&gt;&lt;strong&gt;第二章 程序员与编程&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;人们在很多时候会低估自己的能力，但在更多时候会&lt;strong&gt;高估自己&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 19px; color: #328712;&quot;&gt;&lt;strong&gt;程序员要保持自己的性格、激情、愤怒，这样你才能写出传世的代码&lt;/strong&gt;&lt;/span&gt;，同时也要温和、有理有据有节地与别人探讨问题，还要有健康的生活和好的娱乐活动。除了技术书籍，多看一些人文类的著作，有助于完善自己，善待他人！&lt;/li&gt;
-&lt;li&gt;提高英语阅读能力这事，比提高英语口语和写作能力容易多了。如果程序员缺乏英语阅读能力，这将是你非常大的一块短板，如果意识到了，就尽早补上。&lt;/li&gt;
-&lt;li&gt;即使是最简单的坚持，最后的结果也都是惊人的。&lt;strong style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #939600;&quot;&gt;这世界上一直存在一条路，让我们的能力从平庸到杰出&lt;/span&gt;&lt;/strong&gt;，这条路漫长而且艰辛，只有少数人愿意走下去，所以，优秀的人永远是少数。&lt;/li&gt;
-&lt;li&gt;无论大家工作还是生活，总要涉及各种领域，如果每个领域都浅尝辄止，那你就真的成了普通用户了，普通用户是没法进入高级用户的圈子的，因为那些人讨论的东西你不懂嘛，你也不能给别人提供更有价值的东西，那才是真正的普通用户之殇。&lt;/li&gt;
-&lt;li&gt;如果你是个诗人，那你的人生就是一场风花雪月的事；如果你是个演员，除了学好《演员的自我修养》之外，你的人生就是一场接一场的剧本；如果你是个侠客，对不起，现代没有侠客；&lt;span style=&quot;color: #6a0081;&quot;&gt;&lt;strong&gt;如果你是个程序员，好吧，你的人生将由一行行飘逸的代码和捉摸不定的bug组成，所谓编程人生，就是你的一生已经与编程密不可分，为代码欢笑，为bug忧伤&lt;/strong&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;你对着大海说，我要学尽天下武功！大海对你说，你算术不太好......&lt;/li&gt;
-&lt;li&gt;因为无论是编程还是人生，都是相通的，想清楚了这一点，你就会觉得百无聊赖，因为&lt;span style=&quot;font-size: 24px;&quot;&gt;万事万物要么是熊样要么是鸟样&lt;/span&gt;，都脱不出那个框框。&lt;/li&gt;
-&lt;li&gt;提问和回答是交流最重要的部分，一个好的问题能够让提问者和回答者都有收获。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;大好人生，谁也不愿意为一个烂问题浪费时间。&lt;/strong&gt;&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 21px;&quot;&gt;&lt;strong&gt;第三章 科技与人文&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;做任何事情都是我们自己的徐阿朱，想清楚了也好，没想清楚也罢，想去做的话，尽可能鼓励自己去做。做实事的人总是让人敬佩的，而且由于我们在做事，所以总会遇到失败，这时候那些口诵大悲咒&quot;我早就说过&quot;的Hater是完全可以忽视的，因为&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #e30000;&quot;&gt;所有人都是在试错中成长的&lt;/span&gt;&lt;/span&gt;，那些不犯错的人充满了各种幻觉，其实是因为他不再成长了。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;他们(Hater)一定要给你泼冷水&lt;/strong&gt;。泼冷水的愿望之强烈，你无法想象。那种强烈借助了太多的力量：怀疑、嫉妒、恐惧、愤怒。而在表现的过程中却又包装上另外一层表皮：关怀、爱护、有爱、帮助。&lt;/li&gt;
-&lt;li&gt;很多时候你并不知道那些沉没的成本是否真的沉没了，你只能呢个沉默地坚持，希望坚持到最后的水落石出。&lt;/li&gt;
-&lt;li&gt;你一直坚持着最后失败了，就是固执不懂变通。中途转向失败了，就是没有再坚持最后一公里。相反，如果你一直坚持着最后成事了，那就是无所畏惧一往无前；转向成功了，那就是灵活柔性随需应变。可见&lt;strong style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #147191;&quot;&gt;选择是一件多么艰难而奇妙的事&lt;/span&gt;&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;通晓天下武功而百无一用，其实和不出家门的书生也没太大区别；&lt;strong style=&quot;font-size: 19px;&quot;&gt;学尽世上技术但做不出成功的产品，一样是毫无意义&lt;/strong&gt;。所谓知行合一，实在缺一不可！&lt;/li&gt;
-&lt;li&gt;如果你手里有一把锤子，所有东西看上去都像钉子；如果你有一个钉子，就会满大街找锤子。&lt;/li&gt;
-&lt;li&gt;从长远来看，人类对美好事物的追求是永无止境的，所以不要担心他们是否愿意买你的服务，不要担心他们是否会把钱花在你做的东西上。如果有人不愿意并抱怨你做的东西，这没什么，因为这并不是他们真正需要的东西 ，仅此而已。&lt;/li&gt;
-&lt;li&gt;世界上还有大量的人懂得欣赏，愿意付费去购买美好的东西，因为他们认为它是值得的，它让他们的生活更美好，只要你的东西足够好。我想这是技术人持续编程和写作的最重要的理由之一。&lt;/li&gt;
-&lt;li&gt;关于技术和管理(或其他非技术技能)，永远没有非正即负，非黑即白&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #328712;&quot;&gt;&lt;strong&gt;不要轻易为自己设限，人的潜力是无法估量的&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;一个团队中除了有任命的领导，还有更多未任命的领导，他们往往充满活力，善于提出各种奇思妙想，自发带领团队以更有效率、更优雅的方式工作，这样的潜在领导尤其值得关注，他们的发展空间可能更为广阔。&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 21px; color: #2d4fc9;&quot;&gt;&lt;strong&gt;直觉&lt;/strong&gt;&lt;/span&gt;，是高手的一个特征。&lt;/li&gt;
-&lt;li&gt;在技术公司，规则和次序，更适合那些不知进取或不思进取的新手和胜任者，人一旦在某个领域达到一定的高度，就有了自己的做法和直觉，方向没问题就行了，复杂的制度反而会抑制他们的创造性。&lt;/li&gt;
-&lt;li&gt;自信往往来自于无知而不是知识，一个人一旦成为高手，就会痛苦地意识到自己知道的多么少，人生苦短学问太多，这样的人是不需要去鞭策的，给空间和鼓励就好。&lt;/li&gt;
-&lt;li&gt;如果我需要别人的意见和建议，那就把自己放空，暂时扔掉偏见和预判，认真听，好好学，争取融会贯通，提升自我。&lt;/li&gt;
-&lt;li&gt;对于员工本身来说，不管企业是什么文化，&lt;span style=&quot;font-size: 24px; color: #4dce1d;&quot;&gt;&lt;strong&gt;如果你热爱自己做的事情，并愿意付出劳动获取酬劳，那就去做好了&lt;/strong&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;一个产品从无到有是困难的，从有到精是艰难的，而当你站上一个颠覆之后，哪怕是做最微小的改进和提升，都需要花费大量的人力物力，同时还要承受失败的风险。&lt;span style=&quot;font-size: 19px; color: #f14f9a;&quot;&gt;&lt;strong&gt;可能很多人、很多公司穷尽一生都无法达到卓越的境地&lt;/strong&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;color: #1c3387;&quot;&gt;人在成长过程中，不仅需要身边的亲友同事鼓励，还需要自己给自己打气，有时候无觉得吹牛就是鼓励自己的一种方法，吹牛吹到最后，你自己都不好意思不牛了，那你就成事了&lt;/span&gt;&lt;/span&gt;。&lt;/li&gt;
-&lt;li&gt;资源永远有限，如果把人作为x轴，资源作为y轴，那资源基本上符合正态分布曲线，极少数人在资源上极端富有，极少数人极端贫穷，剩下的大区间里的大部分人都是中等水平。你我中大部分都属于这个区间，只是有的偏上有的偏下而已。&lt;/li&gt;
-&lt;li&gt;旅行就是从一个自己待烦了的地方，跑到一个别人待烦了的地方。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;我以为我是个盖世程序员，有一天我的程序会奔跑在千万台服务器上。我猜中了前头，可是我猜不着这结尾&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;也许我们每个人内心深处都是个无法无天的石猴，充满愤怒和激情，只是随着年龄的增长，慢慢被带上了紧箍咒，然后用一生去寻找自我。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;strong style=&quot;font-size: 21px;&quot;&gt;第四章 人物&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;要想人前显贵，人后必须受罪，人后若不受罪，人前就要遭罪&lt;/li&gt;
-&lt;li&gt;一个人学了十年再工作十年，以为学历一点文和术，但你了解越多，越会发现自己仅仅是大海之一滴水、沙漠之一粒石，永远有无数优秀和卓越的人在你前方奔跑，你只能看到他们奔跑中的一缕尘埃！&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 21px;&quot;&gt;&lt;strong&gt;第五章工具 与 第六章职场&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;无记录&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;em&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; 抄书与此&lt;em&gt;忧桑的结束&lt;/em&gt; &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/em&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #7b003d;&quot;&gt;有些文字需要上下文一起品味来才更有feel，建议大家入手此书慢慢细品哈！！&lt;/span&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 32px;&quot;&gt;&lt;strong&gt;小结&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果您以为这书说的是Mac，终错过此书，那么东哥会为你可惜；&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果你以为你折腾好代码便可以独步天下，那么东哥会提醒你图样图森破；&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果你想了解更多同你一样程序员的心声，那么东哥希望你能静静打开此书，听着@池建强 平和的于你，述说他工作历程的点滴。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 19px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;不想去评论此书是否太屌丝或者格局low，因为&lt;strong&gt;阅读一本书能给自己带来开心和收获&lt;/strong&gt;，还有什么比这更珍贵。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;祝好！&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201404/082010003094782.png&quot; /&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E3%80%8AMacTalk%E4%BA%BA%E7%94%9F%E5%85%83%E7%BC%96%E7%A8%8B%E3%80%8B%E4%B9%8B%E5%B0%8F%E8%AE%B0/&quot;&gt;《mactalk人生元编程》之小记&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 08, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[前端面试【有感而发】]]></title>
-  <link rel="alternate" type="text/html" href="/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E3%80%90%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91%E3%80%91/" />
-  <id>/前端面试【有感而发】</id>
-  <published>2014-03-09T00:00:00+08:00</published>
-  <updated>2014-03-09T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;首先，这篇没有具体的面试题；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;其次，这篇仅是我个人的面试态度；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;最后，在这金三银四的跳槽季里，祝愿各位找到好工作。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺第一次做面试官是2011年，想起那时自己真的很紧张(不管做什么头几次都紧张哈)，可是还是在希望在面试者面前留个比较专业的印象，所以总是装作很淡定，记得那时总会放一件修身小西装放公司，专门用来面试的时候穿的，装成熟，你懂得。现在回忆起那时的点滴，不由自主的会嘴角上扬:)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;105&quot; height=&quot;90&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091236062066446.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&lt;em&gt;------------------------------- 低调的分割线&amp;nbsp;-------------------------------&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;“全世界都缺前端&quot; &amp;mdash;&amp;mdash; 这话总会被提起，PM尤其是喜欢这么说，而且还是在工作推动的过程中(我会告诉你我这是在黑PM么)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;面试一直是俺工作中重要的一块，而且自己也喜欢去参与面试(工作忙爆的时间除外)。原因究竟为甚其实我自己也说不上来，可能是因为心里希望在工作时可以与聪明的人合作吧；也可能是希望通过面试push自己去主动了解行业新的技术...Anyhow，也就一头扎进了面试官的行列，且乐此不疲。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091739542849832.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ccffff; font-size: 18pt; font-family: 黑体;&quot;&gt;&lt;strong&gt;前端回忆录&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;8年前的前端做些什么？页面重构(HTML+CSS)和实现页面交互(JS+CSS)；jQuery也是在8年前诞生(06年8月发布V1.0)；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;4年前业内提出大前端，这直接让前端职位在产品和业务中变得更加重要，甚至是最重要的存在，在以前的技能基础上又需要掌握一门服务端语言和少量数据库的经验(从那时开始身边经常有朋友由后端转前端)；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;2年前的前端界Node开始疯狂火热，且一扫各种前端论坛、开源项目，狂热者更提出“JS一统WEB开发”的头号，数据结构简单点的网站建设只需要一个工程师即可搞定，那就是前端，叼炸天呀；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;Now，全端工程师？？？maybe...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;移动互联网风光依旧，前端更是无处不在。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;可是... ...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;招人真心难，招前端更难，招个好前端难上加难有木有~~&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;151&quot; height=&quot;100&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091844286907778.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; color: #000000; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;主观意识 &amp;amp;&amp;nbsp;经验主义&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;工程师每轮面试时间一般为一小时左右，除非面试官对你没有兴趣，否则不会十几分钟就打发走你(我厂要求面试至少20分钟)。而且就在这差不多一小时，面试官要判断你是否符合招聘的岗位，这本身就是一件非常挑战的事情。正因为这样，所以面试官的决定都有一定的风险和主观意识，这不可避免。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;许久以前看过一篇跟面试相关的文章，具体内容说什么忘记了，不过里面有一句话给我印象深刻，大概意思是：“很多面试官希望能招到个像自己的人，和自己类似的人”。很容易理解这句话，因为和自己类似所有更容易引起自身的关注，而且记忆会更深刻。这个“&lt;strong&gt;类似&lt;/strong&gt;”俩字我理解应该至少包括几个方面：技术方向、性格、思维方式等。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;我也同意会带着主观意识去面试，但我认为这并不是什么糟糕的事情。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;具体点说，我会考虑&lt;strong&gt;你是否会push甚至引导团队的成长&lt;/strong&gt;、与你合作是否会愉快，这也是我参与面试的原因之一。在此，希望你静静思考下，你在团队中是否属于这类人，至于是与不是由看官您自己评判了:)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;79&quot; height=&quot;95&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091740530345217.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;技术一面&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;通常情况下工程师面试都有几轮？不管几轮都很正常，反而很少有听说只有一轮面试的，所以这里说的一面是纯技术的面试。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有时我会为面试面到一名优秀的同学而高兴不已，因为聊天会很畅快，而且决定很明朗。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;更多时候我会比较纠结，因为我需要考虑给不给面试者通过我这关。正因如此，其实很多时候我做的每个选择都有一定的运气成分。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺初期做面试官的时候，基本都是我主动来发问和出题，用自己的主观意识去考察面试者的方方面面。那时想当然的认为，这份岗位需要这些XX技能和用到这些XX技巧，所以如果面试者具备这些知识点就可以通过。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;再后来面试的经验提升了，想明白了学习能力、思维方式和技术能力同样非常重要，所有会主要针对面试者比较擅长的领域来【交流、讨论】。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;在面试这个过程里，我现在总会在正式面试之前，和面试者说句话：“面试就是聊天，我们简单聊聊吧”。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091758348465128.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;本来想随便配个图，可是看到这个图片突然想起一首儿歌：丢肥皂&amp;nbsp;丢肥皂 轻轻的放在小基友的后面 大家不要告诉他 快点快点捉住他，快点快点捉住他...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;好吧，节操碎了一地。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;我的期待&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;下周已经安排有六个面试。请思考，作为一名面试官应该对你又有怎样的期待？&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺的面试时的问题一般不固定，因为我不喜欢背题的做法。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有一定工作经验最好，当然没有也同样有机会，而且有工作经验对于面试也不一定都是好事。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;PS：工作年限和项目经验决定了你的知识储备，所以也会有针对性的调整难度和问题。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;在我看来评价一名同事是否优秀其实很简单，&amp;nbsp;看看他是否够【专业】就行了。那么合计合计，你自己对待工作是否对得住专业俩字。至于怎么理解专业俩字，还是见仁见智吧。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;简历造假或者过分夸大。夸大自己的工作确实也属正常，可是如果夸大、夸大程度都需要有底线可言。经常会看到简历上写着精通XX，比如jQuery，然后面试的一问没有读过源码，对其细节原理说不出所以然来，这还不如不写。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;记得前不久在微博上看 &lt;a target=&quot;_blank&quot; href=&quot;http://weibo.com/shyvo&quot;&gt;@朴灵&lt;/a&gt;&amp;nbsp;说过：“如果你的GitHub上没有任何项目和代码，简历上还是别填GitHub地址了，没啥好处的。”&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;期待你不要紧张、而且自信，让自己好的一面尽量的展现出来，努力把面试官当成你的同事，你只是与他探讨工作中的问题。甚至可以多提些自己觉得有意思的想法，如果能够和面试官一直存于一个较愉快的谈话环境，相信你的面试结论上，面试官一定不会吝啬对你进行正面的评价。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;136&quot; height=&quot;150&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091843190501489.jpg&quot; /&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;总结&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;面试其实也是修心的过程。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;我毕业初期时找工作也并不顺利，不过多次在找工作面试的过程中经常会遇见很好的面试官，就算你没有达到他们的岗位要求，他们还是会中肯的给你一些靠谱的建议。这些面试过程就非常的美好，其实结果不一定是最重要的，过程也一样美妙，不是吗。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;最后，请带着你积极的心态，好好享受每一次面试。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;祝好&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E3%80%90%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91%E3%80%91/&quot;&gt;前端面试【有感而发】&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on March 09, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Nodejs初阶之express]]></title>
-  <link rel="alternate" type="text/html" href="/Nodejs%E5%88%9D%E9%98%B6%E4%B9%8Bexpress/" />
-  <id>/Nodejs初阶之express</id>
-  <published>2014-02-28T00:00:00+08:00</published>
-  <updated>2014-02-28T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&lt;span style=&quot;line-height: 1.5;&quot;&gt;&amp;#12288;&amp;#12288;PS: 2014/09/24 更新《&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/p/express4.html&quot;&gt;Express 4.X 启航指南&lt;/a&gt;》，欢迎阅读和评论:)&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&lt;span style=&quot;line-height: 1.5;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;line-height: 1.5;&quot;&gt;老规矩，开头部分都是些自娱自乐的随想，想到哪写到哪...&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;line-height: 1.5; font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;到今天俺已经在俺厂工作俩年零几天了，工作以来头一回在一家企业工作超俩年，对于这俩年确实只有满满的成就感，不管是工作还是生活...写到这句突然又想写篇这俩年的总结，等这篇文章发了之后就着手整理吧，吼吼。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;line-height: 1.5; font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201402/262041577757011.gif&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;line-height: 1.5; font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&lt;span style=&quot;line-height: 1.5;&quot;&gt;&amp;#12288;&amp;#12288;那篇《&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2011/10/31/nodejs.html&quot; title=&quot;node.js 初体验&quot;&gt;node.js 初体验&lt;/a&gt;》好像才发生在前几月，没想到时间已过两年有多。且看到文章末尾处那句： “这篇文章只会是一个开始” 令俺脸红掩面&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201402/270046481715808.gif&quot; /&gt;，尼玛真没想到这一开始就开始了两年&lt;/span&gt;多，这让老夫情何以堪&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201402/270002525962790.gif&quot; /&gt;...&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;好吧，反正脸皮厚已不是俩三天，让俺装傻混过去吧，咱往前看才是硬道理不是。俺一定痛改前非、洗心革面、好好改造，今年中心的小心思是把【&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html&quot;&gt;前端攻略系列&lt;/a&gt;】折腾点名堂出来，厚积薄发的时刻来鸟。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;Node不得不写写，没辙呀，太火！看看最近的前端圈子吧，没弄过几行Node代码都不好意思和别人打招呼；不折腾点Node的小平台、小工具，去食堂都不好意思多搞几碗饭，所以俺也就顺大潮把自己的工作笔记整理整理，试试能否写好这篇Nodejs系列。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201402/270010498417459.jpg&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;好吧，不开玩笑哒~~~介绍这篇和接下来几篇Node文章的内容，基本都属于Node的初阶，略偏实战，进阶和高阶内容正在YY中，最终的目录与里程碑下一篇应该差不多能定下来。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;本篇以介绍Express为话题，延伸出用Node开发小页面，然后其中穿插概述express主要的API、路由的原理、Node模块概念，顺便也会介绍自己使用Node工具等等。默认看官们都具备JavaScript基础，所以过于基础的内容俺就不浪费篇幅咯，GOGO。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;最后自我爆料一个吧。老婆已回家养胎，所以俺穷的只有时间了。有时间好好加班拼工作，有时间好好写博(客)拼积累...诸如心灵鸡汤什么的就不灌各位啦，喝多了反胃:)&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;一不小心随想就写了那么多，尼玛炫酷狂拽屌炸天有木有！&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201402/271125378366371.gif&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&lt;em&gt;&lt;span style=&quot;line-height: 1.5; color: #888888;&quot;&gt;--------------------------------------------&amp;nbsp;华丽丽的分割线 --------------------------------------------&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br /&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;Node和NPM的安装够便捷了，不细说...有几点基础顺手提一下：&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;ol&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;安装命令中的 “-g” 表示全局(global)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;express的版本不是通常的 “-v” 来查看，而是 “-V”&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;安装express项目的命令如下&lt;br /&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ffffff; color: #993366;&quot;&gt;express -e nodejs-product&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;&lt;/span&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;-e, --ejs add ejs engine support &lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;-J, --jshtml add jshtml engine support (defaults to jade)&lt;/span&gt;&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;
-
-PS：模板引擎之类暂时不必care，不过俺当初学习搭建Node+express时用的是ejs，所以也就顺手一直用着了&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ol&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;Node的小基友supervisor&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;每次修改代码后会自动重启。懒程序员就指望这种省事省力的工具活着了:)&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;安装：&lt;span style=&quot;color: #993366;&quot;&gt;&lt;strong&gt;npm install -g supervisor&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;执行：&lt;span style=&quot;color: #993366;&quot;&gt;&lt;strong&gt;supervisor app.js&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;
-
-&lt;strong&gt;&lt;span style=&quot;color: #41007d;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;另一个&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;小基友forever&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;虚拟机一关node服务就关了，不过forever可以让node服务不停止，介绍如下，安装和执行不细说啦，我懒：&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;forever是一个简单的命令式nodejs的守护进程，能够启动，停止，重启App应用。forever完全基于命令行操作，在forever进程之下，创建node的子进程，通过monitor监控node子进程的运行情况，一旦文件更新，或者进程挂掉，forever会自动重启node服务器，确保应用正常运行。&lt;/span&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;express项目目录&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201402/272113409312155.png&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;如&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;上图就是一个express项目结构，简单过一下：&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;app.js： 项目入口，反正express爱叫app.js没辙，你可以改成index.js或者main.js都成。相当于php项目中的 index.php、index.html&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;node_modules： 存放项目的依赖库&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;package.json： 项目依赖配置及开发者信息(这个要说就说多了，还是看文档好，俺就不误人子弟了。下期看看抽个小段单说Node模块)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;public： 静态文件如 css,js,img (PS:俺其实习惯叫static)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;routes： 路由文件(学习的重要攻克对象。尼玛业务好不好，路由是关键)&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;Views： 页面文件(Ejs或者jade的模板，默认是jade，俺这用Ejs，在初阶练手最重要，所以都可以试试)&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;打开View 文件发现index.ejs比较不习惯，所以对app.js进行小改动：&lt;/span&gt;&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;&lt;ol&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;“app.set(&#39;view engine&#39;, &#39;ejs&#39;);” 变成 “app.engine(&#39;.html&#39;, ejs.__express);app.set(&#39;view engine&#39;, &#39;html&#39;);”&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;上一行出现的ejs变量需要require ejs模块，增加代码“var&amp;nbsp;ejs = require(&#39;ejs&#39;);”&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/ol&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;最终的app.js如下：&lt;/span&gt;&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201402/280037097683921.png&quot; /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;代码小解：&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;因为针对的是初阶入门，俺们还是继续过一下express的使用与Node的方法哈：&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;require() 用于在当前模块中加载和使用其他模块；此方法是模块的基础，使用中大概有路径的概念就行。PS：JS文件可以去掉&quot;.js&quot;后缀&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; exports 表示模块的导出对象，用于导出模块的属性和公共方法。在项目routes文件夹下有index.js和users.js（路由有细说），都使用到exports对象导出对象，如33行的routes.index和34行的user.list;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; PS：一个模块的代码只会在模块第一次被使用时执行，不会因require多次而被初始化多次。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;strong&gt;express()&amp;nbsp;&lt;/strong&gt;表示创建express应用程序。简单几行代码其实就可以创建一个应用，如下：&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;&lt;div class=&quot;cnblogs_code_toolbar&quot;&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a title=&quot;复制代码&quot; onclick=&quot;copyCnblogsCode(this)&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;img alt=&quot;复制代码&quot; src=&quot;http://common.cnblogs.com/images/copycode.gif&quot; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;pre&gt;     &lt;span style=&quot;color: #0000ff;&quot;&gt;var&lt;/span&gt; express = require(&#39;express&#39;&lt;span style=&quot;color: #000000;&quot;&gt;);
-     &lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;var&lt;/span&gt; app =&lt;span style=&quot;color: #000000;&quot;&gt; express();
-     app.get(&lt;/span&gt;&#39;/&#39;, &lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;(req, res){
-          res.send(&lt;/span&gt;&#39;hello world&#39;&lt;span style=&quot;color: #000000;&quot;&gt;);
-          console.log(&lt;/span&gt;&#39;hello world&#39;&lt;span style=&quot;color: #000000;&quot;&gt;);
-     });
-     app.listen(&lt;/span&gt;&#39;8808&#39;);&lt;/pre&gt;
-&lt;div class=&quot;cnblogs_code_toolbar&quot;&gt;&lt;span class=&quot;cnblogs_code_copy&quot;&gt;&lt;a title=&quot;复制代码&quot; onclick=&quot;copyCnblogsCode(this)&quot; href=&quot;javascript:void(0);&quot;&gt;&lt;img alt=&quot;复制代码&quot; src=&quot;http://common.cnblogs.com/images/copycode.gif&quot; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;app.listen() 就是在给定的主机和端口上监听请求，这个和node中http模块的http.createServer(function(){...}).listen()效果一致；&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;app.set(name, value)和app.get(name)就是你想的那样，set()为设置 name 的值设为 value，get()为获取设置项 name 的值。如俺app.js的图片16行中的一句“app.set(&#39;port&#39;, process.env.PORT || 3000)”就是设置项目的port，在下面使用http.createServer时就可以使用app.get(&#39;port&#39;)来获取，只是俺偷懒没用来着&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201402/280809248922088.gif&quot; /&gt;；&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;了解app.engine()方法之前先看看express应用的安装命令:“express -e nodejs-product”，其中的 -e 和 -J 我们一开始已经提到，表示ejs和jade模板。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;如果想把模板后缀改成“.html”时就会用到app.engine方法，来重新设置模板文件的扩展名，比如想用ejs模板引擎来处理“.html”后缀的文件：app.engine(&#39;.html&#39;, require(&#39;ejs&#39;).__express);&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;app.engine(ext, callback) 注册模板引擎的 callback 用来处理ext扩展名的文件。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; PS：&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;__express&lt;/span&gt;不用去care，其实就是ejs模块的一个公共属性，表示要渲染的文件扩展名。&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;app.use([path], function) 使用中间件 function,可选参数path默认为&quot;/&quot;。使用 app.use() “定义的”中间件的顺序非常重要，它们将会顺序执行，use的先后顺序决定了中间件的优先级(经常有搞错顺序的时候);&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;最后介绍个很有用的express API：&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;app.render(view, [options], callback)&amp;nbsp;渲染 view, callback 用来处理返回的渲染后的字符串。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;background-color: #ccffff;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 18px;&quot;&gt;&amp;#12288;&amp;#12288;路由实战：&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; 路径代码应该是项目中最本机的一部分了。express中创建一个或者一套新的handle非常简单，先看看express现有的，一会儿我们创建俩个实际的规则。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201402/282058558455441.png&quot; /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; 变量 routes 和 user 都是刚才require的模块，他们各自exports了index方法和list方法；其中&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;Response&lt;/span&gt;.render()表示渲染view，同时传进对应的数据，Response.send()为发送一个响应；在设置路由时index和list方法作为回调函数最终执行。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; &lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; &lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;流程&lt;/span&gt;大概&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;了解啦，俺&lt;/span&gt;们也就实际搞一把，最easy的一种方式，简单俩步：&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;ol&gt;
-&lt;li&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;第一种方式就是在当前的routes/index.js或者routes/test.js中加几行代码如下&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;div class=&quot;cnblogs_code&quot;&gt;
-&lt;pre&gt;exports.test = &lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;(req, res){
-  res.send(&#39;test welcome.&#39;);&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-};&lt;/span&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;在app.js文件设置路由那块加上app.get(&#39;/test&#39;, routes.test);&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; 第二种方式就是多了两步，先新建一个模块如test.js文件，输出然后exports对应的方法；在app.js中require这个模块，再加一行设置路由即完成了。&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 18px; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;快速炫起来，集成Bootstrap：&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;JS工程师使用Nodejs上手还是以快速搭建网站为主，所以才会介绍Express，那么为了让网站更快的体面起来，集成使用Bootstrap就是上佳选择，非常喜欢其响应式布局和整体系的脚手架。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;PS：因为Bootstrap的JS插件都依赖jQeury，所以jQuery也一并引入了。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; 前文已经说到了，静态文件都放在public文件夹中，切文件夹内已经帮我们把类目都分好了，images、 javascripts、 stylesheets。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; 分别引入bootstrap.min.css文件至stylesheets目录下；jquery-1.x.x.min.js和bootstrap.min.js放到javascripts文件夹下。&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; 然后俺们修改view/index.html把文件引入使用即可，下面放出俺在bootstrap demo的基础改的index.html，大家随意拿去使用和修改。&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/span&gt;
-&lt;div onclick=&quot;cnblogs_code_show(&#39;d4005c23-cd80-44fa-b152-9c3cc32606aa&#39;)&quot; class=&quot;cnblogs_code&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif&quot; class=&quot;code_img_closed&quot; id=&quot;code_img_closed_d4005c23-cd80-44fa-b152-9c3cc32606aa&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif&quot; onclick=&quot;cnblogs_code_hide(&#39;d4005c23-cd80-44fa-b152-9c3cc32606aa&#39;,event)&quot; style=&quot;display: none;&quot; class=&quot;code_img_opened&quot; id=&quot;code_img_opened_d4005c23-cd80-44fa-b152-9c3cc32606aa&quot; /&gt;
-&lt;div class=&quot;cnblogs_code_hide&quot; id=&quot;cnblogs_code_open_d4005c23-cd80-44fa-b152-9c3cc32606aa&quot;&gt;
-&lt;pre&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html lang=&quot;zh-cn&quot;&amp;gt;
-  &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;&amp;lt;%= title %&amp;gt;&amp;lt;/title&amp;gt;
-    &amp;lt;meta charset=&quot;utf-8&quot;&amp;gt;
-    &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&amp;gt;
-    &amp;lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&amp;gt;
-    &amp;lt;link href=&quot;/stylesheets/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&amp;gt;
-    &amp;lt;!--&amp;lt;link href=&quot;/stylesheets/base.css&quot; rel=&quot;stylesheet&quot;&amp;gt;--&amp;gt;
-    &amp;lt;!--&amp;lt;link href=&quot;/stylesheets/common.css&quot; rel=&quot;stylesheet&quot;&amp;gt;--&amp;gt;
-    &amp;lt;!--&amp;lt;link href=&quot;/stylesheets/page.css&quot; rel=&quot;stylesheet&quot;&amp;gt;--&amp;gt;
-    &amp;lt;!-- 建议在项目中把CSS分好level，好维护和管理 --&amp;gt;
-    &amp;lt;style&amp;gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-        html, body { overflow&lt;/span&gt;-&lt;span style=&quot;color: #000000;&quot;&gt;x: hidden;}
-        body { padding&lt;/span&gt;-&lt;span style=&quot;color: #000000;&quot;&gt;top: 70px;background:#f1f1f1; }
-        footer { padding:20px &lt;/span&gt;0 10px;text-align:center;font-weight:bold;border-top:1px solid #ddd;margin-&lt;span style=&quot;color: #000000;&quot;&gt;top:30px;}
-        .header&lt;/span&gt;-navbar-&lt;span style=&quot;color: #000000;&quot;&gt;style {
-            filter:alpha(opacity&lt;/span&gt;=90&lt;span style=&quot;color: #000000;&quot;&gt;);
-            &lt;/span&gt;-moz-opacity:0.9&lt;span style=&quot;color: #000000;&quot;&gt;;
-            &lt;/span&gt;-khtml-opacity: 0.9&lt;span style=&quot;color: #000000;&quot;&gt;;
-            opacity: &lt;/span&gt;0.9&lt;span style=&quot;color: #000000;&quot;&gt;;
-            background: linear&lt;/span&gt;-gradient(45deg, rgb(60, 8, 34) 0%, rgb(49, 79, 117) 100%&lt;span style=&quot;color: #000000;&quot;&gt;);
-            border:1px solid #aaa;
-            font&lt;/span&gt;-&lt;span style=&quot;color: #000000;&quot;&gt;size:16px;
-        }
-        .beige {background:beige;}
-        .bisque {background:bisque;}
-        .darkseagreen{ background:darkseagreen;}
-    &lt;/span&gt;&amp;lt;/style&amp;gt;
-  &amp;lt;/head&amp;gt;
-  &amp;lt;body&amp;gt;
-    &amp;lt;div class=&quot;navbar navbar-fixed-top header-navbar-style navbar-inverse&quot; role=&quot;navigation&quot;&amp;gt;
-      &amp;lt;div class=&quot;container&quot;&amp;gt;
-        &amp;lt;div class=&quot;navbar-header&quot;&amp;gt;
-          &amp;lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&amp;gt;
-            &amp;lt;span class=&quot;sr-only&quot;&amp;gt;Toggle navigation&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&quot;icon-bar&quot;&amp;gt;&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&quot;icon-bar&quot;&amp;gt;&amp;lt;/span&amp;gt;
-            &amp;lt;span class=&quot;icon-bar&quot;&amp;gt;&amp;lt;/span&amp;gt;
-          &amp;lt;/button&amp;gt;
-          &amp;lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&amp;gt;Product&amp;lt;/a&amp;gt;
-        &amp;lt;/div&amp;gt;
-        &amp;lt;div class=&quot;collapse navbar-collapse&quot;&amp;gt;
-          &amp;lt;ul class=&quot;nav navbar-nav&quot;&amp;gt;
-            &amp;lt;li class=&quot;active&quot;&amp;gt;&amp;lt;a href=&quot;/&quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-            &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;a href=&quot;/contactus&quot;&amp;gt;Contact&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-            &amp;lt;li class=&quot;dropdown&quot;&amp;gt;
-              &amp;lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&amp;gt;Dropdown &amp;lt;b class=&quot;caret&quot;&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt;
-              &amp;lt;ul class=&quot;dropdown-menu beige&quot;&amp;gt;
-                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Action&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Another action&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Something &lt;span style=&quot;color: #0000ff;&quot;&gt;else&lt;/span&gt; here&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;li class=&quot;divider&quot;&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;Separated link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;li class=&quot;divider&quot;&amp;gt;&amp;lt;/li&amp;gt;
-                &amp;lt;li&amp;gt;&amp;lt;a href=&quot;#&quot;&amp;gt;One more separated link&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-              &amp;lt;/ul&amp;gt;
-            &amp;lt;/li&amp;gt;
-            &amp;lt;li class=&quot;&quot;&amp;gt;&amp;lt;a href=&quot;/faq&quot;&amp;gt;FAQ&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-          &amp;lt;/ul&amp;gt;
-        &amp;lt;/div&amp;gt;&amp;lt;!-- /.nav-collapse --&amp;gt;
-      &amp;lt;/div&amp;gt;&amp;lt;!-- /.container --&amp;gt;
-    &amp;lt;/div&amp;gt;&amp;lt;!-- /.navbar --&amp;gt;
-
-    &amp;lt;!-- 以上位置建议创建个header.html维护起来 --&amp;gt;
-
-    &amp;lt;style&amp;gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-      @media screen and (max&lt;/span&gt;-&lt;span style=&quot;color: #000000;&quot;&gt;width: 767px) {
-        .row&lt;/span&gt;-&lt;span style=&quot;color: #000000;&quot;&gt;offcanvas { position: relative;
-        &lt;/span&gt;-webkit-transition: all 0.25s ease-&lt;span style=&quot;color: #000000;&quot;&gt;out;
-        &lt;/span&gt;-moz-transition: all 0.25s ease-&lt;span style=&quot;color: #000000;&quot;&gt;out;
-        transition: all &lt;/span&gt;0.25s ease-&lt;span style=&quot;color: #000000;&quot;&gt;out;
-      }
-      .row&lt;/span&gt;-offcanvas-right .sidebar-offcanvas { right: -50%; &lt;span style=&quot;color: #008000;&quot;&gt;/*&lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt; 6 columns &lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt;*/&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt; }
-      .row&lt;/span&gt;-offcanvas-left .sidebar-offcanvas { left: -50%; &lt;span style=&quot;color: #008000;&quot;&gt;/*&lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt; 6 columns &lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt;*/&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt; }
-      .row&lt;/span&gt;-offcanvas-right.active { right: 50%; &lt;span style=&quot;color: #008000;&quot;&gt;/*&lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt; 6 columns &lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt;*/&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt; }
-      .row&lt;/span&gt;-offcanvas-left.active { left: 50%; &lt;span style=&quot;color: #008000;&quot;&gt;/*&lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt; 6 columns &lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt;*/&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt; }
-      .sidebar&lt;/span&gt;-offcanvas { position: absolute; top: 0; width: 50%; &lt;span style=&quot;color: #008000;&quot;&gt;/*&lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt; 6 columns &lt;/span&gt;&lt;span style=&quot;color: #008000;&quot;&gt;*/&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt; } }
-    &lt;/span&gt;&amp;lt;/style&amp;gt;
-
-    &amp;lt;div class=&quot;container&quot;&amp;gt;
-      &amp;lt;div class=&quot;row row-offcanvas row-offcanvas-right&quot;&amp;gt;
-        &amp;lt;div class=&quot;col-xs-12 col-sm-9&quot;&amp;gt;
-          &amp;lt;p class=&quot;pull-right visible-xs&quot;&amp;gt;
-            &amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot; data-toggle=&quot;offcanvas&quot;&amp;gt;Toggle nav&amp;lt;/button&amp;gt;
-          &amp;lt;/p&amp;gt;
-          &amp;lt;div class=&quot;jumbotron bisque&quot;&amp;gt;
-            &amp;lt;h1&amp;gt;Welcome &amp;lt;%= title %&amp;gt;!&amp;lt;/h1&amp;gt;
-            &amp;lt;p&amp;gt;This is an example to show the potential of an offcanvas layout pattern &lt;span style=&quot;color: #0000ff;&quot;&gt;in&lt;/span&gt; Bootstrap. Try some responsive-range viewport sizes to see it &lt;span style=&quot;color: #0000ff;&quot;&gt;in&lt;/span&gt; action.&amp;lt;/p&amp;gt;
-          &amp;lt;/div&amp;gt;
-          &amp;lt;div class=&quot;row&quot;&amp;gt;
-            &amp;lt;div class=&quot;col-6 col-sm-6 col-lg-4&quot;&amp;gt;
-              &amp;lt;h2&amp;gt;Heading&amp;lt;/h2&amp;gt;
-              &amp;lt;p&amp;gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &amp;lt;/p&amp;gt;
-              &amp;lt;p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&amp;gt;View details &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-            &amp;lt;div class=&quot;col-6 col-sm-6 col-lg-4&quot;&amp;gt;
-              &amp;lt;h2&amp;gt;Heading&amp;lt;/h2&amp;gt;
-              &amp;lt;p&amp;gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &amp;lt;/p&amp;gt;
-              &amp;lt;p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&amp;gt;View details &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-            &amp;lt;div class=&quot;col-6 col-sm-6 col-lg-4&quot;&amp;gt;
-              &amp;lt;h2&amp;gt;Heading&amp;lt;/h2&amp;gt;
-              &amp;lt;p&amp;gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &amp;lt;/p&amp;gt;
-              &amp;lt;p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&amp;gt;View details &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-            &amp;lt;div class=&quot;col-6 col-sm-6 col-lg-4&quot;&amp;gt;
-              &amp;lt;h2&amp;gt;Heading&amp;lt;/h2&amp;gt;
-              &amp;lt;p&amp;gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &amp;lt;/p&amp;gt;
-              &amp;lt;p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&amp;gt;View details &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-            &amp;lt;div class=&quot;col-6 col-sm-6 col-lg-4&quot;&amp;gt;
-              &amp;lt;h2&amp;gt;Heading&amp;lt;/h2&amp;gt;
-              &amp;lt;p&amp;gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &amp;lt;/p&amp;gt;
-              &amp;lt;p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&amp;gt;View details &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-            &amp;lt;div class=&quot;col-6 col-sm-6 col-lg-4&quot;&amp;gt;
-              &amp;lt;h2&amp;gt;Heading&amp;lt;/h2&amp;gt;
-              &amp;lt;p&amp;gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &amp;lt;/p&amp;gt;
-              &amp;lt;p&amp;gt;&amp;lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&amp;gt;View details &amp;amp;raquo;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-            &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-          &amp;lt;/div&amp;gt;&amp;lt;!--/row--&amp;gt;
-        &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-
-        &amp;lt;div class=&quot;col-xs-6 col-sm-3 sidebar-offcanvas&quot; id=&quot;sidebar&quot; role=&quot;navigation&quot;&amp;gt;
-          &amp;lt;div class=&quot;list-group&quot;&amp;gt;
-            &amp;lt;a target=&quot;_blank&quot; href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-            &amp;lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&amp;gt;Link&amp;lt;/a&amp;gt;
-          &amp;lt;/div&amp;gt;
-        &amp;lt;/div&amp;gt;&amp;lt;!--/span--&amp;gt;
-      &amp;lt;/div&amp;gt;&amp;lt;!--/row--&amp;gt;
-    &amp;lt;/div&amp;gt;&amp;lt;!--/.container--&amp;gt;
-
-    &amp;lt;!-- 从header.html之后到此可分为page层 --&amp;gt;
-
-    &amp;lt;footer class=&quot;darkseagreen&quot;&amp;gt;
-        &amp;lt;p&amp;gt;Copyright &amp;amp;copy; 2014. Designed by nieweidong.&amp;lt;/p&amp;gt;
-    &amp;lt;/footer&amp;gt;
-    &amp;lt;script src=&quot;/javascripts/jquery-1.11.0.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-    &amp;lt;script src=&quot;/javascripts/bootstrap.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-    &amp;lt;script&amp;gt;&lt;span style=&quot;color: #000000;&quot;&gt;
-      $(document).ready(&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;() {
-        $(&lt;/span&gt;&#39;[data-toggle=offcanvas]&#39;).click(&lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #000000;&quot;&gt;() {
-          $(&lt;/span&gt;&#39;.row-offcanvas&#39;).toggleClass(&#39;active&#39;&lt;span style=&quot;color: #000000;&quot;&gt;);
-        });
-      });
-    &lt;/span&gt;&amp;lt;/script&amp;gt;
-  &amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;span class=&quot;cnblogs_code_collapse&quot;&gt;View Code &lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288; 如果样式有问题请检查下bootstrap的路径是否正确引入。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288; 启动项目之后觉得 高大上 很简单，有木有！！&lt;/p&gt;
-&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288; &lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;background-color: #ccffff;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 18px;&quot;&gt;&amp;#12288;&amp;#12288;FAQ&amp;amp;总结：&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; 俺们的express项目暂时，且express也并没有涉及到任何数据库，这个事情需要第三方node模块，比如mysql或者MongoDB，后续俺会有一章单独介绍这块。&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; express也不是Node中web框架的唯一选择，不过由于其文档较全，所以才以其为示例为大家介绍，其原理和实现其实细化之后并不复杂，也希望更多的JS工程师折腾出自己的Web框架。&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288; 尼玛还有几个小时就到3月了，一月一篇可是俺的目标，所以全面的demo俺之后再补上哈。&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 幼圆; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;参考资料：&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;a target=&quot;_blank&quot; href=&quot;http://express.jsbin.cn/api.html&quot;&gt;http://express.jsbin.cn/api.html&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;a target=&quot;_blank&quot; href=&quot;http://www.embeddedjs.com&quot;&gt;http://www.embeddedjs.com&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;&lt;span style=&quot;font-family: 幼圆; font-size: 16px; background-color: #ccffff;&quot;&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;strong&gt;Node的小基友supervisor 和 forever 不要忘记了，相信你会喜欢他们的:)&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/Nodejs%E5%88%9D%E9%98%B6%E4%B9%8Bexpress/&quot;&gt;Nodejs初阶之express&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on February 28, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[AJAX POST&跨域之CORS]]></title>
-  <link rel="alternate" type="text/html" href="/AJAX%E8%B7%A8%E5%9F%9F_POST%E4%B9%8BCORS/" />
-  <id>/AJAX跨域_POST之CORS</id>
-  <published>2014-01-06T00:00:00+08:00</published>
-  <updated>2014-01-06T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;一晃又到新年了，于是开始着手好好整理下自己的文档，顺便把一些自认为有意义的放在博客上，记录成点的点滴。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06081929-22224e37e3d54b0e95bf29b0c5de6919.gif&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;跨域是我在日常面试中经常会问到的问题，这词在前端界出现的频率不低，主要原因还是由于安全限制(同源策略， 即JavaScript或Cookie只能访问同域下的内容)，因为我们在日常的项目开发时会不可避免的需要进行跨域操作，所以跨域能力也算是前端工程师的基本功之一。&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;和大多数跨域的解决方案一样，JSONP也是我的选择，可是某天PM的需求变了，某功能需要改成支持POST，因为传输的数据量比较大，GET形式搞不定。所以折腾了下闻名已久的&lt;strong&gt;CORS（&lt;/strong&gt;跨域资源共享，Cross-Origin Resource Sharing&lt;strong&gt;）&lt;/strong&gt;，这边文章也就是折腾期间的小记与总结。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06081959-ca75c7560afc42f1a52048bdcaad409a.jpg&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&lt;hr /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;h1&gt;概述&lt;/h1&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;CORS能做什么：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;正常使用AJAX会需要正常考虑跨域问题，所以伟大的程序员们又折腾出了一系列跨域问题的解决方案，如JSONP、flash、ifame、xhr2等等。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;本文介绍的CORS就是一套AJAX跨域问题的解决方案。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;nbsp;CORS的原理：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;CORS定义一种跨域访问的机制，可以让AJAX实现跨域访问。CORS 允许一个域上的网络应用向另一个域提交跨域 AJAX 请求。实现此功能非常简单，只需由服务器发送一个响应标头即可。&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;CORS浏览器支持情况如下图：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082033-9233ced009a644f9af909baca57a72b7.png&quot; style=&quot;width: 760px;&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082103-f46e697e71884240b7200f8713697fbc.png&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;喜闻乐见、普大喜奔的支持情况，尤其是在&lt;strong&gt;移动终端&lt;/strong&gt;上，除了opera Mini；&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;PC上的现代浏览器都能友好的支持，除了IE9-，不过前端工程师对这种情况早应该习惯了...&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082134-b13e1416aa0b453f89f71ad953807361.jpg&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;h1&gt;CORS启航&lt;/h1&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;假设我们页面或者应用已在&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;http://www.test1.com&lt;/span&gt;&amp;nbsp;上了，而我们打算从&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;http://www.test2.com&lt;/span&gt;&lt;/span&gt;&amp;nbsp;请求提取数据。一般情况下，如果我们直接使用 AJAX 来请求将会失败，浏览器也会返回“源不匹配”的错误，&quot;&lt;span style=&quot;font-size: 19px; color: #6a0081;&quot;&gt;&lt;strong&gt;跨域&lt;/strong&gt;&lt;/span&gt;&quot;也就以此由来。&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;利用 CORS，&lt;span style=&quot;color: #0000ff;&quot;&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;http://www.test2.com&lt;/span&gt;&lt;/span&gt; 只需添加一个标头，就可以允许来自&amp;nbsp;&lt;span style=&quot;color: #0000ff;&quot;&gt;http://www.test1.com&lt;/span&gt; 的请求，下图是我在PHP中的 hander() 设置，&lt;strong&gt;“*”号表示允许任何域向我们的服务端提交请求&lt;/strong&gt;：&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082159-b1a102a3ce0e49e7841f76675236e408.png&quot; /&gt;&lt;/div&gt;
-&amp;#12288;&amp;#12288;&lt;strong&gt;也可以设置指定的域名，如域名&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;http://www.test2.com&lt;/span&gt;&amp;nbsp;，那么就允许来自这个域名的请求&lt;/strong&gt;：
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082227-10f22c4f75094faeb78255509199aed5.png&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;当前我设置的header为“*”，任意一个请求过来之后服务端我们都可以进行处理&amp;amp;响应，那么在调试工具中可以看到其头信息设置，其中见红框中有一项信息是“&lt;span style=&quot;font-size: 16px; color: #800080;&quot;&gt;&lt;strong&gt;Access-Control-Allow-Origin：*&lt;/strong&gt;&lt;/span&gt;&amp;nbsp;”，表示我们已经启用CORS，如下图。&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 13px;&quot;&gt;PS：&lt;/span&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;由于demo都在我厂的两台测试机间完成，外网也不能访问，所以在这就不提供demo了，见谅&lt;/span&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082301-706148cc7ee142898b8eb25fcd62c406.jpg&quot; /&gt;
-&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06082242-c70a37f237ed48c4a60d33fccfd467fb.png&quot; /&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&amp;#12288;&amp;#12288;简单的一个header设置，一个支持跨域&amp;amp;POST请求的server就完成了:)&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;当然，如果没有开启CORS必定失败的啦，如下图：&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201401/06110611-953e174761e545ad94da63fceee9afb4.jpg&quot; style=&quot;width: 760px;&quot; /&gt;&lt;/div&gt;
-&lt;h1&gt;问题&amp;amp;小结&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;刚刚说到的兼容性。CORS是W3C中一项较新的方案，所以部分浏览器还没有对其进行支持或者完美支持，详情可移至 &lt;a target=&quot;_blank&quot; href=&quot;http://www.w3.org/TR/cors/&quot;&gt;http://www.w3.org/TR/cors/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;安全问题。CORS提供了一种跨域请求方案，但没有为安全访问提供足够的保障机制，如果你需要信息的绝对安全，不要依赖CORS当中的权限制度，应当使用更多其它的措施来保障，比如OAuth2。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;#12288;&amp;#12288;自认为的cors使用场景：&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;cors在移动终端支持的不错，可以考虑在移动端全面尝试；PC上有不兼容和没有完美支持，所以小心踩坑。当然浏览器兼容就是个伪命题，说不准某个浏览器的某个版本就完美兼容了，说不准就有点小坑，尼玛伤不起！～&lt;/li&gt;
-&lt;li&gt;jsonp是get形式，承载的信息量有限，所以信息量较大时CORS是不二选择；&lt;/li&gt;
-&lt;li&gt;配合新的JSAPI(fileapi、xhr2等)一起使用，实现强大的新体验功能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;strong&gt;&amp;#12288;&amp;#12288;祝2014顺利。&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 24px;&quot;&gt;&lt;strong&gt;参考资料:&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.w3.org/TR/cors/&quot;&gt;http://www.w3.org/TR/cors/&lt;/a&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;a target=&quot;_blank&quot; href=&quot;http://www.html5rocks.com/en/tutorials/cors/&quot;&gt;http://www.html5rocks.com/en/tutorials/cors/&lt;/a&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a target=&quot;_blank&quot; href=&quot;http://caniuse.com/#search=cors&quot;&gt;http://caniuse.com/#search=cors&lt;/a&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/AJAX%E8%B7%A8%E5%9F%9F_POST%E4%B9%8BCORS/&quot;&gt;AJAX POST&amp;跨域之CORS&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on January 06, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[数据工作之百度统计体验]]></title>
-  <link rel="alternate" type="text/html" href="/%E6%95%B0%E6%8D%AE%E5%B7%A5%E4%BD%9C%E4%B9%8B%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1%E4%BD%93%E9%AA%8C/" />
-  <id>/数据工作之百度统计体验</id>
-  <published>2013-08-29T00:00:00+08:00</published>
-  <updated>2013-08-29T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium; display: inline !important; float: none;&quot;&gt;Researsh百度统计，记录此过程中的点滴和自己的看法&lt;/span&gt;&lt;br style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot; /&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&lt;br /&gt;
-&lt;div style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;百度统计是什么？&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;一款专业网站流量分析工具，能够告诉您访客是如何找到并浏览您的网站，以及如何改善访客在您网站上的使用体验。。。。。。不多罗嗦，此处省略N百字&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;带着一些问题去研究&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;color: #147191;&quot;&gt;访客属性：&lt;/span&gt;&lt;/strong&gt;通过对您网站页面的监测，分析访客行为，刻画出您网站的访客属性，主要包括性别、年龄、职业和学历四个部分。&lt;strong style=&quot;color: #9e00f3;&quot;&gt;这个属性怎么搞出来的，原理是什么？&lt;/strong&gt;&lt;br /&gt;
-答案：访客属性是拿着访客的baiduid去passport那边获取的。大概就是passport建立了一套用户属性的服务，可以使用baiduid去取，不需要userid。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;color: #3665ee;&quot;&gt;平均停留时长：&lt;/span&gt;&lt;/strong&gt;访客浏览某一页面时所花费的平均时长，页面的停留时长=进入下一个页面的时间-进入本页面的时间。那么&lt;strong style=&quot;color: #4f009a;&quot;&gt;第一页如果没有跳转是否有平均停留时长？&lt;/strong&gt;&lt;br /&gt;
-答案：根据访客浏览两个页面之间的时间间隔来计算页面停留时间，&lt;strong&gt;当访客访问一个页面后没有再访问下一个页面，便无法得知访客在该页面的停留时间&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;忠诚度是什么计算逻辑&lt;/strong&gt;？&lt;br /&gt;
-答案：忠诚度就是记录访客在一个月内的访问次数，次数多的忠诚度就高&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;热力图&lt;/strong&gt;是用户点击、鼠标移动得到的热力分析，还是其他？&lt;br /&gt;
-答案：热力图监控的是鼠标点击&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;异步请求怎么统计&lt;/strong&gt;？&lt;br /&gt;
-答案：有JSAPI叫_trackPageview，用于发送某个指定URL的PV统计请求，通常用于AJAX页面的PV统计。&lt;br /&gt;
-详情还得看官方文档，地址 http://tongji.baidu.com/open/&lt;/li&gt;
-&lt;li&gt;百度统计有流量限制吗？&lt;br /&gt;
-答案：不做任何流量限制，目前可稳定支持“每日千万以上PV”的站点流量统计和分析&lt;/li&gt;
-&lt;li&gt;&lt;strong style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #9c004c;&quot;&gt;百度统计和站内统计数据不一样是为什么？&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;
-答案：&lt;br /&gt;
-a.定义不同。如访客在未关闭浏览器的情况下30分钟内N次（N&amp;gt;1）访问网站，百度统计会视为1次访问&lt;br /&gt;
-b.跟踪技术。有基于浏览器Cookie、flash Cookie、IP+用户代理（基于IP+用户代理的方式，一般是分析日志文件来获取数据，但无法排除蜘蛛程序等来源的点击量，通常会比基于COOKIE的跟踪方式获取的流量数据更高）&lt;br /&gt;
-c.还有不少不一一列举，可查看&amp;nbsp;http://yingxiao.baidu.com/support/tongji/detail_2755.html&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;百度统计不能做什么&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;不支持添加中文域名&lt;/li&gt;
-&lt;li&gt;用户过少时很多报表和数据没有数，如访客数据（样本量过少不足以分析网站的访客属性）&lt;/li&gt;
-&lt;li&gt;不能让你的站点起死回生...&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;有意思的关键点&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;font-weight: normal; font-size: 19px;&quot;&gt;&lt;span style=&quot;color: #2d4fc9;&quot;&gt;&lt;strong&gt;忠诚度&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;：访客在您网站上的访问行为特征分布。通过访客忠诚度报告，您可以及时了解访客在您网站的行为规律以及对您网站的忠诚度。&lt;/span&gt;&amp;nbsp;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;strong&gt;&lt;span style=&quot;color: #147191;&quot;&gt;页头访问次数：&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;访客抵达网站页头的次数。如果您的网站打开速度太慢，或网站内容不吸引人，访客可能未等页面完全打开就离开了网站，此时计入页头访问次数，但不计入访问次数。&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 21px; color: #328712;&quot;&gt;访问时长和最后一页的关闭时间&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;：百度统计于&lt;/span&gt;&lt;/strong&gt;2012年11月1日起对访问时长算法进行优化，针对未能收到关闭时间的页面将采取以下优化方法：&amp;nbsp; 1）&amp;nbsp; 用户一次访问中只访问了一个页面而该页面的关闭时间未收到，则系统赋予该页面一定定值作为访问时长；&amp;nbsp; 2）&amp;nbsp; 用户一次访问中涉及到n（n≥2）个页面，其中第n个页面的关闭时间无法收到，则系统将前 （n-1）个页面的平均访问时长作为第n个页面的访问时长。&lt;strong&gt;以上调整会使得平均访问时长较原来有一定程度的下降，却更符合用户真实访问行为。&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;访问深度：&lt;/strong&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;访客一次访问会话中浏览的不同页面数&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;访问频次：&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;访客一天内在网站上的访问会话总次数&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;访问页数：&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;访客一次访问会话中的页面浏览量，即同一页面多次被浏览累计&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;流失率：&lt;/strong&gt;对指定路径对应的步骤而言，访客从该步骤进入到下一个步骤的过程中流失的比例。 本步骤的流失率=（本步骤的进入次数-下一步骤的进入次数）/本步骤的进入次数。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;老访客：&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;今日之前有过访问，且今日再次访问的访客，记为老访客。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;跳出率：&lt;/strong&gt;只浏览了一个页面便离开了网站的访问次数占总的访问次数的百分比。 子目录的跳出率是指只浏览子目录中一个页面便离开的访问次数占子目录总访问次数的百分比。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;退出率：&lt;/strong&gt;为从该页面跳出网站的浏览量的次数占该页面为下游带去所有浏览量的比&lt;/li&gt;
-&lt;li&gt;平均停留时长&amp;amp;平均访问时长&amp;amp;平均访问页数&amp;amp;上次访问时间&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;新访客数&lt;/strong&gt;：访客中历史第一次访问网站的访客数&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;span style=&quot;color: #7600d8;&quot;&gt;&lt;strong&gt;ip数和uv数不一致&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;：在网吧或者学校等地，是共用一个IP上网的，但是实际访客数并不唯一，就可能出现&lt;strong&gt;IP数小于访客数&lt;/strong&gt;；一般家庭电脑大多用ADSL拨号上网，也就是动态的IP 地址，一天可能拨好几次，但是实际访客数唯一，便会出现&lt;strong&gt;IP数大于uv数&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;span style=&quot;color: #1aade0;&quot;&gt;&lt;strong&gt;抵达率：&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;访问某网站的抵达率=访问次数/点击次数。抵达率过低，则说明较多点击未能抵达网站，需要查看网站url是否正常打开，速度是否够快。&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;百度统计的基友&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 24px; color: #147191;&quot;&gt;百度指数：&lt;/span&gt;以百度网页搜索和百度新闻搜索为基础的免费海量数据分析服务，用以反映不同关键词在过去一段时间里的“用户关注度”和“媒体关注度”。您可以发现、共享和挖掘互联网上最有价值的信息和资讯，直接、客观地反映社会热点、网民的兴趣和需求。&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 24px; color: #939600;&quot;&gt;百度推广：&lt;/span&gt;向企业提供的&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #006aff;&quot;&gt;按效果付费&amp;zwj;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;的网络营销服务，借助百度超过&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;strong&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;80%&amp;zwj;&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;中国搜索引擎市场份额和&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;strong&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;60万家&lt;/span&gt;&lt;/strong&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;联盟网站，打造了链接亿万网民和企业的供需平台，让有需求的人最便捷地找到适合自己的产品和服务，也让企业用少量投入就可以获得大量潜在客户、有效提升企业品牌影响力。&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;font-size: 32px;&quot;&gt;&lt;strong&gt;可借鉴的关键点&lt;/strong&gt;&lt;/div&gt;
-&lt;div&gt;
-&lt;ul&gt;
-&lt;li style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;color: #6a0081;&quot;&gt;&lt;strong&gt;维度分的比较细，可以得到更好的数据挖掘与分析&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div&gt;&lt;ol&gt;
-&lt;li&gt;操作系统&lt;/li&gt;
-&lt;li&gt;地域分布&lt;/li&gt;
-&lt;li&gt;浏览器分布&amp;amp;搜索词分布&lt;/li&gt;
-&lt;li&gt;搜索引擎分布&lt;/li&gt;
-&lt;li&gt;其他来源分布(如直接访问、站内来源、其他网站)&lt;/li&gt;
-&lt;li&gt;屏幕分辨率分布&lt;/li&gt;
-&lt;li&gt;按小时/天/周/月分布&lt;/li&gt;
-&lt;li&gt;是否支持COOKIE&lt;/li&gt;
-&lt;li&gt;是否支持JAVA&lt;/li&gt;
-&lt;li&gt;网络服务提供商&lt;/li&gt;
-&lt;li&gt;语言环境&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ol&gt;&lt;/div&gt;
-&lt;div&gt;&amp;nbsp;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;color: #328712;&quot;&gt;&lt;strong&gt;一次访问(Session)的定义&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div&gt;访客在您网站上的会话(Session)次数，一次会话会浏览一个或多个页面。在百度统计里，以下三种情况会记为新的访问：&lt;br /&gt;&lt;ol&gt;
-&lt;li&gt;访客关闭浏览器后重新进入您的网站；&lt;/li&gt;
-&lt;li&gt;访客不关闭浏览器，但是在您网站上不活动超过30分钟，30分钟后访客再次点击您网站上的链接；&lt;/li&gt;
-&lt;li&gt;访客任何时候从其他网站到达您的网站。&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ol&gt;&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;就是某个页面在一次会话中被多次访问，只会计算一次pv。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;color: #7b003d;&quot;&gt;&lt;strong&gt;趋势分析&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;一段时间内您网站的整体流量及转化情况，您也可以选择地域与来源组合查询细分来源的流量数据&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;ul&gt;
-&lt;li style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;color: #147191;&quot;&gt;&lt;strong&gt;最后一页的关闭时间的计算方法&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ul&gt;
-&lt;div&gt;&lt;ol&gt;
-&lt;li&gt;用户一次访问中只访问了一个页面而该页面的关闭时间未收到，则系统赋予该页面一定定值作为访问时长；&lt;/li&gt;
-&lt;li&gt;用户一次访问中涉及到n（n≥2）个页面，其中第n个页面的关闭时间无法收到，则系统将前 （n-1）个页面的平均访问时长作为第n个页面的访问时长。&lt;/li&gt;
-
-
-
-
-
-
-
-&lt;/ol&gt;&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;
-&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;以上调整会使得平均访问时长较原来有一定程度的下降，却更符合用户真实访问行为。&lt;/div&gt;
-
-
-
-
-
-
-
-&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: 24px;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;color: #4f009a;&quot;&gt;简单总结&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;百度统计所提供的多种图形化报表还是不错的，虽然有些flash让我不爽:)&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;有很多有意思的定义值得借鉴和学习，如页面关闭时间的计算方法、pv计算的方法。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;后续ASAE平台会借鉴其经验，如趋势分析、访问深度分析等等。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;有人问我数据分析有什么用，我会告诉他：“不能起死回生，可能锦上添花”。&lt;/div&gt;
-&lt;div style=&quot;color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;&quot;&gt;&amp;nbsp;&lt;/div&gt;
-
-&lt;/div&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E6%95%B0%E6%8D%AE%E5%B7%A5%E4%BD%9C%E4%B9%8B%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1%E4%BD%93%E9%AA%8C/&quot;&gt;数据工作之百度统计体验&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on August 29, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[前端攻略之开光篇]]></title>
-  <link rel="alternate" type="text/html" href="/%E5%89%8D%E7%AB%AF%E6%94%BB%E7%95%A5%E4%B9%8B%E5%BC%80%E5%85%89%E7%AF%87/" />
-  <id>/前端攻略之开光篇</id>
-  <published>2013-07-11T00:00:00+08:00</published>
-  <updated>2013-07-11T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;h1&gt;背景&amp;amp;前言&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;什么是攻城狮？维基上的解释：“工程师（Engineer）是指那些在工程专业领域的人，他们使用科学知识来驾驭技术以解决实际问题，并以此为职业”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;一句老掉牙的话说前端的由来 ：“随着互联网的迅猛发展和普及，一个新型的行业和新兴的职位正在上升到技术的层面 &amp;mdash;&amp;mdash; &lt;strong&gt;web前端开发工程师&lt;/strong&gt;”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;作为前端中的一份子，不为国家和人民做点什么都觉得 愧对呼吸北京像鸡汤一样的空气(够浑浊)，所以本人虎躯一震，打算力排万难、奔过艰险，写篇自己在“前端领域知识积累”的&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html&quot; title=&quot;前端攻略系列&quot;&gt;《前端攻略系列》&lt;/a&gt;，于是开光篇就介么诞生了。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/10102124-6584a6e9e95a468d9e921f8eec753f3e.gif&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;一名码农的自述&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;读军校是因年少时够调皮捣蛋，父母担心送去地方大学必会惹是生非之类，所以毅然决然的给我丢进军校深造，美名曰&amp;mdash;&amp;mdash;“&lt;strong&gt;锻炼&lt;/strong&gt;我”。实际，去了军校更没少打架斗殴；然后转眼四年毕业，懂得两点。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;部队并不适合自身性格&lt;/li&gt;
-&lt;li&gt;坐办公室折腾电脑不错&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/10101645-5f3a0cca3c5d4ecc9dac1d924550af3f.jpg&quot; /&gt;。。。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;于是乎卷起衣袖、扛着麻袋成为一名IT从业人员。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;我是一名以“码农”自称的“前端”。骄傲这两个称呼，所以依旧在自己梦想的道路上坚持着。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;技术杂，不精，互联网从业四年。领导曾对鄙人的评价是 “艺术青年”，个人觉得可改为“学&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;艺&lt;/strong&gt;&lt;/span&gt;不精的技&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;术&lt;/strong&gt;&lt;/span&gt;打杂&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;青年&lt;/strong&gt;&lt;/span&gt;”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/10072515-03376c9887bc4c868ad850e6355008bf.jpg&quot; /&gt;。。。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;目的&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;定下学习目标，后续好展开自己的学习计划&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;学习各种实现技巧&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;学习优秀代码、库、框架、浏览器等的设计理念&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;巩固知识和基础&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;锻炼写作和表达水平&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;技术需要多交流才会进步，也会意识到不足&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;为将来某天可能写本书做准备，先练练手&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;...&lt;br /&gt;&lt;span style=&quot;font-size: 18px; font-family: 幼圆;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;此处的省略号是因为，写些文章想那么清楚做什么，just do IT(发音&quot;挨踢&quot;)&lt;/span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/li&gt;
-
-
-
-
-
-&lt;/ul&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/11072950-5f40f5eb1a34472a9d133ce9ffc68bae.jpg&quot; /&gt;&amp;nbsp;&amp;#12288;&amp;#12288;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;一直都认为维护个blog就是为了自己开心、充实，可写书却是为了取悦大家，所以现在多做点文章储备和基础积累。书 将来 (&lt;strong&gt;写||&lt;/strong&gt;&lt;strong&gt;不写) &lt;/strong&gt;不重要，关键是此刻的我 享受自己的成长。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;您的推荐和支持是对我最大的鼓励，由衷的谢谢，祝好。&lt;/p&gt;&lt;/div&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E6%94%BB%E7%95%A5%E4%B9%8B%E5%BC%80%E5%85%89%E7%AF%87/&quot;&gt;前端攻略之开光篇&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 11, 2013.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[2013过半，总结、计划、意三十]]></title>
-  <link rel="alternate" type="text/html" href="/2013%E8%BF%87%E5%8D%8A%EF%BC%8C%E6%80%BB%E7%BB%93%E3%80%81%E8%AE%A1%E5%88%92%E3%80%81%E6%84%8F%E4%B8%89%E5%8D%81/" />
-  <id>/2013过半，总结、计划、意三十</id>
-  <published>2013-07-07T00:00:00+08:00</published>
-  <updated>2013-07-07T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&amp;#12288;&amp;#12288;看标题就能猜到这是篇总结加目标计划的文章。转眼自己就是结了婚、奔三的人，所以YY一下自己三十岁的样子；还有就是写博文这事停了太久，久到自己的拖延症犯了又犯，确实不可饶恕(小鞭子抽自己)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201301/11090437-900bebd6f94c405694c8d8324a4e866b.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;最近这段时间有学到不少非前端领域的知识，如果不好好整理整理又成了过往云烟(说直接点就是一片空白)。那么今年后半年继续开博，还给自己加点量(感觉自己属于抽自己的血给自己打鸡血)，每月至少两篇；还有得继续努力自己30岁之前的目标&amp;mdash;&amp;mdash;完成&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html&quot; title=&quot;前端攻略系列&quot;&gt;《前端攻略系列》&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;因为记性不好，所以只好多做总结；因为不进则退的原理，所以需要多停下来思考方向&lt;/strong&gt;&amp;mdash;&amp;mdash;这是我最近最大的感受，工作与生活皆是如此。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;记得看&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2012/06/25/DarkTime.html&quot; title=&quot;《暗时间》读书笔记与读后感&quot;&gt;《暗时间》&lt;/a&gt;这本书时我还在厂里战战兢兢的渡试用期，从小导师那屁颠屁颠的把这本书折腾到手，看得那是津津有味，吧唧吧唧的。所以后来又才写了一篇读后感，发表日期上写着“2012/06/25 20：25”，尼玛转眼已经过了一年又13天。从去年6月至今发生了太多其妙的事情，个人在工作和前端领域的技术积累确实不算理想(js代码还没php+sql写的多T.T)，可生活中确收获了自己的另一半，就此一点对我个人来说也算超额完成了2012的目标，吼吼:)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;看看最近一年的博客几乎木有产出，只写了一篇前端工具&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/04/impressjs.html&quot; title=&quot;impress.js初体验 - 前端装X利器&quot;&gt;《Impress.js》&lt;/a&gt;的分享，想到这觉得脸颊略烫...完成&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html&quot; title=&quot;前端攻略系列&quot;&gt;《前端攻略系列》&lt;/a&gt;这是我30岁的目标之一，里面的内容、深度、广度目前还差的太远，可是不管怎样我会坚持下去，不管前面会有老虎或者大坑，此处可以鼓掌(写博文时会不由自主的自high，请原谅哈)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&amp;nbsp;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114011-20b7edcdff6f4e7690f4a220b45fce7c.gif&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114021-5a1999e39a3546fcb2f7ae4fc4bfb233.gif&quot; /&gt;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114029-92feda3a9c604faf8a7a2d7eb000838e.gif&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #888888;&quot;&gt;&lt;em&gt;------------------分割线-------------------分割线---------------------&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;文章分成四部分。&amp;#12288;&amp;#12288;第一、回顾2012；第二、2013上半年；第三、2013下半年；第四、想象下三年后的自己&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;h1&gt;回顾2012. 关键字“移动&amp;amp;Linux”&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;古玛雅人预言2012是其文明的终点，对我来说2012是新生的一年：新的工作环境和新的生活，一切都是新的开始。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;在2011年的总结中提到：“能进入一家大公司做自己喜欢的工作，所以我应该是幸运的，生活待我不薄所以更应该好好把握现在”。“&lt;span data-aligning=&quot;#src_1_5,#tran_1_5&quot; id=&quot;src_1_5&quot;&gt;&lt;strong&gt;I &lt;/strong&gt;&lt;/span&gt;&lt;span data-aligning=&quot;#src_1_6,#tran_1_6&quot; id=&quot;src_1_6&quot;&gt;&lt;strong&gt;love &lt;/strong&gt;&lt;/span&gt;&lt;span data-aligning=&quot;#src_1_7,#tran_1_7&quot; id=&quot;src_1_7&quot;&gt;&lt;strong&gt;my &lt;/strong&gt;&lt;/span&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot; id=&quot;src_1_8&quot;&gt;&lt;strong&gt;job” - &lt;/strong&gt;来自电影穿普拉达的女王。赞同这句，如果能找到一份自己心爱的工作，再怎么努力和勤奋都不算过分。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot; id=&quot;src_1_8&quot;&gt;&amp;#12288;&amp;#12288;工作和生活都需要正能量，所以时不时给自己打打鸡血吧&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114621-32ee0455a10e49a386cf5668f1d6e435.gif&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;工作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot;&gt;&amp;#12288;&amp;#12288;去年&lt;/span&gt;最重要的事件是从PC上的web开发转到了移动端开发，自然也学到了不少移动设备开发的知识，所以往后博客分享大多都是HTML5和移动相关的case.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;PHP知识也算有点累计和长进，不过完全没有达到自己的预期目标。投入的时间和精力还是不够，自己的定位是一名大前端(JS+PHP)，这块算是自己的短板&lt;/li&gt;
-&lt;li&gt;Linux和vim的知识算是意料之外的收获，工作环境就是天天和它们打交道，也算圆了自己大学时的遗憾。PS：大学光记得打Dota了，没时间折腾这些&lt;/li&gt;
-&lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;其实关于工作在博客里不想聊的太多，每个人都有自己的工作方式和沟通方式，工作也是各有各的看法，所以只要觉得自己没白活就好。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;生活&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;刚毕业的两三年时，看书都是一月一本甚至俩本，而且几乎都是与技术相关的，尼玛现在回想起来都有那么点佩服自己，确实就这么坚持下来了。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;入职百度后看书不像以前看的那么痴迷了，可能也是由于工作和生活都太过充实，所以就没有向以前那么多时间去看书和写博客。并且看得书籍题材也有一半是与技术本身无关的，其实个人感觉收获的更多。写码到一个阶段之后，除非是去学习新的技术或工具，要不 &lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;源代码和技术交流 &lt;/strong&gt;&lt;/span&gt;比书籍更具性价比。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;常常有新手朋友吐槽读源码这种方式，确实多数的源代码都不好啃，关键还得看你读源码的初衷是什么，除非是工作必要的，其它情况个人&lt;strong&gt;只倾向于浅尝。&lt;/strong&gt;理解基本的实现方式和原理，知道此技术解决神马样的问题，适用于神马样的场景，自己再实际写些代码折腾个demo就不错了。对于新技术更应该慎重的浅尝，不过技术这块国外总是走在前沿，再新的技术等我们去学习的时候英文文档都不会少。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;技术交流是个好东西，北上广有非常好的交流氛围，几乎每周都有大大小小的交流会，挑些自己感兴趣或者比较好玩的话题去参与。从一个技术点渐渐深入进去，最终的产出可能非常可观，而且整个过程的参与会非常有价值，解决问题的成就感那也是必不可少的。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;strong&gt;缘分&lt;/strong&gt;&lt;/span&gt;是个看不透、摸不着的东西，妙不可言...2012最大的事情就是与我的初恋女友联系上了，在对的时间遇到对的人，so...圆满完成2012找女朋友的计划:)&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114159-c5720143bebc46eeabbfe45ac88a81a7.gif&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; class=&quot;highLight&quot;&gt;2013上半年总结. 关键字“数据&amp;amp;婚姻”&lt;/span&gt; &amp;#12288;&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;今年上半年工作类型发生了一些改变，不像通常前端开发那样做项目和产品需求，而是偏向基础设施建设，专职做了半年的数据相关支持。怎么定义这个事，说的高深点就是大数据相关那些事。越是大型的公司对数据建设也越是重视，现在更有很多专注数据挖据、分析、展示的公司都挺有影响力和规模。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;原计划也没想到数据的事情会一折腾就是半年，这半年基本上前端技能在工作中就不沾边，都是一些php和sql的活。虽然不乐意不过也坚持过来了，成果和实际产出更是显著的，也算对得起这半年的光阴吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;工作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;折腾了百度各种数据流程，对数据建设和数据挖掘有了最基础的认识。最大的收获是建立了组内新的数据统计流程，拓宽自身的视野和知识面。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;具体细节就不多说了，以下用网络上介绍&quot;阿里数据流&quot;的一张图来说明吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07060655-3a70f3c252884f32ad77621cd206f95d.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;生活&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;2013年2月在家成功领证，4月在家完成婚宴，终于不是临时工了，泪牛满面。从单身到恋爱再到结婚，回想这些感觉自己还在梦境。老婆离开老家来到北京与我过着俩人的小世界，呼吸着北京浑浊的空间，生活着酸甜苦辣，可算有滋有味...&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;业余时间自己又折腾了wordpress，老东西折腾起来也挺有意思。也是准备多练练php，顺便想做个b2c的网站，想为老婆在线上线下开个有个性、有创意的花店。现在的状态正在开发主题:)&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114250-f624355452bc4a82a2689e1c21542b16.jpg&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;2013下半年计划. 关键字“专研、创新”&lt;/h1&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;到了6月中旬数据工作也算告一段落，又回到了喜爱的前端岗位。发现产品线用上了各种新东西，又是grunt、又是fis，有种农民工进城的感觉，不知道步子该怎么迈了T.T&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;积累了不少的数据和php知识后 写前端那叫一个心里底气十足，对具体功能的本质了解的更透彻。比如哪些功能是有数据支撑的需求，哪些功能是理想化需要测试的需求，后续url参数如何维护和管理等等，一切用数据说话，结果导向。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;谈谈自己下半年的期待吧。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;span style=&quot;font-size: 18pt;&quot;&gt;&lt;strong&gt;&lt;span style=&quot;background-color: #ccffcc;&quot;&gt;工作&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&amp;#12288;&amp;#12288;来厂一年多级别还未变过，下半年和明年1月都有考级的机会。本着不想做厨子的编辑不是好程序员的思想，打算一搏传说中的“职称评定”。fighting！&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;技术积累。组内使用上了不少较新的技术，如Manifest、WorkStory、Grount、Fis、Nodejs等等很多，可是这五项自己没有搞透而且觉得有必要搞透，打算文档走起来，Research最后必定会有产出:)&lt;/li&gt;
-&lt;li&gt;在组内做一次技术分享。要写点总结或者文档自己还行，可是与多数码农一样，站在台上做分享或者长时间发言总会比较怯场，希望能在组内做做自己分享，顺便锻炼下自己的表达和演讲能力。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;strong&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffcc;&quot;&gt;&amp;#12288;&amp;#12288;生活&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;头一次在博客中提到那么多有关自己家庭的事情，可能真是结婚和不结婚心理还是不一样的，以前单身的时候可以天天朝10晚11，轻松轮轴转坚持几个月，现在偶尔晚上11点多回家还怕家人担心。总听某些成功人士或者年长者谈论 “家人和事业怎么怎么平衡”，那个时候只懂“话”的意思可是还理解不了&lt;strong&gt;平衡&lt;/strong&gt;的意义，这东西真的需要实践才出真理哈。&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;得学会做饭菜，只需要会三四个菜就好，没事在家的时候可以下厨是件很享受的事情。媳妇口中生活白痴的我是婚后才第一次学习煎鸡蛋&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07113712-28e097e811db4e83b80a43b0e5d73b90.gif&quot; /&gt;...&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;希望接下来的半年里少惹媳妇生气(已婚且疼媳妇的人懂这句，家庭和谐第一)，多陪媳妇买衣服和逛街，做个好好男人:)&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;下半年有几本必须要看的书：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;基友 &lt;a target=&quot;_blank&quot; href=&quot;http://www.weibo.com/u/1241521384&quot; title=&quot;低级码畜&quot;&gt;@&lt;span class=&quot;name&quot;&gt;低级码畜&lt;/span&gt;&lt;/a&gt;推荐的《编程人生》，此书名声在外，上周刚借到手；&lt;/li&gt;
-&lt;li&gt;《代码整洁之道》被几个好友推荐，所以已经入手；&lt;/li&gt;
-&lt;li&gt;重读《php和mysql web开发》。2010年初购买，坚持看完可是现在回想都没有印象了，对于一本入门圣经来说确实罪过&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07113905-2cf38819520d448290c6735e103aa4f3.jpg&quot; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;克军在6月30号的百度技术沙龙分享“工程之美”中有提到这么一句比较有意思，不做评论大家自己思考，大概如：“学习前端技术从阅读标准开始，书是滞后的产物”&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07114443-b956a01da59b4eeab895c0cb01eb9809.gif&quot; /&gt;&lt;/p&gt;
-&lt;h1&gt;&lt;span style=&quot;color: #000000;&quot;&gt;意三十&lt;br /&gt;&lt;/span&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&amp;#12288;&amp;#12288;“三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲”。&lt;span style=&quot;color: #000000;&quot;&gt;毕业4年有余，80后的我转眼到了奔三的年纪，“三十而立”就是摆在我眼前的话题，&lt;/span&gt;作为祖宗的传统说法，源于《论语·为政》的成语，意为人到了30岁就应该去面对一切困难。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;color: #000000;&quot;&gt;&amp;#12288;&amp;#12288;百度百科中有一句比较认同的理解：“&lt;span style=&quot;background-color: #ccffff; font-size: 18px;&quot;&gt;&lt;strong&gt;30岁人应该能依靠自己的本领独立承担自己应承受的责任，并已经确定自己的人生目标与发展方向&lt;/strong&gt;&lt;/span&gt;”&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;北漂一族的我30岁能最希望拥有东西是什么？答案是“孩子、房子、车子”，优先级依次降低...好吧，讲这三个词确实太枯燥也太现实了。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#12288;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;我憧憬三十岁时能给媳妇开一个花店。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;店里有舒服的沙发，我能窝在里面看书、写码甚至打游戏；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有舒服的茶座，时不时约上两三个好友一起坐着喝喝茶、扯扯蛋；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有一台勉强算高级的半自动咖啡机，亲手操作，调制出一杯美味的咖啡，是一种精神上的享受；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有自己的小孩常在身边，一定不告诉他什么叫“hello world”；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有一条柯基或者萨摩常伴左右；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;。。。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;。。。&lt;/span&gt;&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;/blockquote&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;继续回到现实。那么现在我需要准备什么，去学习做咖啡吗？NO！以下这句话&lt;span style=&quot;font-size: 16px;&quot;&gt;与大家共勉&lt;/span&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;希望大家在喜欢的行业中站着把钱的挣了&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#12288;&amp;#12288;ps:就算不喜欢能挣钱也成 &lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/blog/159097/201307/07120621-18a992ecf64c43b8b9f858f66dc161fd.gif&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; style=&quot;font-size: 16px;&quot; class=&quot;highLight&quot; id=&quot;src_1_8&quot;&gt;越努力，越幸福。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; style=&quot;font-size: 16px;&quot; class=&quot;highLight&quot;&gt;再见，上半年。&lt;/span&gt;&lt;/p&gt;
-
-
-
-
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;span data-aligning=&quot;#src_1_8,#tran_1_8&quot; style=&quot;font-size: 16px;&quot; class=&quot;highLight&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/2013%E8%BF%87%E5%8D%8A%EF%BC%8C%E6%80%BB%E7%BB%93%E3%80%81%E8%AE%A1%E5%88%92%E3%80%81%E6%84%8F%E4%B8%89%E5%8D%81/&quot;&gt;2013过半，总结、计划、意三十&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on July 07, 2013.&lt;/p&gt;
   </content>
 </entry>
 

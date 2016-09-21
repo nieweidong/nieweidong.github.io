@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-09-21T14:47:15+08:00</updated>
+<updated>2016-09-21T15:38:59+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
@@ -16,11 +16,11 @@
   
 
 <entry>
-  <title type="html"><![CDATA[公众号-「前端攻略 开光篇」]]></title>
-  <link rel="alternate" type="text/html" href="/2016-09-22-public/" />
-  <id>/2016-09-22-public</id>
-  <published>2016-09-21T14:25:27+08:00</published>
-  <updated>2016-09-21T14:25:27+08:00</updated>
+  <title type="html"><![CDATA[公众号 -「前端攻略 开光篇」]]></title>
+  <link rel="alternate" type="text/html" href="/gongzhonghao/" />
+  <id>/gongzhonghao</id>
+  <published>2016-09-22T00:00:00+08:00</published>
+  <updated>2016-09-22T00:00:00+08:00</updated>
   <author>
     <name>nieweidong</name>
     <uri></uri>
@@ -29,7 +29,9 @@
   <content type="html">
     &lt;p&gt;作为一枚程序员，每件重要项目的开始都忍不住使用”Hello World”。&lt;/p&gt;
 
-&lt;p&gt;这个公众号是不是来晚了？如果你有这个疑问，那么我想说：对于写作和思考，任何时候都不晚。我用三个简单的自问自答，来讲讲这个前端攻略公众号的初衷。&lt;/p&gt;
+&lt;p&gt;这个公众号是不是来晚了？如果你有这个疑问，那么我想说：对于写作和思考，任何时候都不晚。我用四个简单的自问自答，来讲讲这个前端攻略公众号的初衷。&lt;/p&gt;
+
+&lt;p&gt;欢迎关注，感谢~&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/qrcode.jpg&quot; alt=&quot;聂微东公众号&quot; /&gt;&lt;/p&gt;
 
@@ -43,7 +45,19 @@
   &lt;li&gt;GitHub Pages发图片不太方便，不能很好展示我逗逼的写作风格。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://mmbiz.qpic.cn/mmbiz_jpg/z6CJrIF2a4WqSY2HPdL7CEiaY17Q5kbuYvA13llQzNpBSU0aNV8zrwibYKeG9a3CfloEVtVF5GY1rm6oqLW1BYsQ/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/em/jinguanzhang/33.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;个人博客的后续计划&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先博客会继续更新，公众号发的文章也会全部再放到这里来，只不过会稍晚个一天左右吧；&lt;/li&gt;
+  &lt;li&gt;需要罗列大段代码的纯技术文章，只会放在博客，公众号毕竟不适合阅读这种文章；&lt;/li&gt;
+  &lt;li&gt;比较偏生活的个人文章，也只会放博客&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;简单点说，博客照旧。不过，更期待您关注偶的公众号，可以尽情调戏偶…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/em/maomi/08.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;公众号的目标是？&lt;/strong&gt;&lt;/p&gt;
 
@@ -56,7 +70,7 @@
   &lt;li&gt;一直有个出书的梦想，虽暂时没精力去做，但也算时刻准备着嘛。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://mmbiz.qpic.cn/mmbiz_jpg/z6CJrIF2a4WqSY2HPdL7CEiaY17Q5kbuYNYjQiapcS5o5iaibQiaTFglSpibBBLiae4yAN1UIa5SlTclFNKBIXFhwD0bw/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/em/jinguanzhang/43.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;会推送些什么内容呢？&lt;/strong&gt;&lt;/p&gt;
 
@@ -67,13 +81,13 @@
 &lt;p&gt;但归根结底，这里所记录的一切都只会与 Web技术、创业思考、好书分享、科技咨询 这类有关。
 我会努力保证每篇推送文章的质量哒。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://mmbiz.qpic.cn/mmbiz_jpg/z6CJrIF2a4WqSY2HPdL7CEiaY17Q5kbuYQ5plMroTUB5sE3moWho8KcAJpWszJM2NkWhMzOoCfSSnBEJR2cX55g/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/em/baozou/247.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;最后，希望自己能一直铭记这些初心。&lt;/p&gt;
 
 &lt;p&gt;同样，也愿你能不忘初心。&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/2016-09-22-public/&quot;&gt;公众号-「前端攻略 开光篇」&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on September 21, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;/gongzhonghao/&quot;&gt;公众号 -「前端攻略 开光篇」&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on September 22, 2016.&lt;/p&gt;
   </content>
 </entry>
 

@@ -11,8 +11,7 @@ image:
   creditlink: javascript:;
 ---
 
-![聂微东公众号](http://www.fefork.com/images/post/weixin_app.jpg)
-
+![](http://www.fefork.com/images/post/weixin_app.jpg)
 
 ps：微信APP Store、微信小程序、微信应用号都是指同一个事情。
 

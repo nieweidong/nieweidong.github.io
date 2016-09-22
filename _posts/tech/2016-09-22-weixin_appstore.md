@@ -22,7 +22,7 @@ ps：微信APP Store、微信小程序、微信应用号都是指同一个事情
 
 很荣幸，劳资连需要啥资格都不太了解。
 
-![聂微东公众号](http://www.fefork.com/images/em/baozou/75.jpg)
+![](http://www.fefork.com/images/em/baozou/75.png)
 
 微信小程序是个什么鬼呢？下面这段引用是从微博抄来的。
 
@@ -30,9 +30,9 @@ ps：微信APP Store、微信小程序、微信应用号都是指同一个事情
 
 通过各种微信群，终找到了其开发文档截图，如下面两张：
 
-![聂微东公众号](http://www.fefork.com/images/post/WechatIMG48.jpeg)
+![](http://www.fefork.com/images/post/WechatIMG48.jpeg)
 
-![聂微东公众号](http://www.fefork.com/images/post/WechatIMG49.jpeg)
+![](http://www.fefork.com/images/post/WechatIMG49.jpeg)
 
 如果了解过微信 JS SDK 的伙伴一定觉得：卧槽，微信团队真够替前端考虑的，又特么是这套差不多的东西。
 
@@ -62,4 +62,4 @@ ps：微信APP Store、微信小程序、微信应用号都是指同一个事情
 
 最后的最后：谢天谢地，我居然还是个前端。
 
-![聂微东公众号](http://www.fefork.com/images/em/xiongmap/91.jpg)
+![](http://www.fefork.com/images/em/xiongmao/91.jpg)

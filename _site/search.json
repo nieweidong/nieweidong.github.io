@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "「微信小程序」来了",
+      "link"			: "/weixin_appstore/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "公众号 -「前端攻略 开光篇」",
       "link"			: "/gongzhonghao/",
       "excerpt"		: ""

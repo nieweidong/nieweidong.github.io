@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "提问是门艺术",
+      "link"			: "/tiwen/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "如何做好技术串讲",
       "link"			: "/share/",
       "excerpt"		: ""
@@ -34,22 +42,6 @@
 
   
     ,{
-      "title"			: "大前端项目技术栈",
-      "link"			: "/%E5%A4%A7%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "Linux 软件篇",
-      "link"			: "/linux/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
       "title"			: "2016过半",
       "link"			: "/2016half/",
       "excerpt"		: ""
@@ -58,48 +50,8 @@
 
   
     ,{
-      "title"			: "使用 Inquirer.js 打造有趣的CLI",
-      "link"			: "/InquirerJS/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "用Node实现高大上的CLI功能",
-      "link"			: "/commanderjs/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "聊聊Node异步",
-      "link"			: "/async/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "ESLint+ATOM 小结",
-      "link"			: "/standard_javascript/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
       "title"			: "Mac 软件篇",
       "link"			: "/mac_soft/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "ESLint+ATOM 小结",
-      "link"			: "/eslint/",
       "excerpt"		: ""
     }
   
@@ -409,15 +361,15 @@
   
 
   
+
+  
+
+  
     ,{
       "title"			: "About me.",
       "link"			: "/about/",
       "excerpt"		: "聂微东,前端,前端面试,前端攻略,前端博客,JavaScript,JS,React,Gulp,Nodejs,darren"
     }
-  
-
-  
-
   
 
   

@@ -4,13 +4,221 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-10-20T10:03:23+08:00</updated>
+<updated>2016-10-31T10:02:18+08:00</updated>
 <id>/</id>
 <author>
   <name>nieweidong</name>
   <uri>/</uri>
   <email>darrencode@qq.com</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[「标准」的 JS风格]]></title>
+  <link rel="alternate" type="text/html" href="/standardjs/" />
+  <id>/standardjs</id>
+  <published>2016-10-31T00:00:00+08:00</published>
+  <updated>2016-10-31T00:00:00+08:00</updated>
+  <author>
+    <name>nieweidong</name>
+    <uri></uri>
+    <email>darrencode@qq.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;首先，这份 JS风格指南已经在我司的前端团队实行半年多了；&lt;br /&gt;
+其次，在程序员的世界里，从入行到资深都需要面对几个世界级的难题，如：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;世界上最好的编辑器是什么？&lt;/li&gt;
+  &lt;li&gt;是用空格还是 TAB？用空格还特么衍生出 2空格 VS 4空格。&lt;/li&gt;
+  &lt;li&gt;JS到底要不要写分号？&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;最后，PHP是世界上最好的语言。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/em/xiaorentou/95.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;vs&quot;&gt;一、规范VS自由&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;对程序员的每个个体来说，有代码规范其实不一定是好事，因为肯定会影响到写码的自由。&lt;br /&gt;
+比如某程序员习惯用 Tab，团队引入了某规范说都要换成 Spaces，这对于 Tab党来说这不是“噩耗”么。&lt;/p&gt;
+
+&lt;p&gt;尤其是对于老程序员，如果习惯多年的代码风格需要改变(先且不论好坏)，确实是件很拧巴的事情。&lt;/p&gt;
+
+&lt;p&gt;但是对整个团队来说，有代码规范肯定是大好事。而且由于好处实在太多，比如方便管理、好维护、易阅读等等，所以我也别一条条去罗列了，大家都懂:)&lt;/p&gt;
+
+&lt;p&gt;如果，某套代码规范甚至代码流程，能让团队中的成员都相对满意，而且还能切实的去执行…我想说：请好好珍惜这美好的时光。&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/em/jinguanzhang/54.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;目前，各个大厂、各种开源项目都有多种 JS的写法规范。今天本文介绍的 JS 规范号称“Standard Style”，绝对是使用最广的写法之一(star 7800+)，而且有提供配套的工具、插件可以方便的使用。&lt;/p&gt;
+
+&lt;h3 id=&quot;js-standard-style&quot;&gt;二、介绍“JS Standard Style”&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;standardjs就是这个这个项目的名称。&lt;br /&gt;
+对了，它的作者叫 Feross，建议程序员们去了解一下，你会知道程序员世界的“猛人”到底能有多凶残。&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/em/xiongmao/67.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;请仔细看看这篇 JS规范要点，The Rules：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;2 spaces&lt;/em&gt;&lt;/strong&gt; – for indentation&lt;/li&gt;
+  &lt;li&gt;Single quotes for strings – except to avoid escaping&lt;/li&gt;
+  &lt;li&gt;No unused variables – this one catches tons of bugs!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;No semicolons&lt;/em&gt;&lt;/strong&gt; – It’s fine. Really!&lt;/li&gt;
+  &lt;li&gt;Never start a line with (, [, or `&lt;/li&gt;
+  &lt;li&gt;This is the only gotcha with omitting semicolons – automatically checked for you!&lt;/li&gt;
+  &lt;li&gt;Space after keywords if (condition) { … }&lt;/li&gt;
+  &lt;li&gt;Space after function name function name (arg) { … }&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Always use === instead of == – but obj == null is allowed to check null&lt;/td&gt;
+          &lt;td&gt; &lt;/td&gt;
+          &lt;td&gt;undefined.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Always handle the node.js err function parameter&lt;/li&gt;
+  &lt;li&gt;Always prefix browser globals with window – except document and navigator are okay&lt;/li&gt;
+  &lt;li&gt;Prevents accidental use of poorly-named browser globals like open, length, event, and name.&lt;/li&gt;
+  &lt;li&gt;And more goodness – give standard a try today!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;没错，先不管这个规范带来了多大的好处和优点，但是我标注的两个条件确实有点要命：&lt;strong&gt;没有分号；2空格&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;有关是否有分号的讨论可以写许多篇论文了；&lt;br /&gt;
+至于用 tab还是用空格…都可以引发程序员的圣战啦。&lt;/p&gt;
+
+&lt;p&gt;所以这里看看就好，想了解更多的同学，强烈建议你私下去搜索些更多资料。ps：为毛要私下搜索？请参考下图，我其实只是想为你的安全考虑:)&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/em/jinguanzhang/40.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;三、先简单用起来！&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;官方的 demo 是使用 npm script 来展示的。
+一句话表述：先全局安装  standard这个包，然后使用 CLI是实现后续的操作和展示。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ npm install standard –global&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这种方式很适合用作 JS代码的校验审核。如下图：&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/post/standardjs/s.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;但是如果想配合日常开发用上，达到自动提醒，甚至自动格式化的程度，我非常推荐配合着对应的编辑器插件来使用。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;四、配合编辑器插件&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;我喜欢和推荐这个规范的主要原因就是 —— 不用配置！&lt;br /&gt;
+ps：如果你有了解过 ESLint，面对那各种各样的 Configuring 和 Rules，特么有几个人能坚持去看完的，反正我是放弃了。&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/em/xiaorentou/157.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;但是使用 standardjs，它已经把规则都定好了，所以如果你接受它的规则，那么直接无脑使用就行了。如下图：&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/post/standardjs/eslint.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;支持 standardjs插件的编辑器还是很多的，几乎前端常用的编辑器都覆盖到了：&lt;br /&gt;
+  &lt;strong&gt;Sublime Text、Atom、Vim、Emacs、Brackets、Visual Studio Code、WebStorm/PhpStorm。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;篇幅有限，仅介绍下在 Atom编辑器下的使用和效果吧。Atom需要安装对应的两款插件：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;linter-js-standard - Linter plugin for JavaScript Standard Style&lt;/li&gt;
+  &lt;li&gt;standard-formatter - Format file contents using JavaScript Standard Style&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;效果如下图：&lt;br /&gt;
+&lt;img src=&quot;http://www.fefork.com/images/post/standardjs/standard-formatter.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;啊~这是个美好的时代。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;五：如何在项目中实现统一的代码风格&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;不是每个程序员都有代码洁癖，也不是每个程序员都偏执的想写好代码，更多的普通人其实只是想少折腾的把工作完成就好。&lt;br /&gt;
+所以对于在团队内推行代码规范这种事情，顺其自然就好。&lt;/p&gt;
+
+&lt;p&gt;但是，使用以下这套方案可以让这套规范推行的更顺畅些。&lt;/p&gt;
+
+&lt;p&gt;第一步：项目中使用 ESLint，安装对应的包：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;eslint&lt;/li&gt;
+  &lt;li&gt;eslint-config-standard&lt;/li&gt;
+  &lt;li&gt;eslint-plugin-promise&lt;/li&gt;
+  &lt;li&gt;eslint-plugin-standard&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/post/standardjs/dev.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;第二步：编辑器安装对应插件，以 Atom举例：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;linter-js-standard&lt;/li&gt;
+  &lt;li&gt;linter&lt;/li&gt;
+  &lt;li&gt;linter-eslint&lt;/li&gt;
+  &lt;li&gt;standard-formatter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最后一步：在项目中增加的 .eslintrc，只需要一行即可&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;extends: standard&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;开发时自动格式化就这么实现了，想想是不是还有点小激动呢。&lt;br /&gt;
+&lt;strong&gt;ps：希望你有颗包容的心，因为在这半年来，我们也确实遇到了一些小问题，善用 stackoverflow 和开源项目对应的 Issue，各种问题你都能找到答案。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;六、小结：聊几句优、缺点&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;对着这套 JS规范本身，一直都在泛泛而谈，优点和缺点的论述到处散落着，我在这简单梳理下我个人理解吧。&lt;/p&gt;
+
+&lt;p&gt;有关优点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;阅读代码的心情会变好&lt;/strong&gt; - 工作年限越长越能理解这句话的含义，这也是我最在意的一点，谁会有好心情去读第一眼糟糕的代码；更没有人愿意去读一个几百行，但是有几套代码风格的代码。&lt;/li&gt;
+  &lt;li&gt;不用学习麻烦的 ESLint，无配置。&lt;/li&gt;
+  &lt;li&gt;规范中有一条“No unused variables”没有细说，但确实非常有用。未使用的变量会进行提示，方便你优化、缩减代码，甚至定位问题。&lt;/li&gt;
+  &lt;li&gt;想一想，如果团队有新人加入，不用过于担心他的代码风格了，不管他的工作年限。&lt;/li&gt;
+  &lt;li&gt;有套路、好维护。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有关缺点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如果对“JS Standard Style”的某条规范有异议，能否去修改呢？答：不能。&lt;/li&gt;
+  &lt;li&gt;会影响少数人自由。单方面会冒犯到其他程序员，比如 Tab党、4空格党。&lt;/li&gt;
+  &lt;li&gt;我们全团队使用 Atom，配合着对应的插件，偶尔会有点小问题。万能的 stackoverflow 和Issue 会帮助到我们。&lt;/li&gt;
+  &lt;li&gt;对了，别被这套规范的名称给骗了，这其实不是真正的 JS标准，真正的 JS标准现在还在讨论的没玩没了呢。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上就是我使用这套规范的感受吧。&lt;/p&gt;
+
+&lt;p&gt;最后，感谢已经离职的、优秀的德森同学(阿里花名“全栈”，我就问你们怕不怕)。是他强行在我们的 Nodejs Docker项目里面加上了这套玩意，让我们不得不用上了，哈哈哈哈哈哈哈哈。&lt;/p&gt;
+
+&lt;p&gt;这篇文章确实有点长了，那么再长点也无所谓了吧，于是我找到了下面这幅图…&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;七、看图，讲一个悲伤的故事&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;如果你没有尴尬癌，强烈推荐你看这个图片的出处 —— 《硅谷》。&lt;br /&gt;
+真的很多搞笑的点只有程序员才能正确 Get。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.fefork.com/images/post/standardjs/space_vs_tab.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;就这样，over.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;/standardjs/&quot;&gt;「标准」的 JS风格&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on October 31, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
   
@@ -3060,90 +3268,6 @@ Hello World!&lt;/li&gt;
 &lt;/div&gt;&lt;/div&gt;
 
     &lt;p&gt;&lt;a href=&quot;/%E3%80%8AMacTalk%E4%BA%BA%E7%94%9F%E5%85%83%E7%BC%96%E7%A8%8B%E3%80%8B%E4%B9%8B%E5%B0%8F%E8%AE%B0/&quot;&gt;《mactalk人生元编程》之小记&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on April 08, 2014.&lt;/p&gt;
-  </content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[前端面试【有感而发】]]></title>
-  <link rel="alternate" type="text/html" href="/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E3%80%90%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91%E3%80%91/" />
-  <id>/前端面试【有感而发】</id>
-  <published>2014-03-09T00:00:00+08:00</published>
-  <updated>2014-03-09T00:00:00+08:00</updated>
-  <author>
-    <name>nieweidong</name>
-    <uri></uri>
-    <email>darrencode@qq.com</email>
-  </author>
-  <content type="html">
-    &lt;div id=&quot;cnblogs_post_body&quot;&gt;&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;首先，这篇没有具体的面试题；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;其次，这篇仅是我个人的面试态度；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;最后，在这金三银四的跳槽季里，祝愿各位找到好工作。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺第一次做面试官是2011年，想起那时自己真的很紧张(不管做什么头几次都紧张哈)，可是还是在希望在面试者面前留个比较专业的印象，所以总是装作很淡定，记得那时总会放一件修身小西装放公司，专门用来面试的时候穿的，装成熟，你懂得。现在回忆起那时的点滴，不由自主的会嘴角上扬:)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;105&quot; height=&quot;90&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091236062066446.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&lt;em&gt;------------------------------- 低调的分割线&amp;nbsp;-------------------------------&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;“全世界都缺前端&quot; &amp;mdash;&amp;mdash; 这话总会被提起，PM尤其是喜欢这么说，而且还是在工作推动的过程中(我会告诉你我这是在黑PM么)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;面试一直是俺工作中重要的一块，而且自己也喜欢去参与面试(工作忙爆的时间除外)。原因究竟为甚其实我自己也说不上来，可能是因为心里希望在工作时可以与聪明的人合作吧；也可能是希望通过面试push自己去主动了解行业新的技术...Anyhow，也就一头扎进了面试官的行列，且乐此不疲。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091739542849832.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;background-color: #ccffff; font-size: 18pt; font-family: 黑体;&quot;&gt;&lt;strong&gt;前端回忆录&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;8年前的前端做些什么？页面重构(HTML+CSS)和实现页面交互(JS+CSS)；jQuery也是在8年前诞生(06年8月发布V1.0)；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;4年前业内提出大前端，这直接让前端职位在产品和业务中变得更加重要，甚至是最重要的存在，在以前的技能基础上又需要掌握一门服务端语言和少量数据库的经验(从那时开始身边经常有朋友由后端转前端)；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;2年前的前端界Node开始疯狂火热，且一扫各种前端论坛、开源项目，狂热者更提出“JS一统WEB开发”的头号，数据结构简单点的网站建设只需要一个工程师即可搞定，那就是前端，叼炸天呀；&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;Now，全端工程师？？？maybe...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;移动互联网风光依旧，前端更是无处不在。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;可是... ...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;招人真心难，招前端更难，招个好前端难上加难有木有~~&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;151&quot; height=&quot;100&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091844286907778.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; color: #000000; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;主观意识 &amp;amp;&amp;nbsp;经验主义&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;工程师每轮面试时间一般为一小时左右，除非面试官对你没有兴趣，否则不会十几分钟就打发走你(我厂要求面试至少20分钟)。而且就在这差不多一小时，面试官要判断你是否符合招聘的岗位，这本身就是一件非常挑战的事情。正因为这样，所以面试官的决定都有一定的风险和主观意识，这不可避免。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;许久以前看过一篇跟面试相关的文章，具体内容说什么忘记了，不过里面有一句话给我印象深刻，大概意思是：“很多面试官希望能招到个像自己的人，和自己类似的人”。很容易理解这句话，因为和自己类似所有更容易引起自身的关注，而且记忆会更深刻。这个“&lt;strong&gt;类似&lt;/strong&gt;”俩字我理解应该至少包括几个方面：技术方向、性格、思维方式等。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;我也同意会带着主观意识去面试，但我认为这并不是什么糟糕的事情。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;具体点说，我会考虑&lt;strong&gt;你是否会push甚至引导团队的成长&lt;/strong&gt;、与你合作是否会愉快，这也是我参与面试的原因之一。在此，希望你静静思考下，你在团队中是否属于这类人，至于是与不是由看官您自己评判了:)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;79&quot; height=&quot;95&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091740530345217.png&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;line-height: 1.5; font-family: 黑体; font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;技术一面&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;通常情况下工程师面试都有几轮？不管几轮都很正常，反而很少有听说只有一轮面试的，所以这里说的一面是纯技术的面试。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有时我会为面试面到一名优秀的同学而高兴不已，因为聊天会很畅快，而且决定很明朗。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;更多时候我会比较纠结，因为我需要考虑给不给面试者通过我这关。正因如此，其实很多时候我做的每个选择都有一定的运气成分。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺初期做面试官的时候，基本都是我主动来发问和出题，用自己的主观意识去考察面试者的方方面面。那时想当然的认为，这份岗位需要这些XX技能和用到这些XX技巧，所以如果面试者具备这些知识点就可以通过。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;再后来面试的经验提升了，想明白了学习能力、思维方式和技术能力同样非常重要，所有会主要针对面试者比较擅长的领域来【交流、讨论】。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;在面试这个过程里，我现在总会在正式面试之前，和面试者说句话：“面试就是聊天，我们简单聊聊吧”。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091758348465128.jpg&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;本来想随便配个图，可是看到这个图片突然想起一首儿歌：丢肥皂&amp;nbsp;丢肥皂 轻轻的放在小基友的后面 大家不要告诉他 快点快点捉住他，快点快点捉住他...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;好吧，节操碎了一地。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;我的期待&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;下周已经安排有六个面试。请思考，作为一名面试官应该对你又有怎样的期待？&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;俺的面试时的问题一般不固定，因为我不喜欢背题的做法。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;有一定工作经验最好，当然没有也同样有机会，而且有工作经验对于面试也不一定都是好事。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;PS：工作年限和项目经验决定了你的知识储备，所以也会有针对性的调整难度和问题。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;在我看来评价一名同事是否优秀其实很简单，&amp;nbsp;看看他是否够【专业】就行了。那么合计合计，你自己对待工作是否对得住专业俩字。至于怎么理解专业俩字，还是见仁见智吧。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;简历造假或者过分夸大。夸大自己的工作确实也属正常，可是如果夸大、夸大程度都需要有底线可言。经常会看到简历上写着精通XX，比如jQuery，然后面试的一问没有读过源码，对其细节原理说不出所以然来，这还不如不写。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;记得前不久在微博上看 &lt;a target=&quot;_blank&quot; href=&quot;http://weibo.com/shyvo&quot;&gt;@朴灵&lt;/a&gt;&amp;nbsp;说过：“如果你的GitHub上没有任何项目和代码，简历上还是别填GitHub地址了，没啥好处的。”&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;期待你不要紧张、而且自信，让自己好的一面尽量的展现出来，努力把面试官当成你的同事，你只是与他探讨工作中的问题。甚至可以多提些自己觉得有意思的想法，如果能够和面试官一直存于一个较愉快的谈话环境，相信你的面试结论上，面试官一定不会吝啬对你进行正面的评价。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;#12288;&amp;#12288;&lt;img width=&quot;136&quot; height=&quot;150&quot; alt=&quot;&quot; src=&quot;http://images.cnitblog.com/i/159097/201403/091843190501489.jpg&quot; /&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-size: 18pt; background-color: #ccffff; font-family: 黑体;&quot;&gt;&lt;strong&gt;总结&amp;#12288;&amp;#12288;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;面试其实也是修心的过程。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;我毕业初期时找工作也并不顺利，不过多次在找工作面试的过程中经常会遇见很好的面试官，就算你没有达到他们的岗位要求，他们还是会中肯的给你一些靠谱的建议。这些面试过程就非常的美好，其实结果不一定是最重要的，过程也一样美妙，不是吗。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;最后，请带着你积极的心态，好好享受每一次面试。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体; font-size: 16px;&quot;&gt;&amp;#12288;&amp;#12288;祝好&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: 黑体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
-
-    &lt;p&gt;&lt;a href=&quot;/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E3%80%90%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91%E3%80%91/&quot;&gt;前端面试【有感而发】&lt;/a&gt; was originally published by nieweidong at &lt;a href=&quot;&quot;&gt;聂微东，一枚Web技术领域的手艺人&lt;/a&gt; on March 09, 2014.&lt;/p&gt;
   </content>
 </entry>
 

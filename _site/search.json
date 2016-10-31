@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "「标准」的 JS风格",
+      "link"			: "/standardjs/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "年度科技脱口秀来了",
       "link"			: "/smartisanos/",
       "excerpt"		: ""
@@ -369,15 +377,15 @@
   
 
   
-
-  
-
-  
     ,{
       "title"			: "About me.",
       "link"			: "/about/",
       "excerpt"		: "聂微东,前端,前端面试,前端攻略,前端博客,JavaScript,JS,React,Gulp,Nodejs,darren"
     }
+  
+
+  
+
   
 
   

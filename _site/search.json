@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "《岛上书店》简评",
+      "link"			: "/bookstore/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "「标准」的 JS风格",
       "link"			: "/standardjs/",
       "excerpt"		: ""

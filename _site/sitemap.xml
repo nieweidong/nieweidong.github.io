@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/bookstore/</loc>
+    <lastmod>2016-11-02T00:00:00+08:00</lastmod>
+  </url>
+  <url>
     <loc>/standardjs/</loc>
     <lastmod>2016-10-31T00:00:00+08:00</lastmod>
   </url>
@@ -186,35 +190,35 @@
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/about/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/interview/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/gonglue/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/tags/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/tech/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/life/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/note/</loc>
-    <lastmod>2016-10-31T10:02:18+08:00</lastmod>
+    <lastmod>2016-11-03T17:05:04+08:00</lastmod>
   </url>
   <url>
     <loc>/baidu_verify_qOIARazTvY/baidu_verify_qOIARazTvY.html</loc>

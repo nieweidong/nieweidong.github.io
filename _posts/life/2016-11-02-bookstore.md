@@ -6,7 +6,7 @@ categories: [life]
 excerpt:
 tags: [Life, Book]
 image:
-  feature: banners.Moraine Lake, AB, Canada.By Christian Thamm.jpg
+  feature: banners/Moraine Lake, AB, Canada.By Christian Thamm.jpg
   credit: By Christian Thamm
   creditlink: javascript:;
 ---

@@ -7,7 +7,7 @@ excerpt:
 tags: [Life]
 image:
   feature: banners/sony.jpeg
-  credit: By Wim Denijs
+  credit: 自己拍的
   creditlink: javascript:;
 ---
 
@@ -21,7 +21,8 @@ image:
 而对于广大程序员，买个无线耳机肯定是其中之一。
 
 封面这款 Sony大法的 MDR-100ABN是我非常推荐的一款。  
-ps：特么劳资都买了，能不推荐么...
+ps：特么劳资都买了，能不推荐么...  
+![](http://www.fefork.com/images/post/headphones/pangxie.gif)
 
 宋仲基、鹿晗代言，Sony大法的信仰加持都不是重点，关键还带强大的降噪功能，配合着耳机的超高颜值，真心适合闷骚和明骚的筒子们。
 
@@ -49,8 +50,7 @@ ps：夏天肯定热，请有心理准备。
 
 据说镀铝液晶振膜耐煲，不过完全不懂。
 
-**聊两款相关的头戴式降噪耳机**。
-
+**聊两款相关的头戴式降噪耳机**。  
 ![](http://www.fefork.com/images/post/headphones/erji.jpg)
 
 Bose **QC35**(上右一)绝对是这级别的降噪之王，仅提供俩颜色：黑色和银色。  

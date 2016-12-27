@@ -36,7 +36,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: nieweidong
-  avatar: me.jpg
+  avatar: qrcode.jpg
   email: darrencode@qq.com
   disqus-shortname: nieweidong
   twitter: nieweidong

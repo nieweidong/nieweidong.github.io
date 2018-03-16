@@ -3,6 +3,7 @@
   "author": "Michael Rose <michael@mademistakes.com>",
   "homepage": "http://mmistakes.github.io/so-simple-theme/",
   "repository": {
+    "start": "bundle exec jekyll serve --draft",
     "type": "git",
     "url": "git://github.com/mmistakes/so-simple-theme.git"
   },

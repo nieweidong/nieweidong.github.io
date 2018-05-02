@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>说说我的前端之路和分享好书 · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">说说我的前端之路和分享好书</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            说说我的前端之路和分享好书
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Books">Books</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2011/06/29</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>　　WEB前端研发工程师，在国内算是一个朝阳职业，这个领域没有学校的正规教育，大多数人都是靠自己自学成才。本文主要介绍自己从事web开发以来(从大二至今)看过的书籍和自己的成长过程，目的是给想了解JavaScript或者是刚接触JavaScript的朋友，介绍如何通过循序渐进的看书来学习javascript。</p>
+<h3 id="一-入门级"><a href="#一-入门级" class="headerlink" title="一. 入门级"></a>一. 入门级</h3><p>就是有一定的基础(比如最常见的HTML标签及其属性、事件、方法;最常见的CSS属性;基础的JavaScript编程能力)，能够完成一些简单的WEB前端需求。</p>
+<p>推荐：《JavaScript dom 编程艺术》</p>
+<p>理由：此书绝对是入门的好书，本人也是在接触JS一段时间后才看的这本书。此书从JS的历史 - JS基础语法知识 - DOM介绍和简单的使用。现在这本书已经出了第二版，需要的朋友直接第二版就行。</p>
+<p>评价：简洁，实用，详细，易懂，书不厚，相信很快就能看完。</p>
+<p>当然，作为入门书的话《JavaScript权威指南》也非常强大(这名字可不是白起)，其实说起来也惭愧，本人至今都没有买过这本书，最开始是因为这个书实在是小贵，只好借朋友的看，不过也就看了个周末。网上关于此书的评价很多，意思大概都是说这书就是一个JS的文档手册，如果你有闲钱，并且习惯翻书查询，那么就来一本吧。顺便提醒一句，这本书的第六版英文版已经出来了。</p>
+<h3 id="二-初级开发"><a href="#二-初级开发" class="headerlink" title="二. 初级开发"></a>二. 初级开发</h3><p>本人以前的DEV leader兼恩师这么说过：“初级开发人员的标志就是需要在中级和高级开发的指导下完成工作”。首先不要苛责代码的对错严谨，毕竟每个程序员都有这样的一个过程，就是这个级别的特征。</p>
+<p>推荐：《javascript高级程序设计》(第二版)</p>
+<p>理由：这本书的作者是 Nicholas C.Zakas ,博客地址是 <a href="http://www.nczonline.net/" target="_blank" rel="noopener">http://www.nczonline.net/</a> ,大家可以去多关注，雅虎的前端工程师，是YUI的代码贡献者，可想而知这本书得含金量，他出的书都广受好评。这本书已经出了第二版，而且与第一版相比内容更新很大，直接第二版就行。不要被书名的“高级”唬住，只要有JS基础语法知识和DOM基础知识就行，而且本书开始阶段还是介绍JS和DOM的语法知识。</p>
+<p>评论：重点推荐一下第五章(类型),第六章(OOP),第七章(匿名),多看几遍,至少要完全看明白，能为以后进阶打好基础，个人感觉这几章是本书的精华所在。这本书在入门的时候看节奏会快了一些，所以不建议初学者看，可是相对于我一会要介绍的书又算基础一点，所以建议先阅读完这本书，对浏览器兼容和语法知识有一定了解之后再往下阅读。</p>
+<p>推荐：《高性能 JavaScript》《JavaScript语言精粹》</p>
+<p>理由：本人先看的是《高性能JS》，这本书还是 Nicholas C.Zakas 所著，经典之作，书中大量举例了各种不同写法的JavaScript在浏览器中的性能情况，对规范JavaScript代码和提升性能有很好的帮助，最后提到了很多工具和性能测试的方法，都是灰常灰常有实际作用的，看得出作者很厚道(好吧,偶承认了,偶是他的粉丝)<br>记忆最深的一句话:”如果 JavaScript 执行了几秒钟,那么很可能是你做错了什么”;</p>
+<p>《语言精髓》和《高性能》有少部分关键知识都重复提到了，可是为什么要推荐这本书，因为本书对JS语言本质的描述太棒了，这是一本介绍JavaScript语言本质的权威书籍，从 “对象”，“函数”，“继承”，“数组”等等多个重要知识着手。我补一句话 - 本书需要反复阅读。</p>
+<p>评论：都是好书，都很薄，而且所说的内容只要有基础都不难。相信读完之后会对JS又有新的认识，且对以后的代码规范和浏览器差异性等高级问题有了新的认识，如果读完之后会有种被灌顶的感觉，那么恭喜你，你离中级不远了。</p>
+<h3 id="三-中级开发"><a href="#三-中级开发" class="headerlink" title="三. 中级开发"></a>三. 中级开发</h3><p>还是本人以前的DEV leader兼恩师这么说过：“中级开发人员的标志就是在高级开发或架构师较少的指导下高质量的完成工作，并对产品或项目有自己的想法与理解”。</p>
+<p>强烈推荐：《JavaScript DOM高级程序设计》</p>
+<p>理由：此书灰常犀利，本人一共看了近半年的时间，已反复阅读多次。说实话，这本书的翻译一般，代码也有少许错误，可是这不影响这本书的强大，通过学习本书，可以理解一个JS的库如何产生，自己动手写一个简单的自己的JS库，如果你打算研究其他的JS库或者正在研究其他的JS库，那么这本书会使你的理解达到新的高度，进阶高级必读，写库必读。</p>
+<p>评论：异常强大的一本JS巨作，此书不薄，强烈推荐。现在已经买不到正版了，我这里有电子版，有需要的朋友留下邮箱，晚上发给你们。</p>
+<p><strong>PS:这些东西未能及时从盛大网盘转移到百度网盘，所以已经丢失，发不了电子版给大家了T.T</strong></p>
+<p>强烈推荐：《JavaScript设计模式》</p>
+<p>理由：异常生猛的一本书，看书名带“设计模式”就知道，这本书想要读明白有点困难，本人自己感觉，只要某书一带“模式”这两字，反正就简单不了。本书对JS的“模仿接口”，“封装”，“继承”，“链式调用”，“工厂模式”等各种具体的设计模式及其在JavaScript 语言中的应用进行了详细的介绍，运用设计模式使代码更模块化、更高效并且更易维护。</p>
+<p>评论：书不厚，可真的是内容丰富且高深，强烈建议购买。</p>
+<p>推荐：《高性能网站建设指南》《高性能网站建设进阶指南》</p>
+<p>理由：在读完前几本书之后我们对前端的性能和自己的代码的效率已经达到相当的高度了，然后我们在接触一些前端工程师的一些精髓。本书对HTTP请求，CDN，内容缓存和一些web开发中常见问题进行讲解。</p>
+<p>评论：书都不厚，可是说的都是比较实用的东西，可是用不用的上还得看个人和项目需要了。</p>
+<hr>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>以上就是本人一路走来看的JS相关书籍，朋友会问，为什么就只介绍的中级的，那么高级看的书在哪？有木有高级的书？进阶高级程序员之路又在哪？说下我自己的看法和对年轻朋友的建议吧，说的不好或不对请原谅，其实我也才真正工作两年多：</p>
+<ol>
+<li><p>主要是工作经验问题。达到一定程度以后真的合适的书很难找了，更多只有在工作中总结和积累。工作的越久碰到过的问题也就越多。所以一般说高级程序员一般都是至少都3年以上的工作经验，没办法，实践才出真理。</p>
+</li>
+<li><p>我觉得高级web前端灰常有必要总结一个自己的JS库，不管大小，总归有一套自己的东西（嘿嘿，如果认真的实践过《JS DOM高级》的内容，估计有一套JS库的原型了）。</p>
+</li>
+<li><p>前端有必要懂得和熟悉一本服务端语言，其实计算机语言很多语法大致都差不多，不同的就是内置的方法和属性，所以去熟悉一门语言并不难。为什么有必要，因为精通一门语言还是不够的，多学一门语言的好处我就不啰嗦了，大家可以看看这篇文章 - 《门门通还是精一门》</p>
+</li>
+<li><p>许多年轻人都有眼高手低的毛病，我也一样，例如，有的人认为自己编起程序来很顺手，不用查手册，说写就写，很熟练，几乎什么程序都能编出来，就认为自己对这种语言很精通了。其实对于一门语言的掌握程度是不可深测的，对于语言掌握其实是一个无止尽的过程，没有终点。编写时间的长短和编写熟练程度，仅仅是精通语言表现的一个方面。更重要的是程序员要掌握这个语言的适用范围，整体构架，语法规则、功能分类等基础理论方面的知识，并能利用这方面的知识，用最科学的方法去解决现实中各种项目的各个问题。</p>
+</li>
+</ol>
+<p>终于在6月29日写完了，完成了对自己的要求 - 一个月写一个较高质量的文章或技术分享。</p>
+<p>最后，谢谢大家，祝大家工作愉快。</p>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2011/06/29/说说我的前端之路和分享好书/">http://yoursite.com/2011/06/29/说说我的前端之路和分享好书/</a>
+            <p>发表日期: <a href="http://yoursite.com/2011/06/29/说说我的前端之路和分享好书/">June 29th 2011, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2011/07/21/JavaScript实现页面滚动图片加载/" title= JavaScript实现页面滚动图片加载 >
+                    <div class="nextTitle">JavaScript实现页面滚动图片加载</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2011/05/30/JSDOM操作提高篇/" title= JavaScript DOM操作 提高篇 >
+                    <div class="prevTitle">JavaScript DOM操作 提高篇</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一-入门级"><span class="toc-number">1.</span> <span class="toc-text">一. 入门级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二-初级开发"><span class="toc-number">2.</span> <span class="toc-text">二. 初级开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-中级开发"><span class="toc-number">3.</span> <span class="toc-text">三. 中级开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小结"><span class="toc-number">4.</span> <span class="toc-text">小结</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+

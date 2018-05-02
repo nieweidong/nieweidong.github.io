@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>2013过半，总结、计划、意三十 · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">2013过半，总结、计划、意三十</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            2013过半，总结、计划、意三十
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Review">Review</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2013/07/07</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <div id="cnblogs_post_body"><p>&#12288;&#12288;看标题就能猜到这是篇总结加目标计划的文章。转眼自己就是结了婚、奔三的人，所以YY一下自己三十岁的样子；还有就是写博文这事停了太久，久到自己的拖延症犯了又犯，确实不可饶恕(小鞭子抽自己)</p><br><p>&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201301/11090437-900bebd6f94c405694c8d8324a4e866b.jpg"></p><br><p>&nbsp;</p><br><p>&#12288;&#12288;最近这段时间有学到不少非前端领域的知识，如果不好好整理整理又成了过往云烟(说直接点就是一片空白)。那么今年后半年继续开博，还给自己加点量(感觉自己属于抽自己的血给自己打鸡血)，每月至少两篇；还有得继续努力自己30岁之前的目标&mdash;&mdash;完成<a target="_blank" href="http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html" title="前端攻略系列">《前端攻略系列》</a></p><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong>因为记性不好，所以只好多做总结；因为不进则退的原理，所以需要多停下来思考方向</strong>&mdash;&mdash;这是我最近最大的感受，工作与生活皆是如此。</p><br><p>&nbsp;</p><br><p>&#12288;&#12288;记得看<a target="_blank" href="http://www.cnblogs.com/Darren_code/archive/2012/06/25/DarkTime.html" title="《暗时间》读书笔记与读后感">《暗时间》</a>这本书时我还在厂里战战兢兢的渡试用期，从小导师那屁颠屁颠的把这本书折腾到手，看得那是津津有味，吧唧吧唧的。所以后来又才写了一篇读后感，发表日期上写着“2012/06/25 20：25”，尼玛转眼已经过了一年又13天。从去年6月至今发生了太多其妙的事情，个人在工作和前端领域的技术积累确实不算理想(js代码还没php+sql写的多T.T)，可生活中确收获了自己的另一半，就此一点对我个人来说也算超额完成了2012的目标，吼吼:)</p><br><p>&#12288;&#12288;看看最近一年的博客几乎木有产出，只写了一篇前端工具<a target="_blank" href="http://www.cnblogs.com/Darren_code/archive/2013/01/04/impressjs.html" title="impress.js初体验 - 前端装X利器">《Impress.js》</a>的分享，想到这觉得脸颊略烫…完成<a target="_blank" href="http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html" title="前端攻略系列">《前端攻略系列》</a>这是我30岁的目标之一，里面的内容、深度、广度目前还差的太远，可是不管怎样我会坚持下去，不管前面会有老虎或者大坑，此处可以鼓掌(写博文时会不由自主的自high，请原谅哈)</p><br><p>&#12288;&#12288;&nbsp;<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114011-20b7edcdff6f4e7690f4a220b45fce7c.gif"><img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114021-5a1999e39a3546fcb2f7ae4fc4bfb233.gif"><img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114029-92feda3a9c604faf8a7a2d7eb000838e.gif"></p><br><p><span style="color: #888888;"><em>——————分割线——————-分割线———————</em></span></p><br><p>文章分成四部分。&#12288;&#12288;第一、回顾2012；第二、2013上半年；第三、2013下半年；第四、想象下三年后的自己</p><br><p>&nbsp;</p><br><h1>回顾2012. 关键字“移动&amp;Linux”</h1><br><p>&#12288;&#12288;古玛雅人预言2012是其文明的终点，对我来说2012是新生的一年：新的工作环境和新的生活，一切都是新的开始。</p><br><p>&#12288;&#12288;在2011年的总结中提到：“能进入一家大公司做自己喜欢的工作，所以我应该是幸运的，生活待我不薄所以更应该好好把握现在”。“<span data-aligning="#src_1_5,#tran_1_5" id="src_1_5"><strong>I </strong></span><span data-aligning="#src_1_6,#tran_1_6" id="src_1_6"><strong>love </strong></span><span data-aligning="#src_1_7,#tran_1_7" id="src_1_7"><strong>my </strong></span><span data-aligning="#src_1_8,#tran_1_8" class="highLight" id="src_1_8"><strong>job” - </strong>来自电影穿普拉达的女王。赞同这句，如果能找到一份自己心爱的工作，再怎么努力和勤奋都不算过分。</span></p><br><p><span data-aligning="#src_1_8,#tran_1_8" class="highLight" id="src_1_8">&#12288;&#12288;工作和生活都需要正能量，所以时不时给自己打打鸡血吧<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114621-32ee0455a10e49a386cf5668f1d6e435.gif"></span></p><br><p><span data-aligning="#src_1_8,#tran_1_8" class="highLight">&#12288;&#12288;</span></p><br><p>&#12288;&#12288;<span style="font-size: 18pt; background-color: #ccffcc;">&#12288;&#12288;</span><span style="font-size: 18pt;"><strong><span style="background-color: #ccffcc;">工作&#12288;&#12288;</span></strong></span></p><br><p><span data-aligning="#src_1_8,#tran_1_8" class="highLight">&#12288;&#12288;去年</span>最重要的事件是从PC上的web开发转到了移动端开发，自然也学到了不少移动设备开发的知识，所以往后博客分享大多都是HTML5和移动相关的case.</p><br><ol><br><li>PHP知识也算有点累计和长进，不过完全没有达到自己的预期目标。投入的时间和精力还是不够，自己的定位是一名大前端(JS+PHP)，这块算是自己的短板</li><br><li>Linux和vim的知识算是意料之外的收获，工作环境就是天天和它们打交道，也算圆了自己大学时的遗憾。PS：大学光记得打Dota了，没时间折腾这些</li><br><li>…</li><br></ol><br><p>&#12288;&#12288;其实关于工作在博客里不想聊的太多，每个人都有自己的工作方式和沟通方式，工作也是各有各的看法，所以只要觉得自己没白活就好。</p><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong><span style="font-size: 18pt; background-color: #ccffcc;">&#12288;&#12288;生活&#12288;&#12288;</span></strong></p><br><p>&#12288;&#12288;刚毕业的两三年时，看书都是一月一本甚至俩本，而且几乎都是与技术相关的，尼玛现在回想起来都有那么点佩服自己，确实就这么坚持下来了。</p><br><p>&#12288;&#12288;入职百度后看书不像以前看的那么痴迷了，可能也是由于工作和生活都太过充实，所以就没有向以前那么多时间去看书和写博客。并且看得书籍题材也有一半是与技术本身无关的，其实个人感觉收获的更多。写码到一个阶段之后，除非是去学习新的技术或工具，要不 <span style="font-size: 16px;"><strong>源代码和技术交流 </strong></span>比书籍更具性价比。</p><br><p>&#12288;&#12288;常常有新手朋友吐槽读源码这种方式，确实多数的源代码都不好啃，关键还得看你读源码的初衷是什么，除非是工作必要的，其它情况个人<strong>只倾向于浅尝。</strong>理解基本的实现方式和原理，知道此技术解决神马样的问题，适用于神马样的场景，自己再实际写些代码折腾个demo就不错了。对于新技术更应该慎重的浅尝，不过技术这块国外总是走在前沿，再新的技术等我们去学习的时候英文文档都不会少。</p><br><p>&#12288;&#12288;技术交流是个好东西，北上广有非常好的交流氛围，几乎每周都有大大小小的交流会，挑些自己感兴趣或者比较好玩的话题去参与。从一个技术点渐渐深入进去，最终的产出可能非常可观，而且整个过程的参与会非常有价值，解决问题的成就感那也是必不可少的。</p><br><p>&nbsp;</p><br><p>&#12288;&#12288;<span style="font-size: 16px;"><strong>缘分</strong></span>是个看不透、摸不着的东西，妙不可言…2012最大的事情就是与我的初恋女友联系上了，在对的时间遇到对的人，so…圆满完成2012找女朋友的计划:)</p><br><p>&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114159-c5720143bebc46eeabbfe45ac88a81a7.gif"></p><br><h1><span data-aligning="#src_1_8,#tran_1_8" class="highLight">2013上半年总结. 关键字“数据&amp;婚姻”</span> &#12288;</h1><br><p>&#12288;&#12288;今年上半年工作类型发生了一些改变，不像通常前端开发那样做项目和产品需求，而是偏向基础设施建设，专职做了半年的数据相关支持。怎么定义这个事，说的高深点就是大数据相关那些事。越是大型的公司对数据建设也越是重视，现在更有很多专注数据挖据、分析、展示的公司都挺有影响力和规模。</p><br><p>&#12288;&#12288;原计划也没想到数据的事情会一折腾就是半年，这半年基本上前端技能在工作中就不沾边，都是一些php和sql的活。虽然不乐意不过也坚持过来了，成果和实际产出更是显著的，也算对得起这半年的光阴吧。</p><br><p>&#12288;&#12288;<span style="font-size: 18pt; background-color: #ccffcc;">&#12288;&#12288;</span><span style="font-size: 18pt;"><strong><span style="background-color: #ccffcc;">工作&#12288;&#12288;</span></strong></span></p><br><p>&#12288;&#12288;折腾了百度各种数据流程，对数据建设和数据挖掘有了最基础的认识。最大的收获是建立了组内新的数据统计流程，拓宽自身的视野和知识面。</p><br><p>&#12288;&#12288;具体细节就不多说了，以下用网络上介绍”阿里数据流”的一张图来说明吧。</p><br><p>&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07060655-3a70f3c252884f32ad77621cd206f95d.jpg"></p><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong><span style="font-size: 18pt; background-color: #ccffcc;">&#12288;&#12288;生活&#12288;&#12288;</span></strong></p><br><p>&nbsp;&#12288;&#12288;2013年2月在家成功领证，4月在家完成婚宴，终于不是临时工了，泪牛满面。从单身到恋爱再到结婚，回想这些感觉自己还在梦境。老婆离开老家来到北京与我过着俩人的小世界，呼吸着北京浑浊的空间，生活着酸甜苦辣，可算有滋有味…</p><br><p>&nbsp;&#12288;&#12288;业余时间自己又折腾了wordpress，老东西折腾起来也挺有意思。也是准备多练练php，顺便想做个b2c的网站，想为老婆在线上线下开个有个性、有创意的花店。现在的状态正在开发主题:)</p><br><p>&nbsp;&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114250-f624355452bc4a82a2689e1c21542b16.jpg"></p><br><h1>2013下半年计划. 关键字“专研、创新”</h1><br><p>&#12288;&#12288;到了6月中旬数据工作也算告一段落，又回到了喜爱的前端岗位。发现产品线用上了各种新东西，又是grunt、又是fis，有种农民工进城的感觉，不知道步子该怎么迈了T.T</p><br><p>&#12288;&#12288;积累了不少的数据和php知识后 写前端那叫一个心里底气十足，对具体功能的本质了解的更透彻。比如哪些功能是有数据支撑的需求，哪些功能是理想化需要测试的需求，后续url参数如何维护和管理等等，一切用数据说话，结果导向。</p><br><p>&#12288;&#12288;谈谈自己下半年的期待吧。</p><br><p>&#12288;&#12288;<span style="font-size: 18pt; background-color: #ccffcc;">&#12288;&#12288;</span><span style="font-size: 18pt;"><strong><span style="background-color: #ccffcc;">工作&#12288;&#12288;</span></strong></span></p><br><p>&nbsp;&#12288;&#12288;来厂一年多级别还未变过，下半年和明年1月都有考级的机会。本着不想做厨子的编辑不是好程序员的思想，打算一搏传说中的“职称评定”。fighting！</p><br><ol><br><li>技术积累。组内使用上了不少较新的技术，如Manifest、WorkStory、Grount、Fis、Nodejs等等很多，可是这五项自己没有搞透而且觉得有必要搞透，打算文档走起来，Research最后必定会有产出:)</li><br><li>在组内做一次技术分享。要写点总结或者文档自己还行，可是与多数码农一样，站在台上做分享或者长时间发言总会比较怯场，希望能在组内做做自己分享，顺便锻炼下自己的表达和演讲能力。</li><br></ol><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong><span style="font-size: 18pt; background-color: #ccffcc;">&#12288;&#12288;生活&#12288;&#12288;</span></strong></p><br><p>&#12288;&#12288;头一次在博客中提到那么多有关自己家庭的事情，可能真是结婚和不结婚心理还是不一样的，以前单身的时候可以天天朝10晚11，轻松轮轴转坚持几个月，现在偶尔晚上11点多回家还怕家人担心。总听某些成功人士或者年长者谈论 “家人和事业怎么怎么平衡”，那个时候只懂“话”的意思可是还理解不了<strong>平衡</strong>的意义，这东西真的需要实践才出真理哈。</p><br><p>&#12288;&#12288;得学会做饭菜，只需要会三四个菜就好，没事在家的时候可以下厨是件很享受的事情。媳妇口中生活白痴的我是婚后才第一次学习煎鸡蛋<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07113712-28e097e811db4e83b80a43b0e5d73b90.gif">…</p><br><p>&#12288;&#12288;希望接下来的半年里少惹媳妇生气(已婚且疼媳妇的人懂这句，家庭和谐第一)，多陪媳妇买衣服和逛街，做个好好男人:)</p><br><p>&nbsp;</p><br><p>&#12288;&#12288;下半年有几本必须要看的书：</p><br><ol><br><li>基友 <a target="_blank" href="http://www.weibo.com/u/1241521384" title="低级码畜">@<span class="name">低级码畜</span></a>推荐的《编程人生》，此书名声在外，上周刚借到手；</li><br><li>《代码整洁之道》被几个好友推荐，所以已经入手；</li><br><li>重读《php和mysql web开发》。2010年初购买，坚持看完可是现在回想都没有印象了，对于一本入门圣经来说确实罪过<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07113905-2cf38819520d448290c6735e103aa4f3.jpg"></li><br></ol><br><p>&#12288;&#12288;克军在6月30号的百度技术沙龙分享“工程之美”中有提到这么一句比较有意思，不做评论大家自己思考，大概如：“学习前端技术从阅读标准开始，书是滞后的产物”</p><br><p>&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201307/07114443-b956a01da59b4eeab895c0cb01eb9809.gif"></p><br><h1><span style="color: #000000;">意三十<br></span></h1><br><p><span style="color: #000000;">&#12288;&#12288;“三十而立，四十而不惑，五十而知天命，六十而耳顺，七十而从心所欲”。<span style="color: #000000;">毕业4年有余，80后的我转眼到了奔三的年纪，“三十而立”就是摆在我眼前的话题，</span>作为祖宗的传统说法，源于《论语·为政》的成语，意为人到了30岁就应该去面对一切困难。</span></p><br><p><span style="color: #000000;">&#12288;&#12288;百度百科中有一句比较认同的理解：“<span style="background-color: #ccffff; font-size: 18px;"><strong>30岁人应该能依靠自己的本领独立承担自己应承受的责任，并已经确定自己的人生目标与发展方向</strong></span>”</span></p><br><p>&#12288;&#12288;北漂一族的我30岁能最希望拥有东西是什么？答案是“孩子、房子、车子”，优先级依次降低…好吧，讲这三个词确实太枯燥也太现实了。</p><br><p>&nbsp;</p><br><blockquote><br><p>&#12288;<span style="font-size: 16px;">&#12288;我憧憬三十岁时能给媳妇开一个花店。</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;店里有舒服的沙发，我能窝在里面看书、写码甚至打游戏；</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;有舒服的茶座，时不时约上两三个好友一起坐着喝喝茶、扯扯蛋；</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;有一台勉强算高级的半自动咖啡机，亲手操作，调制出一杯美味的咖啡，是一种精神上的享受；</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;有自己的小孩常在身边，一定不告诉他什么叫“hello world”；</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;有一条柯基或者萨摩常伴左右；</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;有…</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;。。。</span></p><br><p><span style="font-size: 16px;">&#12288;&#12288;。。。</span></p><br><br><br><br><br><br><br><br><br><br><br></blockquote><br><p>&nbsp;</p><br><p>&#12288;&#12288;继续回到现实。那么现在我需要准备什么，去学习做咖啡吗？NO！以下这句话<span style="font-size: 16px;">与大家共勉</span>：</p><br><p><strong><span style="font-size: 16px;">&#12288;&#12288;希望大家在喜欢的行业中站着把钱的挣了</span></strong></p><br><p>&#12288;&#12288;ps:就算不喜欢能挣钱也成 <img alt="" src="http://images.cnitblog.com/blog/159097/201307/07120621-18a992ecf64c43b8b9f858f66dc161fd.gif"></p><br><p>&nbsp;</p><br><p>&nbsp;</p><br><blockquote><br><p><span data-aligning="#src_1_8,#tran_1_8" style="font-size: 16px;" class="highLight" id="src_1_8">越努力，越幸福。</span></p><br><p><span data-aligning="#src_1_8,#tran_1_8" style="font-size: 16px;" class="highLight">再见，上半年。</span></p><br><br><br><br><br></blockquote><br><p><span data-aligning="#src_1_8,#tran_1_8" style="font-size: 16px;" class="highLight">&nbsp;</span></p></div>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2013/07/07/2013过半，总结、计划、意三十/">http://yoursite.com/2013/07/07/2013过半，总结、计划、意三十/</a>
+            <p>发表日期: <a href="http://yoursite.com/2013/07/07/2013过半，总结、计划、意三十/">July 7th 2013, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2013/07/11/前端攻略之开光篇/" title= 前端攻略之开光篇 >
+                    <div class="nextTitle">前端攻略之开光篇</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2013/01/05/前端攻略系列/" title= 前端攻略系列 >
+                    <div class="prevTitle">前端攻略系列</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">回顾2012. 关键字“移动&amp;Linux”</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">2013上半年总结. 关键字“数据&amp;婚姻” 　</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">2013下半年计划. 关键字“专研、创新”</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">意三十</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+

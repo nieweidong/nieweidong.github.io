@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>IE下z-index的各种坑 · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">IE下z-index的各种坑</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            IE下z-index的各种坑
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Browser">Browser</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "CSS">CSS</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2012/03/05</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <div id="cnblogs_post_body"><p>&#12288;&#12288;到新地方有些日子了，差不多适应了这边的工作节奏与流程。接到的第一个开发任务是几个比较简单的页面，需要做的工作就是先把设计图变成页面，然后使用PHP创建几个请求的接口传递数据，标准且简洁的web开发思路。可是真有些日子没有写DIV+CSS了，而且对IE6兼容性的坑碰到的还是不够多(以前做国外项目)，所以这次开发中不可避免的碰见了几个问题，尤其是在IE下的 z-index 问题很有意思，所以整理了一些资料和总结分享给大家…注：因为引入了jsfiddle，所以页面加载受影响会稍慢一些^_^&#12288;&#12288;</p><br><p><strong>&#12288;&#12288;<span style="font-size: 14pt;">阅读目录</span>：</strong></p><br><ol><br><li><a href="#darren_1" style="font-size: 16px;">z-index属性</a></li><br><li><a href="#darren_2" style="font-size: 16px;">z-index规范参考</a></li><br><li><a href="#darren_3" style="font-size: 16px;">在IE下出现的问题</a></li><br><li><a href="#darren_4" style="font-size: 16px;">在IE6下z-index的问题</a><ol><br><li>&gt;<a href="#darren_5">拼爹的时代</a></li><br><li>&gt;<a href="#darren_6">万恶的float&nbsp;</a></li><br></ol></li><br><li><a href="#darren_7" style="font-size: 16px;">IE6下 select z-index无效而遮挡div</a><ol><br><li>&gt;<a href="#darren_8">用 iframe 包裹 select 元素</a></li><br><li>&gt;<a href="#darren_9">以 Iframe 作为div的子元素，覆盖 select 元素</a></li><br></ol></li><br><li><span style="font-size: 16px;"><a data-mce-="" href="#darren_11">本文结语</a></span></li><br><li><a href="#darren_10" style="font-size: 16px;">参考资料</a></li><br></ol><br><div>&nbsp;</div><br><h1 id="darren_1">&#12288;&#12288;z-index属性&#12288;&#12288;</h1><br><ol><br><li>z-index : auto | number</li><br><li>z-index 属性设置元素的堆叠顺序，如果为正数，则离用户更近，为负数则表示离用户更远；</li><br><li>拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面；</li><br><li>z-index 仅能在定位元素上奏效（position 属性值为 relative 或 absolute 或 fixed的对象）。</li><br></ol><br><div>&nbsp;</div><br><h1 id="darren_2">&#12288;&#12288;z-index规范参考&#12288;&#12288;</h1><br><div><br><ul><br><li>在 W3C CSS2.1 规范中，<strong>每个元素都具有三维的空间位置</strong>，除我们所熟悉的水平和垂直位置外，元素还可在 “Z轴” 方向上层层相叠、依次向前排开；&nbsp;</li><br><li>元素在 “Z 轴” 方向上的呈现顺序，由层叠上下文和层叠级别决定。在文档中，每个元素仅属于一个层叠上下文。在给定的层叠上下文中，<strong>每个元素都有一个整型的层叠级别</strong>，它描述了在相同层叠上下文中元素在 “Z轴” 上的显示顺序；</li><br><li>同一个层叠上下文中，层叠级别大的显示在上，层叠级别小的显示在下，<strong>相同层叠级别时，遵循后来居上的原则</strong>（back-to-font）；</li><br><li>不同层叠上下文中，元素显示顺序以父级层叠上下文的层叠级别来决定显示的先后顺序。与自身的层叠级别无关；</li><br><li>每一个定位元素都归属于一个stacking context。根元素形成 root stacking context，而其他的 stacking context 则由定位元素产生（此定位元素的 z-index 被定义一个非 auto 的 z-index 值），定位子元素会以这个 local stacking context 为参考，用相同的规则来决定层叠顺序；</li><br><li>当任何一个元素层叠另一个包含在不同 stacking context 元素时，则会以 stacking context 的层叠级别（stack level）来决定显示的先后情况。也就是说，在相同的 stacking context 下才会用<strong>元素本身</strong>的 z-index 来决定先后，不同时则由 stacking context 的<strong>父元素</strong>的 z-index 来决定。</li><br></ul><br><div>&nbsp;</div><br></div><br><h1 id="darren_3"><span style="font-size: 18pt;">&#12288;&#12288;在IE下出现的问题&#12288;&#12288;</span></h1><br><p>&#12288;&#12288;当定位元素的 ‘z-index’ 未设置时（默认为 auto），在&nbsp;<em>IE6 IE7 IE8(Q)</em>&nbsp;下将会创建一个新的局部层叠上下文。而在其它浏览器下，则严格按照规范，不产生新的局部层叠上下文。</p><br><p>&#12288;&#12288;这个问题将导致定位元素的层叠关系在不同浏览器出现很大的区别，严重的可导致页面布局混乱、内容覆盖等。</p><br><p>&#12288;&#12288;受影响的浏览器有IE6 IE7 IE8(Quriks Mode)</p><br><p>&#12288;&#12288;直接从w3help复制了代码，分析以下代码：</p><br><div class="cnblogs_code"><br><pre>&lt;style type=<span style="color: #800000;">“</span><span style="color: #800000;">text/css</span><span style="color: #800000;">“</span>&gt;<br>  body { margin:<span style="color: #800080;">0</span>; }<br>  .p1{ top:20px; height:50px; width:150px; background-color:blue;}<br>  .p2{ top:10px; left:20px; height:30px; width:100px; background-color:yellow;}<br>  .p3{ top:0px; left:50px; height:100px; width:50px; background-color:red;}<br>&lt;/style&gt;<br><br>&lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:relative;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">p1</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">1</span><br>    &lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute; z-index:1;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">p2</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">2</span>&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">p3</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">3</span>&lt;/div&gt;</pre><br></div><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2012/159097/2012022921011169.jpg"></p><br><p>&#12288;&#12288;注：Q代表Quriks Mode，即混杂模式。</p><br><p>&#12288;&#12288;根据 W3C CSS2.1 规范中的说明，定位元素【p1】和【p3】由于未设置 ‘z-index’ 特性（使用默认值 auto），它们不会创建新的局部层叠上下文，而定位元素【p2】设置了 z-index:1 则会创建新的层叠上下文。</p><br><p>&#12288;&#12288;另，在同一根层叠上下文中，同为 z-index:auto 的定位元素【p1】和【p3】，它们的层叠级别相同，但【p3】在【p1】之后，所以在 Z 轴上【p3】比【p1】靠前显示，又，【p2】层叠上下文的层叠级别为正数，所以【p2】的层叠级别要比【p3】高。因此，它们在 Z 轴上的顺序为：（遵循 back-to-font）【p1】 -&gt; 【p3】 -&gt; 【p2】</p><br><p>&#12288;&#12288;以上为标准浏览器下的情况。</p><br><p>&#12288;&#12288;而在 IE6 IE7 E8(Q) 下，定位元素【p1】和【p3】都创建了新的局部层叠上下文，在同一根层叠上下文中，它们的层叠级别相同，但【p3】在【p1】之后，所以在 Z 轴上【p3】比【p1】靠前显示。此时，由于【p2】处于【p1】的层叠上下文中，所以【p2】在 Z 轴上要比【p3】靠后。</p><br><p>&#12288;&#12288;在来一个例子：</p><br><div class="cnblogs_code"><br><pre>&lt;style&gt;<br>  .parent{width:200px; height:200px; padding:10px;}<br>  .sub{text-align:right; font:15px Verdana;width:100px; height:100px;}<br>  .lt50{left:50px;top:50px;}<br>&lt;/style&gt;<br><br>&lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute; background:lightgrey;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">parent</span><span style="color: #800000;">“</span>&gt;<br>    &lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute;z-index:20;background:darkgray;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">sub</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">20</span>&lt;/div&gt;<br>    &lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute;z-index:10;background:dimgray;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">sub lt50</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">10</span>&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute;left:80px;top:80px;background:black;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">parent</span><span style="color: #800000;">“</span>&gt;<br>    &lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute;z-index:2;background:darkgray;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">sub</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">2</span>&lt;/div&gt;<br>    &lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:absolute;z-index:1;background:dimgray;</span><span style="color: #800000;">“</span> <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">sub lt50</span><span style="color: #800000;">“</span>&gt;<span style="color: #800080;">1</span>&lt;/div&gt;<br>&lt;/div&gt;</pre><br></div><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2012/159097/2012022921053279.jpg"></p><br><p><strong><span style="background-color: #ccffff; font-size: 18pt;">&#12288;&#12288;解决办法&#12288;&#12288;</span></strong></p><br><p>&#12288;&#12288;理解层叠上下文、层叠级别与 ‘z-index’ 之间的关系。在可能出现定位元素相互覆盖的情况时，明确指定定位元素的 ‘z-index’ 特性，避免此问题的出现。</p><br><p>&#12288;&#12288;注：此段内容基本都是来自w3help。</p><br><p>&nbsp;</p><br><h1 id="darren_4">&#12288;&#12288;在IE6下z-index的问题</h1><br><p>&#12288;&#12288;我不是一个喜欢抱怨的人，so…有关抱怨IE6的话在此省略500字…</p><br><p>&#12288;&#12288;先上个图说说我在工作中实际遇到的问题：</p><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2012/159097/2012030114264812.jpg"></p><br><p>&#12288;&#12288;图片的上半部分就是在非IE6下的交互，图片下半部分是在IE6下的显示效果，当打开虚拟机测试的时候我表示瞬间碉堡了，囧…在IE6下这个tips被盖住了，很明显这个不是我想要的效果，可是为什么会出现这个情况类？接着往下看。</p><br><p><span style="font-size: 18pt; background-color: #ccffff;">&#12288;&#12288;分析此类问题的原因：&#12288;&#12288;</span></p><br><p>&#12288;&#12288;<span style="font-size: 16px;" id="darren_5"><strong>1.这是个拼爹的时代，在IE6下很好的体现了这点…囧</strong></span></p><br><p>&#12288;&#12288;按照正常的思维，z-index层级越高，内容越应该在上面显示，在大部分的浏览器在大部分的情况下，确实如此，但是不绝对。尤其遇到IE6。</p><br><p>&#12288;&#12288;在IE6下的层级高低不仅要看本身，还要看自己的父元素是否给力：父元素的 position 属性为 relative或absolute 时，子元素的 absolute 属性是相对于父元素而言的。而在IE6下的层级的表现有时候不是看子元素的 z-index 多高，而要看它们的父元素的 z-index 谁高谁低。点击 Result 可以看到HTML对应的VIEW。</p><br><p><iframe width="100%" height="380" src="http://jsfiddle.net/DarrenCode/D6kfs/2/embedded/html,result"></iframe></p><br><p>&#12288;&#12288;从以上的代码中可以看到最内层&lt;div&gt;的z-index属性为999，其父元素的z-index属性为100。按照正常的显示逻辑，图片应该正常显示且不会被背景色所影响，可是在IE6下会有问题，直接上图片会比较直观，比较看看IE6下和非IE6浏览器的显示效果。chrome、FF和opera都经过测试了，为了不使图片过多我就拿个chrome的截图吧。</p><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2012/159097/2012030122580824.jpg"></p><br><p>&#12288;&#12288;重现这个bug的条件很简单，只要绝对定位（position:absolute）&lt;div&gt;的祖先元素，或者说是最顶级的祖先元素的 relative 属性小于黑色半透明层的z-index层级即可。解决办法也很简单，只需要给的祖先元素加上z-index就可以。</p><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2012/159097/2012030418365071.jpg" style="width: 760px;"></p><br><p>&#12288;&#12288;为具有 relative 属性的顶级祖先元素打了鸡血(加了z-index)后，IE6下终于正常显示了。这个问题很现实的教育了我们 - 在拼爹拼不过的条件下我们只能靠自己努力…</p><br><p>&#12288;&#12288;IE6下拼爹的问题也就是我在实际开发中碰到的问题，现在已经完美解决且达到需求的效果了。接下来要介绍的是一些我总结的资料，都是介绍在IE环境下得各种z-index的坑。</p><br><p>&#12288;&#12288;</p><br><p>&nbsp;&#12288;&#12288;<span style="font-size: 16px;" id="darren_6"><strong>2.万恶的float</strong></span></p><br><p>&#12288;&#12288;float 是 css 的定位属性，而且应该是CSS中最常用的属性之一了，至于为什么说它万恶等我改天去准备一篇文章单独进行解说，在这里借着以前的学习笔记简单说几点：</p><br><p>&#12288;&#12288;1. IE7 中，底边距 bug是当浮动父元素有浮动子元素时，这些子元素的底边距会被父元素忽略掉；</p><br><p>&#12288;&#12288;2.&nbsp;3像素间距是指挨着浮动元素的文本会神奇的被踢出去3像素，好像浮动元素的周围有一个奇怪的力场一样；</p><br><p>&#12288;&#12288;3.&nbsp;双倍边距bug处理 IE6 时，另一个需要记住的事情是，如果在和浮动方向相同的方向上设置外边距(margin)，会引发双倍边距。</p><br><p>&#12288;&#12288;有关float的扫盲就先到这里，还有一点就是float毕竟是标准的属性，而且大多数的前端都习惯用它去实现页面，所以我的建议就是：深入理解 HTML语义和表现。</p><br><p>&#12288;&#12288;接着开始讲述 z-index和float 在IE6环境下擦出的坑爹的火花…先上一段代码：</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;&lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">background:#000;width:100%;height:600px;opacity:0.3; filter:alpha(opacity=30);position:absolute;left:0;top:0;z-index:1;overflow:hidden;</span><span style="color: #800000;">“</span>&gt;&lt;/div&gt;<br>&#12288;&#12288;&lt;div style=<span style="color: #800000;">“</span><span style="color: #800000;">position:relative;z-index:100;</span><span style="color: #800000;">“</span>&gt;<br>&#12288;&#12288;&#12288;&#12288;&lt;img src=<span style="color: #800000;">“</span><span style="color: #800000;"><a href="http://images.cnblogs.com/cnblogs_com/Darren_code/311197/o_1.jpg" target="_blank" rel="noopener">http://images.cnblogs.com/cnblogs_com/Darren_code/311197/o_1.jpg</a></span><span style="color: #800000;">“</span> style=<span style="color: #800000;">“</span><span style="color: #800000;">float:left;</span><span style="color: #800000;">“</span> width=<span style="color: #800000;">“</span><span style="color: #800000;">300</span><span style="color: #800000;">“</span> /&gt;<br>&#12288;&#12288;&lt;/div&gt;</pre><br></div><br><p>&#12288;&#12288;看到&lt;img&gt;有设置float属性，上面这段代码显示的效果与IE6下拼爹失败一样，IE6下的犀牛书是灰色的 T.T 。为了让犀牛书正常显示，只需要把&lt;img&gt;的float属性去掉即可。</p><br><p>&#12288;&#12288;个人理解可能是因为&lt;img&gt;的float使得z-index失效造成的。网上还有种说法是因为float和relative两者在定位上问题，所以一起使用的时候会造成此bug。</p><br><p>&#12288;&#12288;这个问题又教育了我们 - 某些环境(IE6)下也要小心被兄弟坑…</p><br><p>&nbsp;</p><br><h1 id="darren_7">&#12288;&#12288;IE6下 select z-index无效而遮挡div</h1><br><p>&#12288;&#12288;这个问题其实在是比较常见的了，我早期做项目的时候有幸遇见过这个问题，所以有现成的资料，趁着这次也刚好整理整理、回忆回忆。两个解决办法都是围绕iframe展开的，咱们先来看第一个。</p><br><p>&#12288;&#12288;<strong id="darren_8">1.用 iframe 包裹 select 元素</strong></p><br><p>&#12288;&#12288;使用iframe包住select，这样iframe可以有z-index，只要在div上设置的z-index比iframe的高即可实现。示例代码如下：&nbsp;</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;&lt;iframe style=<span style="color: #800000;">“</span><span style="color: #800000;">z-index:1;position: absolute; </span><span style="color: #800000;">“</span>&gt;<br>&#12288;&#12288;&#12288;&#12288;&lt;<span style="color: #0000ff;">select</span> name=<span style="color: #800000;">“</span><span style="color: #800000;">me</span><span style="color: #800000;">“</span>&gt;                    <br>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&lt;option value=<span style="color: #800000;">“</span><span style="color: #800000;">name</span><span style="color: #800000;">“</span>&gt;Darren聂微东&lt;/option&gt;     <br>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&lt;option value=<span style="color: #800000;">“</span><span style="color: #800000;">sex</span><span style="color: #800000;">“</span>&gt;male&lt;/option&gt;     <br>&#12288;&#12288;&#12288;&#12288;&#12288;&#12288;&lt;option value=<span style="color: #800000;">“</span><span style="color: #800000;">age</span><span style="color: #800000;">“</span>&gt;secret&lt;/option&gt;     <br>&#12288;&#12288;&#12288;&#12288;&lt;/<span style="color: #0000ff;">select</span>&gt;     <br>&#12288;&#12288;&lt;/iframe&gt;</pre><br></div><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong id="darren_9">2.以 Iframe 作为div的子元素，覆盖 select 元素(推荐使用)</strong><br>&#12288;&#12288;建立一个跟div同宽同高的iframe，并且z-index比div要低。</p><br><div class="cnblogs_code"><br><pre>&lt;style type=”text/css”&gt;<br>#iframe{   <br>    position: absolute;<br>    width: <span style="color: #800080;">100</span>%;<br>    height: <span style="color: #800080;">100</span>%;<br>    z-index:-<span style="color: #800080;">1</span>;<br>}   <br>.text_div{   <br>    position: absolute;   <br>    left:100px;   <br>    top:50px;   <br>    width: 300px;   <br>    height: 200px;   <br>    background : blue;     <br>    z-index:<span style="color: #800080;">100</span>;   <br>}   <br>&lt;/style&gt;<br>&lt;div <span style="color: #0000ff;">class</span>=<span style="color: #800000;">“</span><span style="color: #800000;">text_div</span><span style="color: #800000;">“</span>&gt;  <br>     &lt;span&gt;这里可以包含其他dom元素&lt;/span&gt;  <br>     &lt;iframe id=<span style="color: #800000;">“</span><span style="color: #800000;">iframe</span><span style="color: #800000;">“</span>&gt;&lt;/iframe&gt;  <br>&lt;/div&gt;</pre><br></div><br><p>&#12288;&#12288;注:在这里如果不加src属性,尽管iframe会把select挡住,但是由于默认iframe为白色,会影响原来的div背景色。解决方法可以加了一个空的HTML文件，并把body 的值设为和原来div背景色一致,这样就解决了默认白色背景色的问题，这里只是一种思路，<strong>办法总比困难多&nbsp;</strong>^_^。<br><br></p><br><h1 id="darren_11">&#12288;&#12288;本文结语</h1><br><p>&#12288;&#12288;与很多做国内项目的前端一样，我也会常常忍不住诅咒IE，可是假如换个思考方式我们也得感谢它，工作因为它才有了更多挑战和成就感。</p><br><p>&#12288;&#12288;对不理解CSS层叠朋友来说&nbsp;z-index 确实是一个大坑，希望这篇文章能够给那些掉到坑内的朋友一些帮助。</p><br><p>&nbsp;</p><br><h1 id="darren_10">&#12288;&#12288;参考资料：</h1><br><ul><br><li><a href="http://www.w3.org/TR/CSS21/visuren.html#z-index" target="_blank" rel="noopener">http://www.w3.org/TR/CSS21/visuren.html#z-index</a></li><br><li><a href="http://www.zhangxinxu.com/wordpress/?p=471" target="_blank" rel="noopener">http://www.zhangxinxu.com/wordpress/?p=471</a></li><br><li><a href="http://www.w3school.com.cn/css/pr_pos_z-index.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/css/pr_pos_z-index.asp</a></li><br><li><a href="http://w3help.org/zh-cn/causes/RM8015" target="_blank" rel="noopener">http://w3help.org/zh-cn/causes/RM8015</a></li><br></ul><br><div>&nbsp;&nbsp;</div></div>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2012/03/05/IE下z-index的各种坑/">http://yoursite.com/2012/03/05/IE下z-index的各种坑/</a>
+            <p>发表日期: <a href="http://yoursite.com/2012/03/05/IE下z-index的各种坑/">March 5th 2012, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" title= 要有梦想,创造卓越的职业生涯 >
+                    <div class="nextTitle">要有梦想,创造卓越的职业生涯</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2012/02/19/2011总结与2012展望/" title= 2011总结与2012展望 >
+                    <div class="prevTitle">2011总结与2012展望</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_1"><span class="toc-number">1.</span> <span class="toc-text">　　z-index属性　　</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_2"><span class="toc-number">2.</span> <span class="toc-text">　　z-index规范参考　　</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_3"><span class="toc-number">3.</span> <span class="toc-text">　　在IE下出现的问题　　</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_4"><span class="toc-number">4.</span> <span class="toc-text">　　在IE6下z-index的问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_7"><span class="toc-number">5.</span> <span class="toc-text">　　IE6下 select z-index无效而遮挡div</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_11"><span class="toc-number">6.</span> <span class="toc-text">　　本文结语</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#darren_10"><span class="toc-number">7.</span> <span class="toc-text">　　参考资料：</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+

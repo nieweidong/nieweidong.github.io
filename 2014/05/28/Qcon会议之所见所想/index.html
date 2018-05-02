@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Qcon会议之所见所想 · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Qcon会议之所见所想</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            Qcon会议之所见所想
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tech">Tech</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2014/05/28</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <div id="cnblogs_post_body"><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;作为普通码农一枚，Qcon是俺参与过的最高级的技术大会了。大会共历时三天，因为俺第二天就得赶火车休个五一大长假，所以只参加了第一天4/25号的会议(其他俩天自然有其他同事会去观摩)，不过第一天的会议有俺很喜欢的老池(<a target="_blank" href="http://weibo.com/idreamland">@池建强</a>)组织出品的专题，所以俺参加会议的目标这这么愉快的定下拉。</span></p><br><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img width="105" height="117" alt="" src="http://images.cnitblog.com/i/159097/201405/252026591994984.jpg"></span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;还是得先感谢给俺票票的经理<a target="_blank" href="http://weibo.com/liguniang">@<span>狸姑娘</span></a>，也终于幸运见到了《MacTalk》作者本尊，让俺也当了一把小小的追星族哈。同时也厚着脸皮搭讪，与Mac君进行了正式友好、亲切的交流:)</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img width="187" height="332" alt="" src="http://images.cnitblog.com/i/159097/201405/251344215746507.jpg"></span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&nbsp;</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;五一休假后需要给组内同学分享一些在Qcon的所见所得，分享完成后自己又做了一些整理，所以放到博客里用以记录。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<span style="background-color: #ccffcc;">PS：乱七八糟的照片照了不少，不过现场图片只选择性贴几张，而且作为已婚男士，放美女图片更是影响家庭和谐，尤其俺家庭地位又不高</span><img alt="" src="http://images.cnitblog.com/i/159097/201405/251433593563780.gif">…所以对会议细节感兴趣的同学可以自己去Google百度一下，或者点这个URL<a target="_blank" href="http://s.weibo.com/wb/qcon&amp;xsort=hot"> 微博热门搜索 </a>，不谢。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&nbsp;</span></p><br><h1><span style="font-size: 18pt; font-family: 黑体;">Qcon是神马</span></h1><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;Qcon介绍： 为团队领导者、架构师、项目经理和高级软件开发人员量身打造的企业软件开发大会，其所覆盖的主题内容与InfoQ网站相同，关注架构与设计、真实案例分析等。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;一起来看下面几张照片。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img width="493" height="278" alt="" src="http://images.cnitblog.com/i/159097/201405/251713086849906.jpg"></span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img width="497" height="280" alt="" src="http://images.cnitblog.com/i/159097/201405/251424066379091.jpg" style="line-height: 1.5;"></span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img width="190" height="337" alt="" src="http://images.cnitblog.com/i/159097/201405/251951164813865.jpg"></span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img width="502" height="283" alt="" src="http://images.cnitblog.com/i/159097/201405/251954126065291.jpg"></span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;图一是因为头一回去国际会议中心，所以得瑟的照了一张以示到此一游；</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;图二是InfoQ某领导的开场致辞。俺到的其实还算早(早上7点多)，在外面逛展台、拿礼品、瞎聊天，然后搞得最终进场还给耽搁了，所以坐到会场中间的位置，过会儿回头一看，已然完全坐满，而且还有部分站着的。大家可脑补测量下，这会场坐了多少人:)</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;从上俩张图片可以初窥Qcon会议的规模了，我们再看看 <strong><a target="_blank" href="http://www.qconbeijing.com/schedule.html">大会日程</a></strong>，上午的分享都是来自老外，对于我等学渣来说，尼玛英语听力和交流真心是硬伤呀<img alt="" src="http://images.cnitblog.com/i/159097/201405/251956390741609.jpg">，可是让我遇见了图三，所以美丽的事情继续发生…</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;图三是同声传译的装备，俺果断把驾照压那儿，然后就可以免费借用的，用完了还回去即可；</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;图四是自主的午/晚餐，味道肯定谈不上多好，不过作为一个技术的交流大会，能有这等伙食已然不错，知足亦长乐。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;在“技术会议”这个话题中，Qcon绝对算得上“高大上”。不过这仅仅是我参与的第二个收费的技术交流会，第一个是京JS。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;简述下俺眼中的Qcon吧：</span></p><br><ul><br><li><span style="font-size: 16px; font-family: 黑体;">早上既然还提供了早餐，感觉贴心不少，且糕点的品种还算不少。当然水和程序员最爱的咖啡更是不限量供应哈；</span></li><br><li><span style="font-size: 16px; font-family: 黑体;">再进入会场时会发个Qcon的袋子，里有装有各种展台和相关的广告信息，还有个Qcon攻略的纸。<br>我略懵，一个技术交流会为啥还有“攻略”。然后明白了，原来Qcon还讲究一定玩法，比如集盖章、现场写code、微信、微博各种方式，当然，也收到不少招聘的信息…最终斩获T恤、杯子、贴牌、抱枕、笔记本等等好多战利品(写这段的时候觉得自己略Low<img alt="" src="http://images.cnitblog.com/i/159097/201405/222252009346815.gif">羞)</span></li><br><li><span style="font-family: 黑体;"><span style="font-size: 16px;">范儿大，规模大；</span><span style="font-size: 16px;">美女多，可触摸。</span></span></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></ul><br><p><span style="font-family: 黑体;"><span style="font-size: 16px;">&#12288;&#12288;光夸不贬不是俺的风格，所以再微微吐槽几句：</span>&nbsp;</span></p><br><ul><br><li><span style="font-family: 黑体;">我听的一个分享中，嘉宾的语速比较慢，而且信息含量比较低，其实听着很着急…</span></li><br><li><span style="font-family: 黑体;">第一天上午都是老外的分析，而且都在大会议室，不知道这帮人是怎么请来的，确实分享的内容很水。后来有看InfoQ出版的《架构师》，InfoQ自己也承认这点，可为什么不改类，难道从哪哪地方请个老外讲一通英语就显得InfoQ高端么…</span></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></ul><br><p><span style="font-family: 黑体;">&nbsp;</span></p><br><p><span style="font-size: 16px; line-height: 1.5; font-family: 黑体;">&#12288;&#12288;PS：曾听某位技术友人问过俺：“Qcon这会议是不是腾讯办的？”，俺的心情如下图…</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/i/159097/201405/251610504346029.png"></span></p><br><p><span style="font-family: 黑体;">&nbsp;</span></p><br><h1><span style="font-size: 18pt; font-family: 黑体;">我参加的专题与分享</span></h1><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;大家如果看<a target="_blank" href="http://www.qconbeijing.com/schedule.html">大会日程</a>就能看出，第二天4/26有关前端的话题比较多而全。所以第一天的演讲也没多想多选，一上午先听老外灌水，下午就听了一下午《知名网站案例分析》的专题。</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&#12288;&#12288;上午大厅分享的内容如下：<br></span></p><br><ul><br><li><span style="font-size: 16px; font-family: 黑体;"><span style="background-color: #ccffcc;"><strong>亚马逊AWS服务和NoSQL产品</strong></span>(Deep Dive into Amazon’s NoSQL Journey and AWS Operations)<br>一开场这哥们的英语让我惊呆了，本来就听力不咋地，结果这个嘉宾是标准的印式英语，当场就打算放弃这个分享了。后来看见有同声传译这种高级的玩具，于是乎才又鼓起勇气继续认真听讲。<br>分享的内容大致就是他介绍了亚马逊研发了一个NoSql的产品，然后用绚丽的PPT延伸了关系型数据库和和NoSQL的优缺点，如果一些增删改查的操作，然后再量较大时，关系型数据库的缺点。<br>然后就抛出他们这个NoSql的解决方案 &mdash;&mdash;&nbsp;dynamo库，然后围绕这这个dynamo搞出了dynamoDB之类，学习曲线比较陡峭。<br><br></span></li><br><br><br><br><br><br><br><br><br><br></ul><br><ul><br><li><span style="font-size: 16px; font-family: 黑体;"><span style="background-color: #ccffcc;"><strong>大型前端应用的组件与模块</strong></span><br>一个来自英国金融时报实验室的嘉宾分享了一个他们自己的前端组件，名称是origami。<br>他上来先一顿吐苦水(Rescue the old stuff)，说自己做的项目如何坑。<br>然后介绍了<span>origami，基本就是</span>定义了一些前端的规范和标准，然后基于这些标准，提供了一系列的组件，在使用的时候只要在页面上引入相关的CSS、JS文件，就可以使用相关的组件了。<br>他讲到在build小型的通用组件，为<span>让别人用起来方便，</span>一个组件不要做太多事情。<br>听完之后我的感受就是，他们基本就是实现了一套自己的Bootstrap(又是组件、又是默认样式、又是脚手架的)…<br><img width="73" height="63" alt="" src="http://images.cnitblog.com/i/159097/201405/281134541198111.jpg"><br>PS：说实话，一天的会议结束后，他的Slides是做的最好的，有可能他已经在很多地方演讲过。Slides地址来一发：<a target="_blank" href="http://triblondon.github.io/talk-components-origami/#/">http://triblondon.github.io/talk-components-origami/<br><br></a></span></li><br><li><span style="font-size: 16px; font-family: 黑体;"><span style="background-color: #ccffcc;"><strong>大规模脑计算</strong></span><br>没听明白…<br>说研究神经的学者，做大数据量的分析遇到的问题，用的是spark，俺也不懂，就不说了。</span></li><br><br><br><br><br><br><br><br></ul><br><p>&nbsp;</p><br><p><span style="font-family: 黑体;"><span style="font-size: 16px;">&#12288;&#12288;</span></span><span style="font-size: 16px; font-family: 黑体;">下午《知名网站案例分析》的内容如下：</span></p><br><ul><br><li><span style="background-color: #ccffcc;"><strong><span style="font-size: 16px; font-family: 黑体;">Localization of Stack Overflow StackOverFlow Marco Cecconi</span></strong></span><br><span style="font-family: 黑体; font-size: 16px;">刚吃完午饭略困；老外分享；结果是我睡着了…睡着…睡…<br><br></span></li><br><li><span style="font-size: 16px; font-family: 黑体;"><span style="background-color: #ccffcc;"><strong>汽车之家论坛架构分析</strong></span><br>由于刚补充完睡眠，所以这个分享听的异常的认真哈，还记了些小笔记。<br>由一枚汽车之家的架构师分享他们在论坛上的技术之路。上来的开场不错，先黑了一下去年那个F0车主被BMW7系挖墙脚那事:)<br>然后开始叙说如何用其三板斧&mdash;&mdash;做一个快、稳、爱的论坛。<br><img width="347" height="165" alt="" src="http://images.cnitblog.com/i/159097/201405/281459090725154.jpg"><br>然后就开始介绍用Redis做分页、Nginx做缓存、消息队列、分布式上传图片、灾备等等一系列解决快与稳的问题。<br><img width="374" height="165" alt="" src="http://images.cnitblog.com/i/159097/201405/281510151505230.jpg"><br>PS：貌似最后的服务达到4个9的可用性。</span><br><br></li><br><li><span style="font-size: 16px; font-family: 黑体;"><span style="background-color: #ccffcc;"><strong>聚石塔</strong></span><br></span>因为耗子哥(阿里巴巴 陈皓)的名头才格外关注，确实仰慕大牛名头的人非常多，会场爆满，边上到处站满了人，席地而坐的一大片。<br>聚石塔是淘宝天猫对接外部商家IT系统的平台，目前被打造成一个云平台，专门为商家提供云服务的。<br>干货没有，不过有几个理念确实值得思考：<br>~ 目前国内运维工作的重要性被严重低估<br>~&nbsp;做平台的时候需要先制定标准，无标准不平台<br><br></li><br><li><span style="font-size: 16px; font-family: 黑体;"><span style="background-color: #ccffcc;">京东大规模内存存储平台</span><br>俺在推进引擎的公司待过，负责过和电子商务的公司对接实施工作；身边更有一大波混在电子商务公司的友人，都携带各种负能量…所以俺对电子商务公司的硬实力和软实力嘛，就感觉和一线互联网不是一个梯队。<br>不过本次听完技术分享之后，俺还是觉得很高级的<span>(虽然自己也不太懂哈)</span>，最起码别人使用Redis围绕自己的业务场景进行了高度定制，自主研发<br><img width="307" height="190" alt="" src="http://images.cnitblog.com/i/159097/201405/281713475412504.jpg"><br></span></li><br></ul><br><p><span style="font-family: 黑体; font-size: 16px;">&nbsp;</span></p><br><h1><span style="font-family: 黑体; font-size: 18pt;">感触</span></h1><br><p><span style="font-family: 黑体;">&#12288;<span style="font-size: 16px;">&#12288;作为一名长期坚持参加各种会议且工作5年的IT从业人员，再俺看来，参加交流会主要的意义就两个词：</span></span></p><br><ul><br><li><span style="font-family: 黑体; font-size: 16px;"><strong>扩大社交</strong></span></li><br><li><span style="font-family: 黑体; font-size: 16px;"><strong>增长见识</strong></span></li><br></ul><br><p><span style="font-family: 黑体; font-size: 16px;">&nbsp;</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;俺参加交流会基本就是为了与圈内的朋友们聚聚会和认识些新朋友，其次才是增长见识和学习。</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;不过Qcon确实又令俺大开视野、印象深刻，收获多多、感触多多。</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;看着圈内的朋友在讲台上分享，对自己的技术和项目款款而谈，再想着自己的年龄和家人，心中还是挺感慨的。差不多的年龄，友人们还在追求自己的理想，而我却选择了早早的安定下来，结婚、生子。</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;记得前年还与友人大说特说、讨论创业的那些事情，再想想现在的自己，感觉自己成长了，长大了…</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;长大了意味着要考虑的事儿更多了；</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;长大了要承担的事儿更多了；</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;长大了意味着时间会越过越快了；</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;可是，长大了难道就意味着我离自己的梦想越来越远了？</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;我不信，如果那么容易就放弃，那这TM还叫梦想吗？</span></p><br><p><span style="font-family: 黑体; font-size: 16px;">&#12288;&#12288;<img width="80" height="139" alt="" src="http://images.cnitblog.com/i/159097/201405/251940591847652.gif"></span></p><br><p>&nbsp;</p><br><p><span style="font-size: 18pt; font-family: 黑体;">资料:</span></p><br><ul><br><li><span style="font-size: 16px; font-family: 黑体;"><a target="_blank" href="http://www.qconbeijing.com/videoslides.html">http://www.qconbeijing.com/videoslides.html</a></span></li><br></ul><br><p><span style="font-size: 16px; font-family: 黑体;">&nbsp;</span></p><br><p><span style="font-size: 16px; font-family: 黑体;">&nbsp;</span></p></div>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2014/05/28/Qcon会议之所见所想/">http://yoursite.com/2014/05/28/Qcon会议之所见所想/</a>
+            <p>发表日期: <a href="http://yoursite.com/2014/05/28/Qcon会议之所见所想/">May 28th 2014, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2014/06/02/《一个广告人的自白》之小记/" title= 《一个广告人的自白》之小记 >
+                    <div class="nextTitle">《一个广告人的自白》之小记</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2014/04/08/《MacTalk人生元编程》之小记/" title= 《MacTalk人生元编程》之小记 >
+                    <div class="prevTitle">《MacTalk人生元编程》之小记</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">Qcon是神马</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">我参加的专题与分享</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">感触</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+

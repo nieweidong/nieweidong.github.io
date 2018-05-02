@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Nodejs初阶之express · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Nodejs初阶之express</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            Nodejs初阶之express
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "FE-Strategy">FE-Strategy</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Nodejs">Nodejs</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2014/02/28</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <div id="cnblogs_post_body"><div><span style="font-family: 幼圆; font-size: 16px;"><span style="line-height: 1.5;">&#12288;&#12288;PS: 2014/09/24 更新《<a target="_blank" href="http://www.cnblogs.com/Darren_code/p/express4.html">Express 4.X 启航指南</a>》，欢迎阅读和评论:)</span></span></div><br><div>&nbsp;</div><br><div><span style="font-family: 幼圆; font-size: 16px;"><span style="line-height: 1.5;">&#12288;&#12288;</span><span style="line-height: 1.5;">老规矩，开头部分都是些自娱自乐的随想，想到哪写到哪…</span></span></div><br><div><span style="line-height: 1.5; font-family: 幼圆; font-size: 16px;">&#12288;&#12288;到今天俺已经在俺厂工作俩年零几天了，工作以来头一回在一家企业工作超俩年，对于这俩年确实只有满满的成就感，不管是工作还是生活…写到这句突然又想写篇这俩年的总结，等这篇文章发了之后就着手整理吧，吼吼。</span></div><br><div><span style="line-height: 1.5; font-family: 幼圆; font-size: 16px;">&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201402/262041577757011.gif"></span></div><br><div><span style="line-height: 1.5; font-family: 幼圆; font-size: 16px;">&#12288;&#12288;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;"><span style="line-height: 1.5;">&#12288;&#12288;那篇《<a target="_blank" href="http://www.cnblogs.com/Darren_code/archive/2011/10/31/nodejs.html" title="node.js 初体验">node.js 初体验</a>》好像才发生在前几月，没想到时间已过两年有多。且看到文章末尾处那句： “这篇文章只会是一个开始” 令俺脸红掩面<img alt="" src="http://images.cnitblog.com/blog/159097/201402/270046481715808.gif">，尼玛真没想到这一开始就开始了两年</span>多，这让老夫情何以堪<img alt="" src="http://images.cnitblog.com/blog/159097/201402/270002525962790.gif">…</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;好吧，反正脸皮厚已不是俩三天，让俺装傻混过去吧，咱往前看才是硬道理不是。俺一定痛改前非、洗心革面、好好改造，今年中心的小心思是把【<a target="_blank" href="http://www.cnblogs.com/Darren_code/archive/2013/01/05/fe_series.html">前端攻略系列</a>】折腾点名堂出来，厚积薄发的时刻来鸟。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;Node不得不写写，没辙呀，太火！看看最近的前端圈子吧，没弄过几行Node代码都不好意思和别人打招呼；不折腾点Node的小平台、小工具，去食堂都不好意思多搞几碗饭，所以俺也就顺大潮把自己的工作笔记整理整理，试试能否写好这篇Nodejs系列。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201402/270010498417459.jpg"></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;好吧，不开玩笑哒~~~介绍这篇和接下来几篇Node文章的内容，基本都属于Node的初阶，略偏实战，进阶和高阶内容正在YY中，最终的目录与里程碑下一篇应该差不多能定下来。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;本篇以介绍Express为话题，延伸出用Node开发小页面，然后其中穿插概述express主要的API、路由的原理、Node模块概念，顺便也会介绍自己使用Node工具等等。默认看官们都具备JavaScript基础，所以过于基础的内容俺就不浪费篇幅咯，GOGO。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;最后自我爆料一个吧。老婆已回家养胎，所以俺穷的只有时间了。有时间好好加班拼工作，有时间好好写博(客)拼积累…诸如心灵鸡汤什么的就不灌各位啦，喝多了反胃:)</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;一不小心随想就写了那么多，尼玛炫酷狂拽屌炸天有木有！<br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;<img alt="" src="http://images.cnitblog.com/blog/159097/201402/271125378366371.gif"></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;"><em><span style="line-height: 1.5; color: #888888;">——————————————–&nbsp;华丽丽的分割线 ——————————————–</span></em></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span><br><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;Node和NPM的安装够便捷了，不细说…有几点基础顺手提一下：</span></div><br><div><ol><br><li><span style="font-family: 幼圆; font-size: 16px;">安装命令中的 “-g” 表示全局(global)</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">express的版本不是通常的 “-v” 来查看，而是 “-V”</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">安装express项目的命令如下<br><strong><span style="background-color: #ffffff; color: #993366;">express -e nodejs-product</span></strong><br></span><br><div><span style="font-family: 幼圆; font-size: 16px;">-e, –ejs add ejs engine support <br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">-J, –jshtml add jshtml engine support (defaults to jade)</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span style="font-family: 幼圆; font-size: 16px;"></span></p>
+<p>PS：模板引擎之类暂时不必care，不过俺当初学习搭建Node+express时用的是ejs，所以也就顺手一直用着了</p></li><p></p>
+<p></p></ol></div><p></p>
+<div>&nbsp;</div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><br><div><span style="font-family: 幼圆; font-size: 16px; background-color: #ccffff;">&#12288;&#12288;<span style="font-size: 18px;"><strong>Node的小基友supervisor&#12288;&#12288;</strong></span></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;每次修改代码后会自动重启。懒程序员就指望这种省事省力的工具活着了:)</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;安装：<span style="color: #993366;"><strong>npm install -g supervisor</strong></span></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;执行：<span style="color: #993366;"><strong>supervisor app.js</strong></span></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><span style="font-family: 幼圆; font-size: 16px;"></span></p>
+<p><strong><span style="color: #41007d;"><br></span></strong></p></div><p></p>
+<div><br><div><span style="font-family: 幼圆; font-size: 16px; background-color: #ccffff;">&#12288;&#12288;另一个<span style="font-size: 18px;"><strong>小基友forever</strong></span></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;虚拟机一关node服务就关了，不过forever可以让node服务不停止，介绍如下，安装和执行不细说啦，我懒：</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;forever是一个简单的命令式nodejs的守护进程，能够启动，停止，重启App应用。forever完全基于命令行操作，在forever进程之下，创建node的子进程，通过monitor监控node子进程的运行情况，一旦文件更新，或者进程挂掉，forever会自动重启node服务器，确保应用正常运行。</span></div>
+
+
+<p></p></div><p></p>
+<div><span style="font-family: 幼圆; font-size: 16px;"> &nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px; background-color: #ccffff;">&#12288;&#12288;<span style="font-size: 18px;"><strong>express项目目录&#12288;&#12288;</strong></span></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;<img alt="" src="http://images.cnitblog.com/i/159097/201402/272113409312155.png"></span></div><br><div>&#12288;&#12288;如<span style="font-family: 幼圆; font-size: 16px;">上图就是一个express项目结构，简单过一下：</span></div><br><div><br><ul><br><li><span style="font-family: 幼圆; font-size: 16px;">app.js： 项目入口，反正express爱叫app.js没辙，你可以改成index.js或者main.js都成。相当于php项目中的 index.php、index.html</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">node_modules： 存放项目的依赖库</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">package.json： 项目依赖配置及开发者信息(这个要说就说多了，还是看文档好，俺就不误人子弟了。下期看看抽个小段单说Node模块)</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">public： 静态文件如 css,js,img (PS:俺其实习惯叫static)</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">routes： 路由文件(学习的重要攻克对象。尼玛业务好不好，路由是关键)</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">Views： 页面文件(Ejs或者jade的模板，默认是jade，俺这用Ejs，在初阶练手最重要，所以都可以试试)</span></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></ul><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;打开View 文件发现index.ejs比较不习惯，所以对app.js进行小改动：</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p></div><p></p>
+<div><ol><br><li><span style="font-family: 幼圆; font-size: 16px;">“app.set(‘view engine’, ‘ejs’);” 变成 “app.engine(‘.html’, ejs.__express);app.set(‘view engine’, ‘html’);”</span></li><br><li><span style="font-family: 幼圆; font-size: 16px;">上一行出现的ejs变量需要require ejs模块，增加代码“var&nbsp;ejs = require(‘ejs’);”</span></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></ol><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;最终的app.js如下：</span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p></p></div><p></p>
+<div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp;&nbsp; <img alt="" src="http://images.cnitblog.com/i/159097/201402/280037097683921.png"><br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px; background-color: #ccffff;">&#12288;&#12288;<strong><span style="font-size: 18px;">代码小解：&#12288;&#12288;</span></strong></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;因为针对的是初阶入门，俺们还是继续过一下express的使用与Node的方法哈：</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;require() 用于在当前模块中加载和使用其他模块；此方法是模块的基础，使用中大概有路径的概念就行。PS：JS文件可以去掉”.js”后缀</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; exports 表示模块的导出对象，用于导出模块的属性和公共方法。在项目routes文件夹下有index.js和users.js（路由有细说），都使用到exports对象导出对象，如33行的routes.index和34行的user.list;<br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; PS：一个模块的代码只会在模块第一次被使用时执行，不会因require多次而被初始化多次。</span></div><br><div>&nbsp;</div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;<strong>express()&nbsp;</strong>表示创建express应用程序。简单几行代码其实就可以创建一个应用，如下：</span></div><br><div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a title="复制代码" onclick="copyCnblogsCode(this)" href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" src="http://common.cnblogs.com/images/copycode.gif"></a></span></div><br><pre>     <span style="color: #0000ff;">var</span> express = require(‘express’<span style="color: #000000;">);<br>     </span><span style="color: #0000ff;">var</span> app =<span style="color: #000000;"> express();<br>     app.get(</span>‘/‘, <span style="color: #0000ff;">function</span><span style="color: #000000;">(req, res){<br>          res.send(</span>‘hello world’<span style="color: #000000;">);<br>          console.log(</span>‘hello world’<span style="color: #000000;">);<br>     });<br>     app.listen(</span>‘8808’);</pre><br><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a title="复制代码" onclick="copyCnblogsCode(this)" href="javascript:void(0);" target="_blank" rel="noopener"><img alt="复制代码" src="http://common.cnblogs.com/images/copycode.gif"></a></span></div></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;app.listen() 就是在给定的主机和端口上监听请求，这个和node中http模块的http.createServer(function(){…}).listen()效果一致；</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;app.set(name, value)和app.get(name)就是你想的那样，set()为设置 name 的值设为 value，get()为获取设置项 name 的值。如俺app.js的图片16行中的一句“app.set(‘port’, process.env.PORT || 3000)”就是设置项目的port，在下面使用http.createServer时就可以使用app.get(‘port’)来获取，只是俺偷懒没用来着<img alt="" src="http://images.cnitblog.com/i/159097/201402/280809248922088.gif">；</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;了解app.engine()方法之前先看看express应用的安装命令:“express -e nodejs-product”，其中的 -e 和 -J 我们一开始已经提到，表示ejs和jade模板。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;如果想把模板后缀改成“.html”时就会用到app.engine方法，来重新设置模板文件的扩展名，比如想用ejs模板引擎来处理“.html”后缀的文件：app.engine(‘.html’, require(‘ejs’).<strong>express);</strong></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;app.engine(ext, callback) 注册模板引擎的 callback 用来处理ext扩展名的文件。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; PS：<span style="font-family: 幼圆; font-size: 16px;">express</span>不用去care，其实就是ejs模块的一个公共属性，表示要渲染的文件扩展名。<br></span></div><br><div>&nbsp;</div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;app.use([path], function) 使用中间件 function,可选参数path默认为”/“。使用 app.use() “定义的”中间件的顺序非常重要，它们将会顺序执行，use的先后顺序决定了中间件的优先级(经常有搞错顺序的时候);</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;最后介绍个很有用的express API：</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;app.render(view, [options], callback)&nbsp;渲染 view, callback 用来处理返回的渲染后的字符串。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;</span></div><br><div><span style="background-color: #ccffff;"><strong><span style="font-family: 幼圆; font-size: 18px;">&#12288;&#12288;路由实战：&#12288;&#12288;</span></strong></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp;&nbsp; 路径代码应该是项目中最本机的一部分了。express中创建一个或者一套新的handle非常简单，先看看express现有的，一会儿我们创建俩个实际的规则。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp;&nbsp; <img alt="" src="http://images.cnitblog.com/i/159097/201402/282058558455441.png"><br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp;&nbsp; 变量 routes 和 user 都是刚才require的模块，他们各自exports了index方法和list方法；其中<span style="font-family: 幼圆; font-size: 16px;">Response</span>.render()表示渲染view，同时传进对应的数据，Response.send()为发送一个响应；在设置路由时index和list方法作为回调函数最终执行。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; <br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; <span style="font-family: 幼圆; font-size: 16px;">流程</span>大概<span style="font-family: 幼圆; font-size: 16px;">了解啦，俺</span>们也就实际搞一把，最easy的一种方式，简单俩步：<br></span></div><br><div><ol><br><li><span style="font-family: 幼圆; font-size: 16px;"><span style="font-family: 幼圆; font-size: 16px;">第一种方式就是在当前的routes/index.js或者routes/test.js中加几行代码如下<br></span></span><br><div class="cnblogs_code"><br><pre>exports.test = <span style="color: #0000ff;">function</span><span style="color: #000000;">(req, res){<br>  res.send(‘test welcome.’);</span><span style="color: #000000;"><br>};</span></pre><br></div><br><p>&nbsp;</p><br></li><br><li>在app.js文件设置路由那块加上app.get(‘/test’, routes.test);</li><br></ol></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; 第二种方式就是多了两步，先新建一个模块如test.js文件，输出然后exports对应的方法；在app.js中require这个模块，再加一行设置路由即完成了。<br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><strong><span style="font-family: 幼圆; font-size: 18px; background-color: #ccffff;">&#12288;&#12288;快速炫起来，集成Bootstrap：&#12288;&#12288;</span></strong></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;JS工程师使用Nodejs上手还是以快速搭建网站为主，所以才会介绍Express，那么为了让网站更快的体面起来，集成使用Bootstrap就是上佳选择，非常喜欢其响应式布局和整体系的脚手架。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;PS：因为Bootstrap的JS插件都依赖jQeury，所以jQuery也一并引入了。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; 前文已经说到了，静态文件都放在public文件夹中，切文件夹内已经帮我们把类目都分好了，images、 javascripts、 stylesheets。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; 分别引入bootstrap.min.css文件至stylesheets目录下；jquery-1.x.x.min.js和bootstrap.min.js放到javascripts文件夹下。<br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; 然后俺们修改view/index.html把文件引入使用即可，下面放出俺在bootstrap demo的基础改的index.html，大家随意拿去使用和修改。<br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;"><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;</span></span><br><div onclick="cnblogs_code_show('d4005c23-cd80-44fa-b152-9c3cc32606aa')" class="cnblogs_code"><img alt="" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" class="code_img_closed" id="code_img_closed_d4005c23-cd80-44fa-b152-9c3cc32606aa"><img alt="" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" onclick="cnblogs_code_hide('d4005c23-cd80-44fa-b152-9c3cc32606aa',event)" style="display: none;" class="code_img_opened" id="code_img_opened_d4005c23-cd80-44fa-b152-9c3cc32606aa"><br><div class="cnblogs_code_hide" id="cnblogs_code_open_d4005c23-cd80-44fa-b152-9c3cc32606aa"><br><pre>&lt;!DOCTYPE html&gt;<br>&lt;html lang=”zh-cn”&gt;<br>  &lt;head&gt;<br>    &lt;title&gt;&lt;%= title %&gt;&lt;/title&gt;<br>    &lt;meta charset=”utf-8”&gt;<br>    &lt;meta name=”viewport” content=”width=device-width, initial-scale=1.0”&gt;<br>    &lt;meta http-equiv=”X-UA-Compatible” content=”IE=edge”&gt;<br>    &lt;link href=”/stylesheets/bootstrap.min.css” rel=”stylesheet”&gt;<br>    &lt;!–&lt;link href=”/stylesheets/base.css” rel=”stylesheet”&gt;–&gt;<br>    &lt;!–&lt;link href=”/stylesheets/common.css” rel=”stylesheet”&gt;–&gt;<br>    &lt;!–&lt;link href=”/stylesheets/page.css” rel=”stylesheet”&gt;–&gt;<br>    &lt;!– 建议在项目中把CSS分好level，好维护和管理 –&gt;<br>    &lt;style&gt;<span style="color: #000000;"><br>        html, body { overflow</span>-<span style="color: #000000;">x: hidden;}<br>        body { padding</span>-<span style="color: #000000;">top: 70px;background:#f1f1f1; }<br>        footer { padding:20px </span>0 10px;text-align:center;font-weight:bold;border-top:1px solid #ddd;margin-<span style="color: #000000;">top:30px;}<br>        .header</span>-navbar-<span style="color: #000000;">style {<br>            filter:alpha(opacity</span>=90<span style="color: #000000;">);<br>            </span>-moz-opacity:0.9<span style="color: #000000;">;<br>            </span>-khtml-opacity: 0.9<span style="color: #000000;">;<br>            opacity: </span>0.9<span style="color: #000000;">;<br>            background: linear</span>-gradient(45deg, rgb(60, 8, 34) 0%, rgb(49, 79, 117) 100%<span style="color: #000000;">);<br>            border:1px solid #aaa;<br>            font</span>-<span style="color: #000000;">size:16px;<br>        }<br>        .beige {background:beige;}<br>        .bisque {background:bisque;}<br>        .darkseagreen{ background:darkseagreen;}<br>    </span>&lt;/style&gt;<br>  &lt;/head&gt;<br>  &lt;body&gt;<br>    &lt;div class=”navbar navbar-fixed-top header-navbar-style navbar-inverse” role=”navigation”&gt;<br>      &lt;div class=”container”&gt;<br>        &lt;div class=”navbar-header”&gt;<br>          &lt;button type=”button” class=”navbar-toggle” data-toggle=”collapse” data-target=”.navbar-collapse”&gt;<br>            &lt;span class=”sr-only”&gt;Toggle navigation&lt;/span&gt;<br>            &lt;span class=”icon-bar”&gt;&lt;/span&gt;<br>            &lt;span class=”icon-bar”&gt;&lt;/span&gt;<br>            &lt;span class=”icon-bar”&gt;&lt;/span&gt;<br>          &lt;/button&gt;<br>          &lt;a class=”navbar-brand” href=”/“&gt;Product&lt;/a&gt;<br>        &lt;/div&gt;<br>        &lt;div class=”collapse navbar-collapse”&gt;<br>          &lt;ul class=”nav navbar-nav”&gt;<br>            &lt;li class=”active”&gt;&lt;a href=”/“&gt;Home&lt;/a&gt;&lt;/li&gt;<br>            &lt;li class=””&gt;&lt;a href=”/contactus”&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>            &lt;li class=”dropdown”&gt;<br>              &lt;a href=”#” class=”dropdown-toggle” data-toggle=”dropdown”&gt;Dropdown &lt;b class=”caret”&gt;&lt;/b&gt;&lt;/a&gt;<br>              &lt;ul class=”dropdown-menu beige”&gt;<br>                &lt;li&gt;&lt;a href=”#”&gt;Action&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a href=”#”&gt;Another action&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a href=”#”&gt;Something <span style="color: #0000ff;">else</span> here&lt;/a&gt;&lt;/li&gt;<br>                &lt;li class=”divider”&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a href=”#”&gt;Separated link&lt;/a&gt;&lt;/li&gt;<br>                &lt;li class=”divider”&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a href=”#”&gt;One more separated link&lt;/a&gt;&lt;/li&gt;<br>              &lt;/ul&gt;<br>            &lt;/li&gt;<br>            &lt;li class=””&gt;&lt;a href=”/faq”&gt;FAQ&lt;/a&gt;&lt;/li&gt;<br>          &lt;/ul&gt;<br>        &lt;/div&gt;&lt;!– /.nav-collapse –&gt;<br>      &lt;/div&gt;&lt;!– /.container –&gt;<br>    &lt;/div&gt;&lt;!– /.navbar –&gt;<br><br>    &lt;!– 以上位置建议创建个header.html维护起来 –&gt;<br><br>    &lt;style&gt;<span style="color: #000000;"><br>      @media screen and (max</span>-<span style="color: #000000;">width: 767px) {<br>        .row</span>-<span style="color: #000000;">offcanvas { position: relative;<br>        </span>-webkit-transition: all 0.25s ease-<span style="color: #000000;">out;<br>        </span>-moz-transition: all 0.25s ease-<span style="color: #000000;">out;<br>        transition: all </span>0.25s ease-<span style="color: #000000;">out;<br>      }<br>      .row</span>-offcanvas-right .sidebar-offcanvas { right: -50%; <span style="color: #008000;">/<em></em></span><span style="color: #008000;"> 6 columns </span><span style="color: #008000;">/</span><span style="color: #000000;"> }<br>      .row</span>-offcanvas-left .sidebar-offcanvas { left: -50%; <span style="color: #008000;">/<em></em></span><span style="color: #008000;"> 6 columns </span><span style="color: #008000;">/</span><span style="color: #000000;"> }<br>      .row</span>-offcanvas-right.active { right: 50%; <span style="color: #008000;">/<em></em></span><span style="color: #008000;"> 6 columns </span><span style="color: #008000;">/</span><span style="color: #000000;"> }<br>      .row</span>-offcanvas-left.active { left: 50%; <span style="color: #008000;">/<em></em></span><span style="color: #008000;"> 6 columns </span><span style="color: #008000;">/</span><span style="color: #000000;"> }<br>      .sidebar</span>-offcanvas { position: absolute; top: 0; width: 50%; <span style="color: #008000;">/<em></em></span><span style="color: #008000;"> 6 columns </span><span style="color: #008000;">/</span><span style="color: #000000;"> } }<br>    </span>&lt;/style&gt;<br><br>    &lt;div class=”container”&gt;<br>      &lt;div class=”row row-offcanvas row-offcanvas-right”&gt;<br>        &lt;div class=”col-xs-12 col-sm-9”&gt;<br>          &lt;p class=”pull-right visible-xs”&gt;<br>            &lt;button type=”button” class=”btn btn-primary btn-xs” data-toggle=”offcanvas”&gt;Toggle nav&lt;/button&gt;<br>          &lt;/p&gt;<br>          &lt;div class=”jumbotron bisque”&gt;<br>            &lt;h1&gt;Welcome &lt;%= title %&gt;!&lt;/h1&gt;<br>            &lt;p&gt;This is an example to show the potential of an offcanvas layout pattern <span style="color: #0000ff;">in</span> Bootstrap. Try some responsive-range viewport sizes to see it <span style="color: #0000ff;">in</span> action.&lt;/p&gt;<br>          &lt;/div&gt;<br>          &lt;div class=”row”&gt;<br>            &lt;div class=”col-6 col-sm-6 col-lg-4”&gt;<br>              &lt;h2&gt;Heading&lt;/h2&gt;<br>              &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;/p&gt;<br>              &lt;p&gt;&lt;a class=”btn btn-default” href=”#” role=”button”&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;<br>            &lt;/div&gt;&lt;!–/span–&gt;<br>            &lt;div class=”col-6 col-sm-6 col-lg-4”&gt;<br>              &lt;h2&gt;Heading&lt;/h2&gt;<br>              &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;/p&gt;<br>              &lt;p&gt;&lt;a class=”btn btn-default” href=”#” role=”button”&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;<br>            &lt;/div&gt;&lt;!–/span–&gt;<br>            &lt;div class=”col-6 col-sm-6 col-lg-4”&gt;<br>              &lt;h2&gt;Heading&lt;/h2&gt;<br>              &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;/p&gt;<br>              &lt;p&gt;&lt;a class=”btn btn-default” href=”#” role=”button”&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;<br>            &lt;/div&gt;&lt;!–/span–&gt;<br>            &lt;div class=”col-6 col-sm-6 col-lg-4”&gt;<br>              &lt;h2&gt;Heading&lt;/h2&gt;<br>              &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;/p&gt;<br>              &lt;p&gt;&lt;a class=”btn btn-default” href=”#” role=”button”&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;<br>            &lt;/div&gt;&lt;!–/span–&gt;<br>            &lt;div class=”col-6 col-sm-6 col-lg-4”&gt;<br>              &lt;h2&gt;Heading&lt;/h2&gt;<br>              &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;/p&gt;<br>              &lt;p&gt;&lt;a class=”btn btn-default” href=”#” role=”button”&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;<br>            &lt;/div&gt;&lt;!–/span–&gt;<br>            &lt;div class=”col-6 col-sm-6 col-lg-4”&gt;<br>              &lt;h2&gt;Heading&lt;/h2&gt;<br>              &lt;p&gt;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. &lt;/p&gt;<br>              &lt;p&gt;&lt;a class=”btn btn-default” href=”#” role=”button”&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;<br>            &lt;/div&gt;&lt;!–/span–&gt;<br>          &lt;/div&gt;&lt;!–/row–&gt;<br>        &lt;/div&gt;&lt;!–/span–&gt;<br><br>        &lt;div class=”col-xs-6 col-sm-3 sidebar-offcanvas” id=”sidebar” role=”navigation”&gt;<br>          &lt;div class=”list-group”&gt;<br>            &lt;a target=”_blank” href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>            &lt;a href=”#” class=”list-group-item”&gt;Link&lt;/a&gt;<br>          &lt;/div&gt;<br>        &lt;/div&gt;&lt;!–/span–&gt;<br>      &lt;/div&gt;&lt;!–/row–&gt;<br>    &lt;/div&gt;&lt;!–/.container–&gt;<br><br>    &lt;!– 从header.html之后到此可分为page层 –&gt;<br><br>    &lt;footer class=”darkseagreen”&gt;<br>        &lt;p&gt;Copyright &amp;copy; 2014. Designed by nieweidong.&lt;/p&gt;<br>    &lt;/footer&gt;<br>    &lt;script src=”/javascripts/jquery-1.11.0.min.js”&gt;&lt;/script&gt;<br>    &lt;script src=”/javascripts/bootstrap.min.js”&gt;&lt;/script&gt;<br>    &lt;script&gt;<span style="color: #000000;"><br>      $(document).ready(</span><span style="color: #0000ff;">function</span><span style="color: #000000;">() {<br>        $(</span>‘[data-toggle=offcanvas]’).click(<span style="color: #0000ff;">function</span><span style="color: #000000;">() {<br>          $(</span>‘.row-offcanvas’).toggleClass(‘active’<span style="color: #000000;">);<br>        });<br>      });<br>    </span>&lt;/script&gt;<br>  &lt;/body&gt;<br>&lt;/html&gt;</pre><br></div><br><span class="cnblogs_code_collapse">View Code </span></div><br><p>&#12288;&#12288; 如果样式有问题请检查下bootstrap的路径是否正确引入。</p><br><p>&#12288;&#12288; 启动项目之后觉得 高大上 很简单，有木有！！</p><br></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288; <br></span></div><br><div><span style="background-color: #ccffff;"><strong><span style="font-family: 幼圆; font-size: 18px;">&#12288;&#12288;FAQ&amp;总结：&#12288;&#12288;</span></strong></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp;&nbsp; 俺们的express项目暂时，且express也并没有涉及到任何数据库，这个事情需要第三方node模块，比如mysql或者MongoDB，后续俺会有一章单独介绍这块。</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; express也不是Node中web框架的唯一选择，不过由于其文档较全，所以才以其为示例为大家介绍，其原理和实现其实细化之后并不复杂，也希望更多的JS工程师折腾出自己的Web框架。<br></span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&nbsp; &nbsp; &nbsp;</span></div><br><div><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288; 尼玛还有几个小时就到3月了，一月一篇可是俺的目标，所以全面的demo俺之后再补上哈。<br></span></div><br><div>&nbsp;</div><br><div>&nbsp;</div><br><div><br><div style="color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;"><span style="font-size: 18px;"><strong><span style="font-family: 幼圆; background-color: #ccffff;">&#12288;&#12288;参考资料：&#12288;&#12288;</span></strong></span></div><br><div style="color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;"><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;<a target="_blank" href="http://express.jsbin.cn/api.html">http://express.jsbin.cn/api.html</a></span></div><br><div style="color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;"><span style="font-family: 幼圆; font-size: 16px;">&#12288;&#12288;<a target="_blank" href="http://www.embeddedjs.com">http://www.embeddedjs.com</a></span></div><br><div style="color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;">&nbsp;</div><br><div style="color: #000000; font-family: 微软雅黑; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; font-size: medium;">&nbsp;</div><br></div><br></div><br><div><span style="font-family: 幼圆; font-size: 16px; background-color: #ccffff;">&#12288;&#12288;<span style="font-size: 18px;"><strong>Node的小基友supervisor 和 forever 不要忘记了，相信你会喜欢他们的:)&#12288;&#12288;</strong></span></span></div></div>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2014/02/28/Nodejs初阶之express/">http://yoursite.com/2014/02/28/Nodejs初阶之express/</a>
+            <p>发表日期: <a href="http://yoursite.com/2014/02/28/Nodejs初阶之express/">February 28th 2014, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2014/03/09/前端面试【有感而发】/" title= 前端面试【有感而发】 >
+                    <div class="nextTitle">前端面试【有感而发】</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2014/01/06/AJAX跨域_POST之CORS/" title= AJAX POST&跨域之CORS >
+                    <div class="prevTitle">AJAX POST&跨域之CORS</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+

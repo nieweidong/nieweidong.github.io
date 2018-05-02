@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Node.js初体验 · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Node.js初体验</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            Node.js初体验
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Interview">Interview</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "FE-Strategy">FE-Strategy</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Nodejs">Nodejs</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2011/10/31</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <div id="cnblogs_post_body"><p><span>PS: ~ 此篇文章的进阶内容在为《</span><span style="font-size: 16px;"><a target="_blank" href="http://www.cnblogs.com/Darren_code/p/node_express.html">Nodejs初阶之express</a></span><span>》</span></p><br><p><span>&#12288;&#12288;~ 2014/09/24 更新《<a target="_blank" href="http://www.cnblogs.com/Darren_code/p/express4.html">Express 4.X 启航指南</a>》</span></p><br><p><span>&#12288;&#12288;欢迎阅读和评论:)<br></span></p><br><p>&nbsp;</p><br><p>&#12288;&#12288;最近写的文章收到许多朋友的反馈，感谢大家的支持和建议，让我对坚持写博客充满热情，一个月一篇文章确实有点少，所以以后尽力多做分享，做好的分享，希望能对朋友们有用。</p><br><p><span style="font-size: 14px;"><span>&#12288;&#12288;到新公司的这段时间学到了很多新东西，有好多东西需要去总结去探索，不过事情得一件一件来，今天咱们先从Node开始。<em>注：以后出现的Node即node.js。</em></span></span></p><br><p><span style="background-color: #ccffcc;"><strong><span style="font-size: 16px;">先搞点前戏热热场 - 为什么写这篇文章：</span></strong></span></p><br><p>&#12288;&#12288;1.前段时间单位有新项目启动，服务端要做的工作不多也不算麻烦，就是处理一些中间层的服务，而且我们团队里面个个都会JavaScript，领导就决定试试服务器端的JavaScript，结果本人有幸被派去研究了几天Node，怀着鸡冻的心情开始了node.js的篇章，这篇文章也就是为这几天研究的总结。</p><br><p>&#12288;&#12288;2.一个JavaScript工程师如果没听过node.js那么我想你是不是错过了什么，每个优秀的前端工程师都有必要去了解后台处理流程，那么如果又能从JavaScript出发，岂不是一件很美妙的事么。</p><br><p>&#12288;&#12288;3.互联网的火热使得JavaScript风光无限，且服务端的JavaScript也并不是什么新技术了，相关的框架也有不少，只是node.js的成功让他爆发式的出现在我们的视线中，让很多前端工程师看到了从前端写到后端的另一种实现希望。<span style="font-size: 14px;"><em>注：node.js 是一个允许开发人员使用 JavaScript 语言编写服务器端代码的框架。</em></span></p><br><p>&#12288;&#12288;4.今年8月曾在某大公司最后一轮(第五轮)的面试被问到Node.js的问题，相对应的回答那是相当之糟糕，结果怎样你们懂的，感觉这个问题是导致没有通过的关键点之一…那家公司是我在读大学的时候就无比向往的公司，现在回想起那次经历和过程，谈不上惋惜，毕竟我真的尽力了 -&nbsp;其实这篇文章更多的也是为了完成自己一个小小的心结…好吧，又扯远了。</p><br><p>&#12288;&#12288;5.欢迎各种转载，不过请注明出处，谢谢。</p><br><p>&nbsp;</p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>Node是个啥？</strong></span></p><br><p>&#12288;&#12288;<span style="color: #808080; font-size: 12px;">写个东西还是尽量面面俱到吧，所以有关基本概念的东西我也从网上选择性的拿了些下来，有些地方针对自己的理解有所改动，对这些概念性的东西有过了解的可选择跳过这段。</span></p><br><p>&#12288;&#12288;1.Node 是一个服务器端 JavaScript 解释器，可是真的以为JavaScript不错的同学学习Node就能轻松拿下，那么你就错了，总结：水深不深我还不知道，不过确实不浅。</p><br><p>&#12288;&#12288;2.Node&nbsp;的目标是帮助程序员构建高度可伸缩的应用程序，编写能够处理数万条同时连接到一个物理机的连接代码。处理高并发和异步I/O是Node受到开发人员的关注的原因之一。</p><br><p>&#12288;&#12288;3.Node 本身运行<strong>Google V8 JavaScript引擎</strong>，所以速度和性能非常好，看chrome就知道，而且Node对其封装的同时还改进了其处理二进制数据的能力。因此，Node不仅仅简单的使用了V8，还对其进行了优化，使其在各种环境下更加给力。（什么是V8 JavaScript 引擎？请“百度知道”）</p><br><p>&#12288;&#12288;4.第三方的扩展和模块在Node的使用中起到重要的作用。下面也会介绍下载npm，npm就是模块的管理工具，用它安装各种 Node 的软件包(如express，redis等)并发布自己为Node写的软件包&nbsp;。</p><br><p>&nbsp;</p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>安装Node</strong></span></p><br><p><span style="background-color: #ffffff;">&#12288;&#12288;在这简单说说在window7和linux两种环境下安装Node。安装的时候一定要注意Python的版本，多次因为Python版本的问题安装失败，<span data-mce-="">建议2.6+的版本，低版本会出现Node安装错误，</span>查询Python版本可在终端中输入：pyhton -v&nbsp;</span></p><br><p><strong><span style="background-color: #ffffff;">&#12288;&#12288;1.先介绍linux下的安装吧，Node在Linux环境下的安装和使用都非常方便，建议在Linux下运行Node，^_^…<em>我使用的是Ubuntu11.04</em></span></strong></p><br><p>&#12288;&#12288;&#12288;a.安装依赖包：<em><span style="font-size: 12px;">50-100kb/s大概每个包一分钟就能下载安装完成</span></em></p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;sudo apt-<span style="color: #0000ff;">get</span> install g++ curl libssl-dev apache2-utils <br>&#12288;&#12288;sudo apt-<span style="color: #0000ff;">get</span> install git-core</pre><br></div><br><p>&#12288;&#12288;&#12288;b.在终端一步步运行一下命令：</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;git clone git:<span style="color: #008000;">//</span><span style="color: #008000;">github.com/joyent/node.git   </span><span style="color: #008000;"><br></span>&#12288;&#12288;cd node<br>&#12288;&#12288;./configure<br>&#12288;&#12288;make   <span style="color: #008000;"><br></span>&#12288;&#12288;sudo make install</pre><br></div><br><p>&#12288;&#12288;安装顺利的话到这一步Node就算安装成功了，2M的网络用了共计12分钟。</p><br><p>&#12288;&#12288;注：如果不用git下载也可以直接下载源码，不过这样下载安装需要注意Node版本问题。使用git下载安装是最方便的，所以推荐之。</p><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong>2.在Windows下使用Cygwin安装Node，这个方式不太推荐，因为真的需要较长时间和较好的人品。<em>我的系统是 win7旗舰版</em></strong></p><br><p>&#12288;&#12288;Cygwin是一个在windows平台上运行的unix模拟环境，下载地址：<a target="_blank" href="http://cygwin.com/setup.exe">http://cygwin.com/setup.exe</a>。</p><br><p>&#12288;&#12288;下载好Cygwin后开始安装，步骤：</p><br><p>&#12288;&#12288;&#12288;a.选择下载的来源 - Install from Internet</p><br><p>&#12288;&#12288;&#12288;b.选择下载安装的根目录</p><br><p>&#12288;&#12288;&#12288;c.选择下载文件所存放的目录</p><br><p>&#12288;&#12288;&#12288;d.选择连接的方式</p><br><p>&#12288;&#12288;&#12288;e.选择下载的网站&nbsp;-&nbsp;<a href="http://mirrors.163.com/cygwin" target="_blank" rel="noopener">http://mirrors.163.com/cygwin</a></p><br><p>&#12288;&#12288;&#12288;f.麻烦就麻烦在这步，考验人品的时候到了。需要的下载安装时间不确定，反正需要比较长的时间(超过20分钟)，偶尔会出现安装失败的情况。单击一下各个程序包前面的旋转箭头图标选择你想要的版本，选中时会出现了”x”号表示已经选中了该程序包。选择需要下载的程序包：</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;Devel包：<br>&#12288;&#12288;&#12288;&#12288;gcc-g++: C++ compiler<br>&#12288;&#12288;&#12288;&#12288;gcc-mingw-g++: Mingw32 support headers and libraries <span style="color: #0000ff;">for</span> GCC C++<br>&#12288;&#12288;&#12288;&#12288;gcc4-g++: G++ subpackage<br>&#12288;&#12288;&#12288;&#12288;git: Fast Version Control System &ndash; core files<br>&#12288;&#12288;&#12288;&#12288;make: The GNU version of the ‘make’ utility<br>&#12288;&#12288;&#12288;&#12288;openssl-devel: The OpenSSL development environment<br>&#12288;&#12288;&#12288;&#12288;pkg-config: A utility used to retrieve information about installed libraries<br>&#12288;&#12288;&#12288;&#12288;zlib-devel: The zlib compression/decompression library (development)<br>&#12288;&#12288;Editor包：vim: Vi IMproved &ndash; enhanced vi editor<br>&#12288;&#12288;Python包：把Default切换成install状态即可<br>&#12288;&#12288;Web包：<br>&#12288;&#12288;&#12288;&#12288;wget: Utility to retrieve files <span style="color: #0000ff;">from</span> the WWW via HTTP and FTP<br>&#12288;&#12288;&#12288;&#12288;curl: Multi-protocol file transfer command-line tool</pre><br></div><br><p>&#12288;&#12288;上个截图，以下载zlib-devel为例：</p><br><p>&#12288;&#12288;&#12288;&#12288;<img width="600" alt="cygwin例子" src="http://pic002.cnblogs.com/images/2011/159097/2011102917303125.jpg" title="cygwin例子"></p><br><p>&#12288;&#12288;其上几步走完才算把环境搭建完成，可是现在还没有到安装Node，还需要在Cywgin的ASH模式下执行rebaseall，步骤如下：</p><br><p>&#12288;&#12288;&#12288;a. cmd命令行</p><br><p>&#12288;&#12288;&#12288;b. 进入cygwin安装目录下的bin子目录</p><br><p>&#12288;&#12288;&#12288;c. 运行ash进入shell模式</p><br><p>&#12288;&#12288;&#12288;d.&nbsp;./rebaseall -v</p><br><p>&#12288;&#12288;&#12288;e.&nbsp;没有错误就关闭命令行窗口<br>&#12288;&#12288;好了，现在到下载安装Node了，启动Cygwin.exe后输入：</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;$ wget http:<span style="color: #008000;">//</span><span style="color: #008000;">nodejs.org/dist/node-v0.4.12.tar.gz</span><span style="color: #008000;"><br></span>&#12288;&#12288;$ tar xf node-v0.<span style="color: #800080;">4.12</span>.tar.gz<br>&#12288;&#12288;$ cd node-v0.<span style="color: #800080;">4.12</span><br>&#12288;&#12288;$ ./configure<br>&#12288;&#12288;$ make<br>&#12288;&#12288;$ make install</pre><br></div><br><p>&nbsp;</p><br><p><strong><span style="background-color: #ffffff;">&#12288;&#12288;3.直接下载node.exe文件</span></strong></p><br><p><span style="background-color: #ffffff;">&#12288;&#12288;nodejs.org下载较慢所以我在网盘上传了一个，下载地址：<a href="http://www.everbox.com/f/VhyL6EiGF5Lm3ZSRx85caFDIA5" target="_blank" rel="noopener">http://www.everbox.com/f/VhyL6EiGF5Lm3ZSRx85caFDIA5</a></span></p><br><p><span style="background-color: #ffffff;">&#12288;&#12288;听说有不太稳定的问题，不过你假如只是想先在windows下了解Node，个人感觉这个方法比你装个Cygwin好很多。</span></p><br><p><span style="background-color: #ffffff;">&nbsp;</span></p><br><p><span style="background-color: #ffffff;">&#12288;&#12288;注：原本不太想写安装Node这段，可是为了这篇文章的全面性还是写了，没想到一写就是那么长一段了…茶几了</span></p><br><p><span style="background-color: #ffffff;">&nbsp;</span></p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>“Hello World” - 为什么每次见到这句心情都会小激动，不解…</strong></span></p><br><p>&#12288;&#12288;首先，创建个hello.js的文件，在文件中copy如下代码：</p><br><div class="cnblogs_code"><br><pre><span style="color: #0000ff;">&#12288;&#12288;var</span> http = require(‘http’);<br>&#12288;&#12288;http.createServer(<span style="color: #0000ff;">function</span> (req, res) {<br>&#12288;&#12288;  res.writeHead(200, {‘Content-Type’: ‘text/plain’});<br> &#12288;&#12288; res.end(‘Hello World\n’);<br>&#12288;&#12288;}).listen(1337, “127.0.0.1”);<br>&#12288;&#12288;console.log(‘Server running at <a href="http://127.0.0.1:1337/&#39;)" target="_blank" rel="noopener">http://127.0.0.1:1337/&#39;)</a>;</pre><br></div><br><p>&#12288;&#12288;<strong>代码逻辑：</strong></p><br><p>&#12288;&#12288;&#12288;a. 全局方法require()是用来导入模块的，一般直接把 require() 方法的返回值赋值给一个变量，在 JavaScript 代码中直接使用此变量即可&nbsp;。require(“http”) 就是加载系统预置的 http 模块</p><br><p>&#12288;&#12288;&#12288;b.&nbsp;http.createServer 是模块的方法，目的就是创建并返回一个新的web server对象，并且给服务绑定一个回调，用以处理请求。</p><br><p>&#12288;&#12288;&#12288;c. 通过 http.listen() 方法就可以让该 HTTP 服务器在特定端口监听。</p><br><p>&#12288;&#12288;&#12288;d. console.log就不用多说了，了解firebug的都应该知道，Node实现了这个方法。</p><br><p><em>&#12288;&#12288;&#12288;&#12288;注：&nbsp;想了解具体细节请查看文档&nbsp;<a href="http://cnodejs.org/cman/all.html#http.createServer" target="_blank" rel="noopener">cnodejs.org/cman/all.html#http.createServer</a></em></p><br><p>&#12288;&#12288;接着运行Node服务器，执行hello.js代码，成功启动会看见console.log()中的文本。有图有真相：</p><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011103110462272.jpg"></p><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011103110465577.jpg"></p><br><p><span style="background-color: #ffffff;">&nbsp;</span></p><br><p><span style="background-color: #ccffcc;"><strong><span style="font-size: 16px;">npm的下载和使用</span></strong></span></p><br><p>&#12288;&#12288;除Node本身提供的API外，现在有不少第三方模块可极大的提高开发效率，npm就是Node的软件包管理器，可以用它安装所需软件包并发布自己为nodejs写的软件包。官网地址：<a href="http://npmjs.org/" target="_blank" rel="noopener">npmjs.org</a></p><br><p>&#12288;&#12288;安装只需要在终端写入一行代码：&#12288;&#12288;&#12288;&#12288;</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;curl http:<span style="color: #008000;">//</span><span style="color: #008000;">npmjs.org/install.sh | sh</span></pre><br></div><br><p>&#12288;&#12288;npm安装node扩展包同样是一行代码：&#12288;&#12288;</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;npm install &lt;包名&gt;&#12288;&#12288;&#12288;&#12288;<span style="color: #008000;">//</span><span style="color: #008000;">例：npm install express</span></pre><br></div><br><p><span>&#12288;&#12288;注：如果安装模块的过程中报域名错误的话，请清空缓存 &gt;npm cache clean 或重启计算机即可。<strong><br></strong></span></p><br><p><span style="font-size: 16px;"><span style="font-size: 16px;"><strong>&#12288;&#12288;</strong></span></span></p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>理解Node的模块概念</strong></span></p><br><p>&#12288;&#12288;在Node中，不同的功能组件被划分成不同的模块。应用可以根据自己的需要来选择使用合适的模块。每个模块都会暴露一些公共的方法或属性。模块的使用者直接使用这些方法或属性即可，对于内部的实现细节就可以不用了解。除了Node本身提供的API外，开发人员也可以利用这个机制来将应用拆分成多个模块，以提高代码的可复用性。</p><br><p>&#12288;&#12288;<strong>1.如何使用模块？</strong></p><br><p>&#12288;&#12288;在Node中使用模块是非常方便的，在 JavaScript 代码中可以直接使用全局函数 require() 来加载一个模块。</p><br><p>&#12288;&#12288;在刚刚”Hello World”的例子中，require(“http”) 可以加载系统预置的 http 模块；模块名称以 “./“ 开始的，如 require(“./myModule.js”) 用来加载与当前 JavaScript 文件同一目录下的 myModule.js 模块。</p><br><p>&#12288;&#12288;<strong>2.自己如何开发模块？</strong></p><br><p>&#12288;&#12288;刚刚介绍使用require()导入模块的时候，模块名称以 “./“ 开始的这种，就是自己开发的模块文件。需要注意的就是JS文件的系统路径。</p><br><p>&#12288;&#12288;代码中封装了模块的内部处理逻辑，一个模块一般都会暴露一些公开的方法或属性给其他的人使用。模块的内部代码需要把这些方法或属性给暴露出来。</p><br><p>&#12288;&#12288;<strong>3.来一套简单的例子。</strong>先创建一个模块文件如myModule.js，就一行代码</p><br><div class="cnblogs_code"><br><pre>&#12288;&#12288;console.log(‘Hi Darren.’)</pre><br></div><br><p>&#12288;&#12288;然后创建一个test.js文件，导入这个JS文件，执行node看到结果</p><br><p><img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011103116550537.jpg"></p><br><p>&#12288;&#12288;现在Node社区中已有不少第三方的模块，希望能有更多人通过学习Node，加入到这个大家庭中，为Node社区来添砖加瓦。先谢谢之，咱们继续。&#12288;&#12288;</p><br><p>&#12288;&#12288;<strong>4.来一个深点的例子。</strong>这个例子中将会针对 私有和共有 进行介绍。先创建一个myModule.js，代码如下：</p><br><div class="cnblogs_code"><br><pre><span style="color: #0000ff;">&#12288;&#12288;var</span> name = “Darren”;<br><span style="color: #0000ff;">&#12288;&#12288;this</span>.location = “Beijing”;<br><span style="color: #0000ff;">&#12288;&#12288;this</span>.showLog = <span style="color: #0000ff;">function</span>(){<br>&#12288;&#12288;    console.log(‘Hi Darren.’)<br>&#12288;&#12288;};</pre><br></div><br><p>&#12288;&#12288;代码中出现了三种类型，分别是： 私用属性，共有属性和共有方法，再创建一个test.js，执行Node</p><br><p><img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011103117303855.jpg"></p><br><p>&#12288;&#12288;结果高亮的地方很清楚的告诉我们，私有方法我们在模块以外是取不到的，所以是undefined。共有属性和共有方法的声明需要在前面加上 this 关键字。</p><br><p><span style="font-size: 16px;"><strong>&nbsp;</strong></span></p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>Node能做什么和它的优势</strong></span></p><br><p>&#12288;&#12288;Node核心思想：&#12288;&#12288;<span style="background-color: #b7d2e1;"><strong>1.非阻塞；&#12288;&#12288;2.单线程；&#12288;&#12288;3.事件驱动</strong></span>。</p><br><p>&#12288;&#12288;在目前的web应用中，客户端和服务器端之间有些交互可以认为是基于事件的，那么AJAX就是页面及时响应的关键。每次发送一个请求时（不管请求的数据多么小），都会在网络里走一个来回。服务器必须针对这个请求作出响应，通常是开辟一个新的进程。那么越多用户访问这个页面，所发起的请求个数就会越来越多，就会出现内存溢出、逻辑交错带来的冲突、网络瘫痪、系统崩溃这些问题。</p><br><p>&#12288;&#12288;Node的目标是提供一种构建可伸缩的网络应用的方案，在hello world例子中，服务器可以同时处理很多客户端连接。</p><br><p>&#12288;&#12288;Node和操作系统有一种约定，如果创建了新的链接，操作系统就将通知Node，然后进入休眠。如果有人创建了新的链接，那么它（Node）执行一个回调，每一个链接只占用了非常小的（内存）堆栈开销。&#12288;&#12288;&#12288;&nbsp;</p><br><p>&#12288;&#12288;举一个简单的异步调用的例子，把test.js和myMydule.js准备好了，^_^。把以下代码拷贝到test.js中并执行：</p><br><div class="cnblogs_code"><br><pre><span style="color: #0000ff;">&#12288;&#12288;var</span> fs = require(<span style="color: #800000;">‘</span><span style="color: #800000;">fs</span><span style="color: #800000;">‘</span>);<br>&#12288;&#12288;fs.readFile(<span style="color: #800000;">‘</span><span style="color: #800000;">./myModule.js</span><span style="color: #800000;">‘</span>, function (err, data) {<br><span style="color: #0000ff;">&#12288;&#12288;&#12288;&#12288;if</span> (err) <span style="color: #0000ff;">throw</span> err;<br>&#12288;&#12288;&#12288;&#12288;console.log(<span style="color: #800000;">‘</span><span style="color: #800000;">successfully</span><span style="color: #800000;">‘</span>);<br>&#12288;&#12288;});<br>&#12288;&#12288;console.log(<span style="color: #800000;">‘</span><span style="color: #800000;">async</span><span style="color: #800000;">‘</span>);</pre><br></div><br><p><img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011103122302345.jpg"></p><br><p>&#12288;&#12288;所谓的异步，大家应该都能想得到运行时会先打先显示”async”，再显示”successfully”。</p><br><p>&#12288;&#12288;Node是无阻塞的，新请求到达服务器时，不需要为这个请求单独作什么事情。Node仅仅是在那里等待请求的发生，有请求就处理请求。</p><br><p>&#12288;&#12288;<strong>Node更擅长处理体积小的请求以及基于事件的I/O。</strong></p><br><p>&#12288;&#12288;Node不仅仅是做一个Web服务的框架，它可以做更多，比如它可以做Socket服务，可以做比方说基于文件的，然后基于像一些比方说可以有子进程，然后内部的，它是一个很完整的事件机制，包括一些异步非注射的解决方案，而不仅仅局限在网络一层。同时它可能，即使作为一个Web服务来说，它也提供了更多可以深入这个服务内核、核心的一些功能，比方说Node使用的Http Agent，这块就是它可以更深入这个服务内核来去做一些功能。</p><br><p>&nbsp;</p><br><p><span style="background-color: #ccffff; font-size: 16px;"><strong>Node事件流概念</strong></span></p><br><p>&#12288;&#12288;因为Node 采用的是事件驱动的模式，其中的很多模块都会产生各种不同的事件，可由模块来添加事件处理方法，所有能够产生事件的对象都是事件模块中的 EventEmitter 类的实例。代码是全世界通用的语言，所以我们还是用代码说话：</p><br><div class="cnblogs_code"><br><pre><span style="color: #0000ff;">&#12288;&#12288;var</span> events = require(<span style="color: #800000;">“</span><span style="color: #800000;">events</span><span style="color: #800000;">“</span>); <br><span style="color: #0000ff;">&#12288;&#12288;var</span> emitter = <span style="color: #0000ff;">new</span> events.EventEmitter(); <br>&#12288;&#12288;emitter.on(<span style="color: #800000;">“</span><span style="color: #800000;">myEvent</span><span style="color: #800000;">“</span>, function(msg) { <br>&#12288;&#12288;&#12288;&#12288;console.log(msg); <br>&#12288;&#12288;}); <br>&#12288;&#12288;emitter.emit(<span style="color: #800000;">“</span><span style="color: #800000;">myEvent</span><span style="color: #800000;">“</span>, <span style="color: #800000;">“</span><span style="color: #800000;">Hello World.</span><span style="color: #800000;">“</span>);</pre><br></div><br><p>&#12288;&#12288;简单的分析这段：</p><br><p>&#12288;&#12288;&#12288;1. 使用require()方法添加了events模块并把返回值赋给了一个变量</p><br><p>&#12288;&#12288;&#12288;2.&nbsp;new events.EventEmitter()这句创建了一个事件触发器，也就是所谓的事件模块中的 EventEmitter 类的实例</p><br><p>&#12288;&#12288;&#12288;3.&nbsp;on(event, listener)用来为某个事件 event 添加事件处理方法监听器</p><br><p>&#12288;&#12288;&#12288;4.&nbsp;emit(event, [arg1], [arg2], […]) 方法用来产生事件。以提供的参数作为监听器函数的参数，顺序执行监听器列表中的每个监听器函数。</p><br><p>&nbsp;</p><br><p>&#12288;&#12288;<strong>EventEmitter 类中的方法都与事件的产生和处理相关：</strong></p><br><p>&#12288;&#12288;&#12288;1.&nbsp;addListener(event, listener) 和 on(event, listener) 这两个方法都是将一个监听器添加到指定事件的监听器数组的末尾</p><br><p>&#12288;&#12288;&#12288;2.&nbsp;once(event, listener) 这个方法为事件为添加一次性的监听器。该监听器在事件第一次触发时执行，过后将被移除</p><br><p>&#12288;&#12288;&#12288;3.&nbsp;removeListener(event, listener) 该方法用来将监听器从指定事件的监听器数组中移除出去</p><br><p>&#12288;&#12288;&#12288;4.&nbsp;emit(event, [arg1], [arg2], […]) 刚刚提到过了。</p><br><p>&#12288;&#12288;在Node中，存在各式各样不同的数据流，Stream（流）是一个由不同对象实现的抽象接口。例如请求HTTP服务器的request是一个流，类似于stdout（标准输出）；包括文件系统、HTTP 请求和响应、以及 TCP/UDP 连接等。流可以是可读的，可写的，或者既可读又可写。所有流都是EventEmitter的实例，因此可以产生各种不同的事件。</p><br><p>&#12288;&#12288;可读流主要会产生以下事件：</p><br><ul><br><li>data &nbsp; 当读取到流中的数据时，此事件被触发</li><br><li>end &nbsp; 当流中没有数据可读时，此事件被触发</li><br><li>error &nbsp; 当读取数据出现错误时，此事件被触发</li><br><li>close &nbsp; 当流被关闭时，，此事件被触发，可是并不是所有流都会触发这个事件。（例如，一个连接进入的HTTP request流就不会触发’close’事件。）</li><br></ul><br><p>&#12288;&#12288;还有一种比较特殊的&nbsp;fd 事件，当在流中接收到一个文件描述符时触发此事件。只有UNIX流支持这个功能，其他类型的流均不会触发此事件。</p><br><p>&#12288;&#12288;相关详细文档：<a href="http://cnodejs.org/cman/all.html#events_" target="_blank" rel="noopener">http://cnodejs.org/cman/all.html#events_</a></p><br><p>&nbsp;</p><br><p><span style="background-color: #ccffcc; font-size: 16px;"><strong>强大的File System 文件系统模块</strong></span></p><br><p>&#12288;&#12288;Node&nbsp;中的 fs 模块用来对本地文件系统进行操作。文件的I/O是由标准POSIX函数封装而成。需要使用require(‘fs’)访问这个模块。所有的方法都提供了异步和同步两种方式。</p><br><p>&#12288;&#12288;fs 模块中提供的方法可以用来执行基本的文件操作，包括读、写、重命名、创建和删除目录以及获取文件元数据等。每个操作文件的方法都有同步和异步两个版本。</p><br><p>&#12288;&#12288;异步操作的版本都会使用一个回调方法作为最后一个参数。当操作完成的时候，该回调方法会被调用。而回调方法的第一个参数总是保留为操作时可能出现的异常。如果操作正确成功，则第一个参数的值是 null 或 undefined 。</p><br><p>&#12288;&#12288;同步操作的版本的方法名称则是在对应的异步方法之后加上一个 Sync 作为后缀。比如异步的 rename() 方法的同步版本是 renameSync() 。下面列出来了 fs 模块中的一些常用方法，都只介绍异步操作的版本。</p><br><p>&#12288;&#12288;test.js和myModule.js文件准备好了木？把下面这段代码copy到test.js中执行一次</p><br><div class="cnblogs_code"><br><pre><span style="color: #0000ff;">&#12288;&#12288;var</span> fs = require(<span style="color: #800000;">‘</span><span style="color: #800000;">fs</span><span style="color: #800000;">‘</span>);<br>&#12288;&#12288;fs.unlink(<span style="color: #800000;">‘.</span><span style="color: #800000;">/myModule.js</span><span style="color: #800000;">‘</span>, function (err) {<br><span style="color: #0000ff;">&#12288;&#12288;&#12288;&#12288;if</span> (err) <span style="color: #0000ff;">throw</span> err;<br>&#12288;&#12288;&#12288;&#12288;console.log(<span style="color: #800000;">‘</span><span style="color: #800000;">successfully deleted myModule.js</span><span style="color: #800000;">‘</span>);<br>&#12288;&#12288;});</pre><br></div><br><p>&#12288;&#12288;如果没有报error，那么myModule.js就被删除了，就是这么简单</p><br><p>&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011103122081954.jpg"></p><br><p>&#12288;&#12288;这只是一个简单的例子，感兴趣的话自己去多多尝试，实践出真理。由于篇幅原因就不多举例了。^<em>^</em></p><br><p>&nbsp;</p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>学习Node的总结：</strong></span></p><br><p>&#12288;&#12288;1.对于一个linux的命令和shell知识几乎为零的我来说，这段时间又学到了不少关于linux知识；vim真是一个强大的编辑器，不用鼠标的感觉真的很好；而且有一点对我来说很重要，在linux下编程很cool，尤其是在团队中都是使用windows的，装装更健康^^。</p><br><p>&#12288;&#12288;2.理解了服务端JavaScript的一个成功框架-Node，以及它的一些优势和使用的方式，这篇文章就是最好的总结，当然，<strong>这只会是一个开始</strong>。</p><br><p>&#12288;&#12288;3.对于没有进入那么梦想的公司其实是有那么点遗憾，不过生活就应该要这样，有波折有起伏，这正是我需要并且期待的…那么新的生活还是要继续，做自己的舵手，把握好自己的方向，过去的就让它过去吧。</p><br><p>&nbsp;</p><br><p><span style="font-size: 16px; background-color: #ccffcc;"><strong>一些想对大伙说的话：</strong></span></p><br><p>&#12288;&#12288;1. 在这我得打击一部分人的积极性。假如你对后台技术不够了解或者没接触过服务端语言，不知道I/O这些知识，没有后台处理流程这种概念，那么……<strong>Node并不是一门适合入门的服务端技术</strong>。为什么这么说：</p><br><p>&#12288;&#12288;&#12288;a.重点就是中文实例少，文章少，想系统的学习会比较麻烦，所以在使用过程中总有一种不成熟的感觉，当然主要还是因为我对它不熟悉所造成的。国内使用Node的公司确实不多，当然国外还是有不少了，从cnodejs.org截了一个图：</p><br><p>&#12288;&#12288;&#12288;&#12288;<img alt="" src="http://pic002.cnblogs.com/images/2011/159097/2011102222395232.jpg"></p><br><p>&#12288;&#12288;&#12288;b.对没有经验的朋友来说node其实并不好上手，从最简单“Hello world”就可以看出来(各种运行环境和安装细节的了解都得费点功夫)，不要以jQuery库为比较，所处理的事物不同，学习的成本也不同 - 所以不太建议作为新手入门的服务端技术，如果想学习一门服务端语言PHP和Python都是不错的选择，因为：<strong>书多 例子多</strong> 框架多 上手简单 容易理解 搭建方便…</p><br><p>&#12288;&#12288;&#12288;c.以上都是我个人<strong>善意的建议</strong>，由于水平有限，请大家多多指教，希望嘴下留情。</p><br><p>&#12288;&#12288;2. 关于Node的书写规范和具体技巧本人就不献丑了，自己写Node的代码也不多，不过<span style="color: #0000ff;"><strong>面向对象的编程思想</strong></span>在哪都是好使的。</p><br><p>&#12288;&#12288;3.&nbsp;<strong>希望这篇文章能对大家学习Node有用，如果觉得这文章也算用心，请劳驾点右下角的推荐。</strong></p><br><p>&nbsp;</p><br><p><span style="background-color: #ccffcc;"><strong><span style="font-size: 16px;">&nbsp;推荐几个学习Node的网址：</span></strong></span><span style="background-color: #ffffff;"><br></span>&#12288;&#12288;<a target="_blank" href="http://nodejs.org/">http://nodejs.org/</a>&nbsp;&#12288;&#12288;</p><br><p><span style="background-color: #ffffff;">&#12288;&#12288;</span><a target="_blank" href="http://cnodejs.org/">http://cnodejs.org/</a>&nbsp;&#12288;&#12288;由淘宝人建立的社区，内有<strong>Node中文文档</strong></p><br><p><strong>&#12288;&#12288;</strong><a target="_blank" href="http://www.oschina.net/p/nodejs/">http://www.oschina.net/p/nodejs/</a></p><br><p>&#12288;&#12288;<a href="http://www.ibm.com/developerworks/cn/opensource/os-nodejs/index.html?ca=drs" target="_blank" rel="noopener">http://www.ibm.com/developerworks/cn/opensource/os-nodejs/index.html<br><br></a></p><br><p>&#12288;<em>&#12288;注：最终领导决定放弃Node而使用Python，可是这不会影响我对Node的喜爱。我说过，这篇文章只会是一个开始。<br><br><br><br></em></p></div>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2011/10/31/Node.js初体验/">http://yoursite.com/2011/10/31/Node.js初体验/</a>
+            <p>发表日期: <a href="http://yoursite.com/2011/10/31/Node.js初体验/">October 31st 2011, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2011/11/24/JavaScript操作Cookie/" title= JavaScript操作Cookie >
+                    <div class="nextTitle">JavaScript操作Cookie</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2011/09/28/Fiddler前端开发值得拥有/" title= Fiddler前端开发值得拥有 >
+                    <div class="prevTitle">Fiddler前端开发值得拥有</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+

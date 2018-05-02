@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Darren聂微东">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Darren聂微东">
+    <meta name="keywords" content="Darren聂微东 | Darren聂微东">
+    <meta name="description" content="博观而约取,厚积而薄发">
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Gulp使用小结(上) · Darren聂微东</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+		// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+</script>
+    <link rel="icon" href= "/images/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="//at.alicdn.com/t/font_327081_cgbkxhtzasud6lxr.woff" crossorigin>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >一枚Web技术领域的手艺人.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Gulp使用小结(上)</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>一枚Web技术领域的手艺人.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
+
+
+
+
+
+
+
+
+height:60vh;
+
+>
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(/images/so-simple-sample-image-4.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            Gulp使用小结(上)
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+                <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "JS">JS</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tools">Tools</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "FE-Strategy">FE-Strategy</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Build">Build</a>
+    
+</div>
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2016/04/30</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>这篇文章不会介绍 <figure class="highlight plain"><figcaption><span>的起源、发展；不会去一个个讲解 ```Gulp API```；也不想出现大段大段的 ```gulpfile.js``` 代码；更木有帮你分析 ```Gulp``` 实现原理，只有一些我自己对 ```Gulp``` 的使用理解和总结。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; 如何通过 ```Gulp``` 让偶们的前端项目高大上的跑起来？```Gulp``` 能做什么，还能做什么？```Gulp```套路能不能来几套？... 希望通过这篇文章你会找到答案</span><br><span class="line"></span><br><span class="line">写作风格的原因，劳资写的文章都较详(啰)细(嗦)，请轻拍:)</span><br><span class="line"></span><br><span class="line">当然，同样期待能得到伙伴们的讨论和支持。</span><br><span class="line"></span><br><span class="line">## 目录</span><br><span class="line"></span><br><span class="line">- [简单介绍](#intro)</span><br><span class="line">- [必备插件](#must)</span><br><span class="line">- [常用插件](#common)</span><br><span class="line">- [进阶插件](#minority)</span><br><span class="line">- [聊聊 gulpfile.js](#gulpfile)</span><br><span class="line">- [套路](#write)</span><br><span class="line">- [结语](#over)</span><br><span class="line">- [推荐阅读](#rec)</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;h3 id=&quot;intro&quot;&gt;简单介绍&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&gt; 这篇文章的目的是：介绍些我知晓的 ```Gulp plugins ```，然后用少量的代码讲解，最终希望大家能用 ```Gulp``` 让前端项目高大上的跑起来</span><br><span class="line"></span><br><span class="line">&gt; 默认读者知道点 ```npm/cnpm```；明白 ```package.json``` 是作甚的；了解 ```gulpfile.js``` 是作甚的。</span><br><span class="line"></span><br><span class="line">这篇文章起草于2014年下半年，那时 ```Gulp``` 还算个较新潮的玩意。所以在项目实践的过程中，自己记录鸟不少使用收获，心里闷骚的想，等哪天有空再润色一把即可分享出去，但特么拖拖拉拉的就到2016年...</span><br><span class="line"></span><br><span class="line">转眼 ```Gulp``` 都已快被归类为过时的技术鸟([《我为何放弃Gulp与Grunt，转投npm scripts》](http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1)，有关这篇文章下一篇偶再单独细聊)，于是趁着周末之余，火速整理下自己的 ```gulp``` 套路发布出来，也希望对其他小伙伴有点用。</span><br><span class="line"></span><br><span class="line">本文最下方有一些 文章/文档 的阅读推荐:)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;h3 id=&quot;must&quot;&gt;必备插件&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&gt; 【必备】不是指每次项目都得用，而是指最基础的。你可以不用，但是得知道的那些 Gulp 插件</span><br><span class="line"></span><br><span class="line">&gt; 以下插件的方向都各自有不少相似的插件，所以不必过多纠结，用的开心就行</span><br><span class="line"></span><br><span class="line">- [gulp-htmlmin](https://www.npmjs.com/package/gulp-htmlmin) 看到名字就能知道，这个插件是用来压缩 ```HTML```。PS：注释啥的都可以去掉哦，看文档get更多技能哈</span><br><span class="line">- [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin) 除了能压缩常见的图片格式，还能压缩 ```SVG```，叼叼的~</span><br><span class="line">- [gulp-clean-css](https://www.npmjs.com/package/gulp-minify-css) 压缩 CSS。我原本推荐的是 [gulp-minify-css](https://www.npmjs.com/package/gulp-minify-css)，结果其首页中已建议改用```gulp-clean-css```...</span><br><span class="line">- [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) 专业压缩 Javascript</span><br><span class="line">- [gulp-concat](https://www.npmjs.com/package/gulp-concat) 上面几个都是压缩，这插件是管合并的...恭喜，“减少网络请求”的成就达成:)</span><br><span class="line">- [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) 给 CSS 增加前缀。解决某些CSS属性不是标准属性，有各种浏览器前缀的情况，灰常有用</span><br><span class="line">- [gulp-rename](https://www.npmjs.com/package/gulp-rename) 修改文件名称。比如有时我们需要把```app.js```改成```app.min.js```，瞬间高级了</span><br><span class="line">- [gulp-util](https://www.npmjs.com/package/gulp-util) 最基础的工具，但俺只用来打日志...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;h3 id=&quot;common&quot;&gt;常用插件&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&gt; 相对于必备插件，常用插件都是些【有用】但使用场景和频率没那么高的好插件</span><br><span class="line"></span><br><span class="line">- [run-sequence](https://www.npmjs.com/package/run-sequence) ```Gulp``` 的 ```task``` 都是并行(异步)执行，如果遇见需要串行的场景，那么这个插件就是必备了。偶的使用场景是：处理(压缩、合并等等) ```CSS/JS```、再[gulp-rev](https://www.npmjs.com/package/gulp-rev)、再上传 ```CDN```；然后使用 ```CDN```的地址替换 ```HTML``` 中的 ```CSS/JS``` 地址，再压缩 ```HTML```。那么替换 ```HTML``` 这步须在之前的工作处理完后再执行。 ** 最后要说，```Gulp4.0``` 发布后，不需要 [RS](https://www.npmjs.com/package/run-sequence) 也可以搞定串行任务了 **</span><br><span class="line">- [del](https://www.npmjs.com/package/del) / [gulp-clean](https://www.npmjs.com/package/gulp-clean) 删除。俺的使用场景是：```JS/CSS``` 文件都会在压缩后使用[gulp-rev](https://www.npmjs.com/package/gulp-rev)，即文件名被```hash```，然后再上传到 ```CDN```，最后俺再使用 **删除插件** 把本地压缩后的文件删除掉，不用多余保存。</span><br><span class="line">- [gulp-rev](https://www.npmjs.com/package/gulp-rev) 把静态文件名改成```hash```的形式。</span><br><span class="line">- [gulp-rev-replace](https://www.npmjs.com/package/gulp-rev-replace) 配合 [gulp-rev](https://www.npmjs.com/package/gulp-rev) 使用，拿到生成的 ```manifest。json``` 后替换对应的文件名称。</span><br><span class="line">- [gulp-rev-collector](https://www.npmjs.com/package/gulp-rev-collector) 到线上环境前，俺会用来配合[gulp-rev](https://www.npmjs.com/package/gulp-rev)使用，替换 ```HTML``` 中的路径</span><br><span class="line">- [gulp-rev-append](https://www.npmjs.com/package/gulp-rev-append) 给页面引用的静态文件增加```hash```后缀，避免被浏览器缓存...当然，如果是使用 ```CDN```，这个套路就不行了</span><br><span class="line">- [gulp-connect](https://www.npmjs.com/package/gulp-connect) / [gulp-livereload](https://www.npmjs.com/package/gulp-livereload) ```LiveReload``` 的俩款插件都值得拥有，不过都各稍有学习成本，看看文档就明白鸟</span><br><span class="line">- [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps) 处理 ```JavaScript``` 时生成 ```SourceMap```；如果你不了解 ```SourceMap```，可以看看这篇阮一峰大神的[《Source Map 详解》](http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html)</span><br><span class="line">- [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins) 帮忙偷懒用的，可以帮我们加载插件，不用```require```或者```import```...当然，俺个人感觉用了这个插件后，阅读```gulpfile.js```的可读性差了，鱼和熊掌不可兼得:(</span><br><span class="line">- [gulp-jshint](https://www.npmjs.com/package/gulp-jshint) ```JavaScript``` 代码校验</span><br><span class="line">- [gulp-sass](https://www.npmjs.com/package/gulp-sass) / [gulp-less](https://www.npmjs.com/package/gulp-less) 写 ```CSS``` 的同学都懂哈</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;h3 id=&quot;minority&quot;&gt;进阶插件&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&gt; 必备插件和常用插件都有一个特点，就是下载数都不小。虽然有少部分插件下载数相对不多，但同样值得拥有或了解</span><br><span class="line"></span><br><span class="line">- [babel](https://babeljs.io/) ```JS``` 语法新特性用起来。这个插件可以让我们用新的 **标准/特性/提案** 写 ```JavaScript``` 代码，然后再向下 **转换编译**，最终生成随处可用的 ```JavaScript``` 代码。更通俗的说话就是：可以用新的规范写代码，经过 ```babel``` 编译后生成没有兼容问题的代码。</span><br><span class="line">- [gulp-flatten](https://www.npmjs.com/package/gulp-flatten) 移动指定文件，不想压缩或者合并的时候，直接用这个插件把对应文件移动到指定文件夹。俺偶尔在内部项目会偷懒用上，图方便:)</span><br><span class="line">- [gulp-coffee](https://www.npmjs.com/package/gulp-coffee) ```CoffeeScript``` 值得去了解</span><br><span class="line">- [gulp-markdown-pdf](https://www.npmjs.com/package/gulp-markdown-pdf) 把 ```Markdown``` 编译为 ```PDF</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p><a href="https://www.npmjs.com/package/gulp-markdown" target="_blank" rel="noopener">gulp-markdown</a> 写手的福音，可以把 <figure class="highlight plain"><figcaption><span>转成 ```HTML```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- [gulp-html2md](https://www.npmjs.com/package/gulp-html2md) 把 ```HTML``` 编译为 ```Markdown</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p><a href="https://www.npmjs.com/package/gulp-tinypng" target="_blank" rel="noopener">gulp-tinypng</a> 超屌的图片压缩工具，使用 <figure class="highlight plain"><figcaption><span>引擎。PS：因为 ```Tinypng``` 免费帐号有月限制，所以使用使需注意。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">- [sprity](https://www.npmjs.com/package/sprity) 生成雪碧图。稍有点学习成本，仔细阅读文档即可。</span><br><span class="line">- [gulp-if](https://www.npmjs.com/package/gulp-if) 可以在 ```pipe``` 里面写点逻辑了，屌不屌。举例：比如处理 ```./pub/*.js```，如果文件名称是 ```xxx.js```，那么不处理；更可以用来区分当前是开发环境还是生产环境。</span><br><span class="line">- [gulp-file-include](https://www.npmjs.com/package/gulp-file-include) 俺搞内部项目的时候会用到，让 ```HTML``` 组件化的第一小步</span><br><span class="line">- [gulp-git](https://www.npmjs.com/package/gulp-git) 直接在 ```Build``` 时把代码都提交到 ```git```上了...特么劳资懒起来连我自己都害怕</span><br><span class="line">- [gulp-qiniu](https://www.npmjs.com/package/gulp-qiniu) 用于把指定文件上传至七牛的指定路径下(PS:首先，你得有自己的七牛账号和空间)</span><br><span class="line">- [gulp-notify](https://www.npmjs.com/package/gulp-notify) 在控制台中加入文字描述，```build``` 的时候更高级有木有。当然，当需要的时候把错误信息也展示出来会很有帮助。更高级的功能就需要你查看其文档了~</span><br><span class="line">- [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) ```Gulp``` 的错误处理有点坑，假如发生错误进程就挂了。相对的解决办法不少，但是这个是我个人比较推荐的，比特么在容易出错的地方写错误监听靠谱。所以这个插件可以阻止 ```Gulp``` 插件发生错误导致进程退出并输出错误日志。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;h3 id=&quot;gulpfile&quot;&gt;聊聊 gulpfile.js&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&gt; ```Gulp API``` 真没啥好说的，所以也从没打算花时间介绍，那这一节劳资要说说啥呢...干货！</span><br><span class="line"></span><br><span class="line">已经枯燥的balabala一通插件，所以偶用自己的方式聊聊这个 ```gulpfile.js```。PS：默认读者了解，所以不堆代码了哈</span><br><span class="line"></span><br><span class="line">一个较简单的前端项目，```gulpfile.js``` 可以轻松上百行，稍复杂点儿的此文件会更大，肯定会不方便阅读和维护。</span><br><span class="line"></span><br><span class="line">下面这套目录结构，是适合较复杂前端项目的 ```gulpfile.js``` 套路，仅供参考：</span><br><span class="line"></span><br><span class="line">&#123;% blockquote %&#125;</span><br><span class="line">gulpfile.js</span><br><span class="line">gulp-conf/</span><br><span class="line">├── env.js // 环境相关</span><br><span class="line">├── global.js</span><br><span class="line">└── qiniu.js // CDN</span><br><span class="line">gulp-tasks/</span><br><span class="line">├── xxx.js</span><br><span class="line">├── xxxx.js</span><br><span class="line">├── ...</span><br><span class="line">├── image.js</span><br><span class="line">├── log.js</span><br><span class="line">├── release.js</span><br><span class="line">└── watch.js</span><br><span class="line">&#123;% endblockquote %&#125;</span><br><span class="line"></span><br><span class="line">- 第一行中的 ```gulpfile.js``` 也可换成 ```gulpfile.babel.js```。如果想看 ```gulpfile.babel.js``` 的示例可以去 [https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js](https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js)</span><br><span class="line">- ```gulp-conf``` 路径、公共参数等等，把有必要都变成配置文件，代码优雅多了。当然，如果没有必要就别麻烦了，视情况来</span><br><span class="line">- ```gulp-tasks``` 内的各个文件都是些分类型的子任务，这样一拆分 ```gulpfile.js``` 必定清爽很多，关键是之后维护各种 ```task``` 也简单很多</span><br><span class="line"></span><br><span class="line">&gt; 不贴代码的原因是因为我只想提供个 **文件夹套路**，其实怎么用着爽、怎么分类、甚至怎么取名这些都见仁见智，反正目的是让代码组织的够清晰、好维护，那么偶们的目标就达到鸟</span><br><span class="line"></span><br><span class="line">&lt;h3 id=&quot;write&quot;&gt;套路&lt;/h3&gt;</span><br><span class="line"></span><br><span class="line">&gt; 这节会基于这些插件的相互配合和清晰的 ```Gulp``` 目录结构，让偶们的前端项目快速且高大上的 ```build``` 起来！</span><br><span class="line"></span><br><span class="line">偶这粗暴的把套路分成三类：一种是相对简单点的；一种是稍稍复杂点的；一种是“玩”的比较复杂的。区分的原则是这仨套路的目标会有稍许不同，而且项目需求也不同。搞清楚我们(项目)到底想要得到什么，那么剩下的就是去实现它了！</span><br><span class="line"></span><br><span class="line">&gt; **附加组合** 这类在这篇就不说了，比如 ```gulp+webpack``` 这种 ```CP```，针对 ```React``` 项目可以面面俱到。。。这如果要分析起来，比特么 ```Gulp``` 复杂多了去了。</span><br><span class="line"></span><br><span class="line">如果你问我，有木有最简单的套路，答曰：有！</span><br><span class="line"></span><br><span class="line">如果你问我，最简单的方法是神马，答曰：**不要用这些 ```build``` 工具...**</span><br><span class="line"></span><br><span class="line">哇哈哈哈哈哈哈~</span><br><span class="line"></span><br><span class="line">&lt;h4&gt;简单套路&lt;/h4&gt;</span><br><span class="line"></span><br><span class="line">项目/人群 目标：要求较高的个人项目、公司内部项目、小商业项目</span><br><span class="line"></span><br><span class="line">主要需求：</span><br><span class="line"></span><br><span class="line">1. ```HTML``` 也得 ```组件化(这词我有点反感，真听得烂大街了)```。该 ```common``` 的拎出来；该 ```widget``` 的拎出来</span><br><span class="line">2. 图片压缩、合并</span><br><span class="line">3. ```JS/CSS/HTML``` 压缩、合并</span><br><span class="line">4. ```sass/less``` 必须得用起来，要不 ```CSS``` 怎么显得高大上</span><br><span class="line">5. 额...差不多够了吧，毕竟我们只是入门的简体套路，再复杂点儿 ```gulpfile.js``` 的体积就不小了:)</span><br><span class="line"></span><br><span class="line">&lt;h4&gt;一般套路&lt;/h4&gt;</span><br><span class="line"></span><br><span class="line">项目/人群 目标：喜爱尝试的个人项目、一般商业项目、要求较高的开源项目</span><br><span class="line"></span><br><span class="line">主要需求：</span><br><span class="line"></span><br><span class="line">1. 简单套路里面的都包括</span><br><span class="line">2. ```JavaScript``` 部分用 ```ES6``` 来编写... **PS：技术红利不用白不用嘛**</span><br><span class="line">3. ```JavaScript``` 代码校验用起来</span><br><span class="line">4. ```CSS``` 方面根据设置项目所需的浏览器版本，从而自动处理浏览器前缀</span><br><span class="line">5. 所有静态文件全部上 ```CDN</span><br></pre></td></tr></table></figure></p>
+</li>
+</ul>
+<ol start="6">
+<li><p>把 <figure class="highlight plain"><figcaption><span>进行拆分，使其更好维护</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;复杂套路&lt;/h4&gt;</span><br><span class="line"></span><br><span class="line">项目/人群 目标：商业项目、代码洁癖者...额，再加一项：程序员中的单身狗:)</span><br><span class="line"></span><br><span class="line">主要需求：</span><br><span class="line"></span><br><span class="line">1. 一般套路里面的都包括</span><br><span class="line">2. 增加对 ```Gulp``` 进程出错的优雅处理</span><br><span class="line">3. 更多 ```task``` 信息的相关展示</span><br><span class="line">4. 在 ```task``` 中有逻辑处理，比如执行某 ```task``` 会判断是否是开发环境，然后可以有相应的处理</span><br><span class="line">5. 自动清理掉那些不需要的 ```tmp``` 文件(临时文件)，只留下真正有用的代码</span><br><span class="line">6. LiveReload</span><br><span class="line">7. 代码自动同步 ```git</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>劳资实在编不下去了…</p>
+</li>
+</ol>
+<h3 id="over">结语</h3>
+
+<blockquote>
+<p>你的插件应该只做一件事，并且做好</p>
+</blockquote>
+<p>写插件原本是我想好好写的地方，发现中文文档已经非常丰富了，那就不费那个劲了，直接贴官方地址：<a href="http://www.gulpjs.com.cn/docs/writing-a-plugin/" target="_blank" rel="noopener">http://www.gulpjs.com.cn/docs/writing-a-plugin/</a></p>
+<p>最后聊聊我眼中的 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- ```Gulp``` 目前有相关插件2266个</span><br><span class="line">- ```Gulp``` 是基于 ```Node``` 的，95%的代码都是 ```JavaScript```，5%的代码是 ```Shell```，[npmjs.com](https://www.npmjs.com/package/gulp)显示上个月的下载超过210W，当前(2016/04/30)release 的版本是3.9.1</span><br><span class="line">- 神马？安装各种插件还是用 ```npm```？赶紧 [cnpm](https://www.npmjs.com/package/cnpm) 用起来，安装速度噌噌的</span><br><span class="line">- ```Gulp``` VS ```Grunt``` 这话题已经被说烂，但我还是想说说。个人觉得玩```Grunt```是种写配置的感觉；玩```Gulp```就是写脚本(task)，且```Gulp```更容易上手、更高效。 推荐读者看看这篇文章[Gulp vs Grunt](http://www.benben.cc/blog/?p=407)，写的着实深入浅出</span><br><span class="line">- 编译 ```CoffeeScript</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>编译 <figure class="highlight less"><figcaption><span>/ sass```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">-</span> 把 ```<span class="selector-tag">HTML</span>``` 编译为 ```<span class="selector-tag">Markdown</span></span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>把 <figure class="highlight plain"><figcaption><span>编译为 ```HTML/pdf```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 把 ```Excel``` 编译为 ```HTML/JSON</span><br></pre></td></tr></table></figure></p>
+</li>
+<li><p>开发 <code>React</code> 项目时和好基友 <code>webpack</code> 配合，酸爽到爆，推荐同事的一篇文章，我司目前的<code>React</code> 项目基本就是这个套路：<a href="http://www.boke.io/ji-yu-gulphe-webpackde-qian-duan-gong-zuo-liu/" target="_blank" rel="noopener">《基于gulp和webpack的前端工程化》</a></p>
+</li>
+<li>…</li>
+</ul>
+<blockquote>
+<p>最近在InfoQ上有读到一个系列的文章，是讨论 <code>Gulp</code> 和 <code>npm script</code> 优劣，地址 - <a href="http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1" target="_blank" rel="noopener">《我为何放弃Gulp与Grunt，转投npm scripts》</a>。篇幅有限，下期的文章我再拿出来讨论，不过推荐大家阅读，还是值得我们思考的。</p>
+</blockquote>
+<p>下一篇会把这篇文章所介绍的套路，用代码体现出来，文章发布时git会同步更新，地址：<a href="https://github.com/nieweidong/gulp-demos" target="_blank" rel="noopener">gulp-demos</a></p>
+<h3 id="rec">推荐阅读</h3>
+
+<ul>
+<li><a href="https://github.com/google/web-starter-kit/blob/master/gulpfile.babel.js" target="_blank" rel="noopener">gulp示例</a></li>
+<li><a href="http://slides.com/contra/gulp" target="_blank" rel="noopener">为什么是gulp</a></li>
+<li><a href="https://github.com/jabez128/stream-handbook" target="_blank" rel="noopener">《stream-handbook中文版》</a></li>
+<li><a href="https://github.com/lisposter/gulp-docs-zh-cn" target="_blank" rel="noopener">《gulp 简体中文文档》</a></li>
+<li><a href="http://www.gulpjs.com.cn/" target="_blank" rel="noopener">Gulp中文网 http://www.gulpjs.com.cn/</a></li>
+<li><a href="http://www.gulpjs.com.cn/docs/getting-started/" target="_blank" rel="noopener">入门指南 http://www.gulpjs.com.cn/docs/getting-started/</a></li>
+<li><a href="http://www.boke.io/ji-yu-gulphe-webpackde-qian-duan-gong-zuo-liu/" target="_blank" rel="noopener">《基于gulp和webpack的前端工程化》</a></li>
+</ul>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://yoursite.com">Darren聂微东</a>
+            <p>原文链接: <a href="http://yoursite.com/2016/04/30/gulp_1/">http://yoursite.com/2016/04/30/gulp_1/</a>
+            <p>发表日期: <a href="http://yoursite.com/2016/04/30/gulp_1/">April 30th 2016, 12:00:00</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">保持署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2016/05/15/startup/" title= 如果我去创业 >
+                    <div class="nextTitle">如果我去创业</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2016/03/06/2015简单总结/" title= 2015简单总结 >
+                    <div class="prevTitle">2015简单总结</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:darrencode@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/nieweidong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/images/qrcode.jpg" />
+                </span>
+            
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/darrencode" class="iconfont-archer weibo" target="_blank" title=weibo></a>
+            
+        
+    
+        
+            
+                <a href="//www.zhihu.com/people/darrenwei-dong" class="iconfont-archer zhihu" target="_blank" title=zhihu></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+
+<!-- <span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span> -->
+
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:60vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#over"><span class="toc-number">1.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rec"><span class="toc-number">2.</span> <span class="toc-text">推荐阅读</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 53 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2017/04/30/2016流水账/" >2016流水账</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2016 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2016/12/24/buybuybuy/" >提升幸福感之「无线耳机」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/10</span><a class="archive-post-title" href= "/2016/12/10/convince/" >认知与说服</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2016/12/04/yy/" >YY一下十年后的自己</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/30</span><a class="archive-post-title" href= "/2016/11/30/weixin2/" >微信小程序首次官方分享的纪要</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2016/11/13/weixin1/" >对于前端，「微信小程序」其实不美好</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/02</span><a class="archive-post-title" href= "/2016/11/02/bookstore/" >《岛上书店》简评</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2016/10/31/standardjs/" >「标准」的 JS风格</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/19</span><a class="archive-post-title" href= "/2016/10/19/smartisanos/" >年度科技脱口秀来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2016/10/12/tiwen/" >提问是门艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2016/09/26/share/" >如何做好技术串讲</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span><a class="archive-post-title" href= "/2016/09/22/weixin_appstore/" >「微信小程序」来了</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span><a class="archive-post-title" href= "/2016/09/21/gongzhonghao/" >公众号 -「前端攻略 开光篇」</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2016/09/06/procrastination/" >《拖拉一点也无妨》小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2016/08/04/2016half/" >2016过半</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/19</span><a class="archive-post-title" href= "/2016/06/19/mac_soft/" >Mac 软件篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/06</span><a class="archive-post-title" href= "/2016/06/06/chrome_plugins/" >Chrome插件整理</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span><a class="archive-post-title" href= "/2016/06/05/gulp_2/" >Gulp使用小结(下)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/15</span><a class="archive-post-title" href= "/2016/05/15/startup/" >如果我去创业</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/30</span><a class="archive-post-title" href= "/2016/04/30/gulp_1/" >Gulp使用小结(上)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span><a class="archive-post-title" href= "/2016/03/06/2015简单总结/" >2015简单总结</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2015 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2015/07/30/Atom使用纪要/" >Atom使用纪要</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2014 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2014/09/24/Express4启航指南/" >Express4启航指南</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2014/08/26/偏执的职场生存/" >偏执的职场生存</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/02</span><a class="archive-post-title" href= "/2014/06/02/《一个广告人的自白》之小记/" >《一个广告人的自白》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/28</span><a class="archive-post-title" href= "/2014/05/28/Qcon会议之所见所想/" >Qcon会议之所见所想</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/08</span><a class="archive-post-title" href= "/2014/04/08/《MacTalk人生元编程》之小记/" >《MacTalk人生元编程》之小记</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span><a class="archive-post-title" href= "/2014/03/09/前端面试【有感而发】/" >前端面试【有感而发】</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2014/02/28/Nodejs初阶之express/" >Nodejs初阶之express</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/06</span><a class="archive-post-title" href= "/2014/01/06/AJAX跨域_POST之CORS/" >AJAX POST&跨域之CORS</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2013/08/29/数据工作之百度统计体验/" >数据工作之百度统计体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/11</span><a class="archive-post-title" href= "/2013/07/11/前端攻略之开光篇/" >前端攻略之开光篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/07</span><a class="archive-post-title" href= "/2013/07/07/2013过半，总结、计划、意三十/" >2013过半，总结、计划、意三十</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/05</span><a class="archive-post-title" href= "/2013/01/05/前端攻略系列/" >前端攻略系列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2013/01/04/Impress.js初体验/" >Impress.js初体验</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2012 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/25</span><a class="archive-post-title" href= "/2012/06/25/《暗时间》读书笔记与读后感/" >《暗时间》读书笔记与读后感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/23</span><a class="archive-post-title" href= "/2012/03/23/要有梦想,创造卓越的职业生涯/" >要有梦想,创造卓越的职业生涯</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span><a class="archive-post-title" href= "/2012/03/05/IE下z-index的各种坑/" >IE下z-index的各种坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/2012/02/19/2011总结与2012展望/" >2011总结与2012展望</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2012/01/31/前端各种面试题/" >前端各种面试题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2011 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/31</span><a class="archive-post-title" href= "/2011/12/31/前端各种优化/" >前端各种优化</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2011/11/24/JavaScript操作Cookie/" >JavaScript操作Cookie</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2011/10/31/Node.js初体验/" >Node.js初体验</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/28</span><a class="archive-post-title" href= "/2011/09/28/Fiddler前端开发值得拥有/" >Fiddler前端开发值得拥有</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/31</span><a class="archive-post-title" href= "/2011/08/31/JavaScript设计模式/" >JavaScript设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/21</span><a class="archive-post-title" href= "/2011/07/21/JavaScript实现页面滚动图片加载/" >JavaScript实现页面滚动图片加载</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/29</span><a class="archive-post-title" href= "/2011/06/29/说说我的前端之路和分享好书/" >说说我的前端之路和分享好书</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/30</span><a class="archive-post-title" href= "/2011/05/30/JSDOM操作提高篇/" >JavaScript DOM操作 提高篇</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">05/04</span><a class="archive-post-title" href= "/2011/05/04/jQuery.bind事件详解/" >jQuery.bind事件详解</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span><a class="archive-post-title" href= "/2011/02/09/《高性能JS》读书笔记/" >《高性能JS》读书笔记</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2010 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2010/12/16/HTML5新标签汇总/" >HTML5新标签汇总</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2010/12/13/CSS的4个简写/" >CSS的4个简写</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2010/12/07/Chrome浏览器字体的bug处理/" >Chrome浏览器字体的bug处理</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Browser"><span class="iconfont-archer">&#xe606;</span>Browser</span>
+    
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="JS"><span class="iconfont-archer">&#xe606;</span>JS</span>
+    
+        <span class="sidebar-tag-name" data-tags="Books"><span class="iconfont-archer">&#xe606;</span>Books</span>
+    
+        <span class="sidebar-tag-name" data-tags="HTML"><span class="iconfont-archer">&#xe606;</span>HTML</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tools"><span class="iconfont-archer">&#xe606;</span>Tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Interview"><span class="iconfont-archer">&#xe606;</span>Interview</span>
+    
+        <span class="sidebar-tag-name" data-tags="FE-Strategy"><span class="iconfont-archer">&#xe606;</span>FE-Strategy</span>
+    
+        <span class="sidebar-tag-name" data-tags="Build"><span class="iconfont-archer">&#xe606;</span>Build</span>
+    
+        <span class="sidebar-tag-name" data-tags="Review"><span class="iconfont-archer">&#xe606;</span>Review</span>
+    
+        <span class="sidebar-tag-name" data-tags="Nodejs"><span class="iconfont-archer">&#xe606;</span>Nodejs</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tech"><span class="iconfont-archer">&#xe606;</span>Tech</span>
+    
+        <span class="sidebar-tag-name" data-tags="Startup"><span class="iconfont-archer">&#xe606;</span>Startup</span>
+    
+        <span class="sidebar-tag-name" data-tags="Exchange"><span class="iconfont-archer">&#xe606;</span>Exchange</span>
+    
+        <span class="sidebar-tag-name" data-tags="Buybuybuy"><span class="iconfont-archer">&#xe606;</span>Buybuybuy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Tech"><span class="iconfont-archer">&#xe60a;</span>Tech</span>
+    
+        <span class="sidebar-category-name" data-categories="Exchange"><span class="iconfont-archer">&#xe60a;</span>Exchange</span>
+    
+        <span class="sidebar-category-name" data-categories="FE-Strategy"><span class="iconfont-archer">&#xe60a;</span>FE-Strategy</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/',
+        author: 'Darren聂微东'
+    }
+</script>
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+    
+    </body>
+</html>
+
+
